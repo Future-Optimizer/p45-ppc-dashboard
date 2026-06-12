@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paralela 45 — PPC Diagnostic</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #06080b;
+  --s1: #0d1017;
+  --s2: #131720;
+  --s3: #1a2030;
+  --border: #1f2736;
+  --border2: #2a3448;
+  --text: #dde3ef;
+  --dim: #3d4f68;
+  --mid: #7a8fa8;
+  --crit: #ff3b3b;
+  --warn: #ffaa00;
+  --ok: #00d48a;
+  --info: #4f9eff;
+  --purple: #a855f7;
+  --google: #4285f4;
+  --meta: #1877f2;
+  --bing: #00b4d8;
+  --tiktok: #ff2d55;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.012) 3px, rgba(255,255,255,0.012) 4px);
+  pointer-events:none; z-index:0;
+}
+
+.app {
+  position:relative; z-index:1;
+  display:flex;
+  height:100vh;
+  overflow:hidden;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  width:240px; flex-shrink:0;
+  background: var(--s1);
+  border-right: 1px solid var(--border);
+  display:flex; flex-direction:column;
+  overflow-y:auto;
+}
+
+.sb-logo {
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-main {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: var(--text);
+  line-height:1;
+}
+
+.logo-main span { color: var(--warn); }
+
+.logo-sub {
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 3px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.sb-section {
+  padding: 16px 16px 6px;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-item {
+  display:flex; align-items:center; gap:10px;
+  padding: 9px 16px;
+  cursor:pointer;
+  color: var(--mid);
+  font-size: 12px;
+  border-left: 2px solid transparent;
+  transition: all 0.15s;
+  user-select:none;
+}
+
+.nav-item:hover { background: var(--s2); color: var(--text); }
+.nav-item.active {
+  background: var(--s2);
+  border-left-color: var(--warn);
+  color: var(--text);
+}
+
+.nav-icon { font-size: 14px; width:18px; text-align:center; }
+
+.nav-badge {
+  margin-left:auto;
+  font-size: 9px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.bc { background: rgba(255,59,59,0.18); color: var(--crit); }
+.bw { background: rgba(255,170,0,0.18); color: var(--warn); }
+.bo { background: rgba(79,158,255,0.18); color: var(--info); }
+.bg { background: rgba(0,212,138,0.18); color: var(--ok); }
+
+.plt-row {
+  display:flex; align-items:center; gap:9px;
+  padding: 7px 16px;
+  font-size: 11px;
+  color: var(--mid);
+}
+
+.plt-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+
+.plt-right { margin-left:auto; font-size:10px; color: var(--dim); font-family:'JetBrains Mono',monospace; }
+
+.sb-footer {
+  margin-top:auto;
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  font-size: 10px;
+  color: var(--dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.sync-dot {
+  display:inline-block;
+  width:5px; height:5px;
+  background: var(--ok);
+  border-radius:50%;
+  margin-right:5px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+/* ── MAIN ── */
+.main {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  background: var(--s1);
+  border-bottom: 1px solid var(--border);
+  height: 50px;
+  display:flex; align-items:center;
+  padding: 0 24px;
+  gap:16px;
+  flex-shrink:0;
+}
+
+.tb-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--text);
+}
+
+.tb-sep { color: var(--border2); }
+
+.tb-meta {
+  font-size: 11px;
+  color: var(--mid);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tb-right { margin-left:auto; display:flex; gap:8px; align-items:center; }
+
+.tb-btn {
+  padding: 5px 12px;
+  background: var(--s2);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  color: var(--mid);
+  font-size: 10px;
+  cursor:pointer;
+  font-family: 'JetBrains Mono', monospace;
+  transition: all 0.15s;
+}
+
+.tb-btn:hover { border-color: var(--warn); color: var(--warn); }
+.tb-btn.primary { border-color: var(--warn); color: var(--warn); background: rgba(255,170,0,0.06); }
+
+/* ── CONTENT AREA ── */
+.content {
+  flex:1;
+  overflow-y:auto;
+  padding: 20px 24px 32px;
+}
+
+/* page visibility */
+.page { display:none; }
+.page.active { display:block; }
+
+/* ── DIAGNOSTIC PAGE ── */
+.diag-summary {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.diag-stat {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 14px 16px;
+  animation: slideUp 0.3s ease both;
+}
+
+.diag-stat:nth-child(1){animation-delay:.05s}
+.diag-stat:nth-child(2){animation-delay:.10s}
+.diag-stat:nth-child(3){animation-delay:.15s}
+.diag-stat:nth-child(4){animation-delay:.20s}
+
+@keyframes slideUp {
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.ds-label {
+  font-size:9px; color:var(--dim);
+  letter-spacing:2px; text-transform:uppercase;
+  margin-bottom:8px;
+  font-family:'JetBrains Mono',monospace;
+}
+
+.ds-value {
+  font-family:'Bebas Neue',sans-serif;
+  font-size: 30px;
+  line-height:1;
+}
+
+.ds-value.crit { color: var(--crit); }
+.ds-value.warn { color: var(--warn); }
+.ds-value.ok   { color: var(--ok); }
+.ds-value.info { color: var(--info); }
+
+.ds-sub { font-size:10px; color:var(--dim); margin-top:4px; }
+
+/* Problem cards */
+.problems-list {
+  display:flex; flex-direction:column; gap:10px;
+}
+
+.prob-card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow:hidden;
+  animation: slideUp 0.35s ease both;
+  cursor:pointer;
+}
+
+.prob-card:nth-child(1){animation-delay:.15s}
+.prob-card:nth-child(2){animation-delay:.20s}
+.prob-card:nth-child(3){animation-delay:.25s}
+.prob-card:nth-child(4){animation-delay:.30s}
+.prob-card:nth-child(5){animation-delay:.35s}
+.prob-card:nth-child(6){animation-delay:.40s}
+.prob-card:nth-child(7){animation-delay:.45s}
+
+.prob-header {
+  display:flex; align-items:center; gap:12px;
+  padding: 14px 16px;
+  transition: background 0.15s;
+}
+
+.prob-card:hover .prob-header { background: var(--s2); }
+
+.prob-sev {
+  width:8px; height:8px; border-radius:50%; flex-shrink:0;
+}
+
+.prob-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  flex:1;
+}
+
+.prob-platform {
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-family:'JetBrains Mono',monospace;
+}
+
+.prob-impact {
+  font-size: 10px;
+  color: var(--dim);
+  font-family:'JetBrains Mono',monospace;
+  white-space:nowrap;
+}
+
+.prob-arrow {
+  font-size: 11px;
+  color: var(--dim);
+  transition: transform 0.2s;
+}
+
+.prob-card.open .prob-arrow { transform: rotate(90deg); }
+
+.prob-body {
+  display:none;
+  padding: 0 16px 16px 36px;
+  border-top: 1px solid var(--border);
+}
+
+.prob-card.open .prob-body { display:block; }
+
+.prob-desc {
+  font-size: 12px;
+  color: var(--mid);
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+.prob-actions {
+  display:flex; flex-direction:column; gap:6px;
+}
+
+.prob-action {
+  display:flex; align-items:flex-start; gap:10px;
+  padding: 10px 12px;
+  background: var(--s2);
+  border-radius: 6px;
+  border-left: 3px solid var(--border2);
+}
+
+.prob-action.act-crit { border-left-color: var(--crit); }
+.prob-action.act-warn { border-left-color: var(--warn); }
+.prob-action.act-ok   { border-left-color: var(--ok); }
+
+.act-num {
+  font-family:'JetBrains Mono',monospace;
+  font-size: 10px;
+  color: var(--dim);
+  flex-shrink:0;
+  margin-top:1px;
+}
+
+.act-text {
+  font-size: 12px;
+  color: var(--text);
+  line-height:1.6;
+}
+
+.act-text strong { color: var(--warn); font-weight:600; }
+
+/* ── NEGATIVES PAGE ── */
+.neg-filters {
+  display:flex; gap:8px; margin-bottom:16px; align-items:center;
+}
+
+.neg-search {
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  padding: 7px 12px;
+  color: var(--text);
+  font-size: 12px;
+  font-family:'JetBrains Mono',monospace;
+  width: 260px;
+  outline:none;
+  transition: border-color 0.15s;
+}
+
+.neg-search:focus { border-color: var(--warn); }
+.neg-search::placeholder { color: var(--dim); }
+
+.filter-btn {
+  padding: 7px 12px;
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--mid);
+  font-size: 11px;
+  cursor:pointer;
+  transition: all 0.15s;
+  font-family:'JetBrains Mono',monospace;
+}
+
+.filter-btn:hover, .filter-btn.active { border-color: var(--warn); color: var(--warn); background: rgba(255,170,0,0.05); }
+
+.neg-add-row {
+  display:flex; gap:8px; margin-bottom:18px;
+}
+
+.neg-input {
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  padding: 8px 14px;
+  color: var(--text);
+  font-size: 12px;
+  font-family:'JetBrains Mono',monospace;
+  flex:1;
+  outline:none;
+  transition: border-color 0.15s;
+}
+
+.neg-input:focus { border-color: var(--warn); }
+.neg-input::placeholder { color: var(--dim); }
+
+.neg-select {
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: var(--mid);
+  font-size: 11px;
+  font-family:'JetBrains Mono',monospace;
+  outline:none;
+  cursor:pointer;
+}
+
+.btn-add {
+  padding: 8px 16px;
+  background: rgba(255,170,0,0.1);
+  border: 1px solid var(--warn);
+  border-radius: 5px;
+  color: var(--warn);
+  font-size: 11px;
+  cursor:pointer;
+  font-family:'JetBrains Mono',monospace;
+  transition: all 0.15s;
+  font-weight:600;
+}
+
+.btn-add:hover { background: rgba(255,170,0,0.18); }
+
+.neg-table-wrap {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow:hidden;
+}
+
+.neg-table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.neg-table th {
+  background: var(--s2);
+  padding: 10px 14px;
+  text-align:left;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-family:'JetBrains Mono',monospace;
+  border-bottom: 1px solid var(--border);
+}
+
+.neg-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--mid);
+  vertical-align:middle;
+}
+
+.neg-table tr:last-child td { border-bottom:none; }
+.neg-table tr:hover td { background: var(--s2); color: var(--text); }
+
+.neg-kw {
+  color: var(--text);
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;
+}
+
+.neg-type {
+  display:inline-flex;
+  padding: 1px 7px;
+  border-radius:3px;
+  font-size:9px;
+  font-family:'JetBrains Mono',monospace;
+}
+
+.type-exact { background: rgba(79,158,255,0.15); color:var(--info); }
+.type-phrase { background: rgba(168,85,247,0.15); color:var(--purple); }
+.type-broad { background: rgba(0,212,138,0.15); color:var(--ok); }
+
+.neg-del {
+  cursor:pointer;
+  color:var(--dim);
+  font-size:14px;
+  transition:color 0.15s;
+  padding:2px 6px;
+  border-radius:3px;
+}
+
+.neg-del:hover { color:var(--crit); background:rgba(255,59,59,0.1); }
+
+/* ── ALERTS PAGE ── */
+.alert-grid {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:12px;
+  margin-bottom: 20px;
+}
+
+.alert-stat {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:7px;
+  padding:14px 16px;
+}
+
+.alert-stat-num {
+  font-family:'Bebas Neue',sans-serif;
+  font-size:32px; line-height:1;
+  margin-bottom:4px;
+}
+
+.alert-stat-label { font-size:10px; color:var(--dim); font-family:'JetBrains Mono',monospace; }
+
+.alerts-full {
+  display:flex; flex-direction:column; gap:8px;
+}
+
+.alert-full {
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:7px;
+  padding:14px 16px;
+  display:flex; align-items:flex-start; gap:14px;
+  animation: slideUp 0.3s ease both;
+}
+
+.alert-full:nth-child(1){animation-delay:.05s}
+.alert-full:nth-child(2){animation-delay:.10s}
+.alert-full:nth-child(3){animation-delay:.15s}
+.alert-full:nth-child(4){animation-delay:.20s}
+.alert-full:nth-child(5){animation-delay:.25s}
+
+.af-icon {
+  width:32px; height:32px;
+  border-radius:6px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:14px; flex-shrink:0;
+}
+
+.af-body { flex:1; }
+
+.af-title {
+  font-size:13px; font-weight:600;
+  color:var(--text); margin-bottom:4px;
+}
+
+.af-desc { font-size:11px; color:var(--mid); line-height:1.6; margin-bottom:8px; }
+
+.af-meta {
+  display:flex; align-items:center; gap:10px;
+  font-size:10px; color:var(--dim);
+  font-family:'JetBrains Mono',monospace;
+}
+
+.af-meta span { color:var(--mid); }
+
+.af-actions { display:flex; gap:6px; flex-shrink:0; }
+
+.af-btn {
+  padding:5px 10px;
+  border-radius:4px;
+  font-size:10px;
+  cursor:pointer;
+  font-family:'JetBrains Mono',monospace;
+  transition:all 0.15s;
+}
+
+.af-btn.resolve {
+  background:rgba(0,212,138,0.1);
+  border:1px solid var(--ok);
+  color:var(--ok);
+}
+
+.af-btn.snooze {
+  background:var(--s2);
+  border:1px solid var(--border2);
+  color:var(--dim);
+}
+
+.af-btn:hover { opacity:0.8; }
+
+/* scrollbar */
+::-webkit-scrollbar { width:4px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--border2); border-radius:2px; }
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sb-logo">
+    <div class="logo-main">PARALELA <span>45</span></div>
+    <div class="logo-sub">PPC Diagnostic</div>
+  </div>
+
+  <div class="sb-section">Tool-uri</div>
+
+  <div class="nav-item active" onclick="showPage('diagnostic',this)">
+    <div class="nav-icon">⚡</div>
+    Daily Check
+    <span class="nav-badge bc">3</span>
+  </div>
+
+  <div class="nav-item" onclick="showPage('negatives',this)">
+    <div class="nav-icon">🚫</div>
+    Negative Keywords
+    <span class="nav-badge bw">12</span>
+  </div>
+
+  <div class="nav-item" onclick="showPage('alerts',this)">
+    <div class="nav-icon">🔔</div>
+    Alerte
+    <span class="nav-badge bo">5</span>
+  </div>
+
+  <div class="sb-section">Platforme</div>
+
+  <div class="plt-row">
+    <div class="plt-dot" style="background:var(--google)"></div>
+    Google Ads
+    <span class="plt-right" style="color:var(--ok)">OK</span>
+  </div>
+  <div class="plt-row">
+    <div class="plt-dot" style="background:var(--meta)"></div>
+    Meta Ads
+    <span class="plt-right" style="color:var(--warn)">2 ⚠</span>
+  </div>
+  <div class="plt-row">
+    <div class="plt-dot" style="background:var(--bing)"></div>
+    Bing Ads
+    <span class="plt-right" style="color:var(--ok)">OK</span>
+  </div>
+  <div class="plt-row">
+    <div class="plt-dot" style="background:var(--tiktok)"></div>
+    TikTok Ads
+    <span class="plt-right" style="color:var(--crit)">1 ✕</span>
+  </div>
+
+  <div class="sb-footer">
+    <div><span class="sync-dot"></span>09:14 · Mock data</div>
+    <div style="margin-top:4px;font-size:9px">29 MAI 2026</div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="tb-title" id="tb-title">DAILY CHECK</div>
+    <span class="tb-sep">·</span>
+    <div class="tb-meta" id="tb-meta">7 probleme detectate · 3 critice · ~4 min review</div>
+    <div class="tb-right">
+      <div class="tb-btn">↓ Export PDF</div>
+      <div class="tb-btn primary">↻ Re-scan</div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- ── DIAGNOSTIC PAGE ── -->
+    <div class="page active" id="page-diagnostic">
+
+      <div class="diag-summary">
+        <div class="diag-stat">
+          <div class="ds-label">Critice</div>
+          <div class="ds-value crit">3</div>
+          <div class="ds-sub">necesită acțiune azi</div>
+        </div>
+        <div class="diag-stat">
+          <div class="ds-label">Avertismente</div>
+          <div class="ds-value warn">4</div>
+          <div class="ds-sub">monitorizare activă</div>
+        </div>
+        <div class="diag-stat">
+          <div class="ds-label">OK</div>
+          <div class="ds-value ok">18</div>
+          <div class="ds-sub">metrici în target</div>
+        </div>
+        <div class="diag-stat">
+          <div class="ds-label">Timp Review</div>
+          <div class="ds-value info">4<span style="font-size:16px">min</span></div>
+          <div class="ds-sub">estimat azi</div>
+        </div>
+      </div>
+
+      <div class="problems-list">
+
+        <!-- PROBLEM 1 - CRITICAL -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--crit)"></div>
+            <div class="prob-title">TikTok ROAS critic — 2.8x vs target 4.5x</div>
+            <span class="prob-platform" style="background:rgba(255,45,85,0.12);color:var(--tiktok)">TikTok</span>
+            <div class="prob-impact" style="color:var(--crit)">−66K RON pierdut/lună</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Campania <strong style="color:var(--text)">TikTok Last Minute</strong> cheltuie 38.400 RON/lună cu un ROAS de 2.8x — cu 38% sub target-ul de 4.5x. Campania <strong style="color:var(--text)">City Break</strong> e la 3.1x, tot sub target. Totalul TikTok generează pierderi efective față de costul de oportunitate Google.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-crit">
+                <div class="act-num">01</div>
+                <div class="act-text">Reduce bugetul zilnic TikTok Last Minute cu <strong>50%</strong> imediat (de la 1.280 RON → 640 RON/zi) până la stabilizarea ROAS.</div>
+              </div>
+              <div class="prob-action act-warn">
+                <div class="act-num">02</div>
+                <div class="act-text">Refresh creative — înlocuiește video-urile cu <strong>format nativ TikTok</strong> (vertical 9:16, primele 3 secunde cu text overlay mare, fără logo în primele 2 sec).</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">03</div>
+                <div class="act-text">Testează <strong>Value-Based Bidding</strong> în loc de Lowest Cost — setează valoare minimă acceptată per conversie la 3.000 RON.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 2 - CRITICAL -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--crit)"></div>
+            <div class="prob-title">Tracking GA4 raportează avans (19%) nu valoarea totală</div>
+            <span class="prob-platform" style="background:rgba(66,133,244,0.12);color:var(--google)">All</span>
+            <div class="prob-impact" style="color:var(--crit)">ROAS fals ×5</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Evenimentul <strong style="color:var(--text)">purchase</strong> trimite în GA4 valoarea avansului (~19% din pachet), nu valoarea totală. Un sejur de 10.000 RON apare ca 1.900 RON în conversii. Smart Bidding optimizează pe date greșite, distorsionând toate deciziile de bid.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-crit">
+                <div class="act-num">01</div>
+                <div class="act-text">Solicită dev să modifice parametrul <strong>value</strong> în evenimentul purchase GTM → să trimită valoarea totală a pachetului, nu avansul.</div>
+              </div>
+              <div class="prob-action act-warn">
+                <div class="act-num">02</div>
+                <div class="act-text">Implementează <strong>Offline Conversion Import</strong> în Google Ads cu datele din CRM (ID comandă + valoare finalizată) pentru conversii prin transfer bancar și cash.</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">03</div>
+                <div class="act-text">Până la fix, setează în Google Ads un <strong>Conversion Value Rule</strong> care multiplică valoarea raportată cu 5.2x pentru a aproxima valoarea reală.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 3 - CRITICAL -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--crit)"></div>
+            <div class="prob-title">197K RON revenue invizibil — plăți offline netrackate</div>
+            <span class="prob-platform" style="background:rgba(66,133,244,0.12);color:var(--google)">Google</span>
+            <div class="prob-impact" style="color:var(--crit)">197K RON/lună</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              21 comenzi Emise + Finalizate (197.673 RON) nu au nicio conversie înregistrată în Google Ads. Sursa: plăți prin Transfer Bancar, Cash la agenție sau Rate Netopia cu flow diferit — fără redirect prin EuPlatesc, fără declanșare purchase event.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-crit">
+                <div class="act-num">01</div>
+                <div class="act-text">Configurează <strong>Google Ads Enhanced Conversions for Leads</strong> + import CRM zilnic cu GCLID + valoare finală pentru comenzile offline.</div>
+              </div>
+              <div class="prob-action act-warn">
+                <div class="act-num">02</div>
+                <div class="act-text">Exportă din CRM comenzile Finalizate din ultimele 30 zile → mapează GCLID (stocat la momentul comenzii) → upload în Google Ads Conversions.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 4 - WARNING -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--warn)"></div>
+            <div class="prob-title">Meta Advantage+ — frequency 4.2, audience obosit</div>
+            <span class="prob-platform" style="background:rgba(24,119,242,0.12);color:var(--meta)">Meta</span>
+            <div class="prob-impact" style="color:var(--warn)">CTR −34% în 7 zile</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Campania Advantage+ Shopping atinge o frecvență medie de 4.2 — pragul de saturație pentru travel este ~2.5. CTR a scăzut de la 2.8% → 1.85% în ultimele 7 zile, CPA a crescut cu 28%.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-warn">
+                <div class="act-num">01</div>
+                <div class="act-text">Încarcă <strong>minimum 6 creative noi</strong> (3 video + 3 imagine) cu mesaje diferite: urgență Last Minute, familie cu copii, early booking 2026.</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">02</div>
+                <div class="act-text">Extinde audiența cu <strong>Lookalike 3-5%</strong> pe baza cumpărătorilor din ultimele 90 zile pentru a dilua frecvența pe audiența actuală.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 5 - WARNING -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--warn)"></div>
+            <div class="prob-title">PMax Sejururi Buc — limitat de buget 3/5 zile</div>
+            <span class="prob-platform" style="background:rgba(66,133,244,0.12);color:var(--google)">Google</span>
+            <div class="prob-impact" style="color:var(--warn)">~34K RON oportunitate</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Campania cu cel mai bun ROAS (9.1x) e limitată de buget — Google raportează "Budget limited" în 3 din ultimele 5 zile. Spend-ul actual: 98K RON vs potențial estimat de ~132K RON.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-ok">
+                <div class="act-num">01</div>
+                <div class="act-text">Crește bugetul zilnic cu <strong>+35%</strong> (de la ~3.267 RON/zi → 4.410 RON/zi). La ROAS 9.1x, fiecare RON cheltuit în plus generează 9.1 RON revenue.</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">02</div>
+                <div class="act-text">Realocă bugetul din TikTok Last Minute (campanie cu ROAS 2.4x) → PMax Sejururi Buc pentru eficiență maximă.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 6 - WARNING -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--warn)"></div>
+            <div class="prob-title">Consent Mode Basic activ — ~50% date lipsă</div>
+            <span class="prob-platform" style="background:rgba(66,133,244,0.12);color:var(--google)">GTM</span>
+            <div class="prob-impact" style="color:var(--warn)">atribuire distorsionată</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Tag-urile cu "Require additional consent — analytics_storage" blochează complet colectarea pentru userii fără consent, în loc să folosească modelarea statistică. Direct/None umflat artificial ca urmare.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-warn">
+                <div class="act-num">01</div>
+                <div class="act-text">În GTM → toate tag-urile afectate → <strong>Additional Consent Checks → No additional consent required</strong>. Built-in checks sunt suficiente.</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">02</div>
+                <div class="act-text">Publică Container Version cu denumire descriptivă → verifică după 48h că Direct% scade și Paid Search/Social cresc în GA4.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROBLEM 7 - INFO -->
+        <div class="prob-card" onclick="toggleProb(this)">
+          <div class="prob-header">
+            <div class="prob-sev" style="background:var(--info)"></div>
+            <div class="prob-title">Corfu search volume +44% YoY — opportunity</div>
+            <span class="prob-platform" style="background:rgba(79,158,255,0.12);color:var(--info)">Google</span>
+            <div class="prob-impact" style="color:var(--info)">oportunitate scalare</div>
+            <div class="prob-arrow">▶</div>
+          </div>
+          <div class="prob-body">
+            <div class="prob-desc">
+              Volume de search pentru "sejur Corfu", "hotel Corfu all inclusive" și variante au crescut cu 44% față de mai 2025. ROAS-ul actual pe Corfu e 7.4x — printre cele mai bune destinații.
+            </div>
+            <div class="prob-actions">
+              <div class="prob-action act-ok">
+                <div class="act-num">01</div>
+                <div class="act-text">Adaugă <strong>Search Themes dedicate</strong> în PMax: "sandy beach corfu", "nisipakia corfu all inclusive", "corfu sejur 7 nopti" pentru a capta volum incremental.</div>
+              </div>
+              <div class="prob-action act-ok">
+                <div class="act-num">02</div>
+                <div class="act-text">Configurează <strong>Value Rule</strong> pentru Corfu: ×1.5 față de baseline Creta, reflectând ROAS-ul superior și AOV mai mare.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── NEGATIVES PAGE ── -->
+    <div class="page" id="page-negatives">
+
+      <div class="neg-add-row">
+        <input class="neg-input" id="neg-kw-input" type="text" placeholder="Adaugă keyword negativ..." onkeydown="if(event.key==='Enter')addNeg()">
+        <select class="neg-select" id="neg-type-sel">
+          <option value="exact">[exact]</option>
+          <option value="phrase">"phrase"</option>
+          <option value="broad">broad</option>
+        </select>
+        <select class="neg-select" id="neg-plt-sel">
+          <option>Google Ads</option>
+          <option>Meta Ads</option>
+          <option>Bing Ads</option>
+          <option>TikTok Ads</option>
+          <option>All Platforms</option>
+        </select>
+        <div class="btn-add" onclick="addNeg()">+ Adaugă</div>
+      </div>
+
+      <div class="neg-filters">
+        <input class="neg-search" id="neg-search" type="text" placeholder="Caută în lista de negativi..." oninput="filterNegs()">
+        <div class="filter-btn active" onclick="filterPlt('all',this)">Toate</div>
+        <div class="filter-btn" onclick="filterPlt('Google Ads',this)">Google</div>
+        <div class="filter-btn" onclick="filterPlt('Meta Ads',this)">Meta</div>
+        <div class="filter-btn" onclick="filterPlt('Bing Ads',this)">Bing</div>
+        <div class="filter-btn" onclick="filterPlt('TikTok Ads',this)">TikTok</div>
+        <div style="margin-left:auto;font-size:11px;color:var(--dim);font-family:'JetBrains Mono',monospace" id="neg-count"></div>
+      </div>
+
+      <div class="neg-table-wrap">
+        <table class="neg-table">
+          <thead>
+            <tr>
+              <th>Keyword</th>
+              <th>Tip</th>
+              <th>Platformă</th>
+              <th>Adăugat</th>
+              <th>Motiv</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="neg-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ── ALERTS PAGE ── -->
+    <div class="page" id="page-alerts">
+
+      <div class="alert-grid">
+        <div class="alert-stat">
+          <div class="alert-stat-num" style="color:var(--crit)">3</div>
+          <div class="alert-stat-label">CRITICE — acțiune imediată</div>
+        </div>
+        <div class="alert-stat">
+          <div class="alert-stat-num" style="color:var(--warn)">2</div>
+          <div class="alert-stat-label">INFO — monitorizare</div>
+        </div>
+      </div>
+
+      <div class="alerts-full">
+
+        <div class="alert-full" style="border-left:3px solid var(--crit)">
+          <div class="af-icon" style="background:rgba(255,59,59,0.12)">🔴</div>
+          <div class="af-body">
+            <div class="af-title">TikTok ROAS 2.8x — sub target 4.5x</div>
+            <div class="af-desc">Campaniile TikTok Last Minute și City Break generează împreună pierderi efective față de bugetul alocat. ROAS combinat: 2.8x vs target 4.5x. Necesită acțiune azi.</div>
+            <div class="af-meta"><span>TikTok Ads</span> · detectat azi 08:00 · Impact: 66K RON/lună</div>
+          </div>
+          <div class="af-actions">
+            <div class="af-btn resolve" onclick="resolveAlert(this)">✓ Rezolvat</div>
+            <div class="af-btn snooze" onclick="snoozeAlert(this)">⏸ 24h</div>
+          </div>
+        </div>
+
+        <div class="alert-full" style="border-left:3px solid var(--crit)">
+          <div class="af-icon" style="background:rgba(255,59,59,0.12)">🔴</div>
+          <div class="af-body">
+            <div class="af-title">Tracking purchase — valoare greșită în GA4</div>
+            <div class="af-desc">GA4 înregistrează avansul (~19% din valoarea pachetului) în loc de valoarea totală. Smart Bidding optimizează pe ROAS fals. Toate platformele afectate.</div>
+            <div class="af-meta"><span>All Platforms</span> · detectat acum 3 zile · Impact: ROAS fals ×5</div>
+          </div>
+          <div class="af-actions">
+            <div class="af-btn resolve" onclick="resolveAlert(this)">✓ Rezolvat</div>
+            <div class="af-btn snooze" onclick="snoozeAlert(this)">⏸ 24h</div>
+          </div>
+        </div>
+
+        <div class="alert-full" style="border-left:3px solid var(--crit)">
+          <div class="af-icon" style="background:rgba(255,59,59,0.12)">🔴</div>
+          <div class="af-body">
+            <div class="af-title">197K RON revenue offline neînregistrat</div>
+            <div class="af-desc">21 comenzi Emise/Finalizate din CRM fără nicio conversie în Google Ads. Plăți prin transfer bancar, cash sau rate Netopia fără tracking pixel.</div>
+            <div class="af-meta"><span>Google Ads</span> · detectat acum 5 zile · Impact: 197.673 RON/lună</div>
+          </div>
+          <div class="af-actions">
+            <div class="af-btn resolve" onclick="resolveAlert(this)">✓ Rezolvat</div>
+            <div class="af-btn snooze" onclick="snoozeAlert(this)">⏸ 24h</div>
+          </div>
+        </div>
+
+        <div class="alert-full" style="border-left:3px solid var(--info)">
+          <div class="af-icon" style="background:rgba(79,158,255,0.12)">🔵</div>
+          <div class="af-body">
+            <div class="af-title">Corfu search volume +44% YoY — oportunitate scalare</div>
+            <div class="af-desc">Volumul de căutări pentru destinația Corfu a crescut semnificativ față de mai 2025. ROAS-ul actual pe Corfu: 7.4x. Spațiu de scalare disponibil.</div>
+            <div class="af-meta"><span>Google Ads</span> · detectat acum 4 zile · Tip: oportunitate</div>
+          </div>
+          <div class="af-actions">
+            <div class="af-btn resolve" onclick="resolveAlert(this)">✓ Notat</div>
+            <div class="af-btn snooze" onclick="snoozeAlert(this)">⏸ 7 zile</div>
+          </div>
+        </div>
+
+        <div class="alert-full" style="border-left:3px solid var(--info)">
+          <div class="af-icon" style="background:rgba(79,158,255,0.12)">🔵</div>
+          <div class="af-body">
+            <div class="af-title">Conversie GTM Purchase Google Ads — activă și funcțională</div>
+            <div class="af-desc">Tag-ul GTM nou (Purchase Google Ads) înregistrează conversii. Tracking dual activ temporar cu importul GA4. Verifică în 48h că ambele înregistrează corect înainte de a dezactiva importul GA4.</div>
+            <div class="af-meta"><span>Google Ads + GTM</span> · 12 mai 2026 · Tip: info</div>
+          </div>
+          <div class="af-actions">
+            <div class="af-btn resolve" onclick="resolveAlert(this)">✓ Notat</div>
+            <div class="af-btn snooze" onclick="snoozeAlert(this)">⏸ 48h</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /main -->
+</div><!-- /app -->
+
+<script>
+// ── PAGE NAVIGATION ──
+function showPage(id, el) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  if (el) el.classList.add('active');
+
+  const titles = {
+    diagnostic: ['DAILY CHECK', '7 probleme detectate · 3 critice · ~4 min review'],
+    negatives: ['NEGATIVE KEYWORDS', '12 keywords negativi activi'],
+    alerts: ['ALERTE & NOTIFICĂRI', '5 alerte active · 3 critice · 2 info']
+  };
+  document.getElementById('tb-title').textContent = titles[id][0];
+  document.getElementById('tb-meta').textContent = titles[id][1];
+}
+
+// ── DIAGNOSTIC EXPAND ──
+function toggleProb(card) {
+  const wasOpen = card.classList.contains('open');
+  document.querySelectorAll('.prob-card').forEach(c => c.classList.remove('open'));
+  if (!wasOpen) card.classList.add('open');
+}
+
+// ── NEGATIVES DATA ──
+let negatives = [
+  { kw: 'gratis', type: 'broad', platform: 'Google Ads', date: '2026-05-15', reason: 'Trafic necalificat' },
+  { kw: 'ieftin', type: 'broad', platform: 'Google Ads', date: '2026-05-15', reason: 'Intent scăzut' },
+  { kw: 'camping', type: 'broad', platform: 'Google Ads', date: '2026-05-10', reason: 'Produs inexistent' },
+  { kw: 'hostel', type: 'broad', platform: 'Google Ads', date: '2026-05-10', reason: 'Produs inexistent' },
+  { kw: 'paralela 45 recenzie', type: 'phrase', platform: 'Google Ads', date: '2026-05-08', reason: 'Navigational, nu tranzacțional' },
+  { kw: 'job paralela 45', type: 'phrase', platform: 'Google Ads', date: '2026-05-08', reason: 'Trafic HR' },
+  { kw: 'gratuit', type: 'broad', platform: 'Meta Ads', date: '2026-05-12', reason: 'Trafic necalificat' },
+  { kw: 'ieftin vacanta', type: 'phrase', platform: 'Meta Ads', date: '2026-05-12', reason: 'Intent scăzut AOV' },
+  { kw: 'last minute grecia', type: 'exact', platform: 'Bing Ads', date: '2026-05-05', reason: 'ROAS negativ pe Bing' },
+  { kw: 'villa inchiriere', type: 'broad', platform: 'Google Ads', date: '2026-04-28', reason: 'Produs inexistent' },
+  { kw: 'bilete avion', type: 'broad', platform: 'Google Ads', date: '2026-04-22', reason: 'Produs inexistent' },
+  { kw: 'turism rural', type: 'broad', platform: 'TikTok Ads', date: '2026-04-18', reason: 'Out of scope' },
+];
+
+let filteredPlt = 'all';
+
+function renderNegs(list) {
+  const tbody = document.getElementById('neg-tbody');
+  document.getElementById('neg-count').textContent = list.length + ' keywords';
+  tbody.innerHTML = list.map((n, i) => `
+    <tr>
+      <td class="neg-kw">${n.kw}</td>
+      <td><span class="neg-type type-${n.type}">${n.type}</span></td>
+      <td style="color:var(--mid)">${n.platform}</td>
+      <td style="font-family:'JetBrains Mono',monospace;color:var(--dim)">${n.date}</td>
+      <td style="color:var(--dim)">${n.reason}</td>
+      <td><span class="neg-del" onclick="delNeg(${negatives.indexOf(n)})">✕</span></td>
+    </tr>
+  `).join('');
+}
+
+function getFiltered() {
+  const q = document.getElementById('neg-search').value.toLowerCase();
+  return negatives.filter(n =>
+    (filteredPlt === 'all' || n.platform === filteredPlt) &&
+    (n.kw.includes(q) || n.reason.toLowerCase().includes(q) || n.platform.toLowerCase().includes(q))
+  );
+}
+
+function filterNegs() { renderNegs(getFiltered()); }
+
+function filterPlt(plt, btn) {
+  filteredPlt = plt;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterNegs();
+}
+
+function addNeg() {
+  const kw = document.getElementById('neg-kw-input').value.trim();
+  if (!kw) return;
+  const type = document.getElementById('neg-type-sel').value;
+  const platform = document.getElementById('neg-plt-sel').value;
+  negatives.unshift({ kw, type, platform, date: '2026-05-29', reason: '—' });
+  document.getElementById('neg-kw-input').value = '';
+  filterNegs();
+}
+
+function delNeg(i) {
+  negatives.splice(i, 1);
+  filterNegs();
+}
+
+// ── ALERTS ──
+function resolveAlert(btn) {
+  const card = btn.closest('.alert-full');
+  card.style.opacity = '0.35';
+  card.style.pointerEvents = 'none';
+  btn.textContent = '✓ Done';
+}
+
+function snoozeAlert(btn) {
+  btn.textContent = '⏸ Snoozed';
+  btn.style.color = 'var(--dim)';
+  btn.style.borderColor = 'var(--dim)';
+}
+
+// init negatives
+renderNegs(negatives);
+</script>
+</body>
+</html>

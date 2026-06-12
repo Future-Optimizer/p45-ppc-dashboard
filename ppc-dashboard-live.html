@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -653,6 +653,21 @@ body::before {
   text-align:right;
 }
 
+.dest-header {
+  display:flex; align-items:center; gap:10px;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2px;
+}
+
+.dest-header .dest-name { width:100px; flex-shrink:0; color: var(--dim); }
+.dest-header .dest-revenue { width:70px; text-align:right; color: var(--dim); }
+.dest-header .dest-roas { width:40px; text-align:right; color: var(--dim); }
+
 /* ─── MINI CHART ─── */
 .mini-chart {
   width:100%;
@@ -754,29 +769,29 @@ body::before {
     <div class="sb-tagline">PPC Command Center</div>
   </div>
 
-  <div class="sb-section">Vizualizare</div>
+  <div class="sb-section">View</div>
 
   <div class="nav-item active" data-view="overview">
     <div class="nav-dot" style="background:var(--accent)"></div>
-    Overview General
+    General Overview
   </div>
   <div id="nav-platforms"></div>
 
-  <div class="sb-section">Rapoarte</div>
+  <div class="sb-section">Reports</div>
   <div class="nav-item" data-view="report-campaigns">
     <div class="nav-dot" style="background:var(--dim)"></div>
-    Campanii Active
+    Active Campaigns
   </div>
   <div class="nav-item" data-view="report-destinations">
     <div class="nav-dot" style="background:var(--dim)"></div>
-    Destinații Top
+    Top Destinations
   </div>
   <div class="nav-item" data-view="report-daily">
     <div class="nav-dot" style="background:var(--dim)"></div>
-    Diagnostic Daily
+    Daily Diagnostic
   </div>
 
-  <div class="sb-section" style="margin-top:8px">Spend Azi</div>
+  <div class="sb-section" style="margin-top:8px">Spend Today</div>
   <div id="sidebar-spend"></div>
 
   <div class="sb-footer" id="sb-footer">
@@ -790,8 +805,8 @@ body::before {
   <span class="topbar-sep">·</span>
   <div class="period-tabs" id="period-tabs"></div>
   <div class="topbar-right">
-    <div class="data-source" id="data-source">SURSĂ: —</div>
-    <div class="btn-refresh" id="btn-refresh">↻ Refresh date</div>
+    <div class="data-source" id="data-source">SOURCE: —</div>
+    <div class="btn-refresh" id="btn-refresh">↻ Refresh data</div>
   </div>
 </header>
 
@@ -806,7 +821,7 @@ body::before {
 
     <!-- PLATFORMS -->
     <div>
-      <div class="section-label">Platforme</div>
+      <div class="section-label">Platforms</div>
       <div class="platforms-grid" id="platforms-grid"></div>
     </div>
 
@@ -815,19 +830,19 @@ body::before {
 
       <!-- TOP CAMPAIGNS -->
       <div class="card">
-        <div class="card-title">Top Campanii <span class="ct-badge">ROAS ↓</span></div>
+        <div class="card-title">Top Campaigns <span class="ct-badge">ROAS ↓</span></div>
         <div id="campaigns-wrap"></div>
       </div>
 
       <!-- DESTINATIONS -->
       <div class="card">
-        <div class="card-title">Top Destinații <span class="ct-badge">Revenue</span></div>
+        <div class="card-title">Top Destinations <span class="ct-badge">Revenue</span></div>
         <div id="destinations-wrap"></div>
       </div>
 
       <!-- ALERTS -->
       <div class="card">
-        <div class="card-title">Alerte Active <span class="ct-badge" id="alerts-count">0 total</span></div>
+        <div class="card-title">Active Alerts <span class="ct-badge" id="alerts-count">0 total</span></div>
         <div id="alerts-wrap"></div>
       </div>
     </div>
@@ -835,14 +850,14 @@ body::before {
     <!-- SPARKLINES ROW -->
     <div class="two-col">
       <div class="card">
-        <div class="card-title" id="spendChartTitle">Spend Zilnic</div>
+        <div class="card-title" id="spendChartTitle">Daily Spend</div>
         <div class="chart-wrap">
           <canvas class="mini-chart" id="spendChart"></canvas>
           <div class="chart-tooltip" id="spendChartTooltip"></div>
         </div>
       </div>
       <div class="card">
-        <div class="card-title" id="roasChartTitle">ROAS Zilnic</div>
+        <div class="card-title" id="roasChartTitle">Daily ROAS</div>
         <div class="chart-wrap">
           <canvas class="mini-chart" id="roasChart"></canvas>
           <div class="chart-tooltip" id="roasChartTooltip"></div>
@@ -852,29 +867,29 @@ body::before {
 
   </div>
 
-  <!-- VIEW: REPORT — CAMPANII ACTIVE -->
+  <!-- VIEW: REPORT — ACTIVE CAMPAIGNS -->
   <div id="view-report-campaigns" class="view hidden">
     <div class="report-filters" id="filter-campaigns"></div>
     <div class="card">
-      <div class="card-title">Campanii Active <span class="ct-badge" id="report-campaigns-count">0 total</span></div>
+      <div class="card-title">Active Campaigns <span class="ct-badge" id="report-campaigns-count">0 total</span></div>
       <div id="report-campaigns-wrap"></div>
     </div>
   </div>
 
-  <!-- VIEW: REPORT — DESTINAȚII TOP -->
+  <!-- VIEW: REPORT — TOP DESTINATIONS -->
   <div id="view-report-destinations" class="view hidden">
     <div class="report-filters" id="filter-destinations"></div>
     <div class="card">
-      <div class="card-title">Destinații Top <span class="ct-badge" id="report-destinations-count">0 total</span></div>
+      <div class="card-title">Top Destinations <span class="ct-badge" id="report-destinations-count">0 total</span></div>
       <div id="report-destinations-wrap"></div>
     </div>
   </div>
 
-  <!-- VIEW: REPORT — DIAGNOSTIC DAILY -->
+  <!-- VIEW: REPORT — DAILY DIAGNOSTIC -->
   <div id="view-report-daily" class="view hidden">
     <div class="report-filters" id="filter-daily"></div>
     <div class="card">
-      <div class="card-title">Diagnostic Daily <span class="ct-badge" id="report-daily-count">0 total</span></div>
+      <div class="card-title">Daily Diagnostic <span class="ct-badge" id="report-daily-count">0 total</span></div>
       <div id="report-daily-wrap"></div>
     </div>
   </div>
@@ -894,23 +909,23 @@ const PLATFORM_META = {
 const PLATFORM_ORDER = ['google', 'meta', 'bing', 'tiktok'];
 
 const KPI_META = {
-  spend_total: { label: 'Spend Total', accent: 'var(--accent)' },
-  revenue:     { label: 'Revenue Atribuit', accent: 'var(--green)' },
-  roas_global: { label: 'ROAS Global', accent: 'var(--purple)' },
-  conversions: { label: 'Conversii', accent: 'var(--bing)' },
-  cpa_avg:     { label: 'CPA Mediu', accent: 'var(--orange)' }
+  spend_total: { label: 'Total Spend', accent: 'var(--accent)' },
+  revenue:     { label: 'Attributed Revenue', accent: 'var(--green)' },
+  roas_global: { label: 'Overall ROAS', accent: 'var(--purple)' },
+  conversions: { label: 'Conversions', accent: 'var(--bing)' },
+  cpa_avg:     { label: 'Avg. CPA', accent: 'var(--orange)' }
 };
 const KPI_ORDER = ['spend_total', 'revenue', 'roas_global', 'conversions', 'cpa_avg'];
 
 const PERIOD_DEFS = [
-  { key: 'today',      label: 'Azi' },
-  { key: '7d',         label: '7 zile' },
-  { key: '14d',        label: '14 zile' },
-  { key: '30d',        label: '30 zile' },
-  { key: '90d',        label: '90 zile' },
-  { key: 'this_month', label: 'Luna aceasta' },
-  { key: 'last_month', label: 'Luna trecută' },
-  { key: 'all_time',   label: 'Tot timpul' },
+  { key: 'today',      label: 'Today' },
+  { key: '7d',         label: '7 days' },
+  { key: '14d',        label: '14 days' },
+  { key: '30d',        label: '30 days' },
+  { key: '90d',        label: '90 days' },
+  { key: 'this_month', label: 'This month' },
+  { key: 'last_month', label: 'Last month' },
+  { key: 'all_time',   label: 'All time' },
 ];
 
 const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily'];
@@ -932,11 +947,11 @@ function renderTopbar(data) {
   document.getElementById('topbar-title').textContent = data.meta?.period_label || 'OVERVIEW';
   const src = document.getElementById('data-source');
   const isLive = (data.meta?.source || 'mock') === 'live';
-  src.textContent = isLive ? 'SURSĂ: LIVE API' : 'SURSĂ: MOCK / DEMO';
+  src.textContent = isLive ? 'SOURCE: LIVE API' : 'SOURCE: MOCK / DEMO';
   src.className = 'data-source ' + (isLive ? 'live' : 'mock');
 
   const ts = data.meta?.generated_at ? new Date(data.meta.generated_at) : null;
-  const tsLabel = ts ? ts.toLocaleString('ro-RO', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }) : '—';
+  const tsLabel = ts ? ts.toLocaleString('en-GB', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }) : '—';
   document.getElementById('sb-footer').innerHTML =
     `<div><span class="sync-dot"></span>Sync: ${escapeHtml(tsLabel)} · ${isLive ? 'Live API' : 'Live mock'}</div>`;
 }
@@ -953,7 +968,7 @@ function renderKPIs(data) {
         <div class="kpi-value">${escapeHtml(k.display ?? '—')}<span class="kpi-unit">${escapeHtml(k.unit ?? '')}</span></div>
         <div class="kpi-delta">
           <span class="${deltaClass}">${escapeHtml(k.delta_display ?? '—')}</span>
-          <span class="delta-label">vs perioada anterioară</span>
+          <span class="delta-label">vs previous period</span>
         </div>
       </div>`;
   }).join('');
@@ -982,7 +997,7 @@ function renderPlatforms(data) {
           <div>
             <div class="plt-name">${meta.label}</div>
           </div>
-          <div class="plt-status ${statusClass}">${escapeHtml(p.status_label || (connected ? '● Activ' : '⚠ Neconectat'))}</div>
+          <div class="plt-status ${statusClass}">${escapeHtml(p.status_label || (connected ? '● Active' : '⚠ Not connected'))}</div>
         </div>
         <div class="plt-metrics">
           <div class="plt-metric">
@@ -994,7 +1009,7 @@ function renderPlatforms(data) {
             <div class="plt-metric-val ${connected ? roasCls : 'off'}">${escapeHtml(roasVal)}</div>
           </div>
           <div class="plt-metric">
-            <div class="plt-metric-label">Conversii</div>
+            <div class="plt-metric-label">Conversions</div>
             <div class="plt-metric-val ${connected ? '' : 'off'}">${escapeHtml(convVal)}</div>
           </div>
           <div class="plt-metric">
@@ -1005,7 +1020,7 @@ function renderPlatforms(data) {
         <div class="plt-bar">
           <div class="plt-bar-fill" style="width:${share}%; background:${meta.color}"></div>
         </div>
-        ${connected ? '' : `<div class="plt-connect-hint">Conectează API-ul ${meta.label} — vezi README_PPC_DASHBOARD.md</div>`}
+        ${connected ? '' : `<div class="plt-connect-hint">Connect the ${meta.label} API — see README_PPC_DASHBOARD.md</div>`}
       </div>`;
   }).join('');
 
@@ -1028,7 +1043,7 @@ function renderCampaigns(data) {
   const wrap = document.getElementById('campaigns-wrap');
   const campaigns = data.campaigns || [];
   if (!campaigns.length) {
-    wrap.innerHTML = `<div class="empty-state">Nicio campanie disponibilă încă.<br>Rulează scriptul de fetch pentru a popula date.</div>`;
+    wrap.innerHTML = `<div class="empty-state">No campaigns available yet.<br>Run the fetch script to populate data.</div>`;
     return;
   }
   const rows = campaigns.map(c => {
@@ -1045,7 +1060,7 @@ function renderCampaigns(data) {
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Campanie</th><th>Spend</th><th>Conv.</th><th>ROAS</th></tr>
+        <tr><th>Campaign</th><th>Spend</th><th>Conv.</th><th>ROAS</th></tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
@@ -1055,11 +1070,11 @@ function renderDestinations(data) {
   const wrap = document.getElementById('destinations-wrap');
   const dests = data.destinations || [];
   if (!dests.length) {
-    wrap.innerHTML = `<div class="empty-state">Breakdown pe destinații indisponibil.<br>Necesită mapare campanie → destinație (vezi config/accounts.json).</div>`;
+    wrap.innerHTML = `<div class="empty-state">Destination breakdown unavailable.<br>Requires campaign → destination mapping (see config/accounts.json).</div>`;
     return;
   }
   const max = Math.max(...dests.map(d => d.revenue || 0), 1);
-  wrap.innerHTML = `<div class="dest-list">` + dests.map(d => {
+  wrap.innerHTML = `<div class="dest-header"><div class="dest-name">Destination</div><div class="dest-bar-wrap"></div><div class="dest-revenue">Revenue</div><div class="dest-roas">ROAS</div></div><div class="dest-list">` + dests.map(d => {
     const pct = Math.round(((d.revenue || 0) / max) * 100);
     const roasColor = d.roas >= 6 ? 'var(--green)' : d.roas >= 4 ? 'var(--orange)' : 'var(--red)';
     return `
@@ -1077,7 +1092,7 @@ function renderAlerts(data) {
   const alerts = data.alerts || [];
   document.getElementById('alerts-count').textContent = `${alerts.length} total`;
   if (!alerts.length) {
-    wrap.innerHTML = `<div class="empty-state">Nicio alertă activă.</div>`;
+    wrap.innerHTML = `<div class="empty-state">No active alerts.</div>`;
     return;
   }
   wrap.innerHTML = `<div class="alert-list">` + alerts.map(a => `
@@ -1134,7 +1149,7 @@ function drawLineChart(canvasId, data, color, fillColor, format, labels, fullLab
   const yOf = v => pad.top + cH - ((v - min) / (max - min || 1)) * cH;
 
   function fmtValue(v) {
-    if (format === 'K') return Math.round(v).toLocaleString('ro-RO') + ' RON';
+    if (format === 'K') return Math.round(v).toLocaleString('en-US') + ' RON';
     return v.toFixed(2) + 'x';
   }
 
@@ -1241,7 +1256,7 @@ function drawLineChart(canvasId, data, color, fillColor, format, labels, fullLab
 function renderCharts(data) {
   const daily = data.daily || {};
   const gran = daily.granularity || 'day';
-  const granLabel = gran === 'month' ? 'Lunar' : gran === 'week' ? 'Săptămânal' : 'Zilnic';
+  const granLabel = gran === 'month' ? 'Monthly' : gran === 'week' ? 'Weekly' : 'Daily';
   const spendTitle = document.getElementById('spendChartTitle');
   const roasTitle = document.getElementById('roasChartTitle');
   if (spendTitle) spendTitle.textContent = `Spend ${granLabel}`;
@@ -1281,7 +1296,7 @@ function renderPeriodTabs() {
 function renderFilterChips(containerId, filterKey, onChange) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  const options = [{ key: 'all', label: 'Toate Platformele', color: 'var(--mid)' }]
+  const options = [{ key: 'all', label: 'All Platforms', color: 'var(--mid)' }]
     .concat(PLATFORM_ORDER.map(k => ({ key: k, label: PLATFORM_META[k].label, color: PLATFORM_META[k].color })));
 
   container.innerHTML = options.map(o => `
@@ -1298,7 +1313,7 @@ function renderFilterChips(containerId, filterKey, onChange) {
   });
 }
 
-/* ─── REPORT: CAMPANII ACTIVE ─── */
+/* ─── REPORT: ACTIVE CAMPAIGNS ─── */
 function renderReportCampaigns(data) {
   const all = data.campaigns_all || data.campaigns || [];
   const filter = currentFilters.campaigns;
@@ -1307,7 +1322,7 @@ function renderReportCampaigns(data) {
   document.getElementById('report-campaigns-count').textContent = `${filtered.length} total`;
   const wrap = document.getElementById('report-campaigns-wrap');
   if (!filtered.length) {
-    wrap.innerHTML = `<div class="empty-state">Nicio campanie pentru acest filtru.</div>`;
+    wrap.innerHTML = `<div class="empty-state">No campaigns for this filter.</div>`;
     return;
   }
   const rows = filtered.map(c => {
@@ -1325,13 +1340,13 @@ function renderReportCampaigns(data) {
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Campanie</th><th>Spend</th><th>Conv.</th><th>Revenue</th><th>ROAS</th></tr>
+        <tr><th>Campaign</th><th>Spend</th><th>Conv.</th><th>Revenue</th><th>ROAS</th></tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
 
-/* ─── REPORT: DESTINAȚII TOP ─── */
+/* ─── REPORT: TOP DESTINATIONS ─── */
 function renderReportDestinations(data) {
   const all = data.destinations_all || data.destinations || [];
   const filter = currentFilters.destinations;
@@ -1340,11 +1355,11 @@ function renderReportDestinations(data) {
   document.getElementById('report-destinations-count').textContent = `${filtered.length} total`;
   const wrap = document.getElementById('report-destinations-wrap');
   if (!filtered.length) {
-    wrap.innerHTML = `<div class="empty-state">Breakdown pe destinații indisponibil pentru acest filtru.<br>Necesită mapare campanie → destinație (vezi config/accounts.json).</div>`;
+    wrap.innerHTML = `<div class="empty-state">Destination breakdown unavailable for this filter.<br>Requires campaign → destination mapping (see config/accounts.json).</div>`;
     return;
   }
   const max = Math.max(...filtered.map(d => d.revenue || 0), 1);
-  wrap.innerHTML = `<div class="dest-list">` + filtered.map(d => {
+  wrap.innerHTML = `<div class="dest-header"><div class="dest-name">Destination</div><div class="dest-bar-wrap"></div><div class="dest-revenue">Revenue</div><div class="dest-roas">ROAS</div></div><div class="dest-list">` + filtered.map(d => {
     const pct = Math.round(((d.revenue || 0) / max) * 100);
     const roasColor = d.roas >= 6 ? 'var(--green)' : d.roas >= 4 ? 'var(--orange)' : 'var(--red)';
     return `
@@ -1357,7 +1372,7 @@ function renderReportDestinations(data) {
   }).join('') + `</div>`;
 }
 
-/* ─── REPORT: DIAGNOSTIC DAILY ─── */
+/* ─── REPORT: DAILY DIAGNOSTIC ─── */
 function renderReportDaily(data) {
   const all = data.daily_table || [];
   const filter = currentFilters.daily;
@@ -1366,7 +1381,7 @@ function renderReportDaily(data) {
   document.getElementById('report-daily-count').textContent = `${filtered.length} total`;
   const wrap = document.getElementById('report-daily-wrap');
   if (!filtered.length) {
-    wrap.innerHTML = `<div class="empty-state">Niciun rezultat pentru acest filtru.</div>`;
+    wrap.innerHTML = `<div class="empty-state">No results for this filter.</div>`;
     return;
   }
   const rows = filtered.slice().reverse().map(p => {
@@ -1375,16 +1390,16 @@ function renderReportDaily(data) {
     return `
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(p.full_label || p.date)}</span></td>
-        <td>${escapeHtml(Math.round(p.spend ?? 0).toLocaleString('ro-RO'))}</td>
+        <td>${escapeHtml(Math.round(p.spend ?? 0).toLocaleString('en-US'))}</td>
         <td>${escapeHtml(p.conversions ?? '—')}</td>
-        <td>${escapeHtml(Math.round(p.revenue ?? 0).toLocaleString('ro-RO'))}</td>
+        <td>${escapeHtml(Math.round(p.revenue ?? 0).toLocaleString('en-US'))}</td>
         <td><span class="roas-pill roas-${cls}">${(p.roas ?? 0).toFixed(2)}x</span></td>
       </tr>`;
   }).join('');
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Data</th><th>Spend (RON)</th><th>Conv.</th><th>Revenue (RON)</th><th>ROAS</th></tr>
+        <tr><th>Date</th><th>Spend (RON)</th><th>Conv.</th><th>Revenue (RON)</th><th>ROAS</th></tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;

@@ -50,18 +50,18 @@ ACCOUNTS_JSON = CONFIG_DIR / "accounts.json"
 OUTPUT_JS = BASE_DIR / "ppc-data.js"
 
 RO_MONTHS = [
-    "IANUARIE", "FEBRUARIE", "MARTIE", "APRILIE", "MAI", "IUNIE",
-    "IULIE", "AUGUST", "SEPTEMBRIE", "OCTOMBRIE", "NOIEMBRIE", "DECEMBRIE",
+    "JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE",
+    "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER",
 ]
 
-RO_MONTHS_SHORT = ["Ian", "Feb", "Mar", "Apr", "Mai", "Iun", "Iul", "Aug", "Sep", "Oct", "Noi", "Dec"]
+RO_MONTHS_SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 PERIOD_KEYS = ["today", "7d", "14d", "30d", "90d", "this_month", "last_month", "all_time"]
 
 NOT_CONNECTED_PLATFORM = {
     "name": None,  # filled per platform
     "status": "not_connected",
-    "status_label": "⚠ Neconectat",
+    "status_label": "⚠ Not connected",
     "status_class": "warn",
     "spend_display": "—",
     "roas": None,
@@ -81,8 +81,8 @@ PLATFORM_LABELS = {
 # ─────────────────────────── helpers: formatting ───────────────────────────
 
 def fmt_int_ro(value) -> str:
-    """1247 -> '1.247' (separator de mii cu punct, stil RO)."""
-    return f"{round(value):,}".replace(",", ".")
+    """1247 -> '1,247' (thousands separator, English style)."""
+    return f"{round(value):,}"
 
 
 def split_compact(value: float):
@@ -149,7 +149,7 @@ def resolve_period(period_key: str):
     if period_key == "today":
         start = end = today
         prev_start = prev_end = today - timedelta(days=1)
-        label = f"OVERVIEW — AZI ({today.strftime('%d.%m.%Y')})"
+        label = f"OVERVIEW — TODAY ({today.strftime('%d.%m.%Y')})"
 
     elif period_key == "7d":
         end = today
@@ -157,7 +157,7 @@ def resolve_period(period_key: str):
         span = (end - start).days + 1
         prev_end = start - timedelta(days=1)
         prev_start = prev_end - timedelta(days=span - 1)
-        label = "OVERVIEW — ULTIMELE 7 ZILE"
+        label = "OVERVIEW — LAST 7 DAYS"
 
     elif period_key == "14d":
         end = today
@@ -165,7 +165,7 @@ def resolve_period(period_key: str):
         span = (end - start).days + 1
         prev_end = start - timedelta(days=1)
         prev_start = prev_end - timedelta(days=span - 1)
-        label = "OVERVIEW — ULTIMELE 14 ZILE"
+        label = "OVERVIEW — LAST 14 DAYS"
 
     elif period_key == "90d":
         end = today
@@ -173,14 +173,14 @@ def resolve_period(period_key: str):
         span = (end - start).days + 1
         prev_end = start - timedelta(days=1)
         prev_start = prev_end - timedelta(days=span - 1)
-        label = "OVERVIEW — ULTIMELE 90 ZILE"
+        label = "OVERVIEW — LAST 90 DAYS"
 
     elif period_key == "this_month":
         start = today.replace(day=1)
         end = today
         prev_end = start - timedelta(days=1)
         prev_start = prev_end.replace(day=1)
-        label = f"OVERVIEW — {RO_MONTHS[today.month - 1]} {today.year} (LUNA CURENTA)"
+        label = f"OVERVIEW — {RO_MONTHS[today.month - 1]} {today.year} (CURRENT MONTH)"
 
     elif period_key == "last_month":
         first_of_this_month = today.replace(day=1)
@@ -188,7 +188,7 @@ def resolve_period(period_key: str):
         start = end.replace(day=1)
         prev_end = start - timedelta(days=1)
         prev_start = prev_end.replace(day=1)
-        label = f"OVERVIEW — {RO_MONTHS[end.month - 1]} {end.year} (LUNA TRECUTA)"
+        label = f"OVERVIEW — {RO_MONTHS[end.month - 1]} {end.year} (LAST MONTH)"
 
     elif period_key == "all_time":
         # Limitam "tot timpul" la ultimii 2 ani, pentru performanta API-ului.
@@ -197,7 +197,7 @@ def resolve_period(period_key: str):
         span = (end - start).days + 1
         prev_end = start - timedelta(days=1)
         prev_start = prev_end - timedelta(days=span - 1)
-        label = "OVERVIEW — TOT TIMPUL (ULTIMII 2 ANI)"
+        label = "OVERVIEW — ALL TIME (LAST 2 YEARS)"
 
     else:  # "30d" default
         end = today
@@ -244,6 +244,22 @@ FROM ad_group
 WHERE segments.date BETWEEN '{start}' AND '{end}'
   AND campaign.status != 'REMOVED'
   AND ad_group.status != 'REMOVED'
+"""
+
+# Campaniile Performance Max nu raporteaza metrici la nivel de 'ad_group'
+# (folosesc 'asset_group' in schimb), asa ca le interogam separat si le
+# combinam cu randurile de mai sus pentru breakdown-ul pe destinatii.
+ASSET_GROUP_QUERY = """
+SELECT
+  campaign.name,
+  asset_group.name,
+  metrics.cost_micros,
+  metrics.conversions,
+  metrics.conversions_value
+FROM asset_group
+WHERE segments.date BETWEEN '{start}' AND '{end}'
+  AND campaign.status != 'REMOVED'
+  AND campaign.advertising_channel_type = 'PERFORMANCE_MAX'
 """
 
 DAILY_QUERY = """
@@ -317,6 +333,31 @@ def fetch_ad_group_totals(ga_service, customer_ids, start, end):
     return rows_out
 
 
+def fetch_asset_group_totals(ga_service, customer_ids, start, end):
+    """La fel ca fetch_ad_group_totals, dar pentru campaniile Performance Max
+    (raporteaza pe 'asset_group', nu pe 'ad_group')."""
+    rows_out = []
+    query = ASSET_GROUP_QUERY.format(start=daterange_str(start), end=daterange_str(end))
+    for cid in customer_ids:
+        try:
+            results = run_query(ga_service, cid, query)
+        except GoogleAdsException:
+            continue
+        for row in results:
+            cost = row.metrics.cost_micros / 1_000_000
+            conv_val = row.metrics.conversions_value
+            conv = row.metrics.conversions
+            if cost <= 0 and conv_val <= 0:
+                continue
+            rows_out.append({
+                "label": f"{row.campaign.name} | {row.asset_group.name}",
+                "cost": cost,
+                "conversions": conv,
+                "conv_value": conv_val,
+            })
+    return rows_out
+
+
 def fetch_period_totals(ga_service, customer_ids, start, end):
     totals = {"cost": 0.0, "conversions": 0.0, "conv_value": 0.0}
     query = CAMPAIGN_QUERY.format(start=daterange_str(start), end=daterange_str(end))
@@ -336,7 +377,7 @@ def _series_point(d: date, entry: dict, granularity: str):
     if granularity == "week":
         wk_end = d + timedelta(days=6)
         label = d.strftime("%d.%m")
-        full_label = f"Sapt. {d.strftime('%d.%m')}–{wk_end.strftime('%d.%m.%Y')}"
+        full_label = f"Week {d.strftime('%d.%m')}–{wk_end.strftime('%d.%m.%Y')}"
     elif granularity == "month":
         label = f"{RO_MONTHS_SHORT[d.month - 1]} {str(d.year)[2:]}"
         full_label = f"{RO_MONTHS[d.month - 1]} {d.year}"
@@ -457,33 +498,33 @@ def build_alerts(campaigns, thresholds):
             alerts.append({
                 "severity": "crit",
                 "icon": "🔴",
-                "title": f"Google Ads: ROAS sub critic ({c['roas']:.1f}x) — {c['name']}",
-                "desc": f"Campania cheltuie {compact_display(c['cost'])} RON cu ROAS {c['roas']:.1f}x, sub pragul critic de {crit:.1f}x. Necesita review urgent.",
-                "time": "azi",
+                "title": f"Google Ads: ROAS below critical ({c['roas']:.1f}x) — {c['name']}",
+                "desc": f"This campaign spends {compact_display(c['cost'])} RON with a ROAS of {c['roas']:.1f}x, below the critical threshold of {crit:.1f}x. Needs urgent review.",
+                "time": "today",
             })
         elif c["roas"] < warn:
             alerts.append({
                 "severity": "warn",
                 "icon": "🟠",
-                "title": f"Google Ads: ROAS sub target ({c['roas']:.1f}x) — {c['name']}",
-                "desc": f"Campania cheltuie {compact_display(c['cost'])} RON cu ROAS {c['roas']:.1f}x, sub pragul de {warn:.1f}x.",
-                "time": "azi",
+                "title": f"Google Ads: ROAS below target ({c['roas']:.1f}x) — {c['name']}",
+                "desc": f"This campaign spends {compact_display(c['cost'])} RON with a ROAS of {c['roas']:.1f}x, below the target of {warn:.1f}x.",
+                "time": "today",
             })
 
     if not alerts:
         alerts.append({
             "severity": "info",
             "icon": "🔵",
-            "title": "Toate campaniile Google Ads sunt pe target",
-            "desc": "Niciun ROAS sub pragurile configurate in config/accounts.json.",
+            "title": "All Google Ads campaigns are on target",
+            "desc": "No ROAS below the thresholds configured in config/accounts.json.",
             "time": "azi",
         })
 
     alerts.append({
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing si TikTok neconectate",
-        "desc": "Conecteaza API-urile acestor platforme pentru date live — vezi README_PPC_DASHBOARD.md.",
+        "title": "Meta, Bing and TikTok not connected",
+        "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
         "time": "azi",
     })
     return alerts
@@ -518,7 +559,7 @@ def build_google_platform(current):
     return {
         "name": "Google Ads",
         "status": "connected",
-        "status_label": "● Activ",
+        "status_label": "● Active",
         "status_class": "ok",
         "spend_display": compact_display(current["cost"]),
         "roas": round(roas, 1),
@@ -543,6 +584,8 @@ def build_period_output(ga_service, customer_ids, accounts, period_key, today_sp
     previous_totals = fetch_period_totals(
         ga_service, customer_ids, period["prev_start"], period["prev_end"])
     ad_groups_raw = fetch_ad_group_totals(
+        ga_service, customer_ids, period["start"], period["end"])
+    ad_groups_raw += fetch_asset_group_totals(
         ga_service, customer_ids, period["start"], period["end"])
 
     granularity = "month" if period_key == "all_time" else "day"
