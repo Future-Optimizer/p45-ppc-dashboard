@@ -2,7 +2,7 @@
 
 ## Ce e deja pregătit
 
-- **`public/index.html`** — versiunea publică a dashboard-ului (identică cu `ppc-dashboard-live.html`), fără cod sensibil.
+- **`docs/index.html`** — versiunea publică a dashboard-ului (identică cu `ppc-dashboard-live.html`), fără cod sensibil.
 - **`.gitignore`** — exclude `config/` (credențiale Google Ads), `*.yaml`, `*.csv`, `*.xlsx` din orice repo public.
 - **`scripts/publish.ps1`** — script care: actualizează datele din Google Ads, copiază fișierele în `public/`, face commit + push pe GitHub.
 
@@ -23,7 +23,7 @@ Deschide PowerShell în folderul proiectului și rulează:
 ```powershell
 cd "C:\Users\Workbox\Documents\Claude\Projects\Paralela 45"
 git init
-git add .gitignore scripts public README_PPC_DASHBOARD.md
+git add .gitignore scripts docs README_PPC_DASHBOARD.md
 git commit -m "Initial commit - dashboard public"
 ```
 
@@ -44,7 +44,7 @@ git push -u origin main
 ## Pas 3 — Activează GitHub Pages
 
 1. În repo, pe GitHub: **Settings → Pages**.
-2. La "Source", alege branch-ul `main` și folderul `/public`.
+2. La "Source", alege branch-ul `main` și folderul `/docs`.
 3. Salvează. În 1-2 minute, dashboard-ul e live la:
 
 ```
