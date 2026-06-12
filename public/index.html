@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paralela 45 — PPC Command Center (Live)</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080a0e;
+  --s1: #0d1018;
+  --s2: #111620;
+  --s3: #161c28;
+  --border: #1a2030;
+  --border2: #222d42;
+  --text: #e2e8f4;
+  --dim: #4a5568;
+  --mid: #8896b0;
+  --accent: #f0b429;
+  --accent2: #fcd34d;
+  --google: #4285f4;
+  --meta: #1877f2;
+  --bing: #00b4d8;
+  --tiktok: #ff2d55;
+  --green: #10d48e;
+  --red: #f43f5e;
+  --purple: #a78bfa;
+  --orange: #fb923c;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content:'';
+  position:fixed;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events:none;
+  z-index:0;
+}
+
+.glow {
+  position:fixed;
+  top:-300px; left:50%;
+  transform:translateX(-50%);
+  width:1000px; height:500px;
+  background:radial-gradient(ellipse, rgba(240,180,41,0.06) 0%, transparent 65%);
+  pointer-events:none;
+  z-index:0;
+}
+
+.app {
+  position:relative; z-index:1;
+  display:grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr;
+  min-height:100vh;
+}
+
+/* ─── SIDEBAR ─── */
+.sidebar {
+  grid-row: 1 / 3;
+  background: var(--s1);
+  border-right: 1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  position:sticky;
+  top:0; height:100vh;
+  overflow-y:auto;
+}
+
+.sb-logo {
+  padding: 24px 18px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sb-brand {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  line-height:1;
+}
+
+.sb-brand em { color: var(--accent); font-style:normal; }
+
+.sb-tagline {
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.sb-section {
+  padding: 18px 18px 6px;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  padding: 9px 18px;
+  cursor:pointer;
+  transition: background 0.15s;
+  border-left: 2px solid transparent;
+  color: var(--mid);
+  font-size: 11px;
+}
+
+.nav-item:hover { background: var(--s2); color: var(--text); }
+.nav-item.active {
+  background: var(--s2);
+  border-left-color: var(--accent);
+  color: var(--text);
+}
+
+.nav-dot {
+  width:7px; height:7px;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.nav-badge {
+  margin-left:auto;
+  font-size: 9px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight:500;
+}
+
+.badge-crit { background: rgba(244,63,94,0.18); color: var(--red); }
+.badge-warn { background: rgba(251,146,60,0.18); color: var(--orange); }
+.badge-ok   { background: rgba(16,212,142,0.18); color: var(--green); }
+.badge-off  { background: rgba(136,150,176,0.14); color: var(--dim); }
+
+.platform-row {
+  display:flex; align-items:center; gap:10px;
+  padding: 7px 18px;
+  font-size: 11px;
+  color: var(--mid);
+}
+
+.plt-indicator {
+  width:6px; height:6px; border-radius:50%; flex-shrink:0;
+}
+
+.plt-spend {
+  margin-left:auto;
+  font-size: 10px;
+  color: var(--dim);
+}
+
+.sb-footer {
+  margin-top:auto;
+  padding: 14px 18px;
+  border-top: 1px solid var(--border);
+  font-size: 10px;
+  color: var(--dim);
+}
+
+.sync-dot {
+  display:inline-block;
+  width:5px; height:5px;
+  background: var(--green);
+  border-radius:50%;
+  margin-right:5px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,100% { opacity:1; }
+  50% { opacity:0.3; }
+}
+
+/* ─── TOPBAR ─── */
+.topbar {
+  background: var(--s1);
+  border-bottom: 1px solid var(--border);
+  padding: 0 28px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+  height:52px;
+}
+
+.topbar-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.topbar-sep { color: var(--border2); }
+
+.period-tabs {
+  display:flex; gap:2px;
+  background: var(--s2);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.period-tab {
+  padding: 4px 10px;
+  font-size: 10px;
+  border-radius: 4px;
+  cursor:pointer;
+  color: var(--dim);
+  transition: all 0.15s;
+}
+
+.period-tab.active {
+  background: var(--s3);
+  color: var(--text);
+}
+
+.topbar-right {
+  margin-left:auto;
+  display:flex; align-items:center; gap:14px;
+}
+
+.data-source {
+  font-size: 9px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 4px;
+  background: var(--s2);
+  color: var(--dim);
+  border: 1px solid var(--border2);
+}
+
+.data-source.live { color: var(--green); border-color: rgba(16,212,142,0.3); }
+.data-source.mock { color: var(--orange); border-color: rgba(251,146,60,0.3); }
+
+.btn-refresh {
+  display:flex; align-items:center; gap:6px;
+  padding: 6px 12px;
+  background: var(--s3);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  color: var(--mid);
+  font-size: 10px;
+  cursor:pointer;
+  font-family: 'DM Mono', monospace;
+  transition: all 0.15s;
+}
+
+.btn-refresh:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── MAIN CONTENT ─── */
+.main {
+  padding: 24px 28px 40px;
+  overflow-y:auto;
+  display:flex;
+  flex-direction:column;
+  gap: 22px;
+}
+
+/* ─── KPI ROW ─── */
+.kpi-row {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.kpi-card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  position:relative;
+  overflow:hidden;
+  animation: fadeUp 0.4s ease both;
+}
+
+.kpi-card::before {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:2px;
+  background: linear-gradient(90deg, transparent, var(--accent-line, var(--accent)), transparent);
+  opacity:0.6;
+}
+
+.kpi-label {
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.kpi-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  line-height:1;
+  margin-bottom: 8px;
+}
+
+.kpi-value .kpi-unit {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mid);
+  margin-left:2px;
+}
+
+.kpi-delta {
+  display:flex; align-items:center; gap:4px;
+  font-size: 10px;
+}
+
+.delta-up { color: var(--green); }
+.delta-down { color: var(--red); }
+.delta-label { color: var(--dim); }
+
+/* ─── PLATFORM SUMMARY ─── */
+.section-label {
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display:flex; align-items:center; gap:10px;
+}
+
+.section-label::after {
+  content:'';
+  flex:1;
+  height:1px;
+  background: var(--border);
+}
+
+.platforms-grid {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.platform-card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  animation: fadeUp 0.5s ease both;
+}
+
+.platform-card.disconnected {
+  opacity: 0.55;
+}
+
+.plt-header {
+  display:flex; align-items:center; gap:10px;
+  margin-bottom: 16px;
+}
+
+.plt-icon {
+  width:30px; height:30px;
+  border-radius: 7px;
+  display:flex; align-items:center; justify-content:center;
+  font-size: 14px;
+  font-weight:700;
+  font-family: 'Syne', sans-serif;
+}
+
+.plt-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.plt-status {
+  margin-left:auto;
+  font-size: 9px;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.plt-metrics {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.plt-metric {
+  background: var(--s2);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.plt-metric-label {
+  font-size: 8px;
+  color: var(--dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.plt-metric-val {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.plt-metric-val.good { color: var(--green); }
+.plt-metric-val.warn { color: var(--orange); }
+.plt-metric-val.bad  { color: var(--red); }
+.plt-metric-val.off  { color: var(--dim); }
+
+.plt-bar {
+  margin-top: 14px;
+  height: 3px;
+  background: var(--s3);
+  border-radius: 2px;
+  overflow:hidden;
+}
+
+.plt-bar-fill {
+  height:100%;
+  border-radius:2px;
+  transition: width 1s ease;
+}
+
+.plt-connect-hint {
+  margin-top: 12px;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 0.5px;
+}
+
+/* ─── TWO COL ─── */
+.two-col {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.three-col {
+  display:grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px;
+  animation: fadeUp 0.5s ease both;
+}
+
+.card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  display:flex; align-items:center; gap:8px;
+}
+
+.card-title .ct-badge {
+  font-size: 9px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--s3);
+  color: var(--dim);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* ─── CAMPAIGN TABLE ─── */
+.camp-table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.camp-table th {
+  font-size: 8px;
+  color: var(--dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align:left;
+  padding: 0 10px 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.camp-table th:last-child, .camp-table td:last-child { text-align:right; padding-right:0; }
+
+.camp-table td {
+  padding: 10px 10px 10px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align:middle;
+  font-size: 11px;
+  color: var(--mid);
+}
+
+.camp-table tr:last-child td { border-bottom:none; }
+.camp-table tr:hover td { color: var(--text); }
+
+.camp-name {
+  color: var(--text);
+  font-size: 11px;
+  max-width: 160px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.camp-plt-dot {
+  width:5px; height:5px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:6px;
+  vertical-align:middle;
+}
+
+.roas-pill {
+  display:inline-flex;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight:500;
+}
+
+.roas-good { background: rgba(16,212,142,0.15); color: var(--green); }
+.roas-warn { background: rgba(251,146,60,0.15); color: var(--orange); }
+.roas-bad  { background: rgba(244,63,94,0.15);  color: var(--red); }
+
+/* ─── EMPTY STATE ─── */
+.empty-state {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  gap: 6px;
+  padding: 28px 10px;
+  color: var(--dim);
+  font-size: 10px;
+  line-height:1.6;
+}
+
+/* ─── ALERTS ─── */
+.alert-list {
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.alert-item {
+  display:flex; align-items:flex-start; gap:10px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--s2);
+  border-left: 3px solid;
+}
+
+.alert-item.crit { border-color: var(--red); }
+.alert-item.warn { border-color: var(--orange); }
+.alert-item.info { border-color: var(--bing); }
+
+.alert-icon { font-size: 13px; flex-shrink:0; margin-top:1px; }
+
+.alert-body { flex:1; }
+
+.alert-title {
+  font-size: 11px;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.alert-desc {
+  font-size: 10px;
+  color: var(--dim);
+  line-height:1.5;
+}
+
+.alert-time {
+  font-size: 9px;
+  color: var(--dim);
+  white-space:nowrap;
+  margin-top:1px;
+}
+
+/* ─── DESTINATION BREAKDOWN ─── */
+.dest-list {
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.dest-row {
+  display:flex; align-items:center; gap:10px;
+}
+
+.dest-name {
+  font-size: 11px;
+  color: var(--text);
+  width: 100px;
+  flex-shrink:0;
+}
+
+.dest-bar-wrap {
+  flex:1;
+  height:5px;
+  background: var(--s3);
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.dest-bar-fill {
+  height:100%;
+  border-radius:3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.dest-revenue {
+  font-family:'Syne', sans-serif;
+  font-size: 11px;
+  font-weight:700;
+  color: var(--text);
+  width: 70px;
+  text-align:right;
+}
+
+.dest-roas {
+  font-size: 10px;
+  width: 40px;
+  text-align:right;
+}
+
+/* ─── MINI CHART ─── */
+.mini-chart {
+  width:100%;
+  height:80px;
+  display:block;
+}
+
+.chart-wrap {
+  position: relative;
+}
+
+.chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--s3);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 10px;
+  color: var(--text);
+  white-space: nowrap;
+  transform: translate(-50%, calc(-100% - 10px));
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.1s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+.chart-tooltip.visible { opacity: 1; }
+
+.chart-tooltip .tt-date {
+  color: var(--dim);
+  font-size: 9px;
+  margin-bottom: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.chart-tooltip .tt-value {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+}
+
+/* ─── VIEWS ─── */
+.view.hidden { display:none; }
+
+/* ─── REPORT FILTERS ─── */
+.report-filters {
+  display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap;
+}
+
+.filter-chip {
+  display:flex; align-items:center; gap:6px;
+  padding: 5px 14px;
+  font-size: 10px;
+  border-radius: 5px;
+  cursor:pointer;
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  color: var(--mid);
+  transition: all 0.15s;
+}
+
+.filter-chip:hover { color: var(--text); border-color: var(--accent); }
+.filter-chip.active {
+  background: var(--s3);
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.filter-dot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+
+/* animations */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(12px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+.kpi-card:nth-child(1) { animation-delay:0.05s; }
+.kpi-card:nth-child(2) { animation-delay:0.10s; }
+.kpi-card:nth-child(3) { animation-delay:0.15s; }
+.kpi-card:nth-child(4) { animation-delay:0.20s; }
+.kpi-card:nth-child(5) { animation-delay:0.25s; }
+
+/* scrollbar */
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--border2); border-radius:3px; }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="app">
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sb-logo">
+    <div class="sb-brand">PARALELA <em>45</em></div>
+    <div class="sb-tagline">PPC Command Center</div>
+  </div>
+
+  <div class="sb-section">Vizualizare</div>
+
+  <div class="nav-item active" data-view="overview">
+    <div class="nav-dot" style="background:var(--accent)"></div>
+    Overview General
+  </div>
+  <div id="nav-platforms"></div>
+
+  <div class="sb-section">Rapoarte</div>
+  <div class="nav-item" data-view="report-campaigns">
+    <div class="nav-dot" style="background:var(--dim)"></div>
+    Campanii Active
+  </div>
+  <div class="nav-item" data-view="report-destinations">
+    <div class="nav-dot" style="background:var(--dim)"></div>
+    Destinații Top
+  </div>
+  <div class="nav-item" data-view="report-daily">
+    <div class="nav-dot" style="background:var(--dim)"></div>
+    Diagnostic Daily
+  </div>
+
+  <div class="sb-section" style="margin-top:8px">Spend Azi</div>
+  <div id="sidebar-spend"></div>
+
+  <div class="sb-footer" id="sb-footer">
+    <div><span class="sync-dot"></span>Sync: — · Live mock</div>
+  </div>
+</aside>
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="topbar-title" id="topbar-title">OVERVIEW</div>
+  <span class="topbar-sep">·</span>
+  <div class="period-tabs" id="period-tabs"></div>
+  <div class="topbar-right">
+    <div class="data-source" id="data-source">SURSĂ: —</div>
+    <div class="btn-refresh" id="btn-refresh">↻ Refresh date</div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- VIEW: OVERVIEW -->
+  <div id="view-overview" class="view">
+
+    <!-- KPIs -->
+    <div class="kpi-row" id="kpi-row"></div>
+
+    <!-- PLATFORMS -->
+    <div>
+      <div class="section-label">Platforme</div>
+      <div class="platforms-grid" id="platforms-grid"></div>
+    </div>
+
+    <!-- CAMPAIGNS + DESTINATIONS + ALERTS -->
+    <div class="three-col">
+
+      <!-- TOP CAMPAIGNS -->
+      <div class="card">
+        <div class="card-title">Top Campanii <span class="ct-badge">ROAS ↓</span></div>
+        <div id="campaigns-wrap"></div>
+      </div>
+
+      <!-- DESTINATIONS -->
+      <div class="card">
+        <div class="card-title">Top Destinații <span class="ct-badge">Revenue</span></div>
+        <div id="destinations-wrap"></div>
+      </div>
+
+      <!-- ALERTS -->
+      <div class="card">
+        <div class="card-title">Alerte Active <span class="ct-badge" id="alerts-count">0 total</span></div>
+        <div id="alerts-wrap"></div>
+      </div>
+    </div>
+
+    <!-- SPARKLINES ROW -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title" id="spendChartTitle">Spend Zilnic</div>
+        <div class="chart-wrap">
+          <canvas class="mini-chart" id="spendChart"></canvas>
+          <div class="chart-tooltip" id="spendChartTooltip"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title" id="roasChartTitle">ROAS Zilnic</div>
+        <div class="chart-wrap">
+          <canvas class="mini-chart" id="roasChart"></canvas>
+          <div class="chart-tooltip" id="roasChartTooltip"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- VIEW: REPORT — CAMPANII ACTIVE -->
+  <div id="view-report-campaigns" class="view hidden">
+    <div class="report-filters" id="filter-campaigns"></div>
+    <div class="card">
+      <div class="card-title">Campanii Active <span class="ct-badge" id="report-campaigns-count">0 total</span></div>
+      <div id="report-campaigns-wrap"></div>
+    </div>
+  </div>
+
+  <!-- VIEW: REPORT — DESTINAȚII TOP -->
+  <div id="view-report-destinations" class="view hidden">
+    <div class="report-filters" id="filter-destinations"></div>
+    <div class="card">
+      <div class="card-title">Destinații Top <span class="ct-badge" id="report-destinations-count">0 total</span></div>
+      <div id="report-destinations-wrap"></div>
+    </div>
+  </div>
+
+  <!-- VIEW: REPORT — DIAGNOSTIC DAILY -->
+  <div id="view-report-daily" class="view hidden">
+    <div class="report-filters" id="filter-daily"></div>
+    <div class="card">
+      <div class="card-title">Diagnostic Daily <span class="ct-badge" id="report-daily-count">0 total</span></div>
+      <div id="report-daily-wrap"></div>
+    </div>
+  </div>
+
+</main>
+</div>
+
+<!-- Data file generated by /scripts/fetch_*.py — see README_PPC_DASHBOARD.md -->
+<script src="ppc-data.js"></script>
+<script>
+const PLATFORM_META = {
+  google: { label: 'Google Ads', icon: 'G', color: 'var(--google)', bg: 'rgba(66,133,244,0.12)' },
+  meta:   { label: 'Meta Ads',   icon: 'f', color: 'var(--meta)',   bg: 'rgba(24,119,242,0.12)' },
+  bing:   { label: 'Bing Ads',   icon: 'B', color: 'var(--bing)',   bg: 'rgba(0,180,216,0.12)' },
+  tiktok: { label: 'TikTok Ads', icon: 'T', color: 'var(--tiktok)', bg: 'rgba(255,45,85,0.12)' }
+};
+const PLATFORM_ORDER = ['google', 'meta', 'bing', 'tiktok'];
+
+const KPI_META = {
+  spend_total: { label: 'Spend Total', accent: 'var(--accent)' },
+  revenue:     { label: 'Revenue Atribuit', accent: 'var(--green)' },
+  roas_global: { label: 'ROAS Global', accent: 'var(--purple)' },
+  conversions: { label: 'Conversii', accent: 'var(--bing)' },
+  cpa_avg:     { label: 'CPA Mediu', accent: 'var(--orange)' }
+};
+const KPI_ORDER = ['spend_total', 'revenue', 'roas_global', 'conversions', 'cpa_avg'];
+
+const PERIOD_DEFS = [
+  { key: 'today',      label: 'Azi' },
+  { key: '7d',         label: '7 zile' },
+  { key: '14d',        label: '14 zile' },
+  { key: '30d',        label: '30 zile' },
+  { key: '90d',        label: '90 zile' },
+  { key: 'this_month', label: 'Luna aceasta' },
+  { key: 'last_month', label: 'Luna trecută' },
+  { key: 'all_time',   label: 'Tot timpul' },
+];
+
+const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily'];
+let currentView = 'overview';
+const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all' };
+
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function roasClass(roas) {
+  if (roas === null || roas === undefined) return 'off';
+  if (roas >= 5) return 'good';
+  if (roas >= 4) return 'warn';
+  return 'bad';
+}
+
+function renderTopbar(data) {
+  document.getElementById('topbar-title').textContent = data.meta?.period_label || 'OVERVIEW';
+  const src = document.getElementById('data-source');
+  const isLive = (data.meta?.source || 'mock') === 'live';
+  src.textContent = isLive ? 'SURSĂ: LIVE API' : 'SURSĂ: MOCK / DEMO';
+  src.className = 'data-source ' + (isLive ? 'live' : 'mock');
+
+  const ts = data.meta?.generated_at ? new Date(data.meta.generated_at) : null;
+  const tsLabel = ts ? ts.toLocaleString('ro-RO', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }) : '—';
+  document.getElementById('sb-footer').innerHTML =
+    `<div><span class="sync-dot"></span>Sync: ${escapeHtml(tsLabel)} · ${isLive ? 'Live API' : 'Live mock'}</div>`;
+}
+
+function renderKPIs(data) {
+  const row = document.getElementById('kpi-row');
+  row.innerHTML = KPI_ORDER.map(key => {
+    const meta = KPI_META[key];
+    const k = data.kpis?.[key] || {};
+    const deltaClass = k.delta_dir === 'down' ? 'delta-down' : 'delta-up';
+    return `
+      <div class="kpi-card" style="--accent-line: ${meta.accent}">
+        <div class="kpi-label">${escapeHtml(meta.label)}</div>
+        <div class="kpi-value">${escapeHtml(k.display ?? '—')}<span class="kpi-unit">${escapeHtml(k.unit ?? '')}</span></div>
+        <div class="kpi-delta">
+          <span class="${deltaClass}">${escapeHtml(k.delta_display ?? '—')}</span>
+          <span class="delta-label">vs perioada anterioară</span>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function renderPlatforms(data) {
+  const grid = document.getElementById('platforms-grid');
+  const nav = document.getElementById('nav-platforms');
+
+  grid.innerHTML = PLATFORM_ORDER.map(key => {
+    const meta = PLATFORM_META[key];
+    const p = data.platforms?.[key] || {};
+    const connected = p.status === 'connected';
+    const statusClass = p.status_class === 'crit' ? 'badge-crit' : p.status_class === 'warn' ? 'badge-warn' : p.status_class === 'ok' ? 'badge-ok' : 'badge-off';
+    const roasVal = (p.roas === null || p.roas === undefined) ? '—' : p.roas.toFixed(1) + 'x';
+    const roasCls = p.roas_class || roasClass(p.roas);
+    const convVal = (p.conversions === null || p.conversions === undefined) ? '—' : p.conversions;
+    const cpaVal = p.cpa_display || '—';
+    const spendVal = p.spend_display || '—';
+    const share = p.share_pct || 0;
+
+    return `
+      <div class="platform-card ${connected ? '' : 'disconnected'}">
+        <div class="plt-header">
+          <div class="plt-icon" style="background:${meta.bg}; color:${meta.color}">${meta.icon}</div>
+          <div>
+            <div class="plt-name">${meta.label}</div>
+          </div>
+          <div class="plt-status ${statusClass}">${escapeHtml(p.status_label || (connected ? '● Activ' : '⚠ Neconectat'))}</div>
+        </div>
+        <div class="plt-metrics">
+          <div class="plt-metric">
+            <div class="plt-metric-label">Spend</div>
+            <div class="plt-metric-val ${connected ? '' : 'off'}">${escapeHtml(spendVal)}</div>
+          </div>
+          <div class="plt-metric">
+            <div class="plt-metric-label">ROAS</div>
+            <div class="plt-metric-val ${connected ? roasCls : 'off'}">${escapeHtml(roasVal)}</div>
+          </div>
+          <div class="plt-metric">
+            <div class="plt-metric-label">Conversii</div>
+            <div class="plt-metric-val ${connected ? '' : 'off'}">${escapeHtml(convVal)}</div>
+          </div>
+          <div class="plt-metric">
+            <div class="plt-metric-label">CPA</div>
+            <div class="plt-metric-val ${connected ? '' : 'off'}">${escapeHtml(cpaVal)}</div>
+          </div>
+        </div>
+        <div class="plt-bar">
+          <div class="plt-bar-fill" style="width:${share}%; background:${meta.color}"></div>
+        </div>
+        ${connected ? '' : `<div class="plt-connect-hint">Conectează API-ul ${meta.label} — vezi README_PPC_DASHBOARD.md</div>`}
+      </div>`;
+  }).join('');
+
+  nav.innerHTML = PLATFORM_ORDER.map(key => {
+    const meta = PLATFORM_META[key];
+    const p = data.platforms?.[key] || {};
+    const connected = p.status === 'connected';
+    const badgeClass = connected ? 'badge-ok' : 'badge-off';
+    const badgeLabel = connected ? 'OK' : '—';
+    return `
+      <div class="nav-item">
+        <div class="nav-dot" style="background:${meta.color}"></div>
+        ${meta.label}
+        <span class="nav-badge ${badgeClass}">${badgeLabel}</span>
+      </div>`;
+  }).join('');
+}
+
+function renderCampaigns(data) {
+  const wrap = document.getElementById('campaigns-wrap');
+  const campaigns = data.campaigns || [];
+  if (!campaigns.length) {
+    wrap.innerHTML = `<div class="empty-state">Nicio campanie disponibilă încă.<br>Rulează scriptul de fetch pentru a popula date.</div>`;
+    return;
+  }
+  const rows = campaigns.map(c => {
+    const meta = PLATFORM_META[c.platform] || { color: 'var(--dim)' };
+    const cls = c.roas_class || roasClass(c.roas);
+    return `
+      <tr>
+        <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(c.name)}</span></td>
+        <td>${escapeHtml(c.spend_display ?? '—')}</td>
+        <td>${escapeHtml(c.conversions ?? '—')}</td>
+        <td><span class="roas-pill roas-${cls}">${(c.roas ?? 0).toFixed(1)}x</span></td>
+      </tr>`;
+  }).join('');
+  wrap.innerHTML = `
+    <table class="camp-table">
+      <thead>
+        <tr><th>Campanie</th><th>Spend</th><th>Conv.</th><th>ROAS</th></tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderDestinations(data) {
+  const wrap = document.getElementById('destinations-wrap');
+  const dests = data.destinations || [];
+  if (!dests.length) {
+    wrap.innerHTML = `<div class="empty-state">Breakdown pe destinații indisponibil.<br>Necesită mapare campanie → destinație (vezi config/accounts.json).</div>`;
+    return;
+  }
+  const max = Math.max(...dests.map(d => d.revenue || 0), 1);
+  wrap.innerHTML = `<div class="dest-list">` + dests.map(d => {
+    const pct = Math.round(((d.revenue || 0) / max) * 100);
+    const roasColor = d.roas >= 6 ? 'var(--green)' : d.roas >= 4 ? 'var(--orange)' : 'var(--red)';
+    return `
+      <div class="dest-row">
+        <div class="dest-name">${escapeHtml(d.name)}</div>
+        <div class="dest-bar-wrap"><div class="dest-bar-fill" style="width:${pct}%"></div></div>
+        <div class="dest-revenue">${escapeHtml(d.revenue_display ?? '—')}</div>
+        <div class="dest-roas" style="color:${roasColor}">${(d.roas ?? 0).toFixed(1)}x</div>
+      </div>`;
+  }).join('') + `</div>`;
+}
+
+function renderAlerts(data) {
+  const wrap = document.getElementById('alerts-wrap');
+  const alerts = data.alerts || [];
+  document.getElementById('alerts-count').textContent = `${alerts.length} total`;
+  if (!alerts.length) {
+    wrap.innerHTML = `<div class="empty-state">Nicio alertă activă.</div>`;
+    return;
+  }
+  wrap.innerHTML = `<div class="alert-list">` + alerts.map(a => `
+    <div class="alert-item ${a.severity}">
+      <div class="alert-icon">${a.icon || '🔵'}</div>
+      <div class="alert-body">
+        <div class="alert-title">${escapeHtml(a.title)}</div>
+        <div class="alert-desc">${escapeHtml(a.desc)}</div>
+      </div>
+      <div class="alert-time">${escapeHtml(a.time || '')}</div>
+    </div>`).join('') + `</div>`;
+}
+
+function renderSidebarSpend(data) {
+  const wrap = document.getElementById('sidebar-spend');
+  const spend = data.sidebar_spend_today || {};
+  wrap.innerHTML = PLATFORM_ORDER.map(key => {
+    const meta = PLATFORM_META[key];
+    return `
+      <div class="platform-row">
+        <div class="plt-indicator" style="background:${meta.color}"></div>
+        ${meta.label}
+        <span class="plt-spend">${escapeHtml(spend[key] ?? '—')}</span>
+      </div>`;
+  }).join('');
+}
+
+/* ─── Mini line charts (canvas) with hover tooltips ─── */
+function drawLineChart(canvasId, data, color, fillColor, format, labels, fullLabels) {
+  const canvas = document.getElementById(canvasId);
+  const tooltip = document.getElementById(canvasId + 'Tooltip');
+  if (!canvas) return;
+  if (!data || !data.length) {
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (tooltip) tooltip.classList.remove('visible');
+    return;
+  }
+  const ctx = canvas.getContext('2d');
+  const W = canvas.offsetWidth;
+  const H = canvas.offsetHeight;
+  canvas.width = W;
+  canvas.height = H;
+
+  const pad = { top: 8, right: 12, bottom: 22, left: 44 };
+  const cW = W - pad.left - pad.right;
+  const cH = H - pad.top - pad.bottom;
+
+  const min = Math.min(...data) * 0.95;
+  const max = Math.max(...data) * 1.05;
+  const n = data.length;
+
+  const xOf = i => n === 1 ? pad.left + cW / 2 : pad.left + (i / (n - 1)) * cW;
+  const yOf = v => pad.top + cH - ((v - min) / (max - min || 1)) * cH;
+
+  function fmtValue(v) {
+    if (format === 'K') return Math.round(v).toLocaleString('ro-RO') + ' RON';
+    return v.toFixed(2) + 'x';
+  }
+
+  function draw(hoverIdx) {
+    ctx.clearRect(0, 0, W, H);
+
+    // gridlines
+    ctx.strokeStyle = '#1a2030';
+    ctx.lineWidth = 1;
+    for (let i = 0; i < 4; i++) {
+      const y = pad.top + (i / 3) * cH;
+      ctx.beginPath();
+      ctx.moveTo(pad.left, y);
+      ctx.lineTo(W - pad.right, y);
+      ctx.stroke();
+    }
+
+    // area fill
+    ctx.beginPath();
+    ctx.moveTo(xOf(0), yOf(data[0]));
+    for (let i = 1; i < n; i++) ctx.lineTo(xOf(i), yOf(data[i]));
+    ctx.lineTo(xOf(n-1), pad.top + cH);
+    ctx.lineTo(xOf(0), pad.top + cH);
+    ctx.closePath();
+    const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + cH);
+    grad.addColorStop(0, fillColor);
+    grad.addColorStop(1, 'transparent');
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    // line
+    ctx.beginPath();
+    ctx.moveTo(xOf(0), yOf(data[0]));
+    for (let i = 1; i < n; i++) ctx.lineTo(xOf(i), yOf(data[i]));
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+
+    // hover vertical guide line
+    if (hoverIdx !== null && hoverIdx !== undefined) {
+      ctx.beginPath();
+      ctx.moveTo(xOf(hoverIdx), pad.top);
+      ctx.lineTo(xOf(hoverIdx), pad.top + cH);
+      ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    }
+
+    // point markers
+    data.forEach((v, i) => {
+      const isHover = i === hoverIdx;
+      ctx.beginPath();
+      ctx.arc(xOf(i), yOf(v), isHover ? 4 : 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      if (isHover) {
+        ctx.lineWidth = 1.5;
+        ctx.strokeStyle = '#080a0e';
+        ctx.stroke();
+      }
+    });
+
+    // y-axis labels
+    ctx.fillStyle = '#4a5568';
+    ctx.font = '9px DM Mono';
+    ctx.textAlign = 'right';
+    [min, (min+max)/2, max].forEach((v, i) => {
+      const y = i === 0 ? pad.top + cH : i === 1 ? pad.top + cH/2 : pad.top;
+      const label = format === 'K' ? Math.round(v/1000)+'K' : v.toFixed(1)+'x';
+      ctx.fillText(label, pad.left - 5, y + 4);
+    });
+
+    // x-axis labels
+    ctx.textAlign = 'center';
+    const step = Math.max(1, Math.ceil(n / Math.max(1, Math.floor(cW / 32))));
+    (labels || []).forEach((d, i) => {
+      if (i % step === 0 || i === n - 1) ctx.fillText(d, xOf(i), H - 5);
+    });
+  }
+
+  draw(null);
+
+  if (tooltip) {
+    canvas.onmousemove = (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      let idx = n === 1 ? 0 : Math.round((x - pad.left) / cW * (n - 1));
+      idx = Math.max(0, Math.min(n - 1, idx));
+      draw(idx);
+      const dateStr = (fullLabels && fullLabels[idx]) || (labels && labels[idx]) || '';
+      tooltip.innerHTML = `<div class="tt-date">${escapeHtml(dateStr)}</div><div class="tt-value">${escapeHtml(fmtValue(data[idx]))}</div>`;
+      tooltip.style.left = xOf(idx) + 'px';
+      tooltip.style.top = yOf(data[idx]) + 'px';
+      tooltip.classList.add('visible');
+    };
+    canvas.onmouseleave = () => {
+      draw(null);
+      tooltip.classList.remove('visible');
+    };
+  }
+}
+
+function renderCharts(data) {
+  const daily = data.daily || {};
+  const gran = daily.granularity || 'day';
+  const granLabel = gran === 'month' ? 'Lunar' : gran === 'week' ? 'Săptămânal' : 'Zilnic';
+  const spendTitle = document.getElementById('spendChartTitle');
+  const roasTitle = document.getElementById('roasChartTitle');
+  if (spendTitle) spendTitle.textContent = `Spend ${granLabel}`;
+  if (roasTitle) roasTitle.textContent = `ROAS ${granLabel}`;
+  setTimeout(() => {
+    drawLineChart('spendChart', daily.spend || [], '#f0b429', 'rgba(240,180,41,0.12)', 'K', daily.days || [], daily.full_labels || []);
+    drawLineChart('roasChart', daily.roas || [], '#10d48e', 'rgba(16,212,142,0.1)', 'x', daily.days || [], daily.full_labels || []);
+  }, 50);
+}
+
+/* ─── PERIOD TABS ─── */
+function renderPeriodTabs() {
+  const container = document.getElementById('period-tabs');
+  if (!container) return;
+  const byPeriod = window.PPC_DATA_BY_PERIOD;
+  const activeKey = window.PPC_DATA?.meta?.period_key || '30d';
+  const avail = byPeriod
+    ? PERIOD_DEFS.filter(p => byPeriod[p.key])
+    : [{ key: activeKey, label: PERIOD_DEFS.find(p => p.key === activeKey)?.label || activeKey }];
+
+  container.innerHTML = avail.map(p => `
+    <div class="period-tab ${p.key === activeKey ? 'active' : ''}" data-period="${p.key}">${escapeHtml(p.label)}</div>
+  `).join('');
+
+  container.querySelectorAll('.period-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      const key = this.dataset.period;
+      if (window.PPC_DATA_BY_PERIOD && window.PPC_DATA_BY_PERIOD[key]) {
+        window.PPC_DATA = window.PPC_DATA_BY_PERIOD[key];
+        renderAll();
+      }
+    });
+  });
+}
+
+/* ─── REPORT FILTER CHIPS ─── */
+function renderFilterChips(containerId, filterKey, onChange) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const options = [{ key: 'all', label: 'Toate Platformele', color: 'var(--mid)' }]
+    .concat(PLATFORM_ORDER.map(k => ({ key: k, label: PLATFORM_META[k].label, color: PLATFORM_META[k].color })));
+
+  container.innerHTML = options.map(o => `
+    <div class="filter-chip ${currentFilters[filterKey] === o.key ? 'active' : ''}" data-filter="${o.key}">
+      <span class="filter-dot" style="background:${o.color}"></span>${escapeHtml(o.label)}
+    </div>`).join('');
+
+  container.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      currentFilters[filterKey] = chip.dataset.filter;
+      renderFilterChips(containerId, filterKey, onChange);
+      onChange();
+    });
+  });
+}
+
+/* ─── REPORT: CAMPANII ACTIVE ─── */
+function renderReportCampaigns(data) {
+  const all = data.campaigns_all || data.campaigns || [];
+  const filter = currentFilters.campaigns;
+  const filtered = filter === 'all' ? all : all.filter(c => c.platform === filter);
+
+  document.getElementById('report-campaigns-count').textContent = `${filtered.length} total`;
+  const wrap = document.getElementById('report-campaigns-wrap');
+  if (!filtered.length) {
+    wrap.innerHTML = `<div class="empty-state">Nicio campanie pentru acest filtru.</div>`;
+    return;
+  }
+  const rows = filtered.map(c => {
+    const meta = PLATFORM_META[c.platform] || { color: 'var(--dim)' };
+    const cls = c.roas_class || roasClass(c.roas);
+    return `
+      <tr>
+        <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(c.name)}</span></td>
+        <td>${escapeHtml(c.spend_display ?? '—')}</td>
+        <td>${escapeHtml(c.conversions ?? '—')}</td>
+        <td>${escapeHtml(c.revenue_display ?? '—')}</td>
+        <td><span class="roas-pill roas-${cls}">${(c.roas ?? 0).toFixed(1)}x</span></td>
+      </tr>`;
+  }).join('');
+  wrap.innerHTML = `
+    <table class="camp-table">
+      <thead>
+        <tr><th>Campanie</th><th>Spend</th><th>Conv.</th><th>Revenue</th><th>ROAS</th></tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+/* ─── REPORT: DESTINAȚII TOP ─── */
+function renderReportDestinations(data) {
+  const all = data.destinations_all || data.destinations || [];
+  const filter = currentFilters.destinations;
+  const filtered = filter === 'all' ? all : all.filter(d => d.platform === filter);
+
+  document.getElementById('report-destinations-count').textContent = `${filtered.length} total`;
+  const wrap = document.getElementById('report-destinations-wrap');
+  if (!filtered.length) {
+    wrap.innerHTML = `<div class="empty-state">Breakdown pe destinații indisponibil pentru acest filtru.<br>Necesită mapare campanie → destinație (vezi config/accounts.json).</div>`;
+    return;
+  }
+  const max = Math.max(...filtered.map(d => d.revenue || 0), 1);
+  wrap.innerHTML = `<div class="dest-list">` + filtered.map(d => {
+    const pct = Math.round(((d.revenue || 0) / max) * 100);
+    const roasColor = d.roas >= 6 ? 'var(--green)' : d.roas >= 4 ? 'var(--orange)' : 'var(--red)';
+    return `
+      <div class="dest-row">
+        <div class="dest-name">${escapeHtml(d.name)}</div>
+        <div class="dest-bar-wrap"><div class="dest-bar-fill" style="width:${pct}%"></div></div>
+        <div class="dest-revenue">${escapeHtml(d.revenue_display ?? '—')}</div>
+        <div class="dest-roas" style="color:${roasColor}">${(d.roas ?? 0).toFixed(1)}x</div>
+      </div>`;
+  }).join('') + `</div>`;
+}
+
+/* ─── REPORT: DIAGNOSTIC DAILY ─── */
+function renderReportDaily(data) {
+  const all = data.daily_table || [];
+  const filter = currentFilters.daily;
+  const filtered = filter === 'all' ? all : all.filter(p => p.platform === filter);
+
+  document.getElementById('report-daily-count').textContent = `${filtered.length} total`;
+  const wrap = document.getElementById('report-daily-wrap');
+  if (!filtered.length) {
+    wrap.innerHTML = `<div class="empty-state">Niciun rezultat pentru acest filtru.</div>`;
+    return;
+  }
+  const rows = filtered.slice().reverse().map(p => {
+    const meta = PLATFORM_META[p.platform] || { color: 'var(--dim)' };
+    const cls = roasClass(p.roas);
+    return `
+      <tr>
+        <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(p.full_label || p.date)}</span></td>
+        <td>${escapeHtml(Math.round(p.spend ?? 0).toLocaleString('ro-RO'))}</td>
+        <td>${escapeHtml(p.conversions ?? '—')}</td>
+        <td>${escapeHtml(Math.round(p.revenue ?? 0).toLocaleString('ro-RO'))}</td>
+        <td><span class="roas-pill roas-${cls}">${(p.roas ?? 0).toFixed(2)}x</span></td>
+      </tr>`;
+  }).join('');
+  wrap.innerHTML = `
+    <table class="camp-table">
+      <thead>
+        <tr><th>Data</th><th>Spend (RON)</th><th>Conv.</th><th>Revenue (RON)</th><th>ROAS</th></tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderActiveReport() {
+  const data = window.PPC_DATA || {};
+  if (currentView === 'report-campaigns') renderReportCampaigns(data);
+  if (currentView === 'report-destinations') renderReportDestinations(data);
+  if (currentView === 'report-daily') renderReportDaily(data);
+}
+
+/* ─── VIEW SWITCHING ─── */
+function switchView(view) {
+  if (!VIEWS.includes(view)) return;
+  currentView = view;
+  VIEWS.forEach(v => {
+    const el = document.getElementById('view-' + v);
+    if (el) el.classList.toggle('hidden', v !== view);
+  });
+  document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+    item.classList.toggle('active', item.dataset.view === view);
+  });
+  renderActiveReport();
+}
+
+function renderAll() {
+  const data = window.PPC_DATA || {};
+  renderPeriodTabs();
+  renderTopbar(data);
+  renderKPIs(data);
+  renderPlatforms(data);
+  renderCampaigns(data);
+  renderDestinations(data);
+  renderAlerts(data);
+  renderSidebarSpend(data);
+  renderCharts(data);
+  renderActiveReport();
+}
+
+renderAll();
+
+document.getElementById('btn-refresh').addEventListener('click', function() {
+  this.style.color = 'var(--green)';
+  // ppc-data.js este un fisier static -- pentru date proaspete, ruleaza
+  // scriptul de fetch (scripts/fetch_google_ads_data.py) si reincarca pagina.
+  location.reload();
+});
+
+document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+  item.addEventListener('click', function() {
+    switchView(this.dataset.view);
+  });
+});
+
+renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
+renderFilterChips('filter-destinations', 'destinations', () => renderReportDestinations(window.PPC_DATA));
+renderFilterChips('filter-daily', 'daily', () => renderReportDaily(window.PPC_DATA));
+</script>
+</body>
+</html>

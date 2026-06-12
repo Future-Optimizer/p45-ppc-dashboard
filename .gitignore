@@ -1,0 +1,13 @@
+# Credentiale si fisiere sensibile - NU se publica niciodata
+config/
+*.yaml
+*.yml
+
+# Date sursa / fisiere mari, nu sunt necesare in site-ul public
+*.csv
+*.xlsx
+
+# Fisiere temporare
+*.log
+__pycache__/
+*.pyc
