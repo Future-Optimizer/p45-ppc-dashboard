@@ -9,9 +9,9 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "655",
-        "unit": "RON",
-        "delta_display": "↓ 18%",
+        "display": "2",
+        "unit": "K RON",
+        "delta_display": "↓ 14%",
         "delta_dir": "down"
       },
       "revenue": {
@@ -23,7 +23,7 @@ window.PPC_DATA_BY_PERIOD = {
       "roas_global": {
         "display": "0.00",
         "unit": "x",
-        "delta_display": "↓ 1.4x",
+        "delta_display": "↓ 4.1x",
         "delta_dir": "down"
       },
       "conversions": {
@@ -45,24 +45,24 @@ window.PPC_DATA_BY_PERIOD = {
         "status": "connected",
         "status_label": "● Active",
         "status_class": "ok",
-        "spend_display": "655",
+        "spend_display": "689",
         "roas": 0.0,
         "roas_class": "bad",
         "conversions": 0,
         "cpa_display": "0 RON",
-        "share_pct": 100
+        "share_pct": 35
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "1.3K",
+        "roas": 0.0,
+        "roas_class": "bad",
+        "conversions": 0,
+        "cpa_display": "0 RON",
+        "share_pct": 65
       },
       "bing": {
         "name": "Bing Ads",
@@ -91,10 +91,76 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 229.87,
+        "spend_display": "230",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 229.7,
+        "spend_display": "230",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 194.93,
+        "spend_display": "195",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 168.57,
+        "spend_display": "169",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 163.46,
+        "spend_display": "163",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 142.74,
+        "spend_display": "143",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 126.39,
-        "spend_display": "126",
+        "spend": 133.56,
+        "spend_display": "134",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -102,76 +168,10 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi Grecia",
-        "spend": 85.59,
-        "spend_display": "86",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 81.59,
-        "spend_display": "82",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi Spania",
-        "spend": 76.23,
-        "spend_display": "76",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Search | Protect brand",
-        "spend": 65.55,
-        "spend_display": "66",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "PMax Shopping - Agentie de turism",
-        "spend": 42.06,
-        "spend_display": "42",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 41.31,
-        "spend_display": "41",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Vacanta Romania",
-        "spend": 36.44,
-        "spend_display": "36",
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 113.49,
+        "spend_display": "113",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -181,10 +181,87 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 229.87,
+        "spend_display": "230",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 229.7,
+        "spend_display": "230",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 194.93,
+        "spend_display": "195",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 168.57,
+        "spend_display": "169",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 163.46,
+        "spend_display": "163",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 142.74,
+        "spend_display": "143",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 126.39,
-        "spend_display": "126",
+        "spend": 133.56,
+        "spend_display": "134",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 113.49,
+        "spend_display": "113",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -194,8 +271,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 85.59,
-        "spend_display": "86",
+        "spend": 88.32,
+        "spend_display": "88",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -205,8 +282,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 81.59,
-        "spend_display": "82",
+        "spend": 86.07,
+        "spend_display": "86",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -216,8 +293,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 76.23,
-        "spend_display": "76",
+        "spend": 80.32,
+        "spend_display": "80",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -227,8 +304,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 65.55,
-        "spend_display": "66",
+        "spend": 68.2,
+        "spend_display": "68",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -238,8 +315,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 42.06,
-        "spend_display": "42",
+        "spend": 45.18,
+        "spend_display": "45",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -249,8 +326,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 41.31,
-        "spend_display": "41",
+        "spend": 44.86,
+        "spend_display": "45",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -260,8 +337,30 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 36.44,
-        "spend_display": "36",
+        "spend": 38.44,
+        "spend_display": "38",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 35.49,
+        "spend_display": "35",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 29.53,
+        "spend_display": "30",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -271,8 +370,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 24.03,
-        "spend_display": "24",
+        "spend": 25.19,
+        "spend_display": "25",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -282,7 +381,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 18.23,
+        "spend": 18.55,
+        "spend_display": "19",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "google",
+        "name": "Demand Gen - Boost",
+        "spend": 18.4,
         "spend_display": "18",
         "conversions": 0,
         "revenue": 0.0,
@@ -293,19 +403,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 17.22,
-        "spend_display": "17",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Demand Gen - Boost",
-        "spend": 16.98,
-        "spend_display": "17",
+        "spend": 18.1,
+        "spend_display": "18",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -315,8 +414,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 15.04,
-        "spend_display": "15",
+        "spend": 15.84,
+        "spend_display": "16",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -326,7 +425,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 7.85,
+        "spend": 7.96,
         "spend_display": "8",
         "conversions": 0,
         "revenue": 0.0,
@@ -350,8 +449,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 25.38,
-        "spend_display": "25",
+        "spend": 27.25,
+        "spend_display": "27",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -360,7 +459,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 17.79,
+        "spend": 18.36,
         "spend_display": "18",
         "conversions": 0,
         "revenue": 0.0,
@@ -370,8 +469,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 13.83,
-        "spend_display": "14",
+        "spend": 14.62,
+        "spend_display": "15",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -380,8 +479,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 55.21,
-        "spend_display": "55",
+        "spend": 60.6,
+        "spend_display": "61",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -390,8 +489,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 41.43,
-        "spend_display": "41",
+        "spend": 43.5,
+        "spend_display": "43",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -400,8 +499,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 17.39,
-        "spend_display": "17",
+        "spend": 18.54,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -410,8 +509,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 26.09,
-        "spend_display": "26",
+        "spend": 28.36,
+        "spend_display": "28",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -420,8 +519,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 46.57,
-        "spend_display": "47",
+        "spend": 50.68,
+        "spend_display": "51",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -432,8 +531,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 25.38,
-        "spend_display": "25",
+        "spend": 27.25,
+        "spend_display": "27",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -442,7 +541,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 17.79,
+        "spend": 18.36,
         "spend_display": "18",
         "conversions": 0,
         "revenue": 0.0,
@@ -452,8 +551,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 13.83,
-        "spend_display": "14",
+        "spend": 14.62,
+        "spend_display": "15",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -462,8 +561,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 55.21,
-        "spend_display": "55",
+        "spend": 60.6,
+        "spend_display": "61",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -472,8 +571,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 41.43,
-        "spend_display": "41",
+        "spend": 43.5,
+        "spend_display": "43",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -482,8 +581,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 17.39,
-        "spend_display": "17",
+        "spend": 18.54,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -492,8 +591,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 26.09,
-        "spend_display": "26",
+        "spend": 28.36,
+        "spend_display": "28",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -502,37 +601,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 46.57,
-        "spend_display": "47",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Turkey",
-        "spend": 30.97,
-        "spend_display": "31",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇵🇹 Portugal",
-        "spend": 24.78,
-        "spend_display": "25",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 51.29,
+        "spend": 50.68,
         "spend_display": "51",
         "conversions": 0,
         "revenue": 0.0,
@@ -541,9 +610,39 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇹🇷 Turkey",
+        "spend": 32.17,
+        "spend_display": "32",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇵🇹 Portugal",
+        "spend": 23.25,
+        "spend_display": "23",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Greece",
+        "spend": 53.33,
+        "spend_display": "53",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 75.87,
-        "spend_display": "76",
+        "spend": 79.55,
+        "spend_display": "80",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -552,8 +651,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 36.44,
-        "spend_display": "36",
+        "spend": 38.44,
+        "spend_display": "38",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -562,7 +661,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 0.27,
+        "spend": 0.28,
         "spend_display": "0",
         "conversions": 0,
         "revenue": 0.0,
@@ -572,7 +671,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇽 Mexico",
-        "spend": 0.64,
+        "spend": 0.67,
         "spend_display": "1",
         "conversions": 0,
         "revenue": 0.0,
@@ -582,7 +681,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 9.98,
+        "spend": 10.37,
         "spend_display": "10",
         "conversions": 0,
         "revenue": 0.0,
@@ -592,7 +691,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 3.05,
+        "spend": 3.1,
         "spend_display": "3",
         "conversions": 0,
         "revenue": 0.0,
@@ -602,8 +701,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 7.24,
-        "spend_display": "7",
+        "spend": 7.52,
+        "spend_display": "8",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -612,7 +711,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 1.72,
+        "spend": 1.85,
         "spend_display": "2",
         "conversions": 0,
         "revenue": 0.0,
@@ -622,8 +721,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 28.09,
-        "spend_display": "28",
+        "spend": 29.13,
+        "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -632,8 +731,188 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 13.84,
-        "spend_display": "14",
+        "spend": 14.58,
+        "spend_display": "15",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 50.15,
+        "spend_display": "50",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 124.51,
+        "spend_display": "125",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 93.03,
+        "spend_display": "93",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 112.92,
+        "spend_display": "113",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 144.91,
+        "spend_display": "145",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 111.57,
+        "spend_display": "112",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 73.9,
+        "spend_display": "74",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 29.14,
+        "spend_display": "29",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 68.64,
+        "spend_display": "69",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 82.34,
+        "spend_display": "82",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 59.41,
+        "spend_display": "59",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 68.55,
+        "spend_display": "69",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 75.88,
+        "spend_display": "76",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 69.81,
+        "spend_display": "70",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 28.45,
+        "spend_display": "28",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 8.88,
+        "spend_display": "9",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 28.37,
+        "spend_display": "28",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 39.23,
+        "spend_display": "39",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -645,29 +924,29 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Protect brand",
-        "desc": "This campaign spends 66 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 68 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Agentie de turism",
-        "desc": "This campaign spends 18 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 19 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Buc",
-        "desc": "This campaign spends 82 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 86 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -678,7 +957,7 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        654.59
+        1996.77
       ],
       "roas": [
         0.0
@@ -696,16 +975,26 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -719,34 +1008,34 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "5.6",
+        "display": "17",
         "unit": "K RON",
-        "delta_display": "↓ 3%",
+        "delta_display": "↓ 6%",
         "delta_dir": "down"
       },
       "revenue": {
-        "display": "5",
+        "display": "28",
         "unit": "K RON",
-        "delta_display": "↑ 21%",
-        "delta_dir": "up"
+        "delta_display": "↓ 34%",
+        "delta_dir": "down"
       },
       "roas_global": {
-        "display": "0.90",
+        "display": "1.66",
         "unit": "x",
-        "delta_display": "↑ 0.2x",
-        "delta_dir": "up"
+        "delta_display": "↓ 0.7x",
+        "delta_dir": "down"
       },
       "conversions": {
-        "display": "4",
+        "display": "8",
         "unit": "",
-        "delta_display": "↑ 12%",
-        "delta_dir": "up"
+        "delta_display": "↓ 16%",
+        "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "1317",
+        "display": "2024",
         "unit": "RON",
-        "delta_display": "↓ 14%",
-        "delta_dir": "up"
+        "delta_display": "↑ 12%",
+        "delta_dir": "down"
       }
     },
     "platforms": {
@@ -759,20 +1048,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.9,
         "roas_class": "bad",
         "conversions": 4,
-        "cpa_display": "1,317 RON",
-        "share_pct": 100
+        "cpa_display": "1,326 RON",
+        "share_pct": 34
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "11K",
+        "roas": 2.1,
+        "roas_class": "bad",
+        "conversions": 4,
+        "cpa_display": "2,762 RON",
+        "share_pct": 66
       },
       "bing": {
         "name": "Bing Ads",
@@ -801,9 +1090,53 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 335.09,
+        "spend_display": "335",
+        "conversions": 1,
+        "revenue": 3908.26,
+        "revenue_display": "3.9K",
+        "roas": 11.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 1437.95,
+        "spend_display": "1.4K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 5.8,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 946.84,
+        "spend_display": "947",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 5.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 1202.15,
+        "spend_display": "1.2K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 4.3,
+        "roas_class": "warn"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 1277.0,
+        "spend": 1284.17,
         "spend_display": "1.3K",
         "conversions": 4,
         "revenue": 5037.4,
@@ -812,10 +1145,10 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 689.79,
-        "spend_display": "690",
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 1918.96,
+        "spend_display": "1.9K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -823,10 +1156,10 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Search | Protect brand",
-        "spend": 569.15,
-        "spend_display": "569",
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 1657.49,
+        "spend_display": "1.7K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -834,54 +1167,10 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Circuite Exotice",
-        "spend": 453.23,
-        "spend_display": "453",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 421.01,
-        "spend_display": "421",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "PMax Shopping - Agentie de turism",
-        "spend": 397.98,
-        "spend_display": "398",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 365.45,
-        "spend_display": "365",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 342.55,
-        "spend_display": "343",
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 1638.42,
+        "spend_display": "1.6K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -891,9 +1180,64 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 1918.96,
+        "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 1657.49,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 1638.42,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 1443.82,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 1437.95,
+        "spend_display": "1.4K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 5.8,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 1277.0,
+        "spend": 1284.17,
         "spend_display": "1.3K",
         "conversions": 4,
         "revenue": 5037.4,
@@ -902,10 +1246,32 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 1202.15,
+        "spend_display": "1.2K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 4.3,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 946.84,
+        "spend_display": "947",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 5.6,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 689.79,
-        "spend_display": "690",
+        "spend": 694.24,
+        "spend_display": "694",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -915,8 +1281,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 569.15,
-        "spend_display": "569",
+        "spend": 571.8,
+        "spend_display": "572",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 469.21,
+        "spend_display": "469",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -926,8 +1303,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 453.23,
-        "spend_display": "453",
+        "spend": 454.03,
+        "spend_display": "454",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -937,7 +1314,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 421.01,
+        "spend": 421.12,
         "spend_display": "421",
         "conversions": 0,
         "revenue": 0.0,
@@ -948,8 +1325,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 397.98,
-        "spend_display": "398",
+        "spend": 401.09,
+        "spend_display": "401",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -959,8 +1336,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 365.45,
-        "spend_display": "365",
+        "spend": 366.62,
+        "spend_display": "367",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -970,8 +1347,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 342.55,
-        "spend_display": "343",
+        "spend": 346.1,
+        "spend_display": "346",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -979,10 +1356,21 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 335.09,
+        "spend_display": "335",
+        "conversions": 1,
+        "revenue": 3908.26,
+        "revenue_display": "3.9K",
+        "roas": 11.7,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 174.53,
-        "spend_display": "175",
+        "spend": 176.53,
+        "spend_display": "177",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -992,7 +1380,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 158.01,
+        "spend": 158.33,
         "spend_display": "158",
         "conversions": 0,
         "revenue": 0.0,
@@ -1003,8 +1391,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 146.72,
-        "spend_display": "147",
+        "spend": 148.13,
+        "spend_display": "148",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1014,8 +1402,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 143.42,
-        "spend_display": "143",
+        "spend": 144.28,
+        "spend_display": "144",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1025,8 +1413,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.71,
-        "spend_display": "137",
+        "spend": 139.44,
+        "spend_display": "139",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1036,8 +1424,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.82,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1080,10 +1468,50 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 567.71,
+        "spend_display": "568",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 14.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 310.22,
+        "spend_display": "310",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 17.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 1070.29,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 4.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 1279.85,
+        "spend_display": "1.3K",
+        "conversions": 1,
+        "revenue": 3908.26,
+        "revenue_display": "3.9K",
+        "roas": 3.1
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 403.54,
-        "spend_display": "404",
+        "spend": 405.61,
+        "spend_display": "406",
         "conversions": 2,
         "revenue": 2873.47,
         "revenue_display": "2.9K",
@@ -1092,8 +1520,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 496.96,
-        "spend_display": "497",
+        "spend": 502.36,
+        "spend_display": "502",
         "conversions": 2,
         "revenue": 1790.49,
         "revenue_display": "1.8K",
@@ -1102,8 +1530,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 368.69,
-        "spend_display": "369",
+        "spend": 372.8,
+        "spend_display": "373",
         "conversions": 0,
         "revenue": 373.44,
         "revenue_display": "373",
@@ -1112,48 +1540,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 154.8,
-        "spend_display": "155",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 83.25,
-        "spend_display": "83",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Rhodes",
-        "spend": 81.81,
-        "spend_display": "82",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 580.61,
-        "spend_display": "581",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇪 Montenegro",
-        "spend": 59.15,
-        "spend_display": "59",
+        "spend": 156.67,
+        "spend_display": "157",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1162,10 +1550,50 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 567.71,
+        "spend_display": "568",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 14.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 310.22,
+        "spend_display": "310",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 17.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 1070.29,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 4.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 1279.85,
+        "spend_display": "1.3K",
+        "conversions": 1,
+        "revenue": 3908.26,
+        "revenue_display": "3.9K",
+        "roas": 3.1
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 403.54,
-        "spend_display": "404",
+        "spend": 405.61,
+        "spend_display": "406",
         "conversions": 2,
         "revenue": 2873.47,
         "revenue_display": "2.9K",
@@ -1174,8 +1602,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 496.96,
-        "spend_display": "497",
+        "spend": 502.36,
+        "spend_display": "502",
         "conversions": 2,
         "revenue": 1790.49,
         "revenue_display": "1.8K",
@@ -1184,8 +1612,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 368.69,
-        "spend_display": "369",
+        "spend": 372.8,
+        "spend_display": "373",
         "conversions": 0,
         "revenue": 373.44,
         "revenue_display": "373",
@@ -1194,8 +1622,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 154.8,
-        "spend_display": "155",
+        "spend": 156.67,
+        "spend_display": "157",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1204,8 +1632,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 83.25,
-        "spend_display": "83",
+        "spend": 83.82,
+        "spend_display": "84",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1214,48 +1642,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 81.81,
-        "spend_display": "82",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 580.61,
-        "spend_display": "581",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇪 Montenegro",
-        "spend": 59.15,
-        "spend_display": "59",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Turkey",
-        "spend": 234.24,
-        "spend_display": "234",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇵🇹 Portugal",
-        "spend": 119.87,
-        "spend_display": "120",
+        "spend": 82.6,
+        "spend_display": "83",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1264,8 +1652,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 339.43,
-        "spend_display": "339",
+        "spend": 343.1,
+        "spend_display": "343",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Greece",
+        "spend": 582.64,
+        "spend_display": "583",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇪 Montenegro",
+        "spend": 60.29,
+        "spend_display": "60",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1274,8 +1682,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 235.98,
-        "spend_display": "236",
+        "spend": 238.25,
+        "spend_display": "238",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇹🇷 Turkey",
+        "spend": 235.44,
+        "spend_display": "235",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇵🇹 Portugal",
+        "spend": 118.33,
+        "spend_display": "118",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1284,18 +1712,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 174.53,
-        "spend_display": "175",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇩🇴 Dominican Republic",
-        "spend": 87.05,
-        "spend_display": "87",
+        "spend": 176.53,
+        "spend_display": "177",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1304,7 +1722,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 66.02,
+        "spend": 66.04,
         "spend_display": "66",
         "conversions": 0,
         "revenue": 0.0,
@@ -1313,38 +1731,8 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇹🇭 Thailand",
-        "spend": 218.39,
-        "spend_display": "218",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇱🇰 Sri Lanka",
-        "spend": 102.19,
-        "spend_display": "102",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 268.4,
-        "spend_display": "268",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇲🇽 Mexico",
-        "spend": 132.19,
+        "spend": 132.22,
         "spend_display": "132",
         "conversions": 0,
         "revenue": 0.0,
@@ -1353,9 +1741,39 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇪🇸 Palma de Mallorca",
-        "spend": 21.58,
-        "spend_display": "22",
+        "name": "🇻🇳 Vietnam",
+        "spend": 268.8,
+        "spend_display": "269",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 87.1,
+        "spend_display": "87",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇹🇭 Thailand",
+        "spend": 218.68,
+        "spend_display": "219",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 102.32,
+        "spend_display": "102",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1364,8 +1782,158 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 40.57,
-        "spend_display": "41",
+        "spend": 41.62,
+        "spend_display": "42",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇪🇸 Palma de Mallorca",
+        "spend": 22.31,
+        "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 459.37,
+        "spend_display": "459",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 787.25,
+        "spend_display": "787",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 994.96,
+        "spend_display": "995",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 931.65,
+        "spend_display": "932",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 246.89,
+        "spend_display": "247",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 642.16,
+        "spend_display": "642",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 622.47,
+        "spend_display": "622",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 447.52,
+        "spend_display": "448",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 591.04,
+        "spend_display": "591",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 530.48,
+        "spend_display": "530",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 462.24,
+        "spend_display": "462",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 244.48,
+        "spend_display": "244",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 83.11,
+        "spend_display": "83",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 241.32,
+        "spend_display": "241",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1377,7 +1945,7 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Protect brand",
-        "desc": "This campaign spends 569 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 572 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -1391,15 +1959,15 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Buc",
-        "desc": "This campaign spends 690 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 694 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -1422,39 +1990,39 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        911.65,
-        914.09,
-        797.95,
-        791.68,
-        706.25,
-        799.98,
-        654.59
+        2468.06,
+        2757.04,
+        2466.55,
+        2397.67,
+        2239.66,
+        2334.77,
+        1996.77
       ],
       "roas": [
-        0.32,
+        1.7,
         0.0,
-        0.0,
-        0.63,
-        4.37,
-        1.44,
+        2.09,
+        0.21,
+        3.73,
+        4.06,
         0.0
       ],
       "revenue": [
-        293.05,
+        4201.31,
         0.0,
-        0.0,
+        5166.39,
         502.4,
-        3086.42,
-        1155.53,
+        8349.64,
+        9484.51,
         0.0
       ],
       "conversions": [
-        0.37,
+        1.37,
         0.0,
-        0.0,
+        1.0,
         0.5,
-        2.5,
-        0.87,
+        3.5,
+        1.87,
         0.0
       ],
       "granularity": "day"
@@ -1471,6 +2039,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "06",
+        "full_label": "06 Jun 2026",
+        "date": "2026-06-06",
+        "spend": 1556.41,
+        "conversions": 1.0,
+        "revenue": 3908.26,
+        "roas": 2.51,
+        "platform": "meta"
+      },
+      {
         "label": "07",
         "full_label": "07 Jun 2026",
         "date": "2026-06-07",
@@ -1479,6 +2057,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "07",
+        "full_label": "07 Jun 2026",
+        "date": "2026-06-07",
+        "spend": 1842.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "08",
@@ -1491,6 +2079,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "08",
+        "full_label": "08 Jun 2026",
+        "date": "2026-06-08",
+        "spend": 1668.6,
+        "conversions": 1.0,
+        "revenue": 5166.39,
+        "roas": 3.1,
+        "platform": "meta"
+      },
+      {
         "label": "09",
         "full_label": "09 Jun 2026",
         "date": "2026-06-09",
@@ -1499,6 +2097,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 502.4,
         "roas": 0.63,
         "platform": "google"
+      },
+      {
+        "label": "09",
+        "full_label": "09 Jun 2026",
+        "date": "2026-06-09",
+        "spend": 1605.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "10",
@@ -1511,6 +2119,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "10",
+        "full_label": "10 Jun 2026",
+        "date": "2026-06-10",
+        "spend": 1533.41,
+        "conversions": 1.0,
+        "revenue": 5263.22,
+        "roas": 3.43,
+        "platform": "meta"
+      },
+      {
         "label": "11",
         "full_label": "11 Jun 2026",
         "date": "2026-06-11",
@@ -1521,19 +2139,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 Jun 2026",
+        "date": "2026-06-11",
+        "spend": 1534.79,
+        "conversions": 1.0,
+        "revenue": 8328.98,
+        "roas": 5.43,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -1547,33 +2185,33 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "11",
+        "display": "34",
         "unit": "K RON",
-        "delta_display": "↓ 5%",
+        "delta_display": "↓ 3%",
         "delta_dir": "down"
       },
       "revenue": {
-        "display": "9.2",
+        "display": "70",
         "unit": "K RON",
-        "delta_display": "↓ 79%",
+        "delta_display": "↓ 25%",
         "delta_dir": "down"
       },
       "roas_global": {
-        "display": "0.81",
+        "display": "2.03",
         "unit": "x",
-        "delta_display": "↓ 2.9x",
+        "delta_display": "↓ 0.6x",
         "delta_dir": "down"
       },
       "conversions": {
-        "display": "8",
+        "display": "18",
         "unit": "",
-        "delta_display": "↓ 60%",
+        "delta_display": "↓ 30%",
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "1418",
+        "display": "1909",
         "unit": "RON",
-        "delta_display": "↑ 136%",
+        "delta_display": "↑ 40%",
         "delta_dir": "down"
       }
     },
@@ -1587,20 +2225,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.8,
         "roas_class": "bad",
         "conversions": 8,
-        "cpa_display": "1,418 RON",
-        "share_pct": 100
+        "cpa_display": "1,422 RON",
+        "share_pct": 33
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "23K",
+        "roas": 2.6,
+        "roas_class": "bad",
+        "conversions": 10,
+        "cpa_display": "2,298 RON",
+        "share_pct": 67
       },
       "bing": {
         "name": "Bing Ads",
@@ -1629,9 +2267,42 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 693.47,
+        "spend_display": "693",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 10.5,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 2908.3,
+        "spend_display": "2.9K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 5.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 2416.01,
+        "spend_display": "2.4K",
+        "conversions": 2,
+        "revenue": 13657.64,
+        "revenue_display": "14K",
+        "roas": 5.7,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2588.88,
+        "spend": 2596.04,
         "spend_display": "2.6K",
         "conversions": 7,
         "revenue": 8555.19,
@@ -1640,88 +2311,110 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 3870.91,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 11666.1,
+        "revenue_display": "12K",
+        "roas": 3.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 2005.84,
+        "spend_display": "2K",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 2.6,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 2895.42,
+        "spend_display": "2.9K",
+        "conversions": 1,
+        "revenue": 5949.1,
+        "revenue_display": "5.9K",
+        "roas": 2.1,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 1142.58,
+        "spend": 1145.23,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 641.84,
         "revenue_display": "642",
         "roas": 0.6,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1732.76,
-        "spend_display": "1.7K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Circuite Exotice",
-        "spend": 1074.52,
-        "spend_display": "1.1K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 986.3,
-        "spend_display": "986",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 685.38,
-        "spend_display": "685",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 681.28,
-        "spend_display": "681",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
         "roas_class": "bad"
       }
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 3870.91,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 11666.1,
+        "revenue_display": "12K",
+        "roas": 3.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 3356.03,
+        "spend_display": "3.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 3308.09,
+        "spend_display": "3.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 2908.3,
+        "spend_display": "2.9K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 5.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 2895.42,
+        "spend_display": "2.9K",
+        "conversions": 1,
+        "revenue": 5949.1,
+        "revenue_display": "5.9K",
+        "roas": 2.1,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2588.88,
+        "spend": 2596.04,
         "spend_display": "2.6K",
         "conversions": 7,
         "revenue": 8555.19,
@@ -1730,10 +2423,43 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 2416.01,
+        "spend_display": "2.4K",
+        "conversions": 2,
+        "revenue": 13657.64,
+        "revenue_display": "14K",
+        "roas": 5.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 2005.84,
+        "spend_display": "2K",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 2.6,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1732.76,
+        "spend": 1737.23,
         "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 1174.69,
+        "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1743,7 +2469,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 1142.58,
+        "spend": 1145.23,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 641.84,
@@ -1754,7 +2480,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 1074.52,
+        "spend": 1075.32,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1765,7 +2491,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 986.3,
+        "spend": 986.41,
         "spend_display": "986",
         "conversions": 0,
         "revenue": 0.0,
@@ -1774,10 +2500,21 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 693.47,
+        "spend_display": "693",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 10.5,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 685.38,
-        "spend_display": "685",
+        "spend": 686.55,
+        "spend_display": "687",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1787,8 +2524,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 681.28,
-        "spend_display": "681",
+        "spend": 684.83,
+        "spend_display": "685",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1798,8 +2535,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "spend": 504.28,
+        "spend_display": "504",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 350.33,
+        "spend_display": "350",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1809,7 +2557,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 330.87,
+        "spend": 331.19,
         "spend_display": "331",
         "conversions": 0,
         "revenue": 0.0,
@@ -1820,8 +2568,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 312.49,
-        "spend_display": "312",
+        "spend": 314.49,
+        "spend_display": "314",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1831,8 +2579,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 296.65,
-        "spend_display": "297",
+        "spend": 298.08,
+        "spend_display": "298",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1842,8 +2590,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 287.44,
-        "spend_display": "287",
+        "spend": 288.31,
+        "spend_display": "288",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1875,8 +2623,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.7,
-        "spend_display": "137",
+        "spend": 139.44,
+        "spend_display": "139",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1886,8 +2634,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.81,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1908,10 +2656,70 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 2162.12,
+        "spend_display": "2.2K",
+        "conversions": 3,
+        "revenue": 16832.49,
+        "revenue_display": "17K",
+        "roas": 7.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 1852.85,
+        "spend_display": "1.9K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 7.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 955.32,
+        "spend_display": "955",
+        "conversions": 1,
+        "revenue": 8491.25,
+        "revenue_display": "8.5K",
+        "roas": 8.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 1118.68,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 7.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 2586.15,
+        "spend_display": "2.6K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 2.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.85,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.4
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 815.43,
-        "spend_display": "815",
+        "spend": 817.5,
+        "spend_display": "818",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -1920,80 +2728,80 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 1054.91,
+        "spend": 1060.31,
         "spend_display": "1.1K",
         "conversions": 2,
         "revenue": 2627.08,
         "revenue_display": "2.6K",
         "roas": 2.5
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 586.77,
-        "spend_display": "587",
-        "conversions": 1,
-        "revenue": 1754.87,
-        "revenue_display": "1.8K",
-        "roas": 3.0
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 736.12,
-        "spend_display": "736",
-        "conversions": 0,
-        "revenue": 470.53,
-        "revenue_display": "471",
-        "roas": 0.6
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 1259.2,
-        "spend_display": "1.3K",
-        "conversions": 0,
-        "revenue": 166.38,
-        "revenue_display": "166",
-        "roas": 0.1
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Kos",
-        "spend": 295.11,
-        "spend_display": "295",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Chania (Crete)",
-        "spend": 42.33,
-        "spend_display": "42",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Antalya",
-        "spend": 3.21,
-        "spend_display": "3",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
       }
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 2162.12,
+        "spend_display": "2.2K",
+        "conversions": 3,
+        "revenue": 16832.49,
+        "revenue_display": "17K",
+        "roas": 7.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 1852.85,
+        "spend_display": "1.9K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 7.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 955.32,
+        "spend_display": "955",
+        "conversions": 1,
+        "revenue": 8491.25,
+        "revenue_display": "8.5K",
+        "roas": 8.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 1118.68,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 7.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 2586.15,
+        "spend_display": "2.6K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 2.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.85,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.4
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 815.43,
-        "spend_display": "815",
+        "spend": 817.5,
+        "spend_display": "818",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -2002,7 +2810,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 1054.91,
+        "spend": 1060.31,
         "spend_display": "1.1K",
         "conversions": 2,
         "revenue": 2627.08,
@@ -2012,8 +2820,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 586.77,
-        "spend_display": "587",
+        "spend": 590.46,
+        "spend_display": "590",
         "conversions": 1,
         "revenue": 1754.87,
         "revenue_display": "1.8K",
@@ -2022,8 +2830,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 736.12,
-        "spend_display": "736",
+        "spend": 740.23,
+        "spend_display": "740",
         "conversions": 0,
         "revenue": 470.53,
         "revenue_display": "471",
@@ -2032,7 +2840,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 1259.2,
+        "spend": 1261.25,
         "spend_display": "1.3K",
         "conversions": 0,
         "revenue": 166.38,
@@ -2042,8 +2850,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 295.11,
-        "spend_display": "295",
+        "spend": 296.99,
+        "spend_display": "297",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2052,8 +2860,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 42.33,
-        "spend_display": "42",
+        "spend": 43.38,
+        "spend_display": "43",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2072,7 +2880,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 108.72,
+        "spend": 109.28,
         "spend_display": "109",
         "conversions": 0,
         "revenue": 0.0,
@@ -2082,8 +2890,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 197.16,
-        "spend_display": "197",
+        "spend": 197.95,
+        "spend_display": "198",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2092,18 +2900,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 106.35,
-        "spend_display": "106",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 491.71,
-        "spend_display": "492",
+        "spend": 107.49,
+        "spend_display": "107",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2112,8 +2910,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 482.34,
-        "spend_display": "482",
+        "spend": 483.54,
+        "spend_display": "484",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2122,8 +2920,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 319.13,
-        "spend_display": "319",
+        "spend": 317.59,
+        "spend_display": "318",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇨🇾 Cyprus",
+        "spend": 493.98,
+        "spend_display": "494",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2132,38 +2940,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 312.49,
-        "spend_display": "312",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 141.11,
-        "spend_display": "141",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 279.1,
-        "spend_display": "279",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 644.85,
-        "spend_display": "645",
+        "spend": 314.49,
+        "spend_display": "314",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2172,7 +2950,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 194.23,
+        "spend": 194.29,
         "spend_display": "194",
         "conversions": 0,
         "revenue": 0.0,
@@ -2181,8 +2959,18 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇰🇪 Kenya",
+        "spend": 141.13,
+        "spend_display": "141",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 605.57,
+        "spend": 605.85,
         "spend_display": "606",
         "conversions": 0,
         "revenue": 0.0,
@@ -2192,7 +2980,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 195.95,
+        "spend": 196.08,
         "spend_display": "196",
         "conversions": 0,
         "revenue": 0.0,
@@ -2201,9 +2989,169 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇻🇳 Vietnam",
+        "spend": 645.24,
+        "spend_display": "645",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 279.13,
+        "spend_display": "279",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 21.58,
+        "spend": 22.31,
         "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 1595.22,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 2011.83,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 501.94,
+        "spend_display": "502",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 1304.77,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 1252.25,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 865.3,
+        "spend_display": "865",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 1201.83,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 1069.27,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 970.7,
+        "spend_display": "971",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 600.79,
+        "spend_display": "601",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 164.71,
+        "spend_display": "165",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 491.8,
+        "spend_display": "492",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 156.16,
+        "spend_display": "156",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 273.46,
+        "spend_display": "273",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2229,15 +3177,15 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Iasi",
-        "desc": "This campaign spends 685 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 687 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -2274,67 +3222,67 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        784.63,
-        854.6,
-        820.93,
-        873.57,
-        803.55,
-        792.57,
-        834.53,
-        911.65,
-        914.09,
-        797.95,
-        791.68,
-        706.25,
-        799.98,
-        654.59
+        2385.81,
+        2700.96,
+        2824.56,
+        2613.02,
+        2381.94,
+        2386.52,
+        2400.73,
+        2468.06,
+        2757.04,
+        2466.55,
+        2397.67,
+        2239.66,
+        2334.77,
+        1996.77
       ],
       "roas": [
-        2.35,
+        4.33,
+        4.32,
+        0.02,
+        0.13,
+        3.1,
+        4.87,
+        0.21,
+        1.7,
         0.0,
-        0.05,
-        0.38,
-        1.79,
-        0.0,
-        0.59,
-        0.32,
-        0.0,
-        0.0,
-        0.63,
-        4.37,
-        1.44,
+        2.09,
+        0.21,
+        3.73,
+        4.06,
         0.0
       ],
       "revenue": [
-        1844.5,
-        0.0,
+        10335.75,
+        11666.1,
         44.81,
         332.76,
-        1441.08,
-        0.0,
+        7390.18,
+        11622.9,
         496.47,
-        293.05,
+        4201.31,
         0.0,
-        0.0,
+        5166.39,
         502.4,
-        3086.42,
-        1155.53,
+        8349.64,
+        9484.51,
         0.0
       ],
       "conversions": [
-        1.07,
-        0.0,
+        2.07,
+        2.0,
         0.03,
         0.29,
-        1.71,
-        0.0,
+        2.71,
+        2.0,
         0.67,
-        0.37,
+        1.37,
         0.0,
-        0.0,
+        1.0,
         0.5,
-        2.5,
-        0.87,
+        3.5,
+        1.87,
         0.0
       ],
       "granularity": "day"
@@ -2351,6 +3299,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "30",
+        "full_label": "30 May 2026",
+        "date": "2026-05-30",
+        "spend": 1601.18,
+        "conversions": 1.0,
+        "revenue": 8491.25,
+        "roas": 5.3,
+        "platform": "meta"
+      },
+      {
         "label": "31",
         "full_label": "31 May 2026",
         "date": "2026-05-31",
@@ -2359,6 +3317,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "31",
+        "full_label": "31 May 2026",
+        "date": "2026-05-31",
+        "spend": 1846.36,
+        "conversions": 2.0,
+        "revenue": 11666.1,
+        "roas": 6.32,
+        "platform": "meta"
       },
       {
         "label": "01",
@@ -2371,6 +3339,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "01",
+        "full_label": "01 Jun 2026",
+        "date": "2026-06-01",
+        "spend": 2003.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "02",
         "full_label": "02 Jun 2026",
         "date": "2026-06-02",
@@ -2379,6 +3357,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 332.76,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "02",
+        "full_label": "02 Jun 2026",
+        "date": "2026-06-02",
+        "spend": 1739.45,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "03",
@@ -2391,6 +3379,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "03",
+        "full_label": "03 Jun 2026",
+        "date": "2026-06-03",
+        "spend": 1578.39,
+        "conversions": 1.0,
+        "revenue": 5949.1,
+        "roas": 3.77,
+        "platform": "meta"
+      },
+      {
         "label": "04",
         "full_label": "04 Jun 2026",
         "date": "2026-06-04",
@@ -2399,6 +3397,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "04",
+        "full_label": "04 Jun 2026",
+        "date": "2026-06-04",
+        "spend": 1593.95,
+        "conversions": 2.0,
+        "revenue": 11622.9,
+        "roas": 7.29,
+        "platform": "meta"
       },
       {
         "label": "05",
@@ -2411,6 +3419,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "05",
+        "full_label": "05 Jun 2026",
+        "date": "2026-06-05",
+        "spend": 1566.2,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "06",
         "full_label": "06 Jun 2026",
         "date": "2026-06-06",
@@ -2419,6 +3437,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 293.05,
         "roas": 0.32,
         "platform": "google"
+      },
+      {
+        "label": "06",
+        "full_label": "06 Jun 2026",
+        "date": "2026-06-06",
+        "spend": 1556.41,
+        "conversions": 1.0,
+        "revenue": 3908.26,
+        "roas": 2.51,
+        "platform": "meta"
       },
       {
         "label": "07",
@@ -2431,6 +3459,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "07",
+        "full_label": "07 Jun 2026",
+        "date": "2026-06-07",
+        "spend": 1842.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "08",
         "full_label": "08 Jun 2026",
         "date": "2026-06-08",
@@ -2439,6 +3477,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "08",
+        "full_label": "08 Jun 2026",
+        "date": "2026-06-08",
+        "spend": 1668.6,
+        "conversions": 1.0,
+        "revenue": 5166.39,
+        "roas": 3.1,
+        "platform": "meta"
       },
       {
         "label": "09",
@@ -2451,6 +3499,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "09",
+        "full_label": "09 Jun 2026",
+        "date": "2026-06-09",
+        "spend": 1605.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "10",
         "full_label": "10 Jun 2026",
         "date": "2026-06-10",
@@ -2459,6 +3517,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3086.42,
         "roas": 4.37,
         "platform": "google"
+      },
+      {
+        "label": "10",
+        "full_label": "10 Jun 2026",
+        "date": "2026-06-10",
+        "spend": 1533.41,
+        "conversions": 1.0,
+        "revenue": 5263.22,
+        "roas": 3.43,
+        "platform": "meta"
       },
       {
         "label": "11",
@@ -2471,19 +3539,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 Jun 2026",
+        "date": "2026-06-11",
+        "spend": 1534.79,
+        "conversions": 1.0,
+        "revenue": 8328.98,
+        "roas": 5.43,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -2497,33 +3585,33 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "25",
+        "display": "75",
         "unit": "K RON",
-        "delta_display": "↓ 15%",
+        "delta_display": "↓ 17%",
         "delta_dir": "down"
       },
       "revenue": {
-        "display": "62",
+        "display": "176",
         "unit": "K RON",
-        "delta_display": "↑ 210%",
-        "delta_dir": "up"
+        "delta_display": "↓ 44%",
+        "delta_dir": "down"
       },
       "roas_global": {
-        "display": "2.48",
+        "display": "2.36",
         "unit": "x",
-        "delta_display": "↑ 1.8x",
-        "delta_dir": "up"
+        "delta_display": "↓ 1.1x",
+        "delta_dir": "down"
       },
       "conversions": {
-        "display": "32",
+        "display": "49",
         "unit": "",
-        "delta_display": "↑ 171%",
+        "delta_display": "↑ 37%",
         "delta_dir": "up"
       },
       "cpa_avg": {
-        "display": "783",
+        "display": "1525",
         "unit": "RON",
-        "delta_display": "↓ 69%",
+        "delta_display": "↓ 39%",
         "delta_dir": "up"
       }
     },
@@ -2537,20 +3625,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 2.5,
         "roas_class": "bad",
         "conversions": 32,
-        "cpa_display": "783 RON",
-        "share_pct": 100
+        "cpa_display": "784 RON",
+        "share_pct": 34
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "50K",
+        "roas": 2.3,
+        "roas_class": "bad",
+        "conversions": 17,
+        "cpa_display": "2,915 RON",
+        "share_pct": 66
       },
       "bing": {
         "name": "Bing Ads",
@@ -2581,7 +3669,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 5054.73,
+        "spend": 5061.9,
         "spend_display": "5.1K",
         "conversions": 25,
         "revenue": 49155.34,
@@ -2590,9 +3678,64 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "good"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 1456.15,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 4606.53,
+        "spend_display": "4.6K",
+        "conversions": 2,
+        "revenue": 17440.46,
+        "revenue_display": "17K",
+        "roas": 3.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 8357.09,
+        "spend_display": "8.4K",
+        "conversions": 4,
+        "revenue": 31385.62,
+        "revenue_display": "31K",
+        "roas": 3.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 5238.32,
+        "spend_display": "5.2K",
+        "conversions": 3,
+        "revenue": 18625.27,
+        "revenue_display": "19K",
+        "roas": 3.6,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 6136.6,
+        "spend_display": "6.1K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 2.7,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 1450.76,
+        "spend": 1454.3,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 2763.25,
@@ -2601,77 +3744,88 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 4090.3,
-        "spend_display": "4.1K",
-        "conversions": 1,
-        "revenue": 5485.72,
-        "revenue_display": "5.5K",
-        "roas": 1.3,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Search | Protect brand",
-        "spend": 2388.51,
-        "spend_display": "2.4K",
-        "conversions": 3,
-        "revenue": 2466.94,
-        "revenue_display": "2.5K",
-        "roas": 1.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Circuite Exotice",
-        "spend": 2662.29,
-        "spend_display": "2.7K",
-        "conversions": 1,
-        "revenue": 2004.19,
-        "revenue_display": "2K",
-        "roas": 0.8,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 2594.81,
-        "spend_display": "2.6K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 1465.79,
-        "spend_display": "1.5K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1034.39,
-        "spend_display": "1K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 6263.8,
+        "spend_display": "6.3K",
+        "conversions": 2,
+        "revenue": 11168.15,
+        "revenue_display": "11K",
+        "roas": 1.8,
         "roas_class": "bad"
       }
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 8357.09,
+        "spend_display": "8.4K",
+        "conversions": 4,
+        "revenue": 31385.62,
+        "revenue_display": "31K",
+        "roas": 3.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 7192.56,
+        "spend_display": "7.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 7141.35,
+        "spend_display": "7.1K",
+        "conversions": 2,
+        "revenue": 11257.03,
+        "revenue_display": "11K",
+        "roas": 1.6,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 6263.8,
+        "spend_display": "6.3K",
+        "conversions": 2,
+        "revenue": 11168.15,
+        "revenue_display": "11K",
+        "roas": 1.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 6136.6,
+        "spend_display": "6.1K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 2.7,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 5238.32,
+        "spend_display": "5.2K",
+        "conversions": 3,
+        "revenue": 18625.27,
+        "revenue_display": "19K",
+        "roas": 3.6,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 5054.73,
+        "spend": 5061.9,
         "spend_display": "5.1K",
         "conversions": 25,
         "revenue": 49155.34,
@@ -2680,9 +3834,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "good"
       },
       {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 4606.53,
+        "spend_display": "4.6K",
+        "conversions": 2,
+        "revenue": 17440.46,
+        "revenue_display": "17K",
+        "roas": 3.8,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 4090.3,
+        "spend": 4094.75,
         "spend_display": "4.1K",
         "conversions": 1,
         "revenue": 5485.72,
@@ -2691,9 +3856,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 2772.47,
+        "spend_display": "2.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 2662.29,
+        "spend": 2663.09,
         "spend_display": "2.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -2704,7 +3880,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 2594.81,
+        "spend": 2594.92,
         "spend_display": "2.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2715,7 +3891,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 2388.51,
+        "spend": 2391.16,
         "spend_display": "2.4K",
         "conversions": 3,
         "revenue": 2466.94,
@@ -2726,7 +3902,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 1465.79,
+        "spend": 1466.95,
         "spend_display": "1.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2735,9 +3911,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 1456.15,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 1450.76,
+        "spend": 1454.3,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 2763.25,
@@ -2748,7 +3935,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1034.39,
+        "spend": 1035.26,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2759,8 +3946,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 902.22,
-        "spend_display": "902",
+        "spend": 903.64,
+        "spend_display": "904",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2770,8 +3957,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 723.41,
-        "spend_display": "723",
+        "spend": 723.73,
+        "spend_display": "724",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2781,8 +3968,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 708.36,
-        "spend_display": "708",
+        "spend": 710.35,
+        "spend_display": "710",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2814,8 +4001,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "spend": 504.28,
+        "spend_display": "504",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 383.23,
+        "spend_display": "383",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2825,8 +4023,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.71,
-        "spend_display": "137",
+        "spend": 139.44,
+        "spend_display": "139",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2836,8 +4034,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.82,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2860,109 +4058,179 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 2528.59,
+        "spend": 2533.99,
         "spend_display": "2.5K",
         "conversions": 13,
         "revenue": 25168.34,
         "revenue_display": "25K",
-        "roas": 10.0
+        "roas": 9.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 4634.48,
+        "spend_display": "4.6K",
+        "conversions": 4,
+        "revenue": 22051.54,
+        "revenue_display": "22K",
+        "roas": 4.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 3920.85,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 3.6
       },
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 826.76,
-        "spend_display": "827",
+        "spend": 825.22,
+        "spend_display": "825",
         "conversions": 3,
         "revenue": 13690.86,
         "revenue_display": "14K",
         "roas": 16.6
       },
       {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 2477.14,
-        "spend_display": "2.5K",
-        "conversions": 4,
-        "revenue": 7621.05,
-        "revenue_display": "7.6K",
-        "roas": 3.1
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 2124.69,
+        "spend_display": "2.1K",
+        "conversions": 2,
+        "revenue": 13458.88,
+        "revenue_display": "13K",
+        "roas": 6.3
       },
       {
-        "platform": "google",
-        "name": "🇹🇳 Tunisia",
-        "spend": 1631.86,
-        "spend_display": "1.6K",
-        "conversions": 6,
-        "revenue": 7567.99,
-        "revenue_display": "7.6K",
-        "roas": 4.6
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 356.35,
+        "spend_display": "356",
+        "conversions": 1,
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 34.2
       },
       {
-        "platform": "google",
+        "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 1219.74,
-        "spend_display": "1.2K",
+        "spend": 4416.48,
+        "spend_display": "4.4K",
         "conversions": 1,
-        "revenue": 1754.87,
-        "revenue_display": "1.8K",
-        "roas": 1.4
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 2.2
       },
       {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 1464.27,
-        "spend_display": "1.5K",
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 1046.31,
+        "spend_display": "1K",
         "conversions": 1,
-        "revenue": 1306.94,
-        "revenue_display": "1.3K",
-        "roas": 0.9
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 1688.41,
-        "spend_display": "1.7K",
-        "conversions": 1,
-        "revenue": 1296.37,
-        "revenue_display": "1.3K",
-        "roas": 0.8
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇭 Thailand",
-        "spend": 1220.03,
-        "spend_display": "1.2K",
-        "conversions": 0,
-        "revenue": 707.83,
-        "revenue_display": "708",
-        "roas": 0.6
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 9.4
       }
     ],
     "destinations_all": [
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 2528.59,
+        "spend": 2533.99,
         "spend_display": "2.5K",
         "conversions": 13,
         "revenue": 25168.34,
         "revenue_display": "25K",
-        "roas": 10.0
+        "roas": 9.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 4634.48,
+        "spend_display": "4.6K",
+        "conversions": 4,
+        "revenue": 22051.54,
+        "revenue_display": "22K",
+        "roas": 4.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 3920.85,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 3.6
       },
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 826.76,
-        "spend_display": "827",
+        "spend": 825.22,
+        "spend_display": "825",
         "conversions": 3,
         "revenue": 13690.86,
         "revenue_display": "14K",
         "roas": 16.6
       },
       {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 2124.69,
+        "spend_display": "2.1K",
+        "conversions": 2,
+        "revenue": 13458.88,
+        "revenue_display": "13K",
+        "roas": 6.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 356.35,
+        "spend_display": "356",
+        "conversions": 1,
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 34.2
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 4416.48,
+        "spend_display": "4.4K",
+        "conversions": 1,
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 2.2
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 1046.31,
+        "spend_display": "1K",
+        "conversions": 1,
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 9.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 2387.05,
+        "spend_display": "2.4K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 3.5
+      },
+      {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 2477.14,
+        "spend": 2479.18,
         "spend_display": "2.5K",
         "conversions": 4,
         "revenue": 7621.05,
@@ -2972,7 +4240,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 1631.86,
+        "spend": 1633.93,
         "spend_display": "1.6K",
         "conversions": 6,
         "revenue": 7567.99,
@@ -2980,9 +4248,49 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 4.6
       },
       {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 5465.33,
+        "spend_display": "5.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 1.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 1382.07,
+        "spend_display": "1.4K",
+        "conversions": 1,
+        "revenue": 6504.84,
+        "revenue_display": "6.5K",
+        "roas": 4.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.85,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 2259.25,
+        "spend_display": "2.3K",
+        "conversions": 1,
+        "revenue": 4752.19,
+        "revenue_display": "4.8K",
+        "roas": 2.1
+      },
+      {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 1219.74,
+        "spend": 1223.42,
         "spend_display": "1.2K",
         "conversions": 1,
         "revenue": 1754.87,
@@ -2992,7 +4300,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 1464.27,
+        "spend": 1468.38,
         "spend_display": "1.5K",
         "conversions": 1,
         "revenue": 1306.94,
@@ -3002,7 +4310,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 1688.41,
+        "spend": 1688.81,
         "spend_display": "1.7K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -3012,7 +4320,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 1220.03,
+        "spend": 1220.31,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 707.83,
@@ -3022,8 +4330,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 959.45,
-        "spend_display": "959",
+        "spend": 960.66,
+        "spend_display": "961",
         "conversions": 0,
         "revenue": 294.27,
         "revenue_display": "294",
@@ -3052,8 +4360,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 831.65,
-        "spend_display": "832",
+        "spend": 833.53,
+        "spend_display": "834",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3062,28 +4370,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 49.74,
-        "spend_display": "50",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 134.03,
-        "spend_display": "134",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Rhodes",
-        "spend": 910.28,
-        "spend_display": "910",
+        "spend": 50.79,
+        "spend_display": "51",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3101,9 +4389,29 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 134.6,
+        "spend_display": "135",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Rhodes",
+        "spend": 911.07,
+        "spend_display": "911",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 239.01,
-        "spend_display": "239",
+        "spend": 240.15,
+        "spend_display": "240",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3112,8 +4420,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 878.41,
-        "spend_display": "878",
+        "spend": 880.68,
+        "spend_display": "881",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3122,8 +4430,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 708.35,
-        "spend_display": "708",
+        "spend": 710.35,
+        "spend_display": "710",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3132,7 +4440,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 441.21,
+        "spend": 441.26,
         "spend_display": "441",
         "conversions": 0,
         "revenue": 0.0,
@@ -3142,7 +4450,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 420.24,
+        "spend": 420.25,
         "spend_display": "420",
         "conversions": 0,
         "revenue": 0.0,
@@ -3152,7 +4460,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 452.68,
+        "spend": 452.81,
         "spend_display": "453",
         "conversions": 0,
         "revenue": 0.0,
@@ -3162,7 +4470,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇽 Mexico",
-        "spend": 1034.53,
+        "spend": 1034.57,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3172,8 +4480,98 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 21.58,
+        "spend": 22.31,
         "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 3456.77,
+        "spend_display": "3.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 2818.21,
+        "spend_display": "2.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 2758.24,
+        "spend_display": "2.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 2646.26,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 2469.88,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 1306.69,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 349.75,
+        "spend_display": "350",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 1055.84,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 1047.43,
+        "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3185,7 +4583,7 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Agentie de turism",
-        "desc": "This campaign spends 723 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 724 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -3199,15 +4597,15 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Demand Gen - Boost",
-        "desc": "This campaign spends 902 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 904 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -3276,131 +4674,131 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        750.18,
-        915.33,
-        908.84,
-        868.0,
-        978.34,
-        782.17,
-        886.61,
-        814.24,
-        899.51,
-        744.02,
-        1006.78,
-        890.68,
-        760.24,
-        817.69,
-        811.13,
-        759.15,
-        784.63,
-        854.6,
-        820.93,
-        873.57,
-        803.55,
-        792.57,
-        834.53,
-        911.65,
-        914.09,
-        797.95,
-        791.68,
-        706.25,
-        799.98,
-        654.59
+        2367.0,
+        2490.17,
+        2666.08,
+        2709.2,
+        2693.63,
+        2429.56,
+        2545.69,
+        2453.76,
+        2455.19,
+        2207.04,
+        2969.93,
+        2492.01,
+        2363.67,
+        2472.73,
+        2459.52,
+        2386.74,
+        2385.81,
+        2700.96,
+        2824.56,
+        2613.02,
+        2381.94,
+        2386.52,
+        2400.73,
+        2468.06,
+        2757.04,
+        2466.55,
+        2397.67,
+        2239.66,
+        2334.77,
+        1996.77
       ],
       "roas": [
-        2.43,
-        7.57,
-        5.27,
+        2.78,
+        2.78,
+        1.8,
+        1.83,
+        1.94,
+        11.09,
+        2.02,
+        0.13,
+        6.27,
         0.0,
+        4.36,
+        4.79,
+        0.56,
+        0.29,
+        1.15,
         0.0,
-        6.26,
-        5.79,
-        0.38,
-        17.13,
+        4.33,
+        4.32,
+        0.02,
+        0.13,
+        3.1,
+        4.87,
+        0.21,
+        1.7,
         0.0,
-        6.39,
-        2.34,
-        1.74,
-        0.87,
-        3.49,
-        0.0,
-        2.35,
-        0.0,
-        0.05,
-        0.38,
-        1.79,
-        0.0,
-        0.59,
-        0.32,
-        0.0,
-        0.0,
-        0.63,
-        4.37,
-        1.44,
+        2.09,
+        0.21,
+        3.73,
+        4.06,
         0.0
       ],
       "revenue": [
-        1825.09,
+        6577.28,
         6933.51,
         4789.65,
-        0.0,
-        0.0,
-        4896.49,
+        4967.63,
+        5219.05,
+        26933.49,
         5136.06,
         310.29,
         15405.97,
         0.0,
-        6431.16,
-        2085.13,
+        12936.0,
+        11944.89,
         1325.94,
         707.83,
         2831.3,
         0.0,
-        1844.5,
-        0.0,
+        10335.75,
+        11666.1,
         44.81,
         332.76,
-        1441.08,
-        0.0,
+        7390.18,
+        11622.9,
         496.47,
-        293.05,
+        4201.31,
         0.0,
-        0.0,
+        5166.39,
         502.4,
-        3086.42,
-        1155.53,
+        8349.64,
+        9484.51,
         0.0
       ],
       "conversions": [
-        2.0,
+        3.0,
         2.0,
         4.0,
-        0.0,
-        0.0,
-        3.0,
+        1.0,
+        1.0,
+        5.0,
         3.0,
         0.37,
         4.83,
         0.0,
+        3.0,
         2.0,
-        1.0,
         1.0,
         0.13,
         0.53,
         0.0,
-        1.07,
-        0.0,
+        2.07,
+        2.0,
         0.03,
         0.29,
-        1.71,
-        0.0,
+        2.71,
+        2.0,
         0.67,
-        0.37,
+        1.37,
         0.0,
-        0.0,
+        1.0,
         0.5,
-        2.5,
-        0.87,
+        3.5,
+        1.87,
         0.0
       ],
       "granularity": "day"
@@ -3417,6 +4815,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "14",
+        "full_label": "14 May 2026",
+        "date": "2026-05-14",
+        "spend": 1616.82,
+        "conversions": 1.0,
+        "revenue": 4752.19,
+        "roas": 2.94,
+        "platform": "meta"
+      },
+      {
         "label": "15",
         "full_label": "15 May 2026",
         "date": "2026-05-15",
@@ -3425,6 +4833,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 6933.51,
         "roas": 7.57,
         "platform": "google"
+      },
+      {
+        "label": "15",
+        "full_label": "15 May 2026",
+        "date": "2026-05-15",
+        "spend": 1574.84,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "16",
@@ -3437,6 +4855,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "16",
+        "full_label": "16 May 2026",
+        "date": "2026-05-16",
+        "spend": 1757.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "17",
         "full_label": "17 May 2026",
         "date": "2026-05-17",
@@ -3445,6 +4873,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "17",
+        "full_label": "17 May 2026",
+        "date": "2026-05-17",
+        "spend": 1841.2,
+        "conversions": 1.0,
+        "revenue": 4967.63,
+        "roas": 2.7,
+        "platform": "meta"
       },
       {
         "label": "18",
@@ -3457,6 +4895,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "18",
+        "full_label": "18 May 2026",
+        "date": "2026-05-18",
+        "spend": 1715.29,
+        "conversions": 1.0,
+        "revenue": 5219.05,
+        "roas": 3.04,
+        "platform": "meta"
+      },
+      {
         "label": "19",
         "full_label": "19 May 2026",
         "date": "2026-05-19",
@@ -3465,6 +4913,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 4896.49,
         "roas": 6.26,
         "platform": "google"
+      },
+      {
+        "label": "19",
+        "full_label": "19 May 2026",
+        "date": "2026-05-19",
+        "spend": 1647.39,
+        "conversions": 2.0,
+        "revenue": 22037.0,
+        "roas": 13.38,
+        "platform": "meta"
       },
       {
         "label": "20",
@@ -3477,6 +4935,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "20",
+        "full_label": "20 May 2026",
+        "date": "2026-05-20",
+        "spend": 1659.08,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "21",
         "full_label": "21 May 2026",
         "date": "2026-05-21",
@@ -3485,6 +4953,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 310.29,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "21",
+        "full_label": "21 May 2026",
+        "date": "2026-05-21",
+        "spend": 1639.52,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "22",
@@ -3497,6 +4975,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "22",
+        "full_label": "22 May 2026",
+        "date": "2026-05-22",
+        "spend": 1555.68,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "23",
         "full_label": "23 May 2026",
         "date": "2026-05-23",
@@ -3505,6 +4993,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "23",
+        "full_label": "23 May 2026",
+        "date": "2026-05-23",
+        "spend": 1463.02,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "24",
@@ -3517,6 +5015,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "24",
+        "full_label": "24 May 2026",
+        "date": "2026-05-24",
+        "spend": 1963.15,
+        "conversions": 1.0,
+        "revenue": 6504.84,
+        "roas": 3.31,
+        "platform": "meta"
+      },
+      {
         "label": "25",
         "full_label": "25 May 2026",
         "date": "2026-05-25",
@@ -3525,6 +5033,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 2085.13,
         "roas": 2.34,
         "platform": "google"
+      },
+      {
+        "label": "25",
+        "full_label": "25 May 2026",
+        "date": "2026-05-25",
+        "spend": 1601.33,
+        "conversions": 1.0,
+        "revenue": 9859.76,
+        "roas": 6.16,
+        "platform": "meta"
       },
       {
         "label": "26",
@@ -3537,6 +5055,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "26",
+        "full_label": "26 May 2026",
+        "date": "2026-05-26",
+        "spend": 1603.43,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "27",
         "full_label": "27 May 2026",
         "date": "2026-05-27",
@@ -3545,6 +5073,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 707.83,
         "roas": 0.87,
         "platform": "google"
+      },
+      {
+        "label": "27",
+        "full_label": "27 May 2026",
+        "date": "2026-05-27",
+        "spend": 1655.04,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "28",
@@ -3557,6 +5095,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "28",
+        "full_label": "28 May 2026",
+        "date": "2026-05-28",
+        "spend": 1648.39,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "29",
         "full_label": "29 May 2026",
         "date": "2026-05-29",
@@ -3565,6 +5113,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "29",
+        "full_label": "29 May 2026",
+        "date": "2026-05-29",
+        "spend": 1627.59,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "30",
@@ -3577,6 +5135,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "30",
+        "full_label": "30 May 2026",
+        "date": "2026-05-30",
+        "spend": 1601.18,
+        "conversions": 1.0,
+        "revenue": 8491.25,
+        "roas": 5.3,
+        "platform": "meta"
+      },
+      {
         "label": "31",
         "full_label": "31 May 2026",
         "date": "2026-05-31",
@@ -3585,6 +5153,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "31",
+        "full_label": "31 May 2026",
+        "date": "2026-05-31",
+        "spend": 1846.36,
+        "conversions": 2.0,
+        "revenue": 11666.1,
+        "roas": 6.32,
+        "platform": "meta"
       },
       {
         "label": "01",
@@ -3597,6 +5175,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "01",
+        "full_label": "01 Jun 2026",
+        "date": "2026-06-01",
+        "spend": 2003.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "02",
         "full_label": "02 Jun 2026",
         "date": "2026-06-02",
@@ -3605,6 +5193,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 332.76,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "02",
+        "full_label": "02 Jun 2026",
+        "date": "2026-06-02",
+        "spend": 1739.45,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "03",
@@ -3617,6 +5215,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "03",
+        "full_label": "03 Jun 2026",
+        "date": "2026-06-03",
+        "spend": 1578.39,
+        "conversions": 1.0,
+        "revenue": 5949.1,
+        "roas": 3.77,
+        "platform": "meta"
+      },
+      {
         "label": "04",
         "full_label": "04 Jun 2026",
         "date": "2026-06-04",
@@ -3625,6 +5233,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "04",
+        "full_label": "04 Jun 2026",
+        "date": "2026-06-04",
+        "spend": 1593.95,
+        "conversions": 2.0,
+        "revenue": 11622.9,
+        "roas": 7.29,
+        "platform": "meta"
       },
       {
         "label": "05",
@@ -3637,6 +5255,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "05",
+        "full_label": "05 Jun 2026",
+        "date": "2026-06-05",
+        "spend": 1566.2,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "06",
         "full_label": "06 Jun 2026",
         "date": "2026-06-06",
@@ -3645,6 +5273,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 293.05,
         "roas": 0.32,
         "platform": "google"
+      },
+      {
+        "label": "06",
+        "full_label": "06 Jun 2026",
+        "date": "2026-06-06",
+        "spend": 1556.41,
+        "conversions": 1.0,
+        "revenue": 3908.26,
+        "roas": 2.51,
+        "platform": "meta"
       },
       {
         "label": "07",
@@ -3657,6 +5295,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "07",
+        "full_label": "07 Jun 2026",
+        "date": "2026-06-07",
+        "spend": 1842.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "08",
         "full_label": "08 Jun 2026",
         "date": "2026-06-08",
@@ -3665,6 +5313,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "08",
+        "full_label": "08 Jun 2026",
+        "date": "2026-06-08",
+        "spend": 1668.6,
+        "conversions": 1.0,
+        "revenue": 5166.39,
+        "roas": 3.1,
+        "platform": "meta"
       },
       {
         "label": "09",
@@ -3677,6 +5335,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "09",
+        "full_label": "09 Jun 2026",
+        "date": "2026-06-09",
+        "spend": 1605.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "10",
         "full_label": "10 Jun 2026",
         "date": "2026-06-10",
@@ -3685,6 +5353,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3086.42,
         "roas": 4.37,
         "platform": "google"
+      },
+      {
+        "label": "10",
+        "full_label": "10 Jun 2026",
+        "date": "2026-06-10",
+        "spend": 1533.41,
+        "conversions": 1.0,
+        "revenue": 5263.22,
+        "roas": 3.43,
+        "platform": "meta"
       },
       {
         "label": "11",
@@ -3697,19 +5375,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 Jun 2026",
+        "date": "2026-06-11",
+        "spend": 1534.79,
+        "conversions": 1.0,
+        "revenue": 8328.98,
+        "roas": 5.43,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -3723,33 +5421,33 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "68",
+        "display": "193",
         "unit": "K RON",
-        "delta_display": "↓ 6%",
-        "delta_dir": "down"
+        "delta_display": "↑ 4%",
+        "delta_dir": "up"
       },
       "revenue": {
-        "display": "100",
+        "display": "511",
         "unit": "K RON",
-        "delta_display": "↑ 105%",
+        "delta_display": "↑ 58%",
         "delta_dir": "up"
       },
       "roas_global": {
-        "display": "1.46",
+        "display": "2.64",
         "unit": "x",
-        "delta_display": "↑ 0.8x",
+        "delta_display": "↑ 0.9x",
         "delta_dir": "up"
       },
       "conversions": {
-        "display": "57",
+        "display": "99",
         "unit": "",
-        "delta_display": "↓ 90%",
+        "delta_display": "↓ 84%",
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "1211",
+        "display": "1962",
         "unit": "RON",
-        "delta_display": "↑ 850%",
+        "delta_display": "↑ 531%",
         "delta_dir": "down"
       }
     },
@@ -3759,24 +5457,24 @@ window.PPC_DATA_BY_PERIOD = {
         "status": "connected",
         "status_label": "● Active",
         "status_class": "ok",
-        "spend_display": "68K",
+        "spend_display": "69K",
         "roas": 1.5,
         "roas_class": "bad",
         "conversions": 57,
-        "cpa_display": "1,211 RON",
-        "share_pct": 100
+        "cpa_display": "1,212 RON",
+        "share_pct": 35
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "125K",
+        "roas": 3.3,
+        "roas_class": "bad",
+        "conversions": 42,
+        "cpa_display": "2,971 RON",
+        "share_pct": 65
       },
       "bing": {
         "name": "Bing Ads",
@@ -3805,9 +5503,20 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 14623.48,
+        "spend_display": "15K",
+        "conversions": 11,
+        "revenue": 143077.96,
+        "revenue_display": "143K",
+        "roas": 9.8,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6435.21,
+        "spend": 6442.37,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
@@ -3816,88 +5525,88 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "Search | Agentie de turism",
-        "spend": 1986.03,
-        "spend_display": "2K",
+        "platform": "meta",
+        "name": "CIRCUITE MARTIE -TRAFIC",
+        "spend": 810.67,
+        "spend_display": "811",
+        "conversions": 1,
+        "revenue": 4500.16,
+        "revenue_display": "4.5K",
+        "roas": 5.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 1456.15,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 8445.88,
+        "spend_display": "8.4K",
         "conversions": 3,
-        "revenue": 4444.94,
-        "revenue_display": "4.4K",
-        "roas": 2.2,
-        "roas_class": "bad"
+        "revenue": 38066.92,
+        "revenue_display": "38K",
+        "roas": 4.5,
+        "roas_class": "warn"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 3636.83,
-        "spend_display": "3.6K",
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 15228.24,
+        "spend_display": "15K",
         "conversions": 4,
-        "revenue": 7865.48,
-        "revenue_display": "7.9K",
-        "roas": 2.2,
-        "roas_class": "bad"
+        "revenue": 62319.77,
+        "revenue_display": "62K",
+        "roas": 4.1,
+        "roas_class": "warn"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 3620.34,
-        "spend_display": "3.6K",
-        "conversions": 4,
-        "revenue": 5884.73,
-        "revenue_display": "5.9K",
-        "roas": 1.6,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Search | Sejururi - Plecare din Cluj",
-        "spend": 781.07,
-        "spend_display": "781",
-        "conversions": 1,
-        "revenue": 595.0,
-        "revenue_display": "595",
-        "roas": 0.8,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 15778.8,
-        "spend_display": "16K",
-        "conversions": 5,
-        "revenue": 11179.06,
-        "revenue_display": "11K",
-        "roas": 0.7,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Search | Protect brand",
-        "spend": 5761.28,
-        "spend_display": "5.8K",
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 12151.55,
+        "spend_display": "12K",
         "conversions": 6,
-        "revenue": 3882.84,
-        "revenue_display": "3.9K",
-        "roas": 0.7,
+        "revenue": 31921.71,
+        "revenue_display": "32K",
+        "roas": 2.6,
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Special Days",
-        "spend": 1721.1,
-        "spend_display": "1.7K",
-        "conversions": 1,
-        "revenue": 977.01,
-        "revenue_display": "977",
-        "roas": 0.6,
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 14520.38,
+        "spend_display": "15K",
+        "conversions": 5,
+        "revenue": 36649.74,
+        "revenue_display": "37K",
+        "roas": 2.5,
         "roas_class": "bad"
       }
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 19480.75,
+        "spend_display": "19K",
+        "conversions": 6,
+        "revenue": 45038.97,
+        "revenue_display": "45K",
+        "roas": 2.3,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 15778.8,
+        "spend": 15783.25,
         "spend_display": "16K",
         "conversions": 5,
         "revenue": 11179.06,
@@ -3906,9 +5615,97 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 15369.54,
+        "spend_display": "15K",
+        "conversions": 2,
+        "revenue": 16742.6,
+        "revenue_display": "17K",
+        "roas": 1.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 15228.24,
+        "spend_display": "15K",
+        "conversions": 4,
+        "revenue": 62319.77,
+        "revenue_display": "62K",
+        "roas": 4.1,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 14623.48,
+        "spend_display": "15K",
+        "conversions": 11,
+        "revenue": 143077.96,
+        "revenue_display": "143K",
+        "roas": 9.8,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 14520.38,
+        "spend_display": "15K",
+        "conversions": 5,
+        "revenue": 36649.74,
+        "revenue_display": "37K",
+        "roas": 2.5,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 12151.55,
+        "spend_display": "12K",
+        "conversions": 6,
+        "revenue": 31921.71,
+        "revenue_display": "32K",
+        "roas": 2.6,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Teasing Exotice",
+        "spend": 11136.35,
+        "spend_display": "11K",
+        "conversions": 2,
+        "revenue": 25383.93,
+        "revenue_display": "25K",
+        "roas": 2.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 8445.88,
+        "spend_display": "8.4K",
+        "conversions": 3,
+        "revenue": 38066.92,
+        "revenue_display": "38K",
+        "roas": 4.5,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 6558.36,
+        "spend_display": "6.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6435.21,
+        "spend": 6442.37,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
@@ -3919,7 +5716,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 5761.28,
+        "spend": 5763.93,
         "spend_display": "5.8K",
         "conversions": 6,
         "revenue": 3882.84,
@@ -3930,7 +5727,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 5665.96,
+        "spend": 5666.76,
         "spend_display": "5.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -3941,7 +5738,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 5602.96,
+        "spend": 5603.07,
         "spend_display": "5.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3952,7 +5749,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 4184.24,
+        "spend": 4185.65,
         "spend_display": "4.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3963,7 +5760,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 3636.83,
+        "spend": 3638.0,
         "spend_display": "3.6K",
         "conversions": 4,
         "revenue": 7865.48,
@@ -3974,7 +5771,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 3620.34,
+        "spend": 3623.88,
         "spend_display": "3.6K",
         "conversions": 4,
         "revenue": 5884.73,
@@ -3996,7 +5793,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 2354.75,
+        "spend": 2356.74,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4007,7 +5804,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 1986.03,
+        "spend": 1986.35,
         "spend_display": "2K",
         "conversions": 3,
         "revenue": 4444.94,
@@ -4038,6 +5835,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 1456.15,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Demand Gen | Exotice 7+7",
         "spend": 1304.64,
@@ -4060,6 +5868,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "CAPPADOCIA _ BUGET INTELIGENT _10 ORASE",
+        "spend": 1199.25,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Demand Gen - Circuite",
         "spend": 1173.0,
@@ -4073,8 +5892,30 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1136.66,
+        "spend": 1137.53,
         "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIRCUITE MARTIE -TRAFIC",
+        "spend": 810.67,
+        "spend_display": "811",
+        "conversions": 1,
+        "revenue": 4500.16,
+        "revenue_display": "4.5K",
+        "roas": 5.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Circuite - CHARTER AVION - TURCIA",
+        "spend": 808.92,
+        "spend_display": "809",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4104,10 +5945,87 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Super Oferte",
+        "spend": 577.34,
+        "spend_display": "577",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "spend": 504.28,
+        "spend_display": "504",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PRAGA - LEADS",
+        "spend": 486.85,
+        "spend_display": "487",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ISTANBUL AVION ALL BUCH",
+        "spend": 485.06,
+        "spend_display": "485",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURKISH DAYS TRAFFIC & AD onn call Campanie",
+        "spend": 448.95,
+        "spend_display": "449",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 383.23,
+        "spend_display": "383",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că...Istanbulul e casa celebrului Burak...”",
+        "spend": 282.34,
+        "spend_display": "282",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Oferte Angajare - Trafic",
+        "spend": 229.92,
+        "spend_display": "230",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4117,8 +6035,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.71,
-        "spend_display": "137",
+        "spend": 139.44,
+        "spend_display": "139",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4128,8 +6046,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.82,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Puglia, cine se trezește de dimineață...ajunge...”",
+        "spend": 93.74,
+        "spend_display": "94",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4150,101 +6079,161 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 4816.47,
+        "spend_display": "4.8K",
+        "conversions": 9,
+        "revenue": 119842.79,
+        "revenue_display": "120K",
+        "roas": 24.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 10820.17,
+        "spend_display": "11K",
+        "conversions": 10,
+        "revenue": 72166.41,
+        "revenue_display": "72K",
+        "roas": 6.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 5916.77,
+        "spend_display": "5.9K",
+        "conversions": 3,
+        "revenue": 56415.42,
+        "revenue_display": "56K",
+        "roas": 9.5
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 5527.46,
+        "spend": 5532.86,
         "spend_display": "5.5K",
         "conversions": 17,
         "revenue": 28481.26,
         "revenue_display": "28K",
-        "roas": 5.2
+        "roas": 5.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 9423.11,
+        "spend_display": "9.4K",
+        "conversions": 3,
+        "revenue": 24282.3,
+        "revenue_display": "24K",
+        "roas": 2.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 2200.57,
+        "spend_display": "2.2K",
+        "conversions": 1,
+        "revenue": 20626.46,
+        "revenue_display": "21K",
+        "roas": 9.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 10026.42,
+        "spend_display": "10K",
+        "conversions": 3,
+        "revenue": 18639.29,
+        "revenue_display": "19K",
+        "roas": 1.9
       },
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 7526.29,
+        "spend": 7528.34,
         "spend_display": "7.5K",
         "conversions": 9,
         "revenue": 18407.75,
         "revenue_display": "18K",
         "roas": 2.4
-      },
-      {
-        "platform": "google",
-        "name": "🇵🇹 Portugal",
-        "spend": 2428.14,
-        "spend_display": "2.4K",
-        "conversions": 5,
-        "revenue": 16144.49,
-        "revenue_display": "16K",
-        "roas": 6.6
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇳 Tunisia",
-        "spend": 2158.15,
-        "spend_display": "2.2K",
-        "conversions": 6,
-        "revenue": 9507.64,
-        "revenue_display": "9.5K",
-        "roas": 4.4
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 4355.28,
-        "spend_display": "4.4K",
-        "conversions": 4,
-        "revenue": 7781.68,
-        "revenue_display": "7.8K",
-        "roas": 1.8
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Turkey",
-        "spend": 3381.45,
-        "spend_display": "3.4K",
-        "conversions": 2,
-        "revenue": 4182.54,
-        "revenue_display": "4.2K",
-        "roas": 1.2
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 4165.36,
-        "spend_display": "4.2K",
-        "conversions": 2,
-        "revenue": 2934.75,
-        "revenue_display": "2.9K",
-        "roas": 0.7
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 3308.08,
-        "spend_display": "3.3K",
-        "conversions": 1,
-        "revenue": 1296.37,
-        "revenue_display": "1.3K",
-        "roas": 0.4
       }
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 4816.47,
+        "spend_display": "4.8K",
+        "conversions": 9,
+        "revenue": 119842.79,
+        "revenue_display": "120K",
+        "roas": 24.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 10820.17,
+        "spend_display": "11K",
+        "conversions": 10,
+        "revenue": 72166.41,
+        "revenue_display": "72K",
+        "roas": 6.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 5916.77,
+        "spend_display": "5.9K",
+        "conversions": 3,
+        "revenue": 56415.42,
+        "revenue_display": "56K",
+        "roas": 9.5
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 5527.46,
+        "spend": 5532.86,
         "spend_display": "5.5K",
         "conversions": 17,
         "revenue": 28481.26,
         "revenue_display": "28K",
-        "roas": 5.2
+        "roas": 5.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 9423.11,
+        "spend_display": "9.4K",
+        "conversions": 3,
+        "revenue": 24282.3,
+        "revenue_display": "24K",
+        "roas": 2.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 2200.57,
+        "spend_display": "2.2K",
+        "conversions": 1,
+        "revenue": 20626.46,
+        "revenue_display": "21K",
+        "roas": 9.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 10026.42,
+        "spend_display": "10K",
+        "conversions": 3,
+        "revenue": 18639.29,
+        "revenue_display": "19K",
+        "roas": 1.9
       },
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 7526.29,
+        "spend": 7528.34,
         "spend_display": "7.5K",
         "conversions": 9,
         "revenue": 18407.75,
@@ -4252,19 +6241,59 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 2.4
       },
       {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 3308.14,
+        "spend_display": "3.3K",
+        "conversions": 2,
+        "revenue": 17894.76,
+        "revenue_display": "18K",
+        "roas": 5.4
+      },
+      {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 2428.14,
+        "spend": 2426.6,
         "spend_display": "2.4K",
         "conversions": 5,
         "revenue": 16144.49,
         "revenue_display": "16K",
-        "roas": 6.6
+        "roas": 6.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 638.69,
+        "spend_display": "639",
+        "conversions": 1,
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 19.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 11567.34,
+        "spend_display": "12K",
+        "conversions": 3,
+        "revenue": 10851.31,
+        "revenue_display": "11K",
+        "roas": 0.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 2834.83,
+        "spend_display": "2.8K",
+        "conversions": 1,
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 3.5
       },
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 2158.15,
+        "spend": 2160.22,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 9507.64,
@@ -4272,9 +6301,19 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 4.4
       },
       {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 6053.35,
+        "spend_display": "6.1K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 1.4
+      },
+      {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 4355.28,
+        "spend": 4358.97,
         "spend_display": "4.4K",
         "conversions": 4,
         "revenue": 7781.68,
@@ -4282,9 +6321,29 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 1.8
       },
       {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.85,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 4951.25,
+        "spend_display": "5K",
+        "conversions": 1,
+        "revenue": 4752.19,
+        "revenue_display": "4.8K",
+        "roas": 1.0
+      },
+      {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 3381.45,
+        "spend": 3382.66,
         "spend_display": "3.4K",
         "conversions": 2,
         "revenue": 4182.54,
@@ -4294,7 +6353,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 4165.36,
+        "spend": 4169.47,
         "spend_display": "4.2K",
         "conversions": 2,
         "revenue": 2934.75,
@@ -4304,7 +6363,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 3308.08,
+        "spend": 3308.47,
         "spend_display": "3.3K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -4314,7 +6373,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 2293.72,
+        "spend": 2295.99,
         "spend_display": "2.3K",
         "conversions": 0,
         "revenue": 946.44,
@@ -4324,7 +6383,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 3000.14,
+        "spend": 3000.43,
         "spend_display": "3K",
         "conversions": 0,
         "revenue": 707.83,
@@ -4333,9 +6392,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇲🇪 Montenegro",
-        "spend": 2463.84,
-        "spend_display": "2.5K",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 1546.62,
+        "spend_display": "1.5K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4343,9 +6402,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇱🇰 Sri Lanka",
-        "spend": 1546.49,
-        "spend_display": "1.5K",
+        "name": "🇲🇪 Montenegro",
+        "spend": 2464.99,
+        "spend_display": "2.5K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4374,7 +6433,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 1172.22,
+        "spend": 1172.79,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4384,8 +6443,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 859.39,
-        "spend_display": "859",
+        "spend": 861.26,
+        "spend_display": "861",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4394,8 +6453,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 996.34,
-        "spend_display": "996",
+        "spend": 997.13,
+        "spend_display": "997",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4404,8 +6463,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 64.56,
-        "spend_display": "65",
+        "spend": 65.61,
+        "spend_display": "66",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4414,8 +6473,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 34.36,
-        "spend_display": "34",
+        "spend": 35.09,
+        "spend_display": "35",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4434,7 +6493,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 2354.74,
+        "spend": 2356.74,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4444,7 +6503,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1093.57,
+        "spend": 1093.62,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4454,7 +6513,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 1031.83,
+        "spend": 1031.84,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4464,8 +6523,98 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇽 Mexico",
-        "spend": 1902.93,
+        "spend": 1902.97,
         "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 7714.79,
+        "spend_display": "7.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Sorrento & Ischia",
+        "spend": 493.04,
+        "spend_display": "493",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Sardinia",
+        "spend": 1157.66,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 5862.51,
+        "spend_display": "5.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 5712.31,
+        "spend_display": "5.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 4846.8,
+        "spend_display": "4.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 1628.61,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 718.25,
+        "spend_display": "718",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 1367.98,
+        "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4497,9 +6646,9 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -4688,187 +6837,187 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        911.17,
-        789.73,
-        801.32,
-        895.01,
-        680.96,
-        673.19,
-        672.55,
-        693.57,
+        1709.03,
+        1452.9,
+        1444.31,
+        1418.06,
+        1157.99,
+        1145.01,
+        1173.42,
+        1232.56,
         0.0,
         60.27,
-        548.66,
-        294.82,
-        411.13,
-        695.75,
-        672.72,
-        644.15,
-        369.35,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        327.89,
-        668.6,
-        549.11,
-        554.81,
-        522.12,
-        617.88,
-        614.58,
-        554.5,
-        590.6,
-        573.12,
-        546.51,
-        786.41,
-        1088.99,
-        1184.75,
-        1115.78,
-        833.84,
-        998.96,
-        1367.09,
-        1327.85,
-        1171.04,
-        1207.03,
-        1063.64,
-        1060.87,
-        1125.01,
-        967.99,
-        1207.56,
-        1070.9,
-        1116.27,
-        1074.5,
-        711.3,
-        772.31,
-        643.44,
-        1060.61,
-        1075.11,
-        841.47,
-        985.04,
-        884.81,
-        874.39,
-        750.18,
-        915.33,
-        908.84,
-        868.0,
-        978.34,
-        782.17,
-        886.61,
-        814.24,
-        899.51,
-        744.02,
-        1006.78,
-        890.68,
-        760.24,
-        817.69,
-        811.13,
-        759.15,
-        784.63,
-        854.6,
-        820.93,
-        873.57,
-        803.55,
-        792.57,
-        834.53,
-        911.65,
-        914.09,
-        797.95,
-        791.68,
-        706.25,
-        799.98,
-        654.59
+        572.4,
+        377.16,
+        489.76,
+        843.3,
+        765.52,
+        1039.75,
+        926.66,
+        44.89,
+        44.06,
+        32.19,
+        33.56,
+        40.19,
+        939.36,
+        1741.93,
+        1670.26,
+        1718.88,
+        1630.71,
+        1929.19,
+        1653.58,
+        1509.36,
+        1186.97,
+        1141.94,
+        1535.9,
+        3692.59,
+        5778.63,
+        5301.0,
+        4613.41,
+        1828.52,
+        2472.91,
+        3782.67,
+        3502.11,
+        2870.79,
+        3355.53,
+        3106.47,
+        3045.08,
+        3289.92,
+        3210.8,
+        3613.8,
+        3422.27,
+        3548.51,
+        3360.36,
+        2670.35,
+        2324.28,
+        2243.14,
+        2602.56,
+        2646.93,
+        2449.59,
+        2491.74,
+        2459.25,
+        2435.6,
+        2367.0,
+        2490.17,
+        2666.08,
+        2709.2,
+        2693.63,
+        2429.56,
+        2545.69,
+        2453.76,
+        2455.19,
+        2207.04,
+        2969.93,
+        2492.01,
+        2363.67,
+        2472.73,
+        2459.52,
+        2386.74,
+        2385.81,
+        2700.96,
+        2824.56,
+        2613.02,
+        2381.94,
+        2386.52,
+        2400.73,
+        2468.06,
+        2757.04,
+        2466.55,
+        2397.67,
+        2239.66,
+        2334.77,
+        1996.77
       ],
       "roas": [
-        1.72,
-        4.84,
+        0.92,
+        2.63,
         0.0,
-        1.23,
-        0.97,
-        0.22,
-        0.95,
-        0.06,
-        0.0,
-        0.0,
-        0.52,
-        1.44,
-        9.46,
-        0.56,
-        0.19,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        3.43,
-        0.0,
-        2.25,
-        0.0,
-        0.0,
-        0.0,
-        2.18,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.82,
-        0.0,
-        0.0,
-        0.36,
-        0.0,
-        0.0,
-        0.0,
-        0.45,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        1.15,
-        1.04,
-        8.86,
+        0.77,
         0.57,
-        0.95,
-        4.66,
-        1.43,
+        0.13,
+        0.54,
+        3.69,
         0.0,
+        0.0,
+        0.5,
+        1.13,
+        7.94,
+        0.46,
+        0.17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.32,
+        0.0,
+        0.73,
+        0.0,
+        0.0,
+        0.0,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.04,
+        0.0,
+        0.83,
+        0.0,
+        21.42,
+        44.0,
+        0.0,
+        0.0,
+        0.0,
+        0.16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.21,
+        0.34,
+        17.14,
+        0.23,
+        0.39,
+        1.6,
+        3.52,
+        1.45,
+        4.01,
+        2.78,
+        2.78,
+        1.8,
+        1.83,
+        1.94,
+        11.09,
+        2.02,
+        0.13,
+        6.27,
+        0.0,
+        4.36,
+        4.79,
+        0.56,
+        0.29,
+        1.15,
+        0.0,
+        4.33,
+        4.32,
+        0.02,
+        0.13,
+        3.1,
+        4.87,
+        0.21,
+        1.7,
+        0.0,
+        2.09,
+        0.21,
         3.73,
-        2.43,
-        7.57,
-        5.27,
-        0.0,
-        0.0,
-        6.26,
-        5.79,
-        0.38,
-        17.13,
-        0.0,
-        6.39,
-        2.34,
-        1.74,
-        0.87,
-        3.49,
-        0.0,
-        2.35,
-        0.0,
-        0.05,
-        0.38,
-        1.79,
-        0.0,
-        0.59,
-        0.32,
-        0.0,
-        0.0,
-        0.63,
-        4.37,
-        1.44,
+        4.06,
         0.0
       ],
       "revenue": [
@@ -4879,7 +7028,7 @@ window.PPC_DATA_BY_PERIOD = {
         658.27,
         146.2,
         636.56,
-        43.21,
+        4543.37,
         0.0,
         0.0,
         283.53,
@@ -4907,60 +7056,60 @@ window.PPC_DATA_BY_PERIOD = {
         0.0,
         0.0,
         0.0,
-        0.0,
+        5512.93,
         0.0,
         1514.45,
         0.0,
+        81018.24,
+        154086.29,
+        0.0,
+        0.0,
         0.0,
         473.22,
         0.0,
         0.0,
         0.0,
-        473.22,
         0.0,
         0.0,
         0.0,
-        0.0,
-        0.0,
-        0.0,
-        816.32,
+        3218.94,
         799.74,
-        5699.72,
+        38454.97,
         599.59,
         1026.1,
         3920.84,
-        1409.32,
-        0.0,
-        3257.61,
-        1825.09,
+        8765.42,
+        3568.85,
+        9777.94,
+        6577.28,
         6933.51,
         4789.65,
-        0.0,
-        0.0,
-        4896.49,
+        4967.63,
+        5219.05,
+        26933.49,
         5136.06,
         310.29,
         15405.97,
         0.0,
-        6431.16,
-        2085.13,
+        12936.0,
+        11944.89,
         1325.94,
         707.83,
         2831.3,
         0.0,
-        1844.5,
-        0.0,
+        10335.75,
+        11666.1,
         44.81,
         332.76,
-        1441.08,
-        0.0,
+        7390.18,
+        11622.9,
         496.47,
-        293.05,
+        4201.31,
         0.0,
-        0.0,
+        5166.39,
         502.4,
-        3086.42,
-        1155.53,
+        8349.64,
+        9484.51,
         0.0
       ],
       "conversions": [
@@ -4971,7 +7120,7 @@ window.PPC_DATA_BY_PERIOD = {
         0.31,
         0.14,
         1.02,
-        0.09,
+        1.09,
         0.0,
         0.0,
         0.24,
@@ -4999,60 +7148,60 @@ window.PPC_DATA_BY_PERIOD = {
         0.0,
         0.0,
         0.0,
-        0.0,
+        1.0,
         0.0,
         0.5,
         0.0,
-        0.0,
-        0.25,
-        0.0,
-        0.0,
-        0.0,
-        0.25,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        2.0,
-        0.74,
-        1.5,
-        0.52,
-        1.0,
-        1.5,
-        1.0,
-        0.0,
-        2.49,
-        2.0,
-        2.0,
         4.0,
+        11.25,
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0,
         0.0,
         3.0,
+        0.74,
+        5.5,
+        0.52,
+        1.0,
+        1.5,
+        2.0,
+        1.0,
+        3.49,
+        3.0,
+        2.0,
+        4.0,
+        1.0,
+        1.0,
+        5.0,
         3.0,
         0.37,
         4.83,
         0.0,
+        3.0,
         2.0,
-        1.0,
         1.0,
         0.13,
         0.53,
         0.0,
-        1.07,
-        0.0,
+        2.07,
+        2.0,
         0.03,
         0.29,
-        1.71,
-        0.0,
+        2.71,
+        2.0,
         0.67,
-        0.37,
+        1.37,
         0.0,
-        0.0,
+        1.0,
         0.5,
-        2.5,
-        0.87,
+        3.5,
+        1.87,
         0.0
       ],
       "granularity": "day"
@@ -5069,6 +7218,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "15",
+        "full_label": "15 Mar 2026",
+        "date": "2026-03-15",
+        "spend": 797.86,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "16",
         "full_label": "16 Mar 2026",
         "date": "2026-03-16",
@@ -5077,6 +7236,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3822.35,
         "roas": 4.84,
         "platform": "google"
+      },
+      {
+        "label": "16",
+        "full_label": "16 Mar 2026",
+        "date": "2026-03-16",
+        "spend": 663.17,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "17",
@@ -5089,6 +7258,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "17",
+        "full_label": "17 Mar 2026",
+        "date": "2026-03-17",
+        "spend": 642.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "18",
         "full_label": "18 Mar 2026",
         "date": "2026-03-18",
@@ -5097,6 +7276,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1098.22,
         "roas": 1.23,
         "platform": "google"
+      },
+      {
+        "label": "18",
+        "full_label": "18 Mar 2026",
+        "date": "2026-03-18",
+        "spend": 523.05,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "19",
@@ -5109,6 +7298,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "19",
+        "full_label": "19 Mar 2026",
+        "date": "2026-03-19",
+        "spend": 477.03,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "20",
         "full_label": "20 Mar 2026",
         "date": "2026-03-20",
@@ -5117,6 +7316,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 146.2,
         "roas": 0.22,
         "platform": "google"
+      },
+      {
+        "label": "20",
+        "full_label": "20 Mar 2026",
+        "date": "2026-03-20",
+        "spend": 471.82,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "21",
@@ -5129,6 +7338,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "21",
+        "full_label": "21 Mar 2026",
+        "date": "2026-03-21",
+        "spend": 500.87,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "22",
         "full_label": "22 Mar 2026",
         "date": "2026-03-22",
@@ -5137,6 +7356,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 43.21,
         "roas": 0.06,
         "platform": "google"
+      },
+      {
+        "label": "22",
+        "full_label": "22 Mar 2026",
+        "date": "2026-03-22",
+        "spend": 538.99,
+        "conversions": 1.0,
+        "revenue": 4500.16,
+        "roas": 8.35,
+        "platform": "meta"
       },
       {
         "label": "23",
@@ -5149,6 +7378,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "23",
+        "full_label": "23 Mar 2026",
+        "date": "2026-03-23",
+        "spend": 0.0,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "24",
         "full_label": "24 Mar 2026",
         "date": "2026-03-24",
@@ -5157,6 +7396,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "24",
+        "full_label": "24 Mar 2026",
+        "date": "2026-03-24",
+        "spend": 0.0,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "25",
@@ -5169,6 +7418,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "25",
+        "full_label": "25 Mar 2026",
+        "date": "2026-03-25",
+        "spend": 23.74,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "26",
         "full_label": "26 Mar 2026",
         "date": "2026-03-26",
@@ -5177,6 +7436,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 425.3,
         "roas": 1.44,
         "platform": "google"
+      },
+      {
+        "label": "26",
+        "full_label": "26 Mar 2026",
+        "date": "2026-03-26",
+        "spend": 82.34,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "27",
@@ -5189,6 +7458,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "27",
+        "full_label": "27 Mar 2026",
+        "date": "2026-03-27",
+        "spend": 78.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "28",
         "full_label": "28 Mar 2026",
         "date": "2026-03-28",
@@ -5197,6 +7476,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 386.98,
         "roas": 0.56,
         "platform": "google"
+      },
+      {
+        "label": "28",
+        "full_label": "28 Mar 2026",
+        "date": "2026-03-28",
+        "spend": 147.55,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "29",
@@ -5209,6 +7498,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "29",
+        "full_label": "29 Mar 2026",
+        "date": "2026-03-29",
+        "spend": 92.8,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "30",
         "full_label": "30 Mar 2026",
         "date": "2026-03-30",
@@ -5217,6 +7516,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "30",
+        "full_label": "30 Mar 2026",
+        "date": "2026-03-30",
+        "spend": 395.6,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "31",
@@ -5229,6 +7538,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "31",
+        "full_label": "31 Mar 2026",
+        "date": "2026-03-31",
+        "spend": 557.31,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "01",
         "full_label": "01 Apr 2026",
         "date": "2026-04-01",
@@ -5237,6 +7556,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "01",
+        "full_label": "01 Apr 2026",
+        "date": "2026-04-01",
+        "spend": 44.89,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "02",
@@ -5249,6 +7578,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "02",
+        "full_label": "02 Apr 2026",
+        "date": "2026-04-02",
+        "spend": 44.06,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "03",
         "full_label": "03 Apr 2026",
         "date": "2026-04-03",
@@ -5257,6 +7596,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "03",
+        "full_label": "03 Apr 2026",
+        "date": "2026-04-03",
+        "spend": 32.19,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "04",
@@ -5269,6 +7618,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "04",
+        "full_label": "04 Apr 2026",
+        "date": "2026-04-04",
+        "spend": 33.56,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "05",
         "full_label": "05 Apr 2026",
         "date": "2026-04-05",
@@ -5277,6 +7636,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "05",
+        "full_label": "05 Apr 2026",
+        "date": "2026-04-05",
+        "spend": 40.19,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "06",
@@ -5289,6 +7658,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "06",
+        "full_label": "06 Apr 2026",
+        "date": "2026-04-06",
+        "spend": 611.47,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "07",
         "full_label": "07 Apr 2026",
         "date": "2026-04-07",
@@ -5297,6 +7676,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 2293.63,
         "roas": 3.43,
         "platform": "google"
+      },
+      {
+        "label": "07",
+        "full_label": "07 Apr 2026",
+        "date": "2026-04-07",
+        "spend": 1073.33,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "08",
@@ -5309,6 +7698,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "08",
+        "full_label": "08 Apr 2026",
+        "date": "2026-04-08",
+        "spend": 1121.15,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "09",
         "full_label": "09 Apr 2026",
         "date": "2026-04-09",
@@ -5317,6 +7716,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1248.45,
         "roas": 2.25,
         "platform": "google"
+      },
+      {
+        "label": "09",
+        "full_label": "09 Apr 2026",
+        "date": "2026-04-09",
+        "spend": 1164.07,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "10",
@@ -5329,6 +7738,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "10",
+        "full_label": "10 Apr 2026",
+        "date": "2026-04-10",
+        "spend": 1108.59,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "11",
         "full_label": "11 Apr 2026",
         "date": "2026-04-11",
@@ -5337,6 +7756,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "11",
+        "full_label": "11 Apr 2026",
+        "date": "2026-04-11",
+        "spend": 1311.31,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "12",
@@ -5349,6 +7778,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "12",
+        "full_label": "12 Apr 2026",
+        "date": "2026-04-12",
+        "spend": 1039.0,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "13",
         "full_label": "13 Apr 2026",
         "date": "2026-04-13",
@@ -5357,6 +7796,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1206.43,
         "roas": 2.18,
         "platform": "google"
+      },
+      {
+        "label": "13",
+        "full_label": "13 Apr 2026",
+        "date": "2026-04-13",
+        "spend": 954.86,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "14",
@@ -5369,6 +7818,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "14",
+        "full_label": "14 Apr 2026",
+        "date": "2026-04-14",
+        "spend": 596.37,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "15",
         "full_label": "15 Apr 2026",
         "date": "2026-04-15",
@@ -5377,6 +7836,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "15",
+        "full_label": "15 Apr 2026",
+        "date": "2026-04-15",
+        "spend": 568.82,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "16",
@@ -5389,6 +7858,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "16",
+        "full_label": "16 Apr 2026",
+        "date": "2026-04-16",
+        "spend": 989.39,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "17",
         "full_label": "17 Apr 2026",
         "date": "2026-04-17",
@@ -5397,6 +7876,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "17",
+        "full_label": "17 Apr 2026",
+        "date": "2026-04-17",
+        "spend": 2906.18,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "18",
@@ -5409,6 +7898,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "18",
+        "full_label": "18 Apr 2026",
+        "date": "2026-04-18",
+        "spend": 4689.64,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "19",
         "full_label": "19 Apr 2026",
         "date": "2026-04-19",
@@ -5417,6 +7916,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "19",
+        "full_label": "19 Apr 2026",
+        "date": "2026-04-19",
+        "spend": 4116.25,
+        "conversions": 1.0,
+        "revenue": 5512.93,
+        "roas": 1.34,
+        "platform": "meta"
       },
       {
         "label": "20",
@@ -5429,6 +7938,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "20",
+        "full_label": "20 Apr 2026",
+        "date": "2026-04-20",
+        "spend": 3497.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "21",
         "full_label": "21 Apr 2026",
         "date": "2026-04-21",
@@ -5437,6 +7956,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1514.45,
         "roas": 1.82,
         "platform": "google"
+      },
+      {
+        "label": "21",
+        "full_label": "21 Apr 2026",
+        "date": "2026-04-21",
+        "spend": 994.68,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "22",
@@ -5449,6 +7978,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "22",
+        "full_label": "22 Apr 2026",
+        "date": "2026-04-22",
+        "spend": 1473.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "23",
         "full_label": "23 Apr 2026",
         "date": "2026-04-23",
@@ -5457,6 +7996,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "23",
+        "full_label": "23 Apr 2026",
+        "date": "2026-04-23",
+        "spend": 2415.58,
+        "conversions": 4.0,
+        "revenue": 81018.24,
+        "roas": 33.54,
+        "platform": "meta"
       },
       {
         "label": "24",
@@ -5469,6 +8018,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "24",
+        "full_label": "24 Apr 2026",
+        "date": "2026-04-24",
+        "spend": 2174.26,
+        "conversions": 11.0,
+        "revenue": 153613.07,
+        "roas": 70.65,
+        "platform": "meta"
+      },
+      {
         "label": "25",
         "full_label": "25 Apr 2026",
         "date": "2026-04-25",
@@ -5477,6 +8036,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "25",
+        "full_label": "25 Apr 2026",
+        "date": "2026-04-25",
+        "spend": 1699.75,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "26",
@@ -5489,6 +8058,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "26",
+        "full_label": "26 Apr 2026",
+        "date": "2026-04-26",
+        "spend": 2148.5,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "27",
         "full_label": "27 Apr 2026",
         "date": "2026-04-27",
@@ -5497,6 +8076,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "27",
+        "full_label": "27 Apr 2026",
+        "date": "2026-04-27",
+        "spend": 2042.83,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "28",
@@ -5509,6 +8098,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "28",
+        "full_label": "28 Apr 2026",
+        "date": "2026-04-28",
+        "spend": 1984.21,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "29",
         "full_label": "29 Apr 2026",
         "date": "2026-04-29",
@@ -5517,6 +8116,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "29",
+        "full_label": "29 Apr 2026",
+        "date": "2026-04-29",
+        "spend": 2164.91,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "30",
@@ -5529,6 +8138,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "30",
+        "full_label": "30 Apr 2026",
+        "date": "2026-04-30",
+        "spend": 2242.81,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "01",
         "full_label": "01 May 2026",
         "date": "2026-05-01",
@@ -5537,6 +8156,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "01",
+        "full_label": "01 May 2026",
+        "date": "2026-05-01",
+        "spend": 2406.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "02",
@@ -5549,6 +8178,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "02",
+        "full_label": "02 May 2026",
+        "date": "2026-05-02",
+        "spend": 2351.37,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "03",
         "full_label": "03 May 2026",
         "date": "2026-05-03",
@@ -5557,6 +8196,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "03",
+        "full_label": "03 May 2026",
+        "date": "2026-05-03",
+        "spend": 2432.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "04",
@@ -5569,6 +8218,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "04",
+        "full_label": "04 May 2026",
+        "date": "2026-05-04",
+        "spend": 2285.86,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "05",
         "full_label": "05 May 2026",
         "date": "2026-05-05",
@@ -5577,6 +8236,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 816.32,
         "roas": 1.15,
         "platform": "google"
+      },
+      {
+        "label": "05",
+        "full_label": "05 May 2026",
+        "date": "2026-05-05",
+        "spend": 1959.05,
+        "conversions": 1.0,
+        "revenue": 2402.62,
+        "roas": 1.23,
+        "platform": "meta"
       },
       {
         "label": "06",
@@ -5589,6 +8258,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "06",
+        "full_label": "06 May 2026",
+        "date": "2026-05-06",
+        "spend": 1551.97,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "07",
         "full_label": "07 May 2026",
         "date": "2026-05-07",
@@ -5597,6 +8276,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 5699.72,
         "roas": 8.86,
         "platform": "google"
+      },
+      {
+        "label": "07",
+        "full_label": "07 May 2026",
+        "date": "2026-05-07",
+        "spend": 1599.7,
+        "conversions": 4.0,
+        "revenue": 32755.25,
+        "roas": 20.48,
+        "platform": "meta"
       },
       {
         "label": "08",
@@ -5609,6 +8298,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "08",
+        "full_label": "08 May 2026",
+        "date": "2026-05-08",
+        "spend": 1541.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "09",
         "full_label": "09 May 2026",
         "date": "2026-05-09",
@@ -5617,6 +8316,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1026.1,
         "roas": 0.95,
         "platform": "google"
+      },
+      {
+        "label": "09",
+        "full_label": "09 May 2026",
+        "date": "2026-05-09",
+        "spend": 1571.82,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "10",
@@ -5629,6 +8338,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "10",
+        "full_label": "10 May 2026",
+        "date": "2026-05-10",
+        "spend": 1608.12,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "11",
         "full_label": "11 May 2026",
         "date": "2026-05-11",
@@ -5637,6 +8356,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1409.32,
         "roas": 1.43,
         "platform": "google"
+      },
+      {
+        "label": "11",
+        "full_label": "11 May 2026",
+        "date": "2026-05-11",
+        "spend": 1506.7,
+        "conversions": 1.0,
+        "revenue": 7356.1,
+        "roas": 4.88,
+        "platform": "meta"
       },
       {
         "label": "12",
@@ -5649,6 +8378,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "12",
+        "full_label": "12 May 2026",
+        "date": "2026-05-12",
+        "spend": 1574.44,
+        "conversions": 1.0,
+        "revenue": 3568.85,
+        "roas": 2.27,
+        "platform": "meta"
+      },
+      {
         "label": "13",
         "full_label": "13 May 2026",
         "date": "2026-05-13",
@@ -5657,6 +8396,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3257.61,
         "roas": 3.73,
         "platform": "google"
+      },
+      {
+        "label": "13",
+        "full_label": "13 May 2026",
+        "date": "2026-05-13",
+        "spend": 1561.21,
+        "conversions": 1.0,
+        "revenue": 6520.33,
+        "roas": 4.18,
+        "platform": "meta"
       },
       {
         "label": "14",
@@ -5669,6 +8418,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "14",
+        "full_label": "14 May 2026",
+        "date": "2026-05-14",
+        "spend": 1616.82,
+        "conversions": 1.0,
+        "revenue": 4752.19,
+        "roas": 2.94,
+        "platform": "meta"
+      },
+      {
         "label": "15",
         "full_label": "15 May 2026",
         "date": "2026-05-15",
@@ -5677,6 +8436,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 6933.51,
         "roas": 7.57,
         "platform": "google"
+      },
+      {
+        "label": "15",
+        "full_label": "15 May 2026",
+        "date": "2026-05-15",
+        "spend": 1574.84,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "16",
@@ -5689,6 +8458,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "16",
+        "full_label": "16 May 2026",
+        "date": "2026-05-16",
+        "spend": 1757.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "17",
         "full_label": "17 May 2026",
         "date": "2026-05-17",
@@ -5697,6 +8476,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "17",
+        "full_label": "17 May 2026",
+        "date": "2026-05-17",
+        "spend": 1841.2,
+        "conversions": 1.0,
+        "revenue": 4967.63,
+        "roas": 2.7,
+        "platform": "meta"
       },
       {
         "label": "18",
@@ -5709,6 +8498,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "18",
+        "full_label": "18 May 2026",
+        "date": "2026-05-18",
+        "spend": 1715.29,
+        "conversions": 1.0,
+        "revenue": 5219.05,
+        "roas": 3.04,
+        "platform": "meta"
+      },
+      {
         "label": "19",
         "full_label": "19 May 2026",
         "date": "2026-05-19",
@@ -5717,6 +8516,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 4896.49,
         "roas": 6.26,
         "platform": "google"
+      },
+      {
+        "label": "19",
+        "full_label": "19 May 2026",
+        "date": "2026-05-19",
+        "spend": 1647.39,
+        "conversions": 2.0,
+        "revenue": 22037.0,
+        "roas": 13.38,
+        "platform": "meta"
       },
       {
         "label": "20",
@@ -5729,6 +8538,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "20",
+        "full_label": "20 May 2026",
+        "date": "2026-05-20",
+        "spend": 1659.08,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "21",
         "full_label": "21 May 2026",
         "date": "2026-05-21",
@@ -5737,6 +8556,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 310.29,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "21",
+        "full_label": "21 May 2026",
+        "date": "2026-05-21",
+        "spend": 1639.52,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "22",
@@ -5749,6 +8578,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "22",
+        "full_label": "22 May 2026",
+        "date": "2026-05-22",
+        "spend": 1555.68,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "23",
         "full_label": "23 May 2026",
         "date": "2026-05-23",
@@ -5757,6 +8596,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "23",
+        "full_label": "23 May 2026",
+        "date": "2026-05-23",
+        "spend": 1463.02,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "24",
@@ -5769,6 +8618,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "24",
+        "full_label": "24 May 2026",
+        "date": "2026-05-24",
+        "spend": 1963.15,
+        "conversions": 1.0,
+        "revenue": 6504.84,
+        "roas": 3.31,
+        "platform": "meta"
+      },
+      {
         "label": "25",
         "full_label": "25 May 2026",
         "date": "2026-05-25",
@@ -5777,6 +8636,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 2085.13,
         "roas": 2.34,
         "platform": "google"
+      },
+      {
+        "label": "25",
+        "full_label": "25 May 2026",
+        "date": "2026-05-25",
+        "spend": 1601.33,
+        "conversions": 1.0,
+        "revenue": 9859.76,
+        "roas": 6.16,
+        "platform": "meta"
       },
       {
         "label": "26",
@@ -5789,6 +8658,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "26",
+        "full_label": "26 May 2026",
+        "date": "2026-05-26",
+        "spend": 1603.43,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "27",
         "full_label": "27 May 2026",
         "date": "2026-05-27",
@@ -5797,6 +8676,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 707.83,
         "roas": 0.87,
         "platform": "google"
+      },
+      {
+        "label": "27",
+        "full_label": "27 May 2026",
+        "date": "2026-05-27",
+        "spend": 1655.04,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "28",
@@ -5809,6 +8698,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "28",
+        "full_label": "28 May 2026",
+        "date": "2026-05-28",
+        "spend": 1648.39,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "29",
         "full_label": "29 May 2026",
         "date": "2026-05-29",
@@ -5817,6 +8716,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "29",
+        "full_label": "29 May 2026",
+        "date": "2026-05-29",
+        "spend": 1627.59,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "30",
@@ -5829,6 +8738,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "30",
+        "full_label": "30 May 2026",
+        "date": "2026-05-30",
+        "spend": 1601.18,
+        "conversions": 1.0,
+        "revenue": 8491.25,
+        "roas": 5.3,
+        "platform": "meta"
+      },
+      {
         "label": "31",
         "full_label": "31 May 2026",
         "date": "2026-05-31",
@@ -5837,6 +8756,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "31",
+        "full_label": "31 May 2026",
+        "date": "2026-05-31",
+        "spend": 1846.36,
+        "conversions": 2.0,
+        "revenue": 11666.1,
+        "roas": 6.32,
+        "platform": "meta"
       },
       {
         "label": "01",
@@ -5849,6 +8778,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "01",
+        "full_label": "01 Jun 2026",
+        "date": "2026-06-01",
+        "spend": 2003.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "02",
         "full_label": "02 Jun 2026",
         "date": "2026-06-02",
@@ -5857,6 +8796,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 332.76,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "02",
+        "full_label": "02 Jun 2026",
+        "date": "2026-06-02",
+        "spend": 1739.45,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "03",
@@ -5869,6 +8818,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "03",
+        "full_label": "03 Jun 2026",
+        "date": "2026-06-03",
+        "spend": 1578.39,
+        "conversions": 1.0,
+        "revenue": 5949.1,
+        "roas": 3.77,
+        "platform": "meta"
+      },
+      {
         "label": "04",
         "full_label": "04 Jun 2026",
         "date": "2026-06-04",
@@ -5877,6 +8836,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "04",
+        "full_label": "04 Jun 2026",
+        "date": "2026-06-04",
+        "spend": 1593.95,
+        "conversions": 2.0,
+        "revenue": 11622.9,
+        "roas": 7.29,
+        "platform": "meta"
       },
       {
         "label": "05",
@@ -5889,6 +8858,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "05",
+        "full_label": "05 Jun 2026",
+        "date": "2026-06-05",
+        "spend": 1566.2,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "06",
         "full_label": "06 Jun 2026",
         "date": "2026-06-06",
@@ -5897,6 +8876,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 293.05,
         "roas": 0.32,
         "platform": "google"
+      },
+      {
+        "label": "06",
+        "full_label": "06 Jun 2026",
+        "date": "2026-06-06",
+        "spend": 1556.41,
+        "conversions": 1.0,
+        "revenue": 3908.26,
+        "roas": 2.51,
+        "platform": "meta"
       },
       {
         "label": "07",
@@ -5909,6 +8898,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "07",
+        "full_label": "07 Jun 2026",
+        "date": "2026-06-07",
+        "spend": 1842.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "08",
         "full_label": "08 Jun 2026",
         "date": "2026-06-08",
@@ -5917,6 +8916,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "08",
+        "full_label": "08 Jun 2026",
+        "date": "2026-06-08",
+        "spend": 1668.6,
+        "conversions": 1.0,
+        "revenue": 5166.39,
+        "roas": 3.1,
+        "platform": "meta"
       },
       {
         "label": "09",
@@ -5929,6 +8938,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "09",
+        "full_label": "09 Jun 2026",
+        "date": "2026-06-09",
+        "spend": 1605.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "10",
         "full_label": "10 Jun 2026",
         "date": "2026-06-10",
@@ -5937,6 +8956,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3086.42,
         "roas": 4.37,
         "platform": "google"
+      },
+      {
+        "label": "10",
+        "full_label": "10 Jun 2026",
+        "date": "2026-06-10",
+        "spend": 1533.41,
+        "conversions": 1.0,
+        "revenue": 5263.22,
+        "roas": 3.43,
+        "platform": "meta"
       },
       {
         "label": "11",
@@ -5949,19 +8978,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 Jun 2026",
+        "date": "2026-06-11",
+        "spend": 1534.79,
+        "conversions": 1.0,
+        "revenue": 8328.98,
+        "roas": 5.43,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -5975,33 +9024,33 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "9.7",
+        "display": "29",
         "unit": "K RON",
-        "delta_display": "↓ 65%",
+        "delta_display": "↓ 64%",
         "delta_dir": "down"
       },
       "revenue": {
-        "display": "7.4",
+        "display": "48",
         "unit": "K RON",
-        "delta_display": "↓ 90%",
+        "delta_display": "↓ 76%",
         "delta_dir": "down"
       },
       "roas_global": {
-        "display": "0.76",
+        "display": "1.63",
         "unit": "x",
-        "delta_display": "↓ 1.9x",
+        "delta_display": "↓ 0.8x",
         "delta_dir": "down"
       },
       "conversions": {
-        "display": "7",
+        "display": "14",
         "unit": "",
-        "delta_display": "↓ 81%",
+        "delta_display": "↓ 74%",
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "1399",
+        "display": "2101",
         "unit": "RON",
-        "delta_display": "↑ 81%",
+        "delta_display": "↑ 38%",
         "delta_dir": "down"
       }
     },
@@ -6015,20 +9064,20 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.8,
         "roas_class": "bad",
         "conversions": 7,
-        "cpa_display": "1,399 RON",
-        "share_pct": 100
+        "cpa_display": "1,404 RON",
+        "share_pct": 33
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "20K",
+        "roas": 2.1,
+        "roas_class": "bad",
+        "conversions": 7,
+        "cpa_display": "2,790 RON",
+        "share_pct": 67
       },
       "bing": {
         "name": "Bing Ads",
@@ -6057,9 +9106,42 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 580.31,
+        "spend_display": "580",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 12.5,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 2484.12,
+        "spend_display": "2.5K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 6.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 1674.61,
+        "spend_display": "1.7K",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 3.1,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2192.55,
+        "spend": 2199.71,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 6710.69,
@@ -6068,10 +9150,32 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 2066.03,
+        "spend_display": "2.1K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 2.5,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 2486.24,
+        "spend_display": "2.5K",
+        "conversions": 1,
+        "revenue": 5949.1,
+        "revenue_display": "5.9K",
+        "roas": 2.4,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 983.81,
-        "spend_display": "984",
+        "spend": 986.46,
+        "spend_display": "986",
         "conversions": 1,
         "revenue": 641.84,
         "revenue_display": "642",
@@ -6079,65 +9183,10 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1441.1,
-        "spend_display": "1.4K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Circuite Exotice",
-        "spend": 881.13,
-        "spend_display": "881",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 801.69,
-        "spend_display": "802",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 595.38,
-        "spend_display": "595",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 593.03,
-        "spend_display": "593",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 3305.93,
+        "spend_display": "3.3K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6147,9 +9196,64 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "campaigns_all": [
       {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 3305.93,
+        "spend_display": "3.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 2857.92,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 2817.04,
+        "spend_display": "2.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 2486.24,
+        "spend_display": "2.5K",
+        "conversions": 1,
+        "revenue": 5949.1,
+        "revenue_display": "5.9K",
+        "roas": 2.4,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 2484.12,
+        "spend_display": "2.5K",
+        "conversions": 2,
+        "revenue": 16577.68,
+        "revenue_display": "17K",
+        "roas": 6.7,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2192.55,
+        "spend": 2199.71,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 6710.69,
@@ -6158,9 +9262,31 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 2066.03,
+        "spend_display": "2.1K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 2.5,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 1674.61,
+        "spend_display": "1.7K",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 3.1,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1441.1,
+        "spend": 1445.56,
         "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6171,8 +9297,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 983.81,
-        "spend_display": "984",
+        "spend": 986.46,
+        "spend_display": "986",
         "conversions": 1,
         "revenue": 641.84,
         "revenue_display": "642",
@@ -6180,10 +9306,21 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 950.21,
+        "spend_display": "950",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 881.13,
-        "spend_display": "881",
+        "spend": 881.93,
+        "spend_display": "882",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6193,7 +9330,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 801.69,
+        "spend": 801.8,
         "spend_display": "802",
         "conversions": 0,
         "revenue": 0.0,
@@ -6203,9 +9340,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 595.38,
-        "spend_display": "595",
+        "name": "Pmax | Sejururi - Plecare din Cluj",
+        "spend": 596.57,
+        "spend_display": "597",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6214,20 +9351,42 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 593.03,
-        "spend_display": "593",
+        "name": "Pmax | Sejururi - Plecare din Iasi",
+        "spend": 596.55,
+        "spend_display": "597",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 580.31,
+        "spend_display": "580",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 12.5,
+        "roas_class": "good"
       },
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "spend": 504.28,
+        "spend_display": "504",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 309.75,
+        "spend_display": "310",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6237,8 +9396,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 289.44,
-        "spend_display": "289",
+        "spend": 289.76,
+        "spend_display": "290",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6248,8 +9407,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 266.49,
-        "spend_display": "266",
+        "spend": 268.48,
+        "spend_display": "268",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6259,8 +9418,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 258.11,
-        "spend_display": "258",
+        "spend": 259.53,
+        "spend_display": "260",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6270,8 +9429,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 248.45,
-        "spend_display": "248",
+        "spend": 249.32,
+        "spend_display": "249",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6303,8 +9462,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.71,
-        "spend_display": "137",
+        "spend": 139.44,
+        "spend_display": "139",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6314,8 +9473,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.82,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6336,10 +9495,60 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 1596.2,
+        "spend_display": "1.6K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 8.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 950.76,
+        "spend_display": "951",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 8.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 2205.77,
+        "spend_display": "2.2K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 3.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.96,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 1842.78,
+        "spend_display": "1.8K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 2.8
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 688.85,
-        "spend_display": "689",
+        "spend": 690.92,
+        "spend_display": "691",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -6348,8 +9557,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 872.37,
-        "spend_display": "872",
+        "spend": 877.77,
+        "spend_display": "878",
         "conversions": 2,
         "revenue": 2604.67,
         "revenue_display": "2.6K",
@@ -6358,70 +9567,70 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 631.85,
-        "spend_display": "632",
+        "spend": 635.96,
+        "spend_display": "636",
         "conversions": 0,
         "revenue": 403.31,
         "revenue_display": "403",
         "roas": 0.6
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 1071.03,
-        "spend_display": "1.1K",
-        "conversions": 0,
-        "revenue": 166.38,
-        "revenue_display": "166",
-        "roas": 0.2
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Kos",
-        "spend": 258.48,
-        "spend_display": "258",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Chania (Crete)",
-        "spend": 41.75,
-        "spend_display": "42",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Antalya",
-        "spend": 2.81,
-        "spend_display": "3",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 106.7,
-        "spend_display": "107",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
       }
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 1596.2,
+        "spend_display": "1.6K",
+        "conversions": 2,
+        "revenue": 14197.8,
+        "revenue_display": "14K",
+        "roas": 8.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 950.76,
+        "spend_display": "951",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 8.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 2205.77,
+        "spend_display": "2.2K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 3.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 342.96,
+        "spend_display": "343",
+        "conversions": 1,
+        "revenue": 5263.22,
+        "revenue_display": "5.3K",
+        "roas": 15.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 1842.78,
+        "spend_display": "1.8K",
+        "conversions": 1,
+        "revenue": 5166.39,
+        "revenue_display": "5.2K",
+        "roas": 2.8
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 688.85,
-        "spend_display": "689",
+        "spend": 690.92,
+        "spend_display": "691",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -6430,8 +9639,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 872.37,
-        "spend_display": "872",
+        "spend": 877.77,
+        "spend_display": "878",
         "conversions": 2,
         "revenue": 2604.67,
         "revenue_display": "2.6K",
@@ -6440,8 +9649,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 631.85,
-        "spend_display": "632",
+        "spend": 635.96,
+        "spend_display": "636",
         "conversions": 0,
         "revenue": 403.31,
         "revenue_display": "403",
@@ -6450,7 +9659,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 1071.03,
+        "spend": 1073.07,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 166.38,
@@ -6460,8 +9669,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 258.48,
-        "spend_display": "258",
+        "spend": 260.37,
+        "spend_display": "260",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6470,8 +9679,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 41.75,
-        "spend_display": "42",
+        "spend": 42.79,
+        "spend_display": "43",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6490,7 +9699,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 106.7,
+        "spend": 107.27,
         "spend_display": "107",
         "conversions": 0,
         "revenue": 0.0,
@@ -6500,7 +9709,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 160.57,
+        "spend": 161.37,
         "spend_display": "161",
         "conversions": 0,
         "revenue": 0.0,
@@ -6509,29 +9718,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 521.92,
-        "spend_display": "522",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 92.66,
-        "spend_display": "93",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 420.81,
-        "spend_display": "421",
+        "spend": 93.8,
+        "spend_display": "94",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6540,8 +9729,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 425.7,
-        "spend_display": "426",
+        "spend": 426.9,
+        "spend_display": "427",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6550,8 +9739,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 260.53,
-        "spend_display": "261",
+        "spend": 259.0,
+        "spend_display": "259",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇪🇸 Spain",
+        "spend": 525.6,
+        "spend_display": "526",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇨🇾 Cyprus",
+        "spend": 423.08,
+        "spend_display": "423",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6560,38 +9769,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 266.48,
-        "spend_display": "266",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 121.72,
-        "spend_display": "122",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 231.79,
-        "spend_display": "232",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 526.69,
-        "spend_display": "527",
+        "spend": 268.48,
+        "spend_display": "268",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6600,7 +9779,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 165.39,
+        "spend": 165.44,
         "spend_display": "165",
         "conversions": 0,
         "revenue": 0.0,
@@ -6609,8 +9788,18 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇰🇪 Kenya",
+        "spend": 121.73,
+        "spend_display": "122",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 462.79,
+        "spend": 463.07,
         "spend_display": "463",
         "conversions": 0,
         "revenue": 0.0,
@@ -6620,8 +9809,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 174.45,
-        "spend_display": "174",
+        "spend": 174.58,
+        "spend_display": "175",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇻🇳 Vietnam",
+        "spend": 527.08,
+        "spend_display": "527",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 231.82,
+        "spend_display": "232",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6630,8 +9839,158 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 21.58,
+        "spend": 22.31,
         "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 813.89,
+        "spend_display": "814",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 1363.03,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 1718.29,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 431.74,
+        "spend_display": "432",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 1107.77,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 1055.83,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 798.12,
+        "spend_display": "798",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 1013.62,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 894.57,
+        "spend_display": "895",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 805.23,
+        "spend_display": "805",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 503.34,
+        "spend_display": "503",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 139.68,
+        "spend_display": "140",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 421.48,
+        "spend_display": "421",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 117.85,
+        "spend_display": "118",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 169.9,
+        "spend_display": "170",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6643,7 +10002,7 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Agentie de turism",
-        "desc": "This campaign spends 289 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 290 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -6657,15 +10016,15 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Iasi",
-        "desc": "This campaign spends 595 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 597 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -6698,59 +10057,59 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        820.93,
-        873.57,
-        803.55,
-        792.57,
-        834.53,
-        911.65,
-        914.09,
-        797.95,
-        791.68,
-        706.25,
-        799.98,
-        654.59
+        2824.56,
+        2613.02,
+        2381.94,
+        2386.52,
+        2400.73,
+        2468.06,
+        2757.04,
+        2466.55,
+        2397.67,
+        2239.66,
+        2334.77,
+        1996.77
       ],
       "roas": [
-        0.05,
-        0.38,
-        1.79,
+        0.02,
+        0.13,
+        3.1,
+        4.87,
+        0.21,
+        1.7,
         0.0,
-        0.59,
-        0.32,
-        0.0,
-        0.0,
-        0.63,
-        4.37,
-        1.44,
+        2.09,
+        0.21,
+        3.73,
+        4.06,
         0.0
       ],
       "revenue": [
         44.81,
         332.76,
-        1441.08,
-        0.0,
+        7390.18,
+        11622.9,
         496.47,
-        293.05,
+        4201.31,
         0.0,
-        0.0,
+        5166.39,
         502.4,
-        3086.42,
-        1155.53,
+        8349.64,
+        9484.51,
         0.0
       ],
       "conversions": [
         0.03,
         0.29,
-        1.71,
-        0.0,
+        2.71,
+        2.0,
         0.67,
-        0.37,
+        1.37,
         0.0,
-        0.0,
+        1.0,
         0.5,
-        2.5,
-        0.87,
+        3.5,
+        1.87,
         0.0
       ],
       "granularity": "day"
@@ -6767,6 +10126,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "01",
+        "full_label": "01 Jun 2026",
+        "date": "2026-06-01",
+        "spend": 2003.63,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "02",
         "full_label": "02 Jun 2026",
         "date": "2026-06-02",
@@ -6775,6 +10144,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 332.76,
         "roas": 0.38,
         "platform": "google"
+      },
+      {
+        "label": "02",
+        "full_label": "02 Jun 2026",
+        "date": "2026-06-02",
+        "spend": 1739.45,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "03",
@@ -6787,6 +10166,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "03",
+        "full_label": "03 Jun 2026",
+        "date": "2026-06-03",
+        "spend": 1578.39,
+        "conversions": 1.0,
+        "revenue": 5949.1,
+        "roas": 3.77,
+        "platform": "meta"
+      },
+      {
         "label": "04",
         "full_label": "04 Jun 2026",
         "date": "2026-06-04",
@@ -6795,6 +10184,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "04",
+        "full_label": "04 Jun 2026",
+        "date": "2026-06-04",
+        "spend": 1593.95,
+        "conversions": 2.0,
+        "revenue": 11622.9,
+        "roas": 7.29,
+        "platform": "meta"
       },
       {
         "label": "05",
@@ -6807,6 +10206,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "05",
+        "full_label": "05 Jun 2026",
+        "date": "2026-06-05",
+        "spend": 1566.2,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "06",
         "full_label": "06 Jun 2026",
         "date": "2026-06-06",
@@ -6815,6 +10224,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 293.05,
         "roas": 0.32,
         "platform": "google"
+      },
+      {
+        "label": "06",
+        "full_label": "06 Jun 2026",
+        "date": "2026-06-06",
+        "spend": 1556.41,
+        "conversions": 1.0,
+        "revenue": 3908.26,
+        "roas": 2.51,
+        "platform": "meta"
       },
       {
         "label": "07",
@@ -6827,6 +10246,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "07",
+        "full_label": "07 Jun 2026",
+        "date": "2026-06-07",
+        "spend": 1842.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "08",
         "full_label": "08 Jun 2026",
         "date": "2026-06-08",
@@ -6835,6 +10264,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "08",
+        "full_label": "08 Jun 2026",
+        "date": "2026-06-08",
+        "spend": 1668.6,
+        "conversions": 1.0,
+        "revenue": 5166.39,
+        "roas": 3.1,
+        "platform": "meta"
       },
       {
         "label": "09",
@@ -6847,6 +10286,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "09",
+        "full_label": "09 Jun 2026",
+        "date": "2026-06-09",
+        "spend": 1605.99,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "10",
         "full_label": "10 Jun 2026",
         "date": "2026-06-10",
@@ -6855,6 +10304,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3086.42,
         "roas": 4.37,
         "platform": "google"
+      },
+      {
+        "label": "10",
+        "full_label": "10 Jun 2026",
+        "date": "2026-06-10",
+        "spend": 1533.41,
+        "conversions": 1.0,
+        "revenue": 5263.22,
+        "roas": 3.43,
+        "platform": "meta"
       },
       {
         "label": "11",
@@ -6867,19 +10326,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 Jun 2026",
+        "date": "2026-06-11",
+        "spend": 1534.79,
+        "conversions": 1.0,
+        "revenue": 8328.98,
+        "roas": 5.43,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 654.59,
+        "spend": 688.99,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 Jun 2026",
+        "date": "2026-06-12",
+        "spend": 1307.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -6893,33 +10372,33 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "28",
+        "display": "82",
         "unit": "K RON",
-        "delta_display": "↑ 29%",
+        "delta_display": "↑ 22%",
         "delta_dir": "up"
       },
       "revenue": {
-        "display": "72",
+        "display": "198",
         "unit": "K RON",
-        "delta_display": "↑ 899%",
-        "delta_dir": "up"
+        "delta_display": "↓ 20%",
+        "delta_dir": "down"
       },
       "roas_global": {
-        "display": "2.62",
+        "display": "2.43",
         "unit": "x",
-        "delta_display": "↑ 2.3x",
-        "delta_dir": "up"
+        "delta_display": "↓ 1.3x",
+        "delta_dir": "down"
       },
       "conversions": {
-        "display": "36",
+        "display": "54",
         "unit": "",
-        "delta_display": "↑ 715%",
+        "delta_display": "↑ 163%",
         "delta_dir": "up"
       },
       "cpa_avg": {
-        "display": "772",
+        "display": "1519",
         "unit": "RON",
-        "delta_display": "↓ 84%",
+        "delta_display": "↓ 54%",
         "delta_dir": "up"
       }
     },
@@ -6934,19 +10413,19 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad",
         "conversions": 36,
         "cpa_display": "772 RON",
-        "share_pct": 100
+        "share_pct": 34
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "54K",
+        "roas": 2.3,
+        "roas_class": "bad",
+        "conversions": 18,
+        "cpa_display": "2,998 RON",
+        "share_pct": 66
       },
       "bing": {
         "name": "Bing Ads",
@@ -6986,6 +10465,39 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "good"
       },
       {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 5299.71,
+        "spend_display": "5.3K",
+        "conversions": 2,
+        "revenue": 32803.7,
+        "revenue_display": "33K",
+        "roas": 6.2,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 5407.2,
+        "spend_display": "5.4K",
+        "conversions": 5,
+        "revenue": 26755.32,
+        "revenue_display": "27K",
+        "roas": 4.9,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 8605.68,
+        "spend_display": "8.6K",
+        "conversions": 5,
+        "revenue": 34954.47,
+        "revenue_display": "35K",
+        "roas": 4.1,
+        "roas_class": "warn"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
         "spend": 1520.39,
@@ -7008,6 +10520,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 6369.58,
+        "spend_display": "6.4K",
+        "conversions": 2,
+        "revenue": 9758.72,
+        "revenue_display": "9.8K",
+        "roas": 1.5,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Protect brand",
         "spend": 2432.53,
@@ -7017,53 +10540,86 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue_display": "3.2K",
         "roas": 1.3,
         "roas_class": "bad"
+      }
+    ],
+    "campaigns_all": [
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 8605.68,
+        "spend_display": "8.6K",
+        "conversions": 5,
+        "revenue": 34954.47,
+        "revenue_display": "35K",
+        "roas": 4.1,
+        "roas_class": "warn"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Circuite Exotice",
-        "spend": 3271.83,
-        "spend_display": "3.3K",
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 8568.72,
+        "spend_display": "8.6K",
+        "conversions": 2,
+        "revenue": 11257.03,
+        "revenue_display": "11K",
+        "roas": 1.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 8513.57,
+        "spend_display": "8.5K",
         "conversions": 1,
-        "revenue": 2004.19,
-        "revenue_display": "2K",
+        "revenue": 5352.68,
+        "revenue_display": "5.4K",
         "roas": 0.6,
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 3299.54,
-        "spend_display": "3.3K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 6488.35,
+        "spend_display": "6.5K",
+        "conversions": 1,
+        "revenue": 5219.05,
+        "revenue_display": "5.2K",
+        "roas": 0.8,
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Demand Gen - Boost",
-        "spend": 1953.15,
-        "spend_display": "2K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 6369.58,
+        "spend_display": "6.4K",
+        "conversions": 2,
+        "revenue": 9758.72,
+        "revenue_display": "9.8K",
+        "roas": 1.5,
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 1510.16,
-        "spend_display": "1.5K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      }
-    ],
-    "campaigns_all": [
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 5407.2,
+        "spend_display": "5.4K",
+        "conversions": 5,
+        "revenue": 26755.32,
+        "revenue_display": "27K",
+        "roas": 4.9,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 5299.71,
+        "spend_display": "5.3K",
+        "conversions": 2,
+        "revenue": 32803.7,
+        "revenue_display": "33K",
+        "roas": 6.2,
+        "roas_class": "good"
+      },
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
@@ -7085,6 +10641,17 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue_display": "56K",
         "roas": 13.2,
         "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 3765.09,
+        "spend_display": "3.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
       },
       {
         "platform": "google",
@@ -7175,6 +10742,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 875.84,
+        "spend_display": "876",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Agentie de turism",
         "spend": 760.51,
@@ -7239,10 +10817,31 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 73.48,
+        "spend_display": "73",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
       }
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 4690.19,
+        "spend_display": "4.7K",
+        "conversions": 6,
+        "revenue": 31160.78,
+        "revenue_display": "31K",
+        "roas": 6.6
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
         "spend": 2497.51,
@@ -7251,6 +10850,26 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 24259.37,
         "revenue_display": "24K",
         "roas": 9.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 1437.88,
+        "spend_display": "1.4K",
+        "conversions": 1,
+        "revenue": 20626.46,
+        "revenue_display": "21K",
+        "roas": 14.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 4628.89,
+        "spend_display": "4.6K",
+        "conversions": 3,
+        "revenue": 18639.29,
+        "revenue_display": "19K",
+        "roas": 4.0
       },
       {
         "platform": "google",
@@ -7273,58 +10892,38 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 6.3
       },
       {
-        "platform": "google",
-        "name": "🇹🇳 Tunisia",
-        "spend": 1200.98,
-        "spend_display": "1.2K",
-        "conversions": 3,
-        "revenue": 5913.47,
-        "revenue_display": "5.9K",
-        "roas": 4.9
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 2215.6,
+        "spend_display": "2.2K",
+        "conversions": 2,
+        "revenue": 13458.88,
+        "revenue_display": "13K",
+        "roas": 6.1
       },
       {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 1462.96,
-        "spend_display": "1.5K",
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 512.04,
+        "spend_display": "512",
         "conversions": 1,
-        "revenue": 2418.08,
-        "revenue_display": "2.4K",
-        "roas": 1.7
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 1336.99,
-        "spend_display": "1.3K",
-        "conversions": 1,
-        "revenue": 2234.71,
-        "revenue_display": "2.2K",
-        "roas": 1.7
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 1832.34,
-        "spend_display": "1.8K",
-        "conversions": 1,
-        "revenue": 1296.37,
-        "revenue_display": "1.3K",
-        "roas": 0.7
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇭 Thailand",
-        "spend": 1472.56,
-        "spend_display": "1.5K",
-        "conversions": 0,
-        "revenue": 707.83,
-        "revenue_display": "708",
-        "roas": 0.5
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 23.8
       }
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 4690.19,
+        "spend_display": "4.7K",
+        "conversions": 6,
+        "revenue": 31160.78,
+        "revenue_display": "31K",
+        "roas": 6.6
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
         "spend": 2497.51,
@@ -7333,6 +10932,26 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 24259.37,
         "revenue_display": "24K",
         "roas": 9.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 1437.88,
+        "spend_display": "1.4K",
+        "conversions": 1,
+        "revenue": 20626.46,
+        "revenue_display": "21K",
+        "roas": 14.3
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 4628.89,
+        "spend_display": "4.6K",
+        "conversions": 3,
+        "revenue": 18639.29,
+        "revenue_display": "19K",
+        "roas": 4.0
       },
       {
         "platform": "google",
@@ -7355,6 +10974,46 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 6.3
       },
       {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 2215.6,
+        "spend_display": "2.2K",
+        "conversions": 2,
+        "revenue": 13458.88,
+        "revenue_display": "13K",
+        "roas": 6.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 512.04,
+        "spend_display": "512",
+        "conversions": 1,
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 23.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 1145.06,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 8.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 1451.15,
+        "spend_display": "1.5K",
+        "conversions": 1,
+        "revenue": 6504.84,
+        "revenue_display": "6.5K",
+        "roas": 4.5
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
         "spend": 1200.98,
@@ -7363,6 +11022,36 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 5913.47,
         "revenue_display": "5.9K",
         "roas": 4.9
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 3381.05,
+        "spend_display": "3.4K",
+        "conversions": 1,
+        "revenue": 5352.68,
+        "revenue_display": "5.4K",
+        "roas": 1.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 2866.12,
+        "spend_display": "2.9K",
+        "conversions": 1,
+        "revenue": 4752.19,
+        "revenue_display": "4.8K",
+        "roas": 1.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 4995.38,
+        "spend_display": "5K",
+        "conversions": 1,
+        "revenue": 3568.85,
+        "revenue_display": "3.6K",
+        "roas": 0.7
       },
       {
         "platform": "google",
@@ -7516,9 +11205,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇩🇴 Dominican Republic",
-        "spend": 629.63,
-        "spend_display": "630",
+        "name": "🇰🇪 Kenya",
+        "spend": 745.08,
+        "spend_display": "745",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -7526,9 +11215,19 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 745.08,
-        "spend_display": "745",
+        "name": "🇲🇽 Mexico",
+        "spend": 1423.15,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 629.63,
+        "spend_display": "630",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -7545,10 +11244,100 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.0
       },
       {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 1423.15,
-        "spend_display": "1.4K",
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 3471.31,
+        "spend_display": "3.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 4034.4,
+        "spend_display": "4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 2565.82,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Sardinia",
+        "spend": 445.29,
+        "spend_display": "445",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 3351.96,
+        "spend_display": "3.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 3285.84,
+        "spend_display": "3.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 2746.17,
+        "spend_display": "2.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 1118.41,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 566.48,
+        "spend_display": "566",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 938.8,
+        "spend_display": "939",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -7580,9 +11369,9 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -7653,136 +11442,136 @@ window.PPC_DATA_BY_PERIOD = {
         "31 May 2026"
       ],
       "spend": [
-        1207.56,
-        1070.9,
-        1116.27,
-        1074.5,
-        711.3,
-        772.31,
-        643.44,
-        1060.61,
-        1075.11,
-        841.47,
-        985.04,
-        884.81,
-        874.39,
-        750.18,
-        915.33,
-        908.84,
-        868.0,
-        978.34,
-        782.17,
-        886.61,
-        814.24,
-        899.51,
-        744.02,
-        1006.78,
-        890.68,
-        760.24,
-        817.69,
-        811.13,
-        759.15,
-        784.63,
-        854.6
+        3613.8,
+        3422.27,
+        3548.51,
+        3360.36,
+        2670.35,
+        2324.28,
+        2243.14,
+        2602.56,
+        2646.93,
+        2449.59,
+        2491.74,
+        2459.25,
+        2435.6,
+        2367.0,
+        2490.17,
+        2666.08,
+        2709.2,
+        2693.63,
+        2429.56,
+        2545.69,
+        2453.76,
+        2455.19,
+        2207.04,
+        2969.93,
+        2492.01,
+        2363.67,
+        2472.73,
+        2459.52,
+        2386.74,
+        2385.81,
+        2700.96
       ],
       "roas": [
         0.0,
         0.0,
         0.0,
         0.0,
+        1.21,
+        0.34,
+        17.14,
+        0.23,
+        0.39,
+        1.6,
+        3.52,
+        1.45,
+        4.01,
+        2.78,
+        2.78,
+        1.8,
+        1.83,
+        1.94,
+        11.09,
+        2.02,
+        0.13,
+        6.27,
+        0.0,
+        4.36,
+        4.79,
+        0.56,
+        0.29,
         1.15,
-        1.04,
-        8.86,
-        0.57,
-        0.95,
-        4.66,
-        1.43,
         0.0,
-        3.73,
-        2.43,
-        7.57,
-        5.27,
-        0.0,
-        0.0,
-        6.26,
-        5.79,
-        0.38,
-        17.13,
-        0.0,
-        6.39,
-        2.34,
-        1.74,
-        0.87,
-        3.49,
-        0.0,
-        2.35,
-        0.0
+        4.33,
+        4.32
       ],
       "revenue": [
         0.0,
         0.0,
         0.0,
         0.0,
-        816.32,
+        3218.94,
         799.74,
-        5699.72,
+        38454.97,
         599.59,
         1026.1,
         3920.84,
-        1409.32,
-        0.0,
-        3257.61,
-        1825.09,
+        8765.42,
+        3568.85,
+        9777.94,
+        6577.28,
         6933.51,
         4789.65,
-        0.0,
-        0.0,
-        4896.49,
+        4967.63,
+        5219.05,
+        26933.49,
         5136.06,
         310.29,
         15405.97,
         0.0,
-        6431.16,
-        2085.13,
+        12936.0,
+        11944.89,
         1325.94,
         707.83,
         2831.3,
         0.0,
-        1844.5,
-        0.0
+        10335.75,
+        11666.1
       ],
       "conversions": [
         0.0,
         0.0,
         0.0,
         0.0,
-        2.0,
+        3.0,
         0.74,
-        1.5,
+        5.5,
         0.52,
         1.0,
         1.5,
-        1.0,
-        0.0,
-        2.49,
         2.0,
+        1.0,
+        3.49,
+        3.0,
         2.0,
         4.0,
-        0.0,
-        0.0,
-        3.0,
+        1.0,
+        1.0,
+        5.0,
         3.0,
         0.37,
         4.83,
         0.0,
+        3.0,
         2.0,
-        1.0,
         1.0,
         0.13,
         0.53,
         0.0,
-        1.07,
-        0.0
+        2.07,
+        2.0
       ],
       "granularity": "day"
     },
@@ -7798,6 +11587,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "01",
+        "full_label": "01 May 2026",
+        "date": "2026-05-01",
+        "spend": 2406.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "02",
         "full_label": "02 May 2026",
         "date": "2026-05-02",
@@ -7806,6 +11605,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "02",
+        "full_label": "02 May 2026",
+        "date": "2026-05-02",
+        "spend": 2351.37,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "03",
@@ -7818,6 +11627,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "03",
+        "full_label": "03 May 2026",
+        "date": "2026-05-03",
+        "spend": 2432.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "04",
         "full_label": "04 May 2026",
         "date": "2026-05-04",
@@ -7826,6 +11645,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "04",
+        "full_label": "04 May 2026",
+        "date": "2026-05-04",
+        "spend": 2285.86,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "05",
@@ -7838,6 +11667,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "05",
+        "full_label": "05 May 2026",
+        "date": "2026-05-05",
+        "spend": 1959.05,
+        "conversions": 1.0,
+        "revenue": 2402.62,
+        "roas": 1.23,
+        "platform": "meta"
+      },
+      {
         "label": "06",
         "full_label": "06 May 2026",
         "date": "2026-05-06",
@@ -7846,6 +11685,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 799.74,
         "roas": 1.04,
         "platform": "google"
+      },
+      {
+        "label": "06",
+        "full_label": "06 May 2026",
+        "date": "2026-05-06",
+        "spend": 1551.97,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "07",
@@ -7858,6 +11707,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "07",
+        "full_label": "07 May 2026",
+        "date": "2026-05-07",
+        "spend": 1599.7,
+        "conversions": 4.0,
+        "revenue": 32755.25,
+        "roas": 20.48,
+        "platform": "meta"
+      },
+      {
         "label": "08",
         "full_label": "08 May 2026",
         "date": "2026-05-08",
@@ -7866,6 +11725,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 599.59,
         "roas": 0.57,
         "platform": "google"
+      },
+      {
+        "label": "08",
+        "full_label": "08 May 2026",
+        "date": "2026-05-08",
+        "spend": 1541.95,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "09",
@@ -7878,6 +11747,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "09",
+        "full_label": "09 May 2026",
+        "date": "2026-05-09",
+        "spend": 1571.82,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "10",
         "full_label": "10 May 2026",
         "date": "2026-05-10",
@@ -7886,6 +11765,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 3920.84,
         "roas": 4.66,
         "platform": "google"
+      },
+      {
+        "label": "10",
+        "full_label": "10 May 2026",
+        "date": "2026-05-10",
+        "spend": 1608.12,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "11",
@@ -7898,6 +11787,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "11",
+        "full_label": "11 May 2026",
+        "date": "2026-05-11",
+        "spend": 1506.7,
+        "conversions": 1.0,
+        "revenue": 7356.1,
+        "roas": 4.88,
+        "platform": "meta"
+      },
+      {
         "label": "12",
         "full_label": "12 May 2026",
         "date": "2026-05-12",
@@ -7906,6 +11805,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "12",
+        "full_label": "12 May 2026",
+        "date": "2026-05-12",
+        "spend": 1574.44,
+        "conversions": 1.0,
+        "revenue": 3568.85,
+        "roas": 2.27,
+        "platform": "meta"
       },
       {
         "label": "13",
@@ -7918,6 +11827,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "13",
+        "full_label": "13 May 2026",
+        "date": "2026-05-13",
+        "spend": 1561.21,
+        "conversions": 1.0,
+        "revenue": 6520.33,
+        "roas": 4.18,
+        "platform": "meta"
+      },
+      {
         "label": "14",
         "full_label": "14 May 2026",
         "date": "2026-05-14",
@@ -7926,6 +11845,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1825.09,
         "roas": 2.43,
         "platform": "google"
+      },
+      {
+        "label": "14",
+        "full_label": "14 May 2026",
+        "date": "2026-05-14",
+        "spend": 1616.82,
+        "conversions": 1.0,
+        "revenue": 4752.19,
+        "roas": 2.94,
+        "platform": "meta"
       },
       {
         "label": "15",
@@ -7938,6 +11867,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "15",
+        "full_label": "15 May 2026",
+        "date": "2026-05-15",
+        "spend": 1574.84,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "16",
         "full_label": "16 May 2026",
         "date": "2026-05-16",
@@ -7946,6 +11885,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 4789.65,
         "roas": 5.27,
         "platform": "google"
+      },
+      {
+        "label": "16",
+        "full_label": "16 May 2026",
+        "date": "2026-05-16",
+        "spend": 1757.24,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "17",
@@ -7958,6 +11907,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "17",
+        "full_label": "17 May 2026",
+        "date": "2026-05-17",
+        "spend": 1841.2,
+        "conversions": 1.0,
+        "revenue": 4967.63,
+        "roas": 2.7,
+        "platform": "meta"
+      },
+      {
         "label": "18",
         "full_label": "18 May 2026",
         "date": "2026-05-18",
@@ -7966,6 +11925,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "18",
+        "full_label": "18 May 2026",
+        "date": "2026-05-18",
+        "spend": 1715.29,
+        "conversions": 1.0,
+        "revenue": 5219.05,
+        "roas": 3.04,
+        "platform": "meta"
       },
       {
         "label": "19",
@@ -7978,6 +11947,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "19",
+        "full_label": "19 May 2026",
+        "date": "2026-05-19",
+        "spend": 1647.39,
+        "conversions": 2.0,
+        "revenue": 22037.0,
+        "roas": 13.38,
+        "platform": "meta"
+      },
+      {
         "label": "20",
         "full_label": "20 May 2026",
         "date": "2026-05-20",
@@ -7986,6 +11965,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 5136.06,
         "roas": 5.79,
         "platform": "google"
+      },
+      {
+        "label": "20",
+        "full_label": "20 May 2026",
+        "date": "2026-05-20",
+        "spend": 1659.08,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "21",
@@ -7998,6 +11987,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "21",
+        "full_label": "21 May 2026",
+        "date": "2026-05-21",
+        "spend": 1639.52,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "22",
         "full_label": "22 May 2026",
         "date": "2026-05-22",
@@ -8006,6 +12005,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 15405.97,
         "roas": 17.13,
         "platform": "google"
+      },
+      {
+        "label": "22",
+        "full_label": "22 May 2026",
+        "date": "2026-05-22",
+        "spend": 1555.68,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "23",
@@ -8018,6 +12027,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "23",
+        "full_label": "23 May 2026",
+        "date": "2026-05-23",
+        "spend": 1463.02,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "24",
         "full_label": "24 May 2026",
         "date": "2026-05-24",
@@ -8026,6 +12045,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 6431.16,
         "roas": 6.39,
         "platform": "google"
+      },
+      {
+        "label": "24",
+        "full_label": "24 May 2026",
+        "date": "2026-05-24",
+        "spend": 1963.15,
+        "conversions": 1.0,
+        "revenue": 6504.84,
+        "roas": 3.31,
+        "platform": "meta"
       },
       {
         "label": "25",
@@ -8038,6 +12067,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "25",
+        "full_label": "25 May 2026",
+        "date": "2026-05-25",
+        "spend": 1601.33,
+        "conversions": 1.0,
+        "revenue": 9859.76,
+        "roas": 6.16,
+        "platform": "meta"
+      },
+      {
         "label": "26",
         "full_label": "26 May 2026",
         "date": "2026-05-26",
@@ -8046,6 +12085,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 1325.94,
         "roas": 1.74,
         "platform": "google"
+      },
+      {
+        "label": "26",
+        "full_label": "26 May 2026",
+        "date": "2026-05-26",
+        "spend": 1603.43,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "27",
@@ -8058,6 +12107,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "27",
+        "full_label": "27 May 2026",
+        "date": "2026-05-27",
+        "spend": 1655.04,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "28",
         "full_label": "28 May 2026",
         "date": "2026-05-28",
@@ -8066,6 +12125,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 2831.3,
         "roas": 3.49,
         "platform": "google"
+      },
+      {
+        "label": "28",
+        "full_label": "28 May 2026",
+        "date": "2026-05-28",
+        "spend": 1648.39,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "29",
@@ -8078,6 +12147,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "29",
+        "full_label": "29 May 2026",
+        "date": "2026-05-29",
+        "spend": 1627.59,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "30",
         "full_label": "30 May 2026",
         "date": "2026-05-30",
@@ -8088,6 +12167,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "30",
+        "full_label": "30 May 2026",
+        "date": "2026-05-30",
+        "spend": 1601.18,
+        "conversions": 1.0,
+        "revenue": 8491.25,
+        "roas": 5.3,
+        "platform": "meta"
+      },
+      {
         "label": "31",
         "full_label": "31 May 2026",
         "date": "2026-05-31",
@@ -8096,11 +12185,21 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "31",
+        "full_label": "31 May 2026",
+        "date": "2026-05-31",
+        "spend": 1846.36,
+        "conversions": 2.0,
+        "revenue": 11666.1,
+        "roas": 6.32,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -8114,31 +12213,31 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "kpis": {
       "spend_total": {
-        "display": "308",
-        "unit": "K RON",
-        "delta_display": "—",
+        "display": "1.57",
+        "unit": "M RON",
+        "delta_display": "↑ 163%",
         "delta_dir": "up"
       },
       "revenue": {
-        "display": "150",
-        "unit": "K RON",
+        "display": "1.63",
+        "unit": "M RON",
         "delta_display": "—",
         "delta_dir": "up"
       },
       "roas_global": {
-        "display": "0.49",
+        "display": "1.04",
         "unit": "x",
-        "delta_display": "↑ 0.5x",
+        "delta_display": "↑ 1.0x",
         "delta_dir": "up"
       },
       "conversions": {
-        "display": "4,193",
+        "display": "4,339",
         "unit": "",
         "delta_display": "—",
         "delta_dir": "up"
       },
       "cpa_avg": {
-        "display": "73",
+        "display": "361",
         "unit": "RON",
         "delta_display": "—",
         "delta_dir": "up"
@@ -8155,19 +12254,19 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad",
         "conversions": 4193,
         "cpa_display": "73 RON",
-        "share_pct": 100
+        "share_pct": 20
       },
       "meta": {
         "name": "Meta Ads",
-        "status": "not_connected",
-        "status_label": "⚠ Not connected",
-        "status_class": "warn",
-        "spend_display": "—",
-        "roas": null,
-        "roas_class": "off",
-        "conversions": null,
-        "cpa_display": "—",
-        "share_pct": 0
+        "status": "connected",
+        "status_label": "● Active",
+        "status_class": "ok",
+        "spend_display": "1.26M",
+        "roas": 1.2,
+        "roas_class": "bad",
+        "conversions": 146,
+        "cpa_display": "8,626 RON",
+        "share_pct": 80
       },
       "bing": {
         "name": "Bing Ads",
@@ -8196,99 +12295,99 @@ window.PPC_DATA_BY_PERIOD = {
     },
     "campaigns": [
       {
-        "platform": "google",
-        "name": "Pmax | Early booking",
-        "spend": 1091.81,
-        "spend_display": "1.1K",
-        "conversions": 5,
-        "revenue": 11143.11,
-        "revenue_display": "11K",
-        "roas": 10.2,
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Știai că în Praga🇨🇿 există un mini turn Eiffel?...",
+        "spend": 249.94,
+        "spend_display": "250",
+        "conversions": 2,
+        "revenue": 31309.35,
+        "revenue_display": "31K",
+        "roas": 125.3,
         "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "PMax | Circuite",
-        "spend": 6435.21,
-        "spend_display": "6.4K",
-        "conversions": 32,
-        "revenue": 62862.28,
-        "revenue_display": "63K",
-        "roas": 9.8,
+        "platform": "meta",
+        "name": "BLACK FRIDAY - PUSH_LP",
+        "spend": 1391.9,
+        "spend_display": "1.4K",
+        "conversions": 4,
+        "revenue": 81734.8,
+        "revenue_display": "82K",
+        "roas": 58.7,
         "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "[Clan] TTR 2026",
-        "spend": 1052.55,
-        "spend_display": "1.1K",
-        "conversions": 5,
-        "revenue": 4714.16,
-        "revenue_display": "4.7K",
-        "roas": 4.5,
-        "roas_class": "warn"
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Kalimera, timișoreni!",
+        "spend": 1259.63,
+        "spend_display": "1.3K",
+        "conversions": 1,
+        "revenue": 55822.72,
+        "revenue_display": "56K",
+        "roas": 44.3,
+        "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 4661.08,
-        "spend_display": "4.7K",
-        "conversions": 29,
-        "revenue": 15558.87,
-        "revenue_display": "16K",
-        "roas": 3.3,
-        "roas_class": "bad"
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Te așteaptă Afrodita pe plajă, briza mării și...",
+        "spend": 599.53,
+        "spend_display": "600",
+        "conversions": 1,
+        "revenue": 13616.19,
+        "revenue_display": "14K",
+        "roas": 22.7,
+        "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "Search | Agentie de turism",
-        "spend": 2966.61,
-        "spend_display": "3K",
-        "conversions": 52,
-        "revenue": 6145.34,
-        "revenue_display": "6.1K",
-        "roas": 2.1,
-        "roas_class": "bad"
+        "platform": "meta",
+        "name": "Spanish Days - Costa Brava - Trafic",
+        "spend": 528.23,
+        "spend_display": "528",
+        "conversions": 1,
+        "revenue": 8919.11,
+        "revenue_display": "8.9K",
+        "roas": 16.9,
+        "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Special Days",
-        "spend": 3419.32,
-        "spend_display": "3.4K",
-        "conversions": 5,
-        "revenue": 6933.42,
-        "revenue_display": "6.9K",
-        "roas": 2.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 4640.04,
+        "platform": "meta",
+        "name": "CIRCUITE MARTIE -TRAFIC",
+        "spend": 4633.46,
         "spend_display": "4.6K",
-        "conversions": 41,
-        "revenue": 6395.75,
-        "revenue_display": "6.4K",
-        "roas": 1.4,
-        "roas_class": "bad"
+        "conversions": 5,
+        "revenue": 76556.7,
+        "revenue_display": "77K",
+        "roas": 16.5,
+        "roas_class": "good"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 21334.59,
-        "spend_display": "21K",
-        "conversions": 129,
-        "revenue": 21874.84,
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Iá Su! Salut !",
+        "spend": 479.47,
+        "spend_display": "479",
+        "conversions": 1,
+        "revenue": 7797.78,
+        "revenue_display": "7.8K",
+        "roas": 16.3,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Brasov Last Minute AYT - Trafic 25 iunei",
+        "spend": 1613.63,
+        "spend_display": "1.6K",
+        "conversions": 2,
+        "revenue": 21566.8,
         "revenue_display": "22K",
-        "roas": 1.0,
-        "roas_class": "bad"
+        "roas": 13.4,
+        "roas_class": "good"
       }
     ],
     "campaigns_all": [
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 41323.91,
+        "spend": 41326.56,
         "spend_display": "41K",
         "conversions": 978,
         "revenue": 7820.44,
@@ -8297,9 +12396,31 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Remarketing",
+        "spend": 29237.43,
+        "spend_display": "29K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Circuite - CHARTER AVION - TURCIA",
+        "spend": 21611.6,
+        "spend_display": "22K",
+        "conversions": 8,
+        "revenue": 59185.8,
+        "revenue_display": "59K",
+        "roas": 2.7,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 21334.59,
+        "spend": 21339.05,
         "spend_display": "21K",
         "conversions": 129,
         "revenue": 21874.84,
@@ -8315,6 +12436,28 @@ window.PPC_DATA_BY_PERIOD = {
         "conversions": 66,
         "revenue": 25.33,
         "revenue_display": "25",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Circuite",
+        "spend": 19481.46,
+        "spend_display": "19K",
+        "conversions": 6,
+        "revenue": 45038.97,
+        "revenue_display": "45K",
+        "roas": 2.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Trafic Insule Grecia - ALL",
+        "spend": 19453.32,
+        "spend_display": "19K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8341,6 +12484,28 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "TURCI ALL 16.02.2025",
+        "spend": 16923.16,
+        "spend_display": "17K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Circuite autocar push - Trafic",
+        "spend": 16825.17,
+        "spend_display": "17K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "[Clan] Vara 2026 leads",
         "spend": 15407.22,
@@ -8352,6 +12517,72 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 15370.53,
+        "spend_display": "15K",
+        "conversions": 2,
+        "revenue": 16742.6,
+        "revenue_display": "17K",
+        "roas": 1.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Sejururi Exotice",
+        "spend": 15228.92,
+        "spend_display": "15K",
+        "conversions": 4,
+        "revenue": 62319.77,
+        "revenue_display": "62K",
+        "roas": 4.1,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi - Transilvania",
+        "spend": 14624.09,
+        "spend_display": "15K",
+        "conversions": 11,
+        "revenue": 143077.96,
+        "revenue_display": "143K",
+        "roas": 9.8,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Sud",
+        "spend": 14521.04,
+        "spend_display": "15K",
+        "conversions": 5,
+        "revenue": 36649.74,
+        "revenue_display": "37K",
+        "roas": 2.5,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BA - EB - COSTA DE LA LUZ",
+        "spend": 14491.35,
+        "spend_display": "14K",
+        "conversions": 2,
+        "revenue": 54453.7,
+        "revenue_display": "54K",
+        "roas": 3.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH EB - 31 OCTOMBRIE",
+        "spend": 14167.43,
+        "spend_display": "14K",
+        "conversions": 2,
+        "revenue": 23625.86,
+        "revenue_display": "24K",
+        "roas": 1.7,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "[Clan] Remarketing si Reach Competitori",
         "spend": 13904.35,
@@ -8359,6 +12590,50 @@ window.PPC_DATA_BY_PERIOD = {
         "conversions": 80,
         "revenue": 8.4,
         "revenue_display": "8",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ & BUC - LM EGIPT 8 august",
+        "spend": 13757.67,
+        "spend_display": "14K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EGIPT ALL 30 iul",
+        "spend": 13666.51,
+        "spend_display": "14K",
+        "conversions": 1,
+        "revenue": 1595.5,
+        "revenue_display": "1.6K",
+        "roas": 0.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ALL",
+        "spend": 13564.89,
+        "spend_display": "14K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🚨 Alertă de vacanță pentru ieșeni! Iașiul are...",
+        "spend": 13241.44,
+        "spend_display": "13K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8374,13 +12649,57 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Sales campaign - Sejururi – Moldova",
+        "spend": 12152.11,
+        "spend_display": "12K",
+        "conversions": 6,
+        "revenue": 31921.71,
+        "revenue_display": "32K",
+        "roas": 2.6,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 11581.35,
+        "spend": 11582.76,
         "spend_display": "12K",
         "conversions": 7,
         "revenue": 7.0,
         "revenue_display": "7",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic - Teasing Exotice",
+        "spend": 11136.35,
+        "spend_display": "11K",
+        "conversions": 2,
+        "revenue": 25383.93,
+        "revenue_display": "25K",
+        "roas": 2.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Brand Aw_NEW_EB",
+        "spend": 10947.78,
+        "spend_display": "11K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Circuite Push",
+        "spend": 10565.99,
+        "spend_display": "11K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8407,6 +12726,105 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "RMKT - AYT",
+        "spend": 10180.53,
+        "spend_display": "10K",
+        "conversions": 5,
+        "revenue": 82203.88,
+        "revenue_display": "82K",
+        "roas": 8.1,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Tailored messages campaign 12.06.2024 Campanie",
+        "spend": 10084.87,
+        "spend_display": "10K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIRCUITE ALL CJ - AWARNESS",
+        "spend": 10025.01,
+        "spend_display": "10K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Obiect nou de tip Interacţiuni Campanie cu setări recomandate",
+        "spend": 9877.14,
+        "spend_display": "9.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EARLY BOOKING 2026 - GENERALA",
+        "spend": 9851.17,
+        "spend_display": "9.9K",
+        "conversions": 2,
+        "revenue": 17563.52,
+        "revenue_display": "18K",
+        "roas": 1.8,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURCIA - AYT - BODRUM I 2026 I 12 orase",
+        "spend": 9729.42,
+        "spend_display": "9.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BA_CAMPAIGN_EB_2026",
+        "spend": 9714.5,
+        "spend_display": "9.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PMI - 4 orase Trafic 18 IULIE",
+        "spend": 9417.8,
+        "spend_display": "9.4K",
+        "conversions": 1,
+        "revenue": 3076.14,
+        "revenue_display": "3.1K",
+        "roas": 0.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "INSULE GRECIA 29 iulie",
+        "spend": 9252.21,
+        "spend_display": "9.3K",
+        "conversions": 1,
+        "revenue": 10865.73,
+        "revenue_display": "11K",
+        "roas": 1.2,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Sejururi - Plecare din Buc",
         "spend": 8923.77,
@@ -8414,6 +12832,72 @@ window.PPC_DATA_BY_PERIOD = {
         "conversions": 34,
         "revenue": 256.75,
         "revenue_display": "257",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "RHODOS ALL - PUSH ALL 10 iulie",
+        "spend": 8507.09,
+        "spend_display": "8.5K",
+        "conversions": 8,
+        "revenue": 69204.18,
+        "revenue_display": "69K",
+        "roas": 8.1,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Traffic campaign - Boost Urgente",
+        "spend": 8446.12,
+        "spend_display": "8.4K",
+        "conversions": 3,
+        "revenue": 38066.92,
+        "revenue_display": "38K",
+        "roas": 4.5,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Trafic - New Early B_ stage 2",
+        "spend": 8362.85,
+        "spend_display": "8.4K",
+        "conversions": 1,
+        "revenue": 5755.3,
+        "revenue_display": "5.8K",
+        "roas": 0.7,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EB GRECIA STAGE 2 _ INSULE ALL",
+        "spend": 8105.58,
+        "spend_display": "8.1K",
+        "conversions": 2,
+        "revenue": 15969.88,
+        "revenue_display": "16K",
+        "roas": 2.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ - ALL GRECIA - LAST MINUTE 30 IUNIE",
+        "spend": 8080.19,
+        "spend_display": "8.1K",
+        "conversions": 4,
+        "revenue": 33609.1,
+        "revenue_display": "34K",
+        "roas": 4.2,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ - ALL 0 PUSH CHARTERE",
+        "spend": 7795.18,
+        "spend_display": "7.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8429,6 +12913,39 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "GRECIA ALL 2026 _ ORASE_CHARTER",
+        "spend": 7245.22,
+        "spend_display": "7.2K",
+        "conversions": 1,
+        "revenue": 8130.83,
+        "revenue_display": "8.1K",
+        "roas": 1.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURCIA _ EB_PUSH_STAGE_2",
+        "spend": 7229.62,
+        "spend_display": "7.2K",
+        "conversions": 1,
+        "revenue": 11901.99,
+        "revenue_display": "12K",
+        "roas": 1.6,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "IASI - PUSH AYT",
+        "spend": 7142.67,
+        "spend_display": "7.1K",
+        "conversions": 6,
+        "revenue": 53175.48,
+        "revenue_display": "53K",
+        "roas": 7.4,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "[Clan] Promovare locatii",
         "spend": 7084.94,
@@ -8440,15 +12957,92 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Carusel Circuite Septembrie",
+        "spend": 6846.13,
+        "spend_display": "6.8K",
+        "conversions": 6,
+        "revenue": 38472.02,
+        "revenue_display": "38K",
+        "roas": 5.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Circuite Turistice ALL start 23 Aprilie",
+        "spend": 6563.88,
+        "spend_display": "6.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness - Exotice",
+        "spend": 6558.5,
+        "spend_display": "6.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6435.21,
+        "spend": 6442.37,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
         "revenue_display": "63K",
         "roas": 9.8,
         "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ HURGHADA :))",
+        "spend": 6407.85,
+        "spend_display": "6.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CORFU PUSH - B - CJ - TM 21 IULIE",
+        "spend": 6373.75,
+        "spend_display": "6.4K",
+        "conversions": 1,
+        "revenue": 12107.23,
+        "revenue_display": "12K",
+        "roas": 1.9,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ARDEAL 7 orase",
+        "spend": 6242.94,
+        "spend_display": "6.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Lansare Cipru - Sibiu",
+        "spend": 6235.18,
+        "spend_display": "6.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
       },
       {
         "platform": "google",
@@ -8462,9 +13056,64 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Laponia VIP trafic",
+        "spend": 6029.96,
+        "spend_display": "6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai să-ți dăm indicii: ai 𝗠𝗘𝗚𝗔  beneficii!!! Am...”",
+        "spend": 6025.04,
+        "spend_display": "6K",
+        "conversions": 1,
+        "revenue": 12444.18,
+        "revenue_display": "12K",
+        "roas": 2.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIPRU ALL",
+        "spend": 5987.15,
+        "spend_display": "6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BA 21 Mai - Tenerife video 1.14\"",
+        "spend": 5922.49,
+        "spend_display": "5.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Muntenegru 2026",
+        "spend": 5845.35,
+        "spend_display": "5.8K",
+        "conversions": 1,
+        "revenue": 4738.41,
+        "revenue_display": "4.7K",
+        "roas": 0.8,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 5665.96,
+        "spend": 5666.76,
         "spend_display": "5.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -8473,14 +13122,58 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
-        "platform": "google",
-        "name": "Pmax | Sejur Exotice",
-        "spend": 5602.96,
+        "platform": "meta",
+        "name": "EB 2026 GRECIA - TRAFIC ALL_31_OCT",
+        "spend": 5612.1,
         "spend_display": "5.6K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
         "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CAPPADOCIA _ BUGET INTELIGENT _10 ORASE",
+        "spend": 5611.18,
+        "spend_display": "5.6K",
+        "conversions": 2,
+        "revenue": 18895.88,
+        "revenue_display": "19K",
+        "roas": 3.4,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "google",
+        "name": "Pmax | Sejur Exotice",
+        "spend": 5603.07,
+        "spend_display": "5.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BRASOV - PUSH",
+        "spend": 5510.12,
+        "spend_display": "5.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURCIA BA -2026",
+        "spend": 5203.16,
+        "spend_display": "5.2K",
+        "conversions": 1,
+        "revenue": 11749.84,
+        "revenue_display": "12K",
+        "roas": 2.3,
         "roas_class": "bad"
       },
       {
@@ -8517,9 +13210,31 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Trafic Noi ORASE AYT 2025 - BC BM BV TGM CRV SB",
+        "spend": 4876.17,
+        "spend_display": "4.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ EB - TOATE DESTINATIILE",
+        "spend": 4772.72,
+        "spend_display": "4.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 4661.08,
+        "spend": 4662.24,
         "spend_display": "4.7K",
         "conversions": 29,
         "revenue": 15558.87,
@@ -8530,12 +13245,34 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 4640.04,
+        "spend": 4643.59,
         "spend_display": "4.6K",
         "conversions": 41,
         "revenue": 6395.75,
         "revenue_display": "6.4K",
         "roas": 1.4,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIRCUITE MARTIE -TRAFIC",
+        "spend": 4633.46,
+        "spend_display": "4.6K",
+        "conversions": 5,
+        "revenue": 76556.7,
+        "revenue_display": "77K",
+        "roas": 16.5,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Awareness AYT 2025",
+        "spend": 4628.86,
+        "spend_display": "4.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
         "roas_class": "bad"
       },
       {
@@ -8561,6 +13298,182 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Whatsupp  - PUSH 16 iulie",
+        "spend": 4535.86,
+        "spend_display": "4.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TUNISIA CLUJ - no 2 - 2025",
+        "spend": 4523.24,
+        "spend_display": "4.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ADVANTAGE - TURCIA 31.08 Campanie",
+        "spend": 4300.79,
+        "spend_display": "4.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Trafic Grecia Heraklion 2 saptamani",
+        "spend": 4075.32,
+        "spend_display": "4.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "AYT _ EB 2026 _ PUSH 31 OCT",
+        "spend": 4037.65,
+        "spend_display": "4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ORADEA TRAFIC 24 aprilie",
+        "spend": 3961.79,
+        "spend_display": "4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "SPANIA ALL EB",
+        "spend": 3921.88,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 19767.12,
+        "revenue_display": "20K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "LAST MINUTE  - PUSH CATEGORIE",
+        "spend": 3910.32,
+        "spend_display": "3.9K",
+        "conversions": 2,
+        "revenue": 34544.53,
+        "revenue_display": "35K",
+        "roas": 8.8,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Trafic 3",
+        "spend": 3878.87,
+        "spend_display": "3.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Creta - Vizibilitate 25 august",
+        "spend": 3852.16,
+        "spend_display": "3.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Turcia - Campanie pana la 29 aprilie",
+        "spend": 3781.53,
+        "spend_display": "3.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "MEXIC - CLUJ NAPOCA",
+        "spend": 3736.75,
+        "spend_display": "3.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH AYT ALL",
+        "spend": 3512.89,
+        "spend_display": "3.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ALANYA - PUSH B & CJ",
+        "spend": 3509.89,
+        "spend_display": "3.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ție îți plac sâmbetele liniștite, ei - 🛍...”",
+        "spend": 3496.66,
+        "spend_display": "3.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Creta Heraklion",
+        "spend": 3446.42,
+        "spend_display": "3.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Special Days",
         "spend": 3419.32,
@@ -8569,6 +13482,17 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 6933.42,
         "revenue_display": "6.9K",
         "roas": 2.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Push Trafic Grecia ALL",
+        "spend": 3346.76,
+        "spend_display": "3.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
         "roas_class": "bad"
       },
       {
@@ -8583,14 +13507,333 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "CIPRU REVELION - BUC - CJ - TM",
+        "spend": 3259.47,
+        "spend_display": "3.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "FINAL STRIKE EB _ 31 _ OCT_ ALL",
+        "spend": 3191.57,
+        "spend_display": "3.2K",
+        "conversions": 1,
+        "revenue": 4400.34,
+        "revenue_display": "4.4K",
+        "roas": 1.4,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Bulgaria -ALBENA",
+        "spend": 3158.66,
+        "spend_display": "3.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PHUKET - CLUJ - PUSH",
+        "spend": 3086.36,
+        "spend_display": "3.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CHANIA - TOATE ORASEELE DE PLECARE - BA",
+        "spend": 3039.8,
+        "spend_display": "3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Suceava ULM Traffic",
+        "spend": 3023.09,
+        "spend_display": "3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știm… și tu ești de modă veche: o iubești ca în...”",
+        "spend": 3011.39,
+        "spend_display": "3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cauți vara? Cauți vacanța? Cauți reducerea? ”",
+        "spend": 2993.99,
+        "spend_display": "3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 2966.61,
+        "spend": 2966.93,
         "spend_display": "3K",
         "conversions": 52,
         "revenue": 6145.34,
         "revenue_display": "6.1K",
         "roas": 2.1,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Timisoara Chartere - martie 2025",
+        "spend": 2932.03,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sicilia EB 2026 0 B & CJ",
+        "spend": 2916.6,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TRAFIC CAMPANIE MAI - REFACUTA",
+        "spend": 2909.95,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TRAVEL FEST - campanie TRAFIC",
+        "spend": 2891.03,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 De câte ori nu ți-ai spus, în iunie, iulie sau...”",
+        "spend": 2851.15,
+        "spend_display": "2.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EGIPT SPECIAL OFFER & BONUS",
+        "spend": 2845.75,
+        "spend_display": "2.8K",
+        "conversions": 5,
+        "revenue": 23972.2,
+        "revenue_display": "24K",
+        "roas": 8.4,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH EGIPT CIRCUITE 2025",
+        "spend": 2733.79,
+        "spend_display": "2.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TARG TRAVEL HUB - PUSH",
+        "spend": 2654.26,
+        "spend_display": "2.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "IASI EB - TOATE DESTINATIILE",
+        "spend": 2652.9,
+        "spend_display": "2.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIPRU LARNACA NEW YEAR",
+        "spend": 2650.81,
+        "spend_display": "2.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "HURGHY - PUSH DEC 2024",
+        "spend": 2647.52,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Zakynthos ULM 2024",
+        "spend": 2631.17,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Zakynthos - Vizibilitate",
+        "spend": 2592.36,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Turcia _ Conversii Campanie",
+        "spend": 2560.57,
+        "spend_display": "2.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Campanie nouă pentru Vizibilitate",
+        "spend": 2548.18,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cauți pachete turistice pentru 🌞 vara 2025? E...”",
+        "spend": 2500.0,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Părinții, seniorii și copiii pe 📢 recepție?!...”",
+        "spend": 2499.7,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să vezi toate minunile 🌍lumii? Să...”",
+        "spend": 2496.76,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Éla! Éla! Ai fost deja în vacanță în 🇬🇷Grecia?...”",
+        "spend": 2495.71,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Rhodos - greek week",
+        "spend": 2481.13,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH CHANIA 2025- 4 orase",
+        "spend": 2457.9,
+        "spend_display": "2.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
         "roas_class": "bad"
       },
       {
@@ -8605,10 +13848,153 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "ISTANBUL - CIRCUIT BUCURESTI & AVION",
+        "spend": 2444.29,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Spanish Days",
+        "spend": 2440.37,
+        "spend_display": "2.4K",
+        "conversions": 1,
+        "revenue": 7370.78,
+        "revenue_display": "7.4K",
+        "roas": 3.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "GRECIA ALL Advantage+ 06.01.2025 Campanie",
+        "spend": 2415.98,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că...Istanbulul e casa celebrului Burak...”",
+        "spend": 2391.17,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "LITORAL RO 2025",
+        "spend": 2363.61,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Obiect nou de tip Trafic Campanie cu setări recomandate",
+        "spend": 2363.12,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 2354.75,
+        "spend": 2356.74,
         "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "AYT - COPIII GRATUIT 3 si 10 mai",
+        "spend": 2352.32,
+        "spend_display": "2.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TRAVEL FEST Campanie",
+        "spend": 2259.84,
+        "spend_display": "2.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TUNISIA _CLUJ_ FINAL_DE_SEZON",
+        "spend": 2258.88,
+        "spend_display": "2.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "LUNA VACANTELOR - PUSH",
+        "spend": 2247.8,
+        "spend_display": "2.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Grecia ALL - CONVERSIONS",
+        "spend": 2237.3,
+        "spend_display": "2.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Lansare CHANIA - CJ & CT",
+        "spend": 2170.27,
+        "spend_display": "2.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Merhaba, kalimera, holà, buongiorno! Spune...”",
+        "spend": 2123.97,
+        "spend_display": "2.1K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -8627,6 +14013,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Brasov Trafic",
+        "spend": 2111.5,
+        "spend_display": "2.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Search | Sejururi - Plecare din Cluj",
         "spend": 2100.65,
@@ -8635,6 +14032,160 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 608.0,
         "revenue_display": "608",
         "roas": 0.3,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ RHS",
+        "spend": 2099.83,
+        "spend_display": "2.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Timisoara Chartere ULM",
+        "spend": 2061.31,
+        "spend_display": "2.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum ar fi ca azi să mănânci pâine cu unt și...”",
+        "spend": 2060.55,
+        "spend_display": "2.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În octombrie plouă… cu ✈️🚍 circuite turistice de...”",
+        "spend": 2036.23,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Tunisia - Push Cluj",
+        "spend": 2033.5,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURKISH DAYS TRAFFIC & AD onn call Campanie",
+        "spend": 2010.97,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru că are grijă de tine tot anul, pentru că...”",
+        "spend": 2000.0,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🏁 Toată lumea vrea relaxare! Tu? ACUM e rândul...",
+        "spend": 1999.99,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îți place să te simți ca un 🌟 star, să ți se...”",
+        "spend": 1999.92,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Antalya 🧿 e doar la 2 ore distanță și 18 grade 🌞...”",
+        "spend": 1999.72,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că 🫒 măslinele conțin proteine, vitamina E...”",
+        "spend": 1999.57,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🧳✈️ Unde? Unde vrei tu!”",
+        "spend": 1997.52,
+        "spend_display": "2K",
+        "conversions": 3,
+        "revenue": 13490.13,
+        "revenue_display": "13K",
+        "roas": 6.8,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei rețeta de cremă catalană? Nu te mai obosi?...”",
+        "spend": 1997.0,
+        "spend_display": "2K",
+        "conversions": 1,
+        "revenue": 7872.73,
+        "revenue_display": "7.9K",
+        "roas": 3.9,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TG MURES EB TRAFIC",
+        "spend": 1979.27,
+        "spend_display": "2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
         "roas_class": "bad"
       },
       {
@@ -8649,6 +14200,600 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Corfu - Lookalike",
+        "spend": 1909.05,
+        "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 📣 Suceveni, vă salutăm! ✈️ Din inima Bucovinei,...",
+        "spend": 1899.6,
+        "spend_display": "1.9K",
+        "conversions": 1,
+        "revenue": 7722.31,
+        "revenue_display": "7.7K",
+        "roas": 4.1,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "VOUCHER CADOU PUSH",
+        "spend": 1880.02,
+        "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TIMISOARA EB ian 2026",
+        "spend": 1873.98,
+        "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Laponia Push 3 Campanie",
+        "spend": 1867.26,
+        "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Litoral Romania 2025",
+        "spend": 1821.51,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 𝗔𝘁𝗲𝗻𝘁̦𝗶𝗲, 𝗜𝗮𝘀̦𝗶! 𝗦𝘂𝗻𝘁𝗲𝘁̦𝗶 𝗴𝗮𝘁𝗮 𝗽𝗲𝗻𝘁𝗿𝘂 𝗮𝘃𝗲𝗻𝘁𝘂𝗿𝗮...”",
+        "spend": 1806.49,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Bulgaria Individual PUSH",
+        "spend": 1805.36,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗕𝘂𝗰𝘂𝗿𝗲𝘀̦𝘁𝗲𝗻𝗶𝗶 știu cel mai bine să prindă...”",
+        "spend": 1797.98,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 1, 2, 3… Vacanțe în Corfu🇬🇷? Chiar acum, dacă vrei!”",
+        "spend": 1797.24,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🔊 Părinții, seniorii și copiii pe recepție? 🥳...”",
+        "spend": 1796.58,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TRAFIC LM AYT",
+        "spend": 1782.24,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Campanie nouă pentru Vizibilitate",
+        "spend": 1756.4,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CRAIOVA PUSH AYT",
+        "spend": 1728.46,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Campanie nouă pentru Vizibilitate",
+        "spend": 1725.78,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cât de repede 💨 te adaptezi? ”",
+        "spend": 1697.92,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Termenul de 𝗔𝗹𝗹 𝗜𝗻𝗰𝗹𝘂𝘀𝗶𝘃𝗲 a fost inventat aici!...”",
+        "spend": 1694.17,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🌞👒 Lume, lume, pregătiți degrabă loțiunea de...",
+        "spend": 1689.0,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Bulgarski televizia 📺 prezintă: Vara 🌞 viitoare...”",
+        "spend": 1686.64,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✈️ Descoperă fericirea în 🇬🇷𝗚𝗿𝗲𝗰𝗶𝗮! Nu rata...”",
+        "spend": 1678.27,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TURCIA 2025 Early Booking",
+        "spend": 1657.03,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Turcia Circuite 29 mai 2025",
+        "spend": 1651.26,
+        "spend_display": "1.7K",
+        "conversions": 1,
+        "revenue": 7497.46,
+        "revenue_display": "7.5K",
+        "roas": 4.5,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "TTR - BODRUM",
+        "spend": 1650.21,
+        "spend_display": "1.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Final EB 19.12.2025",
+        "spend": 1636.23,
+        "spend_display": "1.6K",
+        "conversions": 2,
+        "revenue": 13334.72,
+        "revenue_display": "13K",
+        "roas": 8.1,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH PARALIA KATERINI - REVELION AUTOCAR",
+        "spend": 1631.34,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Brasov Last Minute AYT - Trafic 25 iunei",
+        "spend": 1613.63,
+        "spend_display": "1.6K",
+        "conversions": 2,
+        "revenue": 21566.8,
+        "revenue_display": "22K",
+        "roas": 13.4,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "CIRCUITE ITALIA",
+        "spend": 1608.11,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ - Paste",
+        "spend": 1600.66,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Descoperă fericirea în vacanță! Nu rata ofertele...”",
+        "spend": 1600.0,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TIMISOARA - PUSH SPANIA",
+        "spend": 1572.46,
+        "spend_display": "1.6K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "COPIII ZBOR GRATUIT 0 26 iunie",
+        "spend": 1544.27,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 13376.92,
+        "revenue_display": "13K",
+        "roas": 8.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Costa BRAVA_EB_2026_ Audienta_ B_CJ_IS",
+        "spend": 1543.37,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "UZBEKISTAN - CLUJ PUSH",
+        "spend": 1513.06,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Autocare Turcia",
+        "spend": 1506.86,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CORFU GREEK WEEK",
+        "spend": 1500.75,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când auzi de ofertele 🎏 𝗲𝗮𝗿𝗹𝘆 𝗯𝗼𝗼𝗸𝗶𝗻𝗴 în...”",
+        "spend": 1500.0,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum arată atelierul magic 🪄 al moșului? Ce...”",
+        "spend": 1499.99,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Doar 326 Euro/persoană pentru un pachet cu 7...”",
+        "spend": 1499.99,
+        "spend_display": "1.5K",
+        "conversions": 1,
+        "revenue": 8246.22,
+        "revenue_display": "8.2K",
+        "roas": 5.5,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „😎 Știu ai tăi ce știu – și nu degeaba!”",
+        "spend": 1499.98,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vacanțe de vis? Cu o ofertă te-am convins???”",
+        "spend": 1499.61,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „👋 𝗖𝗮̂𝗻𝗱 𝘃𝗶𝗻𝗲 𝘃𝗼𝗿𝗯𝗮 𝗱𝗲 𝗩𝗮𝗰𝗮𝗻𝘁̦𝗲 𝗟𝗮𝘀𝘁 𝗠𝗶𝗻𝘂𝘁𝗲 𝗲𝘀̦𝘁𝗶...”",
+        "spend": 1499.37,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Alertă de noi 🌍 destinații estivale pentru...”",
+        "spend": 1498.08,
+        "spend_display": "1.5K",
+        "conversions": 1,
+        "revenue": 7583.17,
+        "revenue_display": "7.6K",
+        "roas": 5.1,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝘂𝗺 𝗮𝗱𝘂𝗰𝗲𝗺 𝗱𝗲𝘀𝘁𝗶𝗻𝗮𝘁̦𝗶𝗶𝗹𝗲 𝗱𝗲 🌞 𝘃𝗮𝗿𝗮̆ 𝗺𝗮𝗶 𝗮𝗽𝗿𝗼𝗮𝗽𝗲...”",
+        "spend": 1495.78,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Nessebar - Aqua paradis",
+        "spend": 1468.33,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ISTANBUL AVION ALL BUCH",
+        "spend": 1466.15,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CORFU - C I CJ TM  - PUSH FINAL EB",
+        "spend": 1463.51,
+        "spend_display": "1.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Urgente",
+        "spend": 1456.18,
+        "spend_display": "1.5K",
+        "conversions": 2,
+        "revenue": 7282.46,
+        "revenue_display": "7.3K",
+        "roas": 5.0,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „#𝗧𝘂𝗿𝗰𝗶𝗮, 𝘃𝗲𝗻𝗶𝗺!!! 😍 Călătoriile 🚗✈ sunt  mult mai...”",
+        "spend": 1446.29,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🚨 Alertă de Vacanță! Până și reducerile își...”",
+        "spend": 1440.2,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Marți, 3 ceasuri 🐈‍⬛ rele?”",
+        "spend": 1428.23,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Vrei să simți briza 🌊 mării? Să scapi de asfaltul...",
+        "spend": 1399.45,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îmbunătățește circulația sângelui, iar...”",
+        "spend": 1399.26,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PUSH TOURISTICA judete ardeal 15 - 18.11.2024 Campanie",
+        "spend": 1397.08,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BLACK FRIDAY - PUSH_LP",
+        "spend": 1391.9,
+        "spend_display": "1.4K",
+        "conversions": 4,
+        "revenue": 81734.8,
+        "revenue_display": "82K",
+        "roas": 58.7,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "[Clan] - BlackFriday 2025",
         "spend": 1388.55,
@@ -8656,6 +14801,72 @@ window.PPC_DATA_BY_PERIOD = {
         "conversions": 9,
         "revenue": 60.97,
         "revenue_display": "61",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Travel Hub - PUSH ANTALYA",
+        "spend": 1372.49,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "LOVE CAMPAIGN",
+        "spend": 1354.48,
+        "spend_display": "1.4K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Tenerife Last Minute Paste - Bucuresti",
+        "spend": 1349.96,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Δημοσίευση: \"Și ce dacă e septembrie? 🍂 Vara refuză să plece...\"",
+        "spend": 1349.13,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Call Campaign _ Cipru 2025 Campanie",
+        "spend": 1337.32,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dobro jutro, bom dia, buen día, sabah alkhayr,...”",
+        "spend": 1334.65,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8682,9 +14893,361 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Postare: „Setează-ți ringtonul să sune 🎵 \"Maria me ta...”",
+        "spend": 1300.0,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să descoperi „Magia insulei Kos: din Kos...”",
+        "spend": 1296.1,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „‼ 𝗨𝗹𝘁𝗶𝗺𝗲𝗹𝗲 𝗼𝗳𝗲𝗿𝘁𝗲 𝗮𝗹𝗲 𝗹𝘂𝗻𝗶𝗶 𝗮𝘂𝗴𝘂𝘀𝘁 𝗽𝗲𝗻𝘁𝗿𝘂 𝗔𝗻𝘁𝗮𝗹𝘆𝗮...”",
+        "spend": 1292.12,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BA - ANTALYA DIN TM",
+        "spend": 1270.57,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "NEWV PUSH - HURGHADA PASTE",
+        "spend": 1264.45,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Kalimera, timișoreni!",
+        "spend": 1259.63,
+        "spend_display": "1.3K",
+        "conversions": 1,
+        "revenue": 55822.72,
+        "revenue_display": "56K",
+        "roas": 44.3,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Clujul? Partiamo🧳in vacanze?”",
+        "spend": 1259.09,
+        "spend_display": "1.3K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗦̦𝘁𝗶𝗿𝗲 📰 𝗱𝗲 𝗺𝗮𝘅𝗶𝗺 𝗶𝗻𝘁𝗲𝗿𝗲𝘀 𝗽𝗲𝗻𝘁𝗿𝘂 𝗜𝗮𝘀̦𝗶! A început...”",
+        "spend": 1250.0,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "GREEK DAYS _ Orase Charter",
+        "spend": 1230.33,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Campanie - AUGUST- Ultimul apus",
+        "spend": 1223.47,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Iasi Sales_Advantage+ 10.07.2024 Campanie",
+        "spend": 1219.63,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ZAKYNTHOS - 2026",
+        "spend": 1213.56,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă vacanțele ✈ ar fi mâncăruri, noi am așeza pe...”",
+        "spend": 1200.0,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Upssss! Zilele sunt 🧮 numărate? 🙃 Cele cu oferte...”",
+        "spend": 1199.96,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Drumurile noastre, poate...se vor întâlni vreodată...”",
+        "spend": 1199.94,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎆 Ce e înțepător la limbă și plin de veselie? 🥂...”",
+        "spend": 1199.85,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Din inima Ardealului... în toată lumea!”",
+        "spend": 1199.7,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 𝗧𝗶𝗺𝗶𝘀̦𝗼𝗿𝗲𝗻𝗶, 𝗰𝗼𝗻𝗰𝗲𝗱𝗶𝘂𝗹 𝗶̂𝗻𝗰𝗲𝗽𝗲 𝗔𝗖𝗨𝗠! ”",
+        "spend": 1199.61,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Timișoreni vi se pregătește ceva!!!",
+        "spend": 1199.45,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 Ultima strigare! Hai cu noi la mare. Grecia, în...”",
+        "spend": 1199.43,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢Timișoreni vi se pregătesc cele mai frumoase 🤩...”",
+        "spend": 1199.18,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Gönderi: \"📰 Deschidem jurnalul de vacanță cu știrea...\"",
+        "spend": 1198.93,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Numește o destinație care începe cu litera \"A\",...”",
+        "spend": 1196.5,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🥁🥁 Se aude-n toată țara? A început 𝗧𝗮̂𝗿𝗴𝘂𝗹 𝗱𝗲...”",
+        "spend": 1193.06,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🖤 𝗔 𝗶̂𝗻𝗰𝗲𝗽𝘂𝘁 𝗕𝗹𝗮𝗰𝗸 𝗙𝗿𝗶𝗱𝗮𝘆 “𝘆𝘂𝗽𝗶, 𝘆𝘂𝗽𝗶, 𝘆𝗮𝘆! Tu ce...”",
+        "spend": 1190.09,
+        "spend_display": "1.2K",
+        "conversions": 1,
+        "revenue": 6568.34,
+        "revenue_display": "6.6K",
+        "roas": 5.5,
+        "roas_class": "good"
+      },
+      {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1136.66,
+        "spend": 1137.53,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "FINAL EB 28_02",
+        "spend": 1125.77,
+        "spend_display": "1.1K",
+        "conversions": 1,
+        "revenue": 6127.85,
+        "revenue_display": "6.1K",
+        "roas": 5.4,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 𝗦̦𝘁𝗶𝗶 𝗰𝗲 𝗳𝗮𝗰𝗲 🇪🇬𝗛𝘂𝗿𝗴𝗵𝗮𝗱𝗮 𝗺𝗮𝗴𝗶𝗰𝗮̆? ",
+        "spend": 1119.9,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Vizitatori pe site-ul web Reclamă: Visezi la dimineți cu miros de ☕ cafea, cu aerul...",
+        "spend": 1119.54,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Și afară plouă, plouă și-i trecut de ora nouă...”",
+        "spend": 1118.31,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine e prevăzător, prinde din zbor reducerile...”",
+        "spend": 1107.29,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIPRU 2025 B & CJ PUSH",
+        "spend": 1102.12,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CRETA GREEK DAYS",
+        "spend": 1096.2,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -8704,6 +15267,17 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "good"
       },
       {
+        "platform": "meta",
+        "name": "Craiova ALL_Iulie",
+        "spend": 1058.93,
+        "spend_display": "1.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "[Clan] TTR 2026",
         "spend": 1052.55,
@@ -8715,6 +15289,39 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "warn"
       },
       {
+        "platform": "meta",
+        "name": "Postare: „Aici s-a născut 👑 Zeus, într-o peșteră ascunsă,...”",
+        "spend": 1049.21,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Viva la vida! 🎵 Cânți și dansezi, iar vecinii,...”",
+        "spend": 1048.19,
+        "spend_display": "1K",
+        "conversions": 1,
+        "revenue": 11135.61,
+        "revenue_display": "11K",
+        "roas": 10.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Obiect nou de tip Trafic Campanie cu setări recomandate",
+        "spend": 1047.76,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "[Clan][PMax] Spanish days",
         "spend": 1028.88,
@@ -8722,6 +15329,534 @@ window.PPC_DATA_BY_PERIOD = {
         "conversions": 6,
         "revenue": 16.81,
         "revenue_display": "17",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "AYT - BUC _ TRAFIC _ 299 E",
+        "spend": 1027.7,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Atent la 💰 bugetul familiei?  Acum e cel mai...”",
+        "spend": 1001.73,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce ai semănat 🌱 primăvară culegi 🍆 toamna. Și...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 Colecționează 📸 amintiri de neuitat! Începe din...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru cei care iubesc marea, pentru cei care...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Dublu avantaj pentru ⛱ vacanța ta! Rezervă-ți...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pe aripi de vise, spre ☀ pornim,/ cu hărți și 🧳...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Ești gata pentru aventura verii? Vino la 𝗧𝗿𝗮𝘃𝗲𝗹...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 𝗔𝗹𝗲𝗿𝘁𝗮̆ 𝗺𝗮𝘅𝗶𝗺𝗮̆ 𝗱𝗲 𝗿𝗲𝗱𝘂𝗰𝗲𝗿𝗶! Până la finalul...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Holá! Se aud ritmuri 🎶 latino, valuri ce se sparg...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎏 Descoperă rafinamentul la 𝗖𝗮𝗹𝗶𝘀𝘁𝗮 𝗟𝘂𝘅𝘂𝗿𝘆 𝗥𝗲𝘀𝗼𝗿𝘁...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Agitație și praf? Asta vezi zilnic în Clujul...”",
+        "spend": 1000.0,
+        "spend_display": "1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când poți prăji un 🍳 ou pe asfaltul 🌇 orașelor e...”",
+        "spend": 999.98,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✈️🚍 𝗖𝗶𝗿𝗰𝘂𝗶𝘁𝗲𝗹𝗲 𝘁𝘂𝗿𝗶𝘀𝘁𝗶𝗰𝗲 #𝗣𝗮𝗿𝗮𝗹𝗲𝗹𝗮𝟰𝟱 𝗽𝗲𝗻𝘁𝗿𝘂 𝟮𝟬𝟮𝟱...”",
+        "spend": 999.98,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗩𝗿𝗲𝗶 𝘀𝗮̆ 𝗽𝗹𝗲𝗰𝗶 ✈ 𝗿𝗮𝗽𝗶𝗱 𝗶̂𝗻 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮̆? Să te...”",
+        "spend": 999.97,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Visezi la o vacanță în stil grecesc? Gândește-te...”",
+        "spend": 999.95,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: De ce pleacă clujenii în 🇬🇷Grecia? 🏛 Să compare...",
+        "spend": 999.95,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🚨 Alertă! Paradisul 🌟 e pregătit pentru voi!...”",
+        "spend": 999.94,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Numele său este asociat cu ideea de frumusețe...”",
+        "spend": 999.94,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine au fost faraonii? Cum s-au construit...”",
+        "spend": 999.92,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru o vară de 5*, 𝗦𝗜𝗕𝗜𝗨𝗟 alege #𝗔𝗻𝘁𝗮𝗹𝘆𝗮 și...”",
+        "spend": 999.88,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pune-i \"World 🌎 at her 😍 feet!\"”",
+        "spend": 999.88,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🥁🥁 Badabim-badabum! Se aude-n toată țara? 𝗕𝗹𝗮𝗰𝗸...”",
+        "spend": 999.87,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: În 🇷🇴Sibiu bate vântul de pe 🏞 Făgăraș. În...",
+        "spend": 999.87,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Chi va a Surriento, se scorda ’e tutto” – Cine...”",
+        "spend": 999.86,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Δημοσίευση: \"Temperaturile sunt 🌡️ ridicate, apa 🌊 mării...\"",
+        "spend": 999.84,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îți lipsește vara? 😉 Mai e puțin și începe! Alege...”",
+        "spend": 999.84,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ca să nu simți că-i mică 𝗩𝗮𝗰𝗮𝗻𝘁̦𝗮 𝗠𝗮𝗿𝗲, rezervă...”",
+        "spend": 999.72,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🥁🛩️ 𝗖𝗹𝘂𝗷𝗲𝗻𝗶! 𝗢 𝘃𝗮𝗿𝗮̆ 𝗺𝗲𝗺𝗼𝗿𝗮𝗯𝗶𝗹𝗮̆ 𝗶̂𝗻𝗰𝗲𝗽𝗲...”",
+        "spend": 999.59,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Ești gata pentru o nouă șansă? Ești gata pentru...”",
+        "spend": 999.54,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Dacă vara a-nceput, ",
+        "spend": 999.51,
+        "spend_display": "1000",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îți place 🏖️ soarele, dar adori și nenumăratele...”",
+        "spend": 999.35,
+        "spend_display": "999",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: ☀ Știi cum începe o zi de vacanță autentic...",
+        "spend": 999.29,
+        "spend_display": "999",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă toți ar pleca măcar într-o ✈ vacanță pe an,...”",
+        "spend": 999.13,
+        "spend_display": "999",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai să ne bucurăm de apropierea ⛱ verii, a mult...”",
+        "spend": 999.1,
+        "spend_display": "999",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Un \"Opa, opa\", \"Sagapao\", \"Palamakia\", cam atât...”",
+        "spend": 999.05,
+        "spend_display": "999",
+        "conversions": 1,
+        "revenue": 6570.67,
+        "revenue_display": "6.6K",
+        "roas": 6.6,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pe locuri, fiți gata, 🏳️start Travel Fest by...”",
+        "spend": 998.32,
+        "spend_display": "998",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎏 Ești pregătit pentru ce urmează? Între 𝟮𝟵...”",
+        "spend": 998.26,
+        "spend_display": "998",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Prinde vibe-ul vacanțelor în 🇬🇷𝙂𝙧𝙚𝙘𝙞𝙖 𝙘𝙪 ✈️...”",
+        "spend": 997.48,
+        "spend_display": "997",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi de ce nu te saturi după ce muncești ca un...”",
+        "spend": 997.1,
+        "spend_display": "997",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: 🎒 Te-ai trezit cu dor de ducă? Perfect! Pentru că...",
+        "spend": 991.89,
+        "spend_display": "992",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "PRAGA - LEADS",
+        "spend": 990.21,
+        "spend_display": "990",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „I-ai admirat în „Cheek to cheek” pe maeştrii...”",
+        "spend": 989.43,
+        "spend_display": "989",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „😍 Iubești călătoriile? ”",
+        "spend": 987.29,
+        "spend_display": "987",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "FINAL EB - 31 martie",
+        "spend": 984.65,
+        "spend_display": "985",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EGIPT CIRCUITE - PUSH",
+        "spend": 983.69,
+        "spend_display": "984",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Turcia - Circuite Charter Vara - Gustul Orientului",
+        "spend": 977.24,
+        "spend_display": "977",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Fasten your seatbelts! Vacanțele verii 2026 sunt...”",
+        "spend": 973.12,
+        "spend_display": "973",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
         "roas": 0.0,
         "roas_class": "bad"
       },
@@ -8737,11 +15872,2695 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Vara 🌞 asta se petrece în Hurghada 🇪🇬!",
+        "spend": 963.89,
+        "spend_display": "964",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: 👉Din București până-n Brașov faci 5 ore cu mașina...",
+        "spend": 959.7,
+        "spend_display": "960",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că arganul e aurul 🇲🇦Marocului? Arborele de...”",
+        "spend": 958.57,
+        "spend_display": "959",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✨ Cele mai tari vacanțe se prind din timp! Pentru...”",
+        "spend": 958.52,
+        "spend_display": "959",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎬 Ți-a plăcut Nașul? Vei recunoaște aici locuri...”",
+        "spend": 956.75,
+        "spend_display": "957",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗙𝗶𝗲𝘀𝘁𝗮 🎉 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲𝗹𝗼𝗿 𝗮 𝗶̂𝗻𝗰𝗲𝗽𝘂𝘁! Luna lui Cuptor...”",
+        "spend": 953.68,
+        "spend_display": "954",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIRCUIT CHARTER EGIPT",
+        "spend": 946.62,
+        "spend_display": "947",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „The real deal? Știi ce înseamnă? Să rezervi ✅ de...”",
+        "spend": 930.43,
+        "spend_display": "930",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Turcia plecari MAI",
+        "spend": 918.51,
+        "spend_display": "919",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „De Revelion, în 🇷🇴România, se mănâncă struguri 🍇...”",
+        "spend": 909.24,
+        "spend_display": "909",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗮𝗱𝗼𝘂𝗹 🎁 𝘁𝗮̆𝘂 𝗱𝘂𝗽𝗮̆ 𝘂𝗻 𝗮𝗻 𝘀̦𝗰𝗼𝗹𝗮𝗿, 𝗼🧳𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮̆...”",
+        "spend": 900.0,
+        "spend_display": "900",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când ⏱ timpul e cel mai mare inamic intervenim...”",
+        "spend": 900.0,
+        "spend_display": "900",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Un cuvânt bun poate încălzi trei luni de iarnă\",...”",
+        "spend": 900.0,
+        "spend_display": "900",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mai ai ⏲ 4 zile de prețuri ✨ speciale! Alege...”",
+        "spend": 899.92,
+        "spend_display": "900",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vacanța ta de vara încă nu e stabilită? O lași la...”",
+        "spend": 899.75,
+        "spend_display": "900",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🌿  Beneficiile vacanțelor?",
+        "spend": 898.21,
+        "spend_display": "898",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝙏𝙧𝙖𝙫𝙚𝙡 𝙁𝙚𝙨𝙩 e-un târgușor unde prinzi oferte-n ✈...”",
+        "spend": 895.81,
+        "spend_display": "896",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Second Minute - Push Antalya pana la 10.02",
+        "spend": 894.92,
+        "spend_display": "895",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Lasă totul în urmă și învață să zâmbești din nou...”",
+        "spend": 885.67,
+        "spend_display": "886",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🔊 Alooo! Toată lumea din Constanța lasă culoar...",
+        "spend": 883.03,
+        "spend_display": "883",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "[Clan] Spanish Days - AI max",
         "spend": 874.03,
         "spend_display": "874",
         "conversions": 1,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ _ TOURS _ ALL",
+        "spend": 863.47,
+        "spend_display": "863",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Deja începi să te gândești ușor melancolic la...”",
+        "spend": 850.0,
+        "spend_display": "850",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍📖 „Lumea întreagă e o carte, iar cei care nu...”",
+        "spend": 850.0,
+        "spend_display": "850",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Ești gata pentru 𝘃𝗮𝗿𝗮 𝟮𝟬𝟮𝟱? Am lansat deja...”",
+        "spend": 848.5,
+        "spend_display": "848",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Paris 3 Martie",
+        "spend": 841.82,
+        "spend_display": "842",
+        "conversions": 1,
+        "revenue": 4054.63,
+        "revenue_display": "4.1K",
+        "roas": 4.8,
+        "roas_class": "warn"
+      },
+      {
+        "platform": "meta",
+        "name": "Malta Revelion",
+        "spend": 840.88,
+        "spend_display": "841",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Știai că Neverending story nu-i doar titlul unui...",
+        "spend": 839.46,
+        "spend_display": "839",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În superba 🇮🇹 Sicilia, timpul curge altfel, mai...”",
+        "spend": 839.24,
+        "spend_display": "839",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "TRAVEL FEST  II - 30 noiembrie",
+        "spend": 831.15,
+        "spend_display": "831",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Push Cluj 3",
+        "spend": 829.27,
+        "spend_display": "829",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Te plângi mereu că n-ai timp? Ai grijă că mai e...”",
+        "spend": 827.71,
+        "spend_display": "828",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇹🇷 𝟮𝟲 𝗔𝗽𝗿𝗶𝗹𝗶𝗲, 𝗽𝗹𝗲𝗰𝗮̆𝗺 𝗱𝗶𝗻 𝗕𝘂𝗰𝘂𝗿𝗲𝘀̦𝘁𝗶 𝘀𝗽𝗿𝗲...”",
+        "spend": 820.36,
+        "spend_display": "820",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Fii vigilent, agil și inspirat... rezervă chiar...”",
+        "spend": 818.16,
+        "spend_display": "818",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „😤 Faci alergie la expresia \"a strânge cureaua\"?...”",
+        "spend": 812.91,
+        "spend_display": "813",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru sănătatea mentală a voastră și a 👧...”",
+        "spend": 804.58,
+        "spend_display": "805",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Hurghada PASTE - suplimentare locuri",
+        "spend": 804.43,
+        "spend_display": "804",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Descoperă frumuseţea 🌅 Mării Roşii, în...”",
+        "spend": 804.37,
+        "spend_display": "804",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dieta 7 kile-n 7 zile, cea disociată, cea doar cu...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că primele forme de ⚕ medicină, de...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „4, 3, 3 e aranjarea în terenul de ⚽ fotbal, 8 e...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „De Agios Vasilis copiii primesc 🎁 daruri, în...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎡 Vrei să fii cu adevărat #răsfățat în vacanță?...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „O porție de grilované klobásy (cârnați în pâine)...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai în🧳vacanță cât mai ține 🌞 vara! Profită de...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 Anunț important pentru părinți și copii! 𝗭𝗯𝗼𝗿...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Zilele de vară par să se termine... dar cu...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Lume, lume, hai în...🌍 lume! 𝗔𝗻𝘁𝗮𝗹𝘆𝗮 🧿 e...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când e cel mai potrivit moment să vizitezi...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când viața îți dă 🌞 soare, plaje 🏖 nesfârșite și…...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 𝗩𝗲𝘀𝘁𝗲𝗮 𝗰𝗲𝗮 𝗯𝘂𝗻𝗮̆ 𝗮 𝘀𝗼𝘀𝗶𝘁! 🏖️Vacanțele fabuloase...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Păstrezi obiceiul de a-ți face lista cu...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „¿A donde vas? 🇪🇸 Tenerife! Stațiunea spaniolă te...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Gata pentru o vară de neuitat? 🌞 Profitați acum...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că ofertele 441 Euro/persoană către...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🛎 Rezervă acum vacanța de vis a verii și oferă-ți...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Care e legătură dintre Antalya 🧿 și Imperiul...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-a șoptit o păsărică că vecinii tăi și-au...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pastora Pavón, Camarón de la Isla, Lola Flores și...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce seară memorabilă am avut la 𝗖𝗹𝘂𝗷-𝗡𝗮𝗽𝗼𝗰𝗮 la...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 Vestea bună a sosit! 🎉 𝗧𝗿𝗮𝘃𝗲𝗹 𝗙𝗲𝘀𝘁  #Paralela45...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vacanțele și ofertele 𝗧𝗿𝗮𝘃𝗲𝗹 𝗙𝗲𝘀𝘁 by Paralela...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 𝗕𝗿𝗮𝘀̦𝗼𝘃𝗲𝗻𝗶 𝘀𝘂𝗻𝘁𝗲𝘁̦𝗶 𝗴𝗮𝘁𝗮 𝗽𝗲𝗻𝘁𝗿𝘂 𝗼 𝗻𝗼𝘂𝗮̆...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Clujeni! Sunteți pregătiți să descoperiți un...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru iubitorii de 🌴 natură și aventură,...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☎ Ring, ring! Günaydın! 🇹🇷Turkey is calling!”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Din Suceava pân' la ☀soare,”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Oaspetele e darul lui Dumnezeu”, spun turcii –...”",
+        "spend": 800.0,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🛎🛎 𝗗𝗶𝗻𝗴, 𝗱𝗶𝗻𝗴, 𝗱𝗶𝗻𝗴! 𝗔𝗹𝗲𝗿𝘁𝗮̆ 𝗱𝗲 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲 𝗟𝗔𝗦𝗧...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗧𝗮̂𝗿𝗴𝘂 𝗠𝘂𝗿𝗲𝘀̦, 𝗽𝗿𝗲𝗴𝗮̆𝘁𝗲𝘀̦𝘁𝗲-𝘁𝗲! Fii pe 👀 fază și...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când pisica 🐈 nu-i acasă...Dai fuga să o cauți...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Am lansat cele mai 👌 bune oferte la vacanțe de...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „O rază de soare ☀ face minuni pentru starea ta 😍...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mică, 🌴 verde, autentică, Kos e insula unde s-a...”",
+        "spend": 799.99,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 𝗛𝗲𝗹𝗹𝗼, 𝗩𝗮𝗿𝗮 𝟮𝟬𝟮𝟱! 🎉 Pregătește-te pentru o...”",
+        "spend": 799.98,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗢𝗿𝗴𝗮𝗻𝗶𝘇𝗲𝗮𝘇𝗮̆ 𝗿𝗮𝗽𝗶𝗱 𝘂𝗻 𝗰𝗮𝗹𝗲𝗻𝗱𝗮𝗿 𝗮𝗹 🧳✈️ 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲𝗹𝗼𝗿...”",
+        "spend": 799.98,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Ce pui într-o valiză cu destinația Antalya?...",
+        "spend": 799.98,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mister și istorie, 🏖 plaje, ospitalitate, 😎...”",
+        "spend": 799.97,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mă aștepți cu nerăbdare,”",
+        "spend": 799.95,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îngrijorat că vara se apropie de final? 🌞 Nu-ți...”",
+        "spend": 799.94,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Peste 1,5 milioane de turiști preferă această...”",
+        "spend": 799.94,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝟯𝟵𝟰 𝗘𝘂𝗿𝗼/ 𝗽𝗲𝗿𝘀𝗼𝗮𝗻𝗮̆ 𝗽𝗲𝗻𝘁𝗿𝘂 𝘂𝗻 𝘀𝗲𝗷𝘂𝗿 𝗱𝗲 𝟳 𝗻𝗼𝗽𝘁̦𝗶...”",
+        "spend": 799.94,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În doar 1 oră și 45 de minute treci de la...”",
+        "spend": 799.94,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🤩 București, Timișoara, Brașov, Cluj Napoca,...”",
+        "spend": 799.93,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dorești un ⛱ respiro plin de culoare, viață...”",
+        "spend": 799.92,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să \"înoți\" ușor în următorul an? Atunci...”",
+        "spend": 799.92,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei o gură de aer, un vânticel, vrei răcorirea ❄...”",
+        "spend": 799.91,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești pregătit pentru o vară plină de...”",
+        "spend": 799.9,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „A fost o dată ca niciodată o călătorie....”",
+        "spend": 799.89,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Peste 2 milioane de blocuri de 🪨 piatră, peste...”",
+        "spend": 799.87,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 𝗨𝗹𝘁𝗶𝗺𝗮 𝘀𝘁𝗿𝗶𝗴𝗮𝗿𝗲! 𝗧𝗶𝗺𝗶𝘀̧𝗼𝗿𝗲𝗻𝗶, 𝗖𝗼𝗻𝗰𝗲𝗱𝗶𝘂𝗹 𝗶̂𝗻𝗰𝗲𝗽𝗲...”",
+        "spend": 799.85,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce faci când afli că ai cursă ✈ directă...”",
+        "spend": 799.83,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când ești la 🗻 munte, vrei la mare...”",
+        "spend": 799.75,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"𝗜𝘂𝗯𝗶𝗿𝗲𝗮 𝗲𝘀𝘁𝗲 𝗹𝗲𝗴𝗮̆𝘁𝘂𝗿𝗮 𝘀𝗼𝗰𝗶𝗲𝘁𝗮̆𝘁̦𝗶𝗶 𝘀̦𝗶...”",
+        "spend": 799.59,
+        "spend_display": "800",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Colecționează cele mai frumoase 😍 amintiri din...”",
+        "spend": 799.43,
+        "spend_display": "799",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Insule cu ritmuri de sirtaki. Una din 6 litere,...”",
+        "spend": 798.88,
+        "spend_display": "799",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Bună ziua! Știm sigur că e bună pentru că azi îți...”",
+        "spend": 798.87,
+        "spend_display": "799",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce-ar fi să schimbi munții 🏞  cu țărmurile 🏖...”",
+        "spend": 798.43,
+        "spend_display": "798",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Ultimele plecări ale verii în insula 🇬🇷𝗥𝗵𝗼𝗱𝗼𝘀...”",
+        "spend": 797.86,
+        "spend_display": "798",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești gata să descoperi \"Lacrima Indiei\"? Ți-am...”",
+        "spend": 797.46,
+        "spend_display": "797",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ciao, bella! Bonjour, mon chere! S̄wạs̄dī thī̀rạk...”",
+        "spend": 797.23,
+        "spend_display": "797",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ai atâtea motive să alegi o vacanță superbă pe...”",
+        "spend": 791.61,
+        "spend_display": "792",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "MALLORCA FINAL PUSH",
+        "spend": 789.74,
+        "spend_display": "790",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că în antichitate, orașul Hierapolis,...”",
+        "spend": 783.34,
+        "spend_display": "783",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Ție îți place să savurezi cafeaua ☕ în liniștea...",
+        "spend": 779.87,
+        "spend_display": "780",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Razele 🌞 soarelui te fac să te simți mai vioi,...”",
+        "spend": 779.37,
+        "spend_display": "779",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✨ Vara REFUZĂ să plece și te provoacă la...”",
+        "spend": 779.32,
+        "spend_display": "779",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mănăstirea Prislop, Sarmisegetuza, Cheile...”",
+        "spend": 779.13,
+        "spend_display": "779",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Fantastic, dar adevărat! Vara 2026 în insula...”",
+        "spend": 777.86,
+        "spend_display": "778",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "DUBAI CAMPANIE TRAFIC",
+        "spend": 765.26,
+        "spend_display": "765",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai, grăbește-te, mai e atât de puțin și începe...”",
+        "spend": 759.81,
+        "spend_display": "760",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Ce poți face azi nu lăsa pe mâine!",
+        "spend": 750.45,
+        "spend_display": "750",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇹🇷 Antalya nu e doar una dintre cele mai vizitate...”",
+        "spend": 749.07,
+        "spend_display": "749",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗘́𝗹𝗮, 𝗲́𝗹𝗮 𝗸𝗮𝗹𝗶𝗺𝗲𝗿𝗮! ”",
+        "spend": 749.01,
+        "spend_display": "749",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "LAST MINUTE",
+        "spend": 748.73,
+        "spend_display": "749",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Allons-y! Où? À Paris!!!”",
+        "spend": 746.3,
+        "spend_display": "746",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀ Vara începe devreme anul acesta! Ești gata să...”",
+        "spend": 737.7,
+        "spend_display": "738",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că 🎶 Joe Dassin și Walt Disney preferau...”",
+        "spend": 733.02,
+        "spend_display": "733",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✅ Marele Zid Chinezesc are peste 21.000 km, cam...”",
+        "spend": 730.0,
+        "spend_display": "730",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎞Filme, documentare, reality 📺 show-uri,...”",
+        "spend": 723.18,
+        "spend_display": "723",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Spanish Days Mallorca - 4 orase",
+        "spend": 722.89,
+        "spend_display": "723",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Pentru o vară de 5*, 𝗦𝗶𝗯𝗶𝘂𝗹 𝗮𝗹𝗲𝗴𝗲 #𝗖𝗿𝗲𝘁𝗮 –...",
+        "spend": 719.82,
+        "spend_display": "720",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-ai imaginat deja vacanța ideală pentru 2026?”",
+        "spend": 711.41,
+        "spend_display": "711",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Din 🏞 munte...spre 🏖 mare, cu inimi ușoare!",
+        "spend": 710.23,
+        "spend_display": "710",
+        "conversions": 1,
+        "revenue": 9441.18,
+        "revenue_display": "9.4K",
+        "roas": 13.3,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „O dată ce-ai văzut o țară din Asia, vei dori să...”",
+        "spend": 706.38,
+        "spend_display": "706",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗮𝘂𝘁̦𝗶 𝗰𝗲𝗮 𝗺𝗮𝗶 𝗯𝘂𝗻𝗮̆ 𝗼𝗳𝗲𝗿𝘁𝗮̆ 𝗱𝗲 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮̆ ⛱ 𝗔𝗹𝗹...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când Spania🇪🇸, Turcia🇹🇷, 🇹🇳Tunisia, Portugalia🇵🇹...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sunt în topul celor mai mari producători de...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ciao bella, felice di rivederti! Asta va fi...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vei avea una vacanza 🏖 meravigliosa, îţi...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Nu au drob și nici telemea cu ceapă verde, însă...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Citind 📚 romanele lui Elif Shafak vezi cu ochii...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Credința este a vedea lumină cu 💙 inima.\"”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🚨 ALERTĂ DE 𝗩𝗔𝗖𝗔𝗡𝗧̦𝗔̆!  Mai ai câteva ore până...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 Alertă de voie bună direct din 𝗕𝗿𝗮𝘀̦𝗼𝘃! Pleci...”",
+        "spend": 700.0,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Descoperă savoarea bogată a 🇹🇷Turciei prin...”",
+        "spend": 699.99,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cifrele înseamnă întotdeauna ceva? O 🎂...”",
+        "spend": 699.95,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „12, 14, 18, 19, 20, 22. Nu, nu sunt numerele...”",
+        "spend": 699.75,
+        "spend_display": "700",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🦋 Simți fluturii în stomac când te gândești la o...”",
+        "spend": 699.27,
+        "spend_display": "699",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Azi ai fir 🎣 întins! Pescuiește cea mai frumoasă...",
+        "spend": 699.17,
+        "spend_display": "699",
+        "conversions": 1,
+        "revenue": 4346.1,
+        "revenue_display": "4.3K",
+        "roas": 6.2,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să-ți petreci Revelionul la peste 20 de...”",
+        "spend": 698.74,
+        "spend_display": "699",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum ar fi să petreci Revelionul în orașul zeilor?...”",
+        "spend": 697.77,
+        "spend_display": "698",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când toamna îți dă ☀ soare, plaje 🏖  întinse și...”",
+        "spend": 697.32,
+        "spend_display": "697",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hanami e contemplarea florilor de 🌸 cireș în...”",
+        "spend": 689.97,
+        "spend_display": "690",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Ce faci într-o sâmbătă liniștită? Ei bine… îți...”",
+        "spend": 689.84,
+        "spend_display": "690",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇬🇷 Vară fără „kalimera”??? Nici nu se discută!...”",
+        "spend": 687.6,
+        "spend_display": "688",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 👋 Merhaba, călătorule amator de vacanțe de 5* &...",
+        "spend": 658.13,
+        "spend_display": "658",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Mauritius push 7 zile",
+        "spend": 657.63,
+        "spend_display": "658",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "SUCEAVA PUSH AYT 19",
+        "spend": 654.08,
+        "spend_display": "654",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Istanbul avion- Bucuresti",
+        "spend": 652.0,
+        "spend_display": "652",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Plină de istorie, cultură și frumusețe? Asta...”",
+        "spend": 651.49,
+        "spend_display": "651",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Călătorii-s pe 🔊 recepție??? Prindeți cele mai...”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗹𝘂𝗷𝘂𝗹 𝗲𝘀𝘁𝗲 𝗽𝗲 𝗿𝗲𝗰𝗲𝗽𝘁̦𝗶𝗲? Hai să spargem un mit!...”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Meu nome e.......Bom dia! Tudo bem?\" Te-ai...”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Fără \"tuz\" 🧂 mâncarea 🍛 n-are savoare! Hai cu noi...”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✨ 𝗥𝗮̆𝘀𝗳𝗮𝘁̦𝗮̆-𝘁𝗲 𝗶̂𝗻𝘁𝗿-𝗼 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮̆ 𝗱𝗲 𝘃𝗶𝘀,...”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai la ☀ vară, e frumos!”",
+        "spend": 650.0,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Numește o țară 🌞 însorită în majoritatea anului,...”",
+        "spend": 649.97,
+        "spend_display": "650",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎏 𝗦̦𝘁𝗶𝗿𝗲 𝗱𝗲 𝗺𝗮𝗿𝗲 𝗶𝗻𝘁𝗲𝗿𝗲𝘀 𝗽𝗲𝗻𝘁𝗿𝘂 𝗠𝗼𝗹𝗱𝗼𝘃𝗮 !! A...”",
+        "spend": 648.96,
+        "spend_display": "649",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „If You wanna to feel free let's go NOW to 🇮🇹 Sicily! ”",
+        "spend": 639.99,
+        "spend_display": "640",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cu suc de portocale și lămâie, cu vermut sau...”",
+        "spend": 639.5,
+        "spend_display": "640",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📰Good news: 🇬🇧Londra e mai aproape de tine!”",
+        "spend": 639.29,
+        "spend_display": "639",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIPRU EB 2026",
+        "spend": 638.44,
+        "spend_display": "638",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum știi că ai făcut o afacere profitabilă?...”",
+        "spend": 631.95,
+        "spend_display": "632",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Tunsia - B & CJ",
+        "spend": 629.93,
+        "spend_display": "630",
+        "conversions": 1,
+        "revenue": 7593.86,
+        "revenue_display": "7.6K",
+        "roas": 12.1,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ai citit în paginile 📖 lui Pamuk și poate, în...”",
+        "spend": 628.18,
+        "spend_display": "628",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sper că ești 💨 rapid în luarea deciziilor, pentru...”",
+        "spend": 613.98,
+        "spend_display": "614",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Destinație de 🌞 vară cu nume de ♠️ culoare și...”",
+        "spend": 612.38,
+        "spend_display": "612",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Veste mare, vacanțe #LastMinute la 🌊 mare în...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cauți o vacanță last minute? Ai făcut 🆔...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Trece vara și n-ai 😭 plecat în ✈ vacanță? Ți-am...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce poți face într-o călătorie de câteva ore? Poți...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Super vești despre super 🌍 destinații! Strigăm 📣...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă ești timișorean sau bucureștean ești 🍀...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi ce faci pe 🍁29 septembrie?”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Am dat startul vacanțelor pentru 𝘀𝗲𝘇𝗼𝗻𝘂𝗹 𝗲𝘀𝘁𝗶𝘃𝗮𝗹...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „531 Euro/persoană pentru un sejur de 7 nopți cu...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce e bine să faci în ultimele zile ale 🎆 anului?”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Unii au norocul de a se trezi cu razele☀ soarele...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei o destinație cu peste 300 de zile ☀însorite...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „La Boqueria din Barcelona a fost recunoscută...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Bună dimineața, iubita mea! Cele mai frumoase...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Credem în 💕 dragoste, în fluturi în stomac, în...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Aproape 4 milioane de turiști vizitează...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că cifrele 45 îți pot aduce zâmbetul pe buze? ”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Temperaturile vor scădea 🥶 dramatic, așa că...cea...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că Apollo, zeul soarelui, 🎶 muzicii și...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗣𝗼𝗿𝗻𝗲𝘀̦𝘁𝗲 ✈️ 𝗱𝗶𝗻 𝗧𝗶𝗺𝗶𝘀̦𝗼𝗮𝗿𝗮 𝗶̂𝗻𝘁𝗿-𝗼 𝗮𝘃𝗲𝗻𝘁𝘂𝗿𝗮̆...”",
+        "spend": 600.0,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vezi linia de 🏁 start? Pregătește-te pentru ✈...”",
+        "spend": 599.99,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vara ta în 🇹🇷Turcia promite all inclusive...”",
+        "spend": 599.99,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎄 Cling-cling, sună 🔔 zurgălăii! Ultimele locuri...”",
+        "spend": 599.98,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Iarna ❄ vine cu o avalanșă de vacanțeeee la ☀...”",
+        "spend": 599.98,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce au din abundență și nu lipsește din 🌯...”",
+        "spend": 599.97,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cât de lung are părul 👸 Rapunzel? Ce rețete...”",
+        "spend": 599.96,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Călătoriile ✈ sunt un remediu pentru depresie,...”",
+        "spend": 599.96,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Călătoriile ✨ ne deschid mintea și sufletul!...”",
+        "spend": 599.94,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Grecii înoată 🏊  dimineața la prima oră, mănâncă...”",
+        "spend": 599.94,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🌞🔓 𝙐𝙉𝙇𝙊𝘾𝙆 𝙔𝙊𝙐𝙍 𝙎𝙐𝙈𝙈𝙀𝙍! Ai tot așteptat vara,...",
+        "spend": 599.93,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Lalele, 🌹 trandafiri, frezii, liliac. Astea-s...”",
+        "spend": 599.91,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai să descoperi la vară 🇬🇷Chania, un mozaic de...”",
+        "spend": 599.9,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce destinații sunt la modă iarna❄ asta? Uită-te...”",
+        "spend": 599.85,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Că aici s-au turnat o mulțime de 🎬pelicule de...”",
+        "spend": 599.85,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce bilet ✍ îți poate aduce fericirea?”",
+        "spend": 599.84,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Gönderi: \"🎁 Cele mai frumoase surprize sunt cele din...\"",
+        "spend": 599.81,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ea pleacă în 🧳 vacanță, noi plecăm alături de ea!...”",
+        "spend": 599.77,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când un ardelean zice DA, e deja cu bagajul🧳la ușă.”",
+        "spend": 599.77,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎁 Cel mai frumos cadou de sărbători? O 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮̆...”",
+        "spend": 599.76,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îți place să faci shopping 🛒 și cauți mereu...”",
+        "spend": 599.75,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mai ai timp până pe 28 februarie să prinzi...”",
+        "spend": 599.74,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌿 Verde, aromat, romantic 😍 – insula Corfu 🇬🇷 e...”",
+        "spend": 599.73,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗜̂𝗺𝗽𝗮̆𝗿𝘁̦𝗶𝗺 𝗿𝗲𝗹𝗮𝘅𝗮𝗿𝗲 𝘀̦𝗶 𝗮𝘀𝘁𝗮 𝗻𝗲 𝗽𝗹𝗮𝗰𝗲 𝗹𝗮...”",
+        "spend": 599.69,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ne-am lustruit 🥾 ghetuțele de la mic la mare, iar...”",
+        "spend": 599.61,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îl auzi, dar nu-l vezi? E Santa 🚂 Express, a...”",
+        "spend": 599.56,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Te așteaptă Afrodita pe plajă, briza mării și...",
+        "spend": 599.53,
+        "spend_display": "600",
+        "conversions": 1,
+        "revenue": 13616.19,
+        "revenue_display": "14K",
+        "roas": 22.7,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 Brașoveni, e momentul! ☀ Soarele vă cheamă la...”",
+        "spend": 599.5,
+        "spend_display": "600",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi unde pleci pe 1 octombrie? În Sicilia 🇮🇹 cu...”",
+        "spend": 599.35,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești versatil pentru că treci cu ușurință de la...”",
+        "spend": 599.07,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗦𝘂𝗰𝗲𝗮𝘃𝗮 𝗰𝗮̆𝗹𝗮̆𝘁𝗼𝗿𝗲𝘀̦𝘁𝗲 𝘀̦𝗶 𝗮𝗹𝗲𝗴𝗲 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲𝗹𝗲 𝗟𝗮𝘀𝘁...”",
+        "spend": 599.0,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🥁🥁 Badabim-badabum! Se aude-n toată țara? Între...”",
+        "spend": 598.74,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Anthony Bourdain a numit-o \"o comoară...”",
+        "spend": 598.7,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Dacă lumea ar fi un singur stat, Istanbul🇹🇷 ar...”",
+        "spend": 598.69,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În zilele în care tehnologia pune accent pe...”",
+        "spend": 598.57,
+        "spend_display": "599",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru cei cuminți, chiar și pentru cei...”",
+        "spend": 598.26,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Vacanțele sunt cel mai frumos cadou! 🎁...”",
+        "spend": 598.25,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌊 Kalimera, prieteni! Grígora-grígora (repede,...”",
+        "spend": 598.21,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mică pe 🗺 hartă, uriașă 🌟 în atracții: fortărețe...”",
+        "spend": 598.17,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „La noi cad frunzele, la ei arde soarele 🌞 și...”",
+        "spend": 597.73,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când asculți un nocturn al lui Chopin, simți...”",
+        "spend": 597.54,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „An-tan-te, Antalya 🧿 e mai aproape! ”",
+        "spend": 597.53,
+        "spend_display": "598",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Lasă obiceiurile locale de Anul Nou și adoptă-le...”",
+        "spend": 597.11,
+        "spend_display": "597",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🐈‍⬛ Dacă vezi negru în fața ochilor... e semn...”",
+        "spend": 596.53,
+        "spend_display": "597",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Miros de iasomie. Atât pe străduțele ale unor...”",
+        "spend": 595.17,
+        "spend_display": "595",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Transformă 𝘃𝗮𝗿𝗮 𝟮𝟬𝟮𝟱 într-o aventură memorabilă...”",
+        "spend": 589.99,
+        "spend_display": "590",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sayf, summer, été, estate! În Hurghada 🇪🇬 vara 🌞...”",
+        "spend": 588.7,
+        "spend_display": "589",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce facem noi vara aceasta?? Te mutăm pe modul...”",
+        "spend": 584.19,
+        "spend_display": "584",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BULGARIA - ALBENA LANSARE",
+        "spend": 582.51,
+        "spend_display": "583",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Are 5 litere, începe cu R, iar în trecut a avut...",
+        "spend": 580.74,
+        "spend_display": "581",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Sales campaign - Super Oferte",
+        "spend": 577.34,
+        "spend_display": "577",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum aducem soarele 🌞 în 🏠 casa ta? Cu zecile de...”",
+        "spend": 570.4,
+        "spend_display": "570",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "EGIPT CIRCUIT CHARTER",
+        "spend": 563.59,
+        "spend_display": "564",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că Sfântul Nectarie e considerat...”",
+        "spend": 560.47,
+        "spend_display": "560",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"O zi în care nu ai râs, este o zi pierdută”,...”",
+        "spend": 559.51,
+        "spend_display": "560",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pregătește-te să te îndrăgostești de 🇮🇹Sicilia!...”",
+        "spend": 559.43,
+        "spend_display": "559",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ziua bună 🤩 se cunoaște de dimineață! ”",
+        "spend": 559.16,
+        "spend_display": "559",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine se trezește de dimineață rezervă ✅ vacanța...”",
+        "spend": 559.1,
+        "spend_display": "559",
+        "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
         "roas": 0.0,
@@ -8759,10 +18578,197 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Postare: „Cu siguranță vei păși 😍fericit în 2025 dacă vei...”",
+        "spend": 550.0,
+        "spend_display": "550",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „1, 2, 3, călătorește ✈️ unde vrei! ”",
+        "spend": 550.0,
+        "spend_display": "550",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sunt cei mai zâmbitori. Cei mai deschiși. Sunt...”",
+        "spend": 550.0,
+        "spend_display": "550",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Românii știu să petreacă, să facă haz de necaz,...”",
+        "spend": 549.91,
+        "spend_display": "550",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Puglia, cine se trezește de dimineață...ajunge...”",
+        "spend": 549.85,
+        "spend_display": "550",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să trăiești o experiență fabuloasă în...”",
+        "spend": 547.93,
+        "spend_display": "548",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sagrada Familia, casa Batlo, La Boqueria, la...”",
+        "spend": 539.09,
+        "spend_display": "539",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ROMA PUSH SALES",
+        "spend": 538.95,
+        "spend_display": "539",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 O vacanță nu e o cheltuială, ci o investiție în...”",
+        "spend": 533.22,
+        "spend_display": "533",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Spanish Days - Costa Brava - Trafic",
+        "spend": 528.23,
+        "spend_display": "528",
+        "conversions": 1,
+        "revenue": 8919.11,
+        "revenue_display": "8.9K",
+        "roas": 16.9,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Paștele în Grecia, pe insula 🌞🇬🇷 Corfu e mai mult...”",
+        "spend": 524.57,
+        "spend_display": "525",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "cipru revelion - last minute",
+        "spend": 518.51,
+        "spend_display": "519",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Istanbul - Cluj Napoca",
+        "spend": 516.37,
+        "spend_display": "516",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🤔 De ce o vacanță în 🇬🇷𝗚𝗿𝗲𝗰𝗶𝗮? Îți dăm 5 motive:”",
+        "spend": 515.48,
+        "spend_display": "515",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Din București până-n Satu Mare, toată...”",
+        "spend": 512.28,
+        "spend_display": "512",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🏖 Profită de reduceri & oferte last minute în...”",
+        "spend": 505.99,
+        "spend_display": "506",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 501.16,
-        "spend_display": "501",
+        "spend": 504.28,
+        "spend_display": "504",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Un ceai bun rezolvă și ce nu-i de spus.” Cel...”",
+        "spend": 500.23,
+        "spend_display": "500",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -8781,10 +18787,2848 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad"
       },
       {
+        "platform": "meta",
+        "name": "Postare: „Luni de muncă, stres dispar cu doar o săptămână...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀ E caniculă și toate drumurile ✈ te îmbie spre...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗘 𝘃𝗮𝗿𝗮 𝘁𝗮! 𝗠𝗼𝗺𝗲𝗻𝘁𝘂𝗹 𝘁𝗮̆𝘂 𝗱𝗲 𝗿𝗲𝗹𝗮𝘅𝗮𝗿𝗲 𝘀̦𝗶 𝗯𝘂𝗰𝘂𝗿𝗶𝗲!...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să spui și vara asta: kalimera bougatsa,...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cât de importante au fost pentru istorie 👸 Maria...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Acolo unde încă soarele 🌞 strălucește tare, o...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎅 Moș Crăciun își pregătește sosirea organizând...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vara 🌞 e pentru paddle board și pentru...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „De la munte 🗻 la mare 🌅 e doar un pas. De la...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să uiți de anul ăsta și să începi un nou an...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că prima ediție a jocurilor olimpice...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Alege un 🎆 Revelion memorabil călătorind cu 🚌✨...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Ești pregătit pentru o vară spectaculoasă? Cu...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Profită acum, la început de an, de cele mai...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Kalimera! Asta vei auzi dimineața pe un ton...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 𝗔𝗹𝗲𝗿𝘁𝗮̆ 𝗺𝗮𝘅𝗶𝗺𝗮̆ 𝗱𝗲 𝗿𝗲𝗱𝘂𝗰𝗲𝗿𝗶! Azi e ultima șansă...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Primăvara aceasta aduce surprize senzaționale la...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-ai luat📝 concediul pentru vara 2025? ”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „– Care e diferența dintre un călător optimist și...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Crezi în 🎉 magie? Vara asta, întreaga familie se...”",
+        "spend": 500.0,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Clujul a devenit prea mic 🔬 pentru tine?, Atunci...”",
+        "spend": 499.99,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀ Soare, case albe și-n zare... marea! Ce poate...”",
+        "spend": 499.99,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Montaña de Siete Colores ți se înfățișează în...”",
+        "spend": 499.99,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Printre raportări, e-mailuri și telefoane, fă-ți...”",
+        "spend": 499.99,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Éna, dío, tría sau unu, doi, trei, hai ✈  în...”",
+        "spend": 499.98,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Se spune că aici Apollo a adormit la umbra unui 🫒...”",
+        "spend": 499.98,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Viața e frumoasă și merită călătorită – iar...”",
+        "spend": 499.97,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎶🎵Cubaaa, quiero bailar la salsa! ”",
+        "spend": 499.97,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Represent, represent Cuba...\"”",
+        "spend": 499.97,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Gustave Eiffel a structurat superba cupolă,...”",
+        "spend": 499.97,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✨Visezi la vacanța perfectă în 🇬🇷Grecia? Rezervă...”",
+        "spend": 499.96,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Shambala, Yeti, Lacul Yamdrok și Oracolul Sacru,...”",
+        "spend": 499.96,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Gönderi: \"Cauți o rețetă pentru un cozonac pufos? 📖 Noi am...\"",
+        "spend": 499.95,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗕𝗹𝗮𝗰𝗸 𝗙𝗿𝗶𝗱𝗮𝘆 𝗽𝗲𝗻𝘁𝗿𝘂 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲 𝗔𝗹𝗹 𝗜𝗻𝗰𝗹𝘂𝘀𝗶𝘃𝗲 𝗶̂𝗻...”",
+        "spend": 499.95,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🏖️ Hai și tu la plajă! Alege un hotel high class...”",
+        "spend": 499.94,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dragi călători, 🌅 termometrul a cedat, ne-apucăm...”",
+        "spend": 499.94,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Nu, nu mai vrem Christmas pe repeat, vrem la ☀...”",
+        "spend": 499.94,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „366 de zile calendaristice 📆 trec atât de repede...”",
+        "spend": 499.93,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Timișorenii sunt recunoscuți pentru spiritul lor...”",
+        "spend": 499.93,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Tabere, vacanțe la bunici, sejururi în Turcia...”",
+        "spend": 499.92,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Nu MAI aștepta! Profită de cele mai MAI tentante...”",
+        "spend": 499.92,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Te plimbi 🚶 prin Marele Bazar, îți cumperi...”",
+        "spend": 499.89,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă ar fi să descriem această destinație după...”",
+        "spend": 499.88,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești un fan înfocat al Greciei🇬🇷? Pregătește-te...”",
+        "spend": 499.86,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Ce faci dacă știi că la doar două ore distanță de...",
+        "spend": 499.77,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce planuri ai pe 20 și pe 26 iunie? ”",
+        "spend": 499.76,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇵🇹 𝗦̦𝘁𝗶𝗮𝗶 𝗰𝗮̆ 𝗔𝗹𝗴𝗮𝗿𝘃𝗲, 𝗿𝗲𝗴𝗶𝘂𝗻𝗲𝗮 𝗱𝗲 𝘃𝗶𝘀 𝗮...”",
+        "spend": 499.66,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Trăiește ca un ✨ VIP, plătește 💸 ca un expert în...”",
+        "spend": 499.66,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dzień dobry, 🇵🇱 Polonia! ”",
+        "spend": 499.66,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Δημοσίευση: \"🎏⛱ Da, litoralul chiar este pentru toți! 🌞 Un...\"",
+        "spend": 499.63,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „📢 Sibieni, ultima strigare pentru mare!...”",
+        "spend": 499.59,
+        "spend_display": "500",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Asia te așteaptă cu povești care nu doar se...”",
+        "spend": 499.47,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ai epuizat toate variantele de cadou 🎁 pentru...”",
+        "spend": 499.46,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Un minut de liniște, o oră de deconectare, o zi...”",
+        "spend": 499.44,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Cum ar fi să trăiești o aventură, alături de...",
+        "spend": 499.41,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce-ar fi fost dacă nu ar fi existat decât...”",
+        "spend": 499.36,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Au dăruit 🌏 lumii întregi cosmeticele, au...”",
+        "spend": 499.3,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Plimbare🚶 spre Turnul Galata. Mic dejun 🍽...”",
+        "spend": 499.21,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Maci,🌼margarete, lavandă, cistus și ierburi 🌿...”",
+        "spend": 499.19,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Înțeleptul rezervă iarna vacanța de ☀ vară!”",
+        "spend": 499.14,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce mod mai bun de a-ți lua la revedere de la vară...”",
+        "spend": 499.08,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ştiai că 🐠 Nemo, personajul atât de iubit de...”",
+        "spend": 499.02,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „➌... ➋...➊... și vara trece cât ai clipi! Noroc...”",
+        "spend": 498.79,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că...una dintre Cele Șapte Minuni ale Lumii...”",
+        "spend": 498.72,
+        "spend_display": "499",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să descoperi liniștea și pacea interioară?...”",
+        "spend": 497.95,
+        "spend_display": "498",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi ce efect rapid are ⛱ vacanța? Îți aduce...”",
+        "spend": 497.93,
+        "spend_display": "498",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Explorează Orașul Vechi, bucură-te de plajele 🏖...",
+        "spend": 497.81,
+        "spend_display": "498",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți se pare că ⏳ timpul s-a contractat? Că zilele...”",
+        "spend": 497.5,
+        "spend_display": "498",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CIPRU ALL 17 iunie - SIBIU",
+        "spend": 497.12,
+        "spend_display": "497",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎅 Ai găsit surprize în ghetuțe? Fie că da sau nu,...”",
+        "spend": 496.81,
+        "spend_display": "497",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce faci când pe tavă ți se așează cele mai bune...”",
+        "spend": 496.6,
+        "spend_display": "497",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Paștele 2026 în 🇯🇵Japonia înseamnă temple ⛩...”",
+        "spend": 496.56,
+        "spend_display": "497",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „La noi se vopsesc ouăle și se pregătește pasca,...”",
+        "spend": 494.74,
+        "spend_display": "495",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "JOB OFFERS",
+        "spend": 490.96,
+        "spend_display": "491",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Străzi luminate ca în filme SF, tăiței 🍜...",
+        "spend": 490.46,
+        "spend_display": "490",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cel mai rapid animal terestru de pe planetă?...”",
+        "spend": 485.85,
+        "spend_display": "486",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mai ai timp până pe 28 februarie să rezervi...”",
+        "spend": 479.63,
+        "spend_display": "480",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Iá Su! Salut !",
+        "spend": 479.47,
+        "spend_display": "479",
+        "conversions": 1,
+        "revenue": 7797.78,
+        "revenue_display": "7.8K",
+        "roas": 16.3,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Creta🇬🇷 te poartă prin Labirintul lui Minotaur și...”",
+        "spend": 476.77,
+        "spend_display": "477",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Cine nu cunoaște deșertul, nu poate înțelege...”",
+        "spend": 467.64,
+        "spend_display": "468",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În luna dragostei (sau chiar azi, de 💖...”",
+        "spend": 466.29,
+        "spend_display": "466",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ai descoperit secretul șnițelul vienez și vrei să...”",
+        "spend": 449.45,
+        "spend_display": "449",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Cum îl faci pe el gelos? Anunță-l că te ✈️ duci...",
+        "spend": 449.37,
+        "spend_display": "449",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Stop! Ia-ți doza de energie, ia-ți 🌞 vara înapoi!...”",
+        "spend": 447.95,
+        "spend_display": "448",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Călătoriile ✈ adună cele mai frumoase experiențe...”",
+        "spend": 446.13,
+        "spend_display": "446",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CLUJ PUSH LISABONA",
+        "spend": 427.66,
+        "spend_display": "428",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 382 de Euro/ persoană e costul relaxării tale All...",
+        "spend": 419.82,
+        "spend_display": "420",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Vara începe mai sănătos când e planificată din...”",
+        "spend": 419.77,
+        "spend_display": "420",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 Africa – continentul care îți schimbă sufletul!...”",
+        "spend": 419.49,
+        "spend_display": "419",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „A venit, a venit toamna,”",
+        "spend": 419.01,
+        "spend_display": "419",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "BULGARIA - MUNTE",
+        "spend": 415.49,
+        "spend_display": "415",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Enumerați mai mulți termeni complementari...",
+        "spend": 412.69,
+        "spend_display": "413",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Campanie MAI cu LP valabila 20.05",
+        "spend": 410.24,
+        "spend_display": "410",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Hurghada nu e doar despre plajă – e o aventură...",
+        "spend": 404.78,
+        "spend_display": "405",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că bunicul marelui ✍ Caragiale, Ștefan...”",
+        "spend": 401.56,
+        "spend_display": "402",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Click🖱rapid și start vacanță în 🇪🇦Costa del Sol!...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Specialiștii spun că o experiență de viață,...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pune în paharul de șampanie 🥂 o bijuterie de aur,...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 𝗖𝗹𝘂𝗯𝘂𝗹 𝗶𝘂𝗯𝗶𝘁𝗼𝗿𝗶𝗹𝗼𝗿 𝗱𝗲 𝘀𝗼𝗮𝗿𝗲 𝗱𝗶𝗻 𝗔𝗿𝗱𝗲𝗮𝗹,...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știm că a fi ardelean e o mândrie și că iubești...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Participi la 𝗧𝗮̂𝗿𝗴𝘂𝗹 𝗱𝗲 𝗡𝘂𝗻𝘁̦𝗶 din cadrul...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sanuk (plăcerea în orice faci), „Mai Pen Rai”(...”",
+        "spend": 400.0,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Crăciunul 🎄portughez nu e complet fără Bolo Rei:...”",
+        "spend": 399.96,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „😎  Suntem la jumătatea lui IULIE – și vacanțele...”",
+        "spend": 399.96,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „A venit frigul și în unele zone și primii ❄ fulgi...”",
+        "spend": 399.93,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Îți plac orhideele, peisajele 🌴 naturale, oamenii...”",
+        "spend": 399.89,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ghici ghicitoarea mea:”",
+        "spend": 399.87,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: O rețetă culinară, un influencer ce te convinge...",
+        "spend": 399.87,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗕𝗲𝗹𝗹𝗮𝗴𝗶𝗼 𝗕𝗲𝗮𝗰𝗵 𝗥𝗲𝘀𝗼𝗿𝘁 𝗦𝗽𝗮 𝟱*, All Inclusive, de...”",
+        "spend": 399.85,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🌍 Viața e frumoasă și merită... călătorită!...",
+        "spend": 399.67,
+        "spend_display": "400",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești deja ❤ îndrăgostit de Antalya și \"vânezi\"...”",
+        "spend": 399.16,
+        "spend_display": "399",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să faci o călătorie 🌙 pe Lună? Hai într-un...”",
+        "spend": 398.98,
+        "spend_display": "399",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🚶‍♂ Plimbări pe plajă 🏖 dimineața și seara, 300...”",
+        "spend": 398.87,
+        "spend_display": "399",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🛎 Atenție! Cele mai frumoase vacanțe se rezervă...”",
+        "spend": 398.74,
+        "spend_display": "399",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că în Gran Canaria te poți simți ca în...”",
+        "spend": 398.61,
+        "spend_display": "399",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Niciodată nu e prea târziu pentru ...🎁cadouri! Ne...”",
+        "spend": 397.42,
+        "spend_display": "397",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Crezi că spiritul zeilor Artemis 👸 și Apollo...”",
+        "spend": 397.41,
+        "spend_display": "397",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Vara bună din decembrie se cunoaște! Iar...”",
+        "spend": 390.52,
+        "spend_display": "391",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Boost post - Engagement",
+        "spend": 383.23,
+        "spend_display": "383",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În fiordurile norvegiene există sate 🏘 izolate...”",
+        "spend": 366.72,
+        "spend_display": "367",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Jumătatea lunii august? 🚨 Alerta de vacanțăăă!...”",
+        "spend": 359.97,
+        "spend_display": "360",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🔊Timișoreni! Avem pentru voi un super pont!...”",
+        "spend": 359.63,
+        "spend_display": "360",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Da, trece repede vara, însă nu te panica! 🌞 În...”",
+        "spend": 359.51,
+        "spend_display": "360",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Confort de 5 stele de la decolare 🛫 până la 🛬...”",
+        "spend": 351.43,
+        "spend_display": "351",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗟𝗼𝗼𝗸𝗶𝗻𝗴 𝗳𝗼𝗿 𝘁𝗵𝗲 🌞 𝘀𝘂𝗺𝗺𝗲𝗿? Dacă o cauți, o vei...”",
+        "spend": 350.0,
+        "spend_display": "350",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ziua Națională a 🇪🇸Spaniei, sărbătorită astăzi,...”",
+        "spend": 349.94,
+        "spend_display": "350",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗦𝗮𝘆 𝗯𝘆𝗲-𝗯𝘆𝗲 ☃ 𝗶𝗮𝗿𝗻𝗮̆ 𝗮𝗻𝗱 𝗳𝗹𝘆-𝗳𝗹𝘆 ✈ 𝗗𝘂𝗯𝗮𝗶! ”",
+        "spend": 349.93,
+        "spend_display": "350",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei o destinație ✨ fascinantă? 𝗧𝗵𝗮𝗶𝗹𝗮𝗻𝗱𝗮🇹🇭...”",
+        "spend": 349.73,
+        "spend_display": "350",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Unde? În Toscana!”",
+        "spend": 349.47,
+        "spend_display": "349",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Din Malaga până în Granada, 🇪🇸𝗔𝗻𝗱𝗮𝗹𝘂𝘇𝗶𝗮 ți se...”",
+        "spend": 349.24,
+        "spend_display": "349",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Se aud 🎶acorduri de fado? Lisabona 🇵🇹 te cheamă...”",
+        "spend": 348.48,
+        "spend_display": "348",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "SPANISH DAYS TENERIFE BUCURESTI",
+        "spend": 346.8,
+        "spend_display": "347",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când ai fost ultima dată pe altă 🛸 planetă fără...”",
+        "spend": 345.79,
+        "spend_display": "346",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "CJ - Hurghada Iarna",
+        "spend": 340.07,
+        "spend_display": "340",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Sari peste trafic și aterizează 🛬 direct în...”",
+        "spend": 334.35,
+        "spend_display": "334",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Se spune că migdalii din 🇵🇹Algarve au fost...”",
+        "spend": 331.18,
+        "spend_display": "331",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "ZAKYNTHOS FINAL EB",
+        "spend": 331.01,
+        "spend_display": "331",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când vacanța sosește, toată lumea zâmbește 🤩...”",
+        "spend": 314.78,
+        "spend_display": "315",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum petreceau sultanii odinioară? ”",
+        "spend": 313.2,
+        "spend_display": "313",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Spanish Days - Costa Blanca _ BA",
+        "spend": 310.61,
+        "spend_display": "311",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗨𝗹𝘁𝗿𝗮 𝗟𝗮𝘀𝘁 𝗠𝗶𝗻𝘂𝘁𝗲 𝗛𝘂𝗿𝗴𝗵𝗮𝗱𝗮. Ai reduceri de până...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Jumătate de oră de meditație 🧖‍♂ face minuni...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Uimit de🤳 fotografiile postate de cunoscuți care...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pentru unii începe 🎒școala, pentru alții... ✈...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine caută, găsește! Cea mai frumoasă vacanță de...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Vara a trecut, dar tu deja visezi la următoarea...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Pregătește-te pentru 𝘃𝗮𝗿𝗮 #𝟮𝟬𝟮𝟱 𝗶̂𝗻 🇬🇷...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „7 litere magice, o destinație 🌟 specială pe care...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗜𝗮𝗿𝗻𝗮 ❄ 𝘁𝗲 𝗮𝘀̦𝘁𝗲𝗮𝗽𝘁𝗮̆, 𝗱𝗮, 𝗰𝗵𝗶𝗮𝗿 𝗶̂𝗻 🇫🇮𝗟𝗮𝗽𝗼𝗻𝗶𝗮! ”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇷🇴 𝗦𝗮̆𝗿𝗯𝗮̆𝘁𝗼𝗿𝗶𝗺 𝗥𝗼𝗺𝗮̂𝗻𝗶𝗮 𝗰𝘂 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗲 𝗱𝗲 ✨...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce îi lipsește unui brașovean? 🌊Marea! Dacă îți e...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce poți face cu 💶 100 de Euro? ”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „De 𝟮𝟱 𝗠𝗮𝗿𝘁𝗶𝗲, 🇬🇷 grecii respectă Postul Paștelui,...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine e prevăzător și dornic de 😎relaxare, pleacă✈...”",
+        "spend": 300.0,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ei spun 💬 \"𝗴𝘂𝗻𝗮𝘆𝗱𝗶𝗻\", tu \"bună dimineața!\", ție...”",
+        "spend": 299.98,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Și cu ce ne mai lăudăm în materie de vacanțe? ”",
+        "spend": 299.96,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cine vine din 🇲🇽Mexic are un sombrero 👒 haios și...”",
+        "spend": 299.95,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Amor a la mexicana, nu e doar titlul unei...”",
+        "spend": 299.93,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce nu lipsește din bucătăria unui 🇹🇳tunisian?...”",
+        "spend": 299.88,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce destinație e supranumită \"insula minunilor\",...”",
+        "spend": 299.86,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce-ar fi viața fără 🎈 visare? O călătorie mai anostă!”",
+        "spend": 299.84,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „De ce să alegi o ✈ vacanță de ⛱ vară cu zboruri...”",
+        "spend": 299.82,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hei, alooo! ”",
+        "spend": 299.73,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Nu doar final de vară! Ci un final de sezon...”",
+        "spend": 299.72,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 𝗕𝗹𝗮𝗰𝗸 𝗙𝗿𝗶𝗱𝗮𝘆 – 𝘇𝗶𝗹𝗲𝗹𝗲 𝗿𝗲𝗱𝘂𝗰𝗲𝗿𝗶𝗹𝗼𝗿 #𝗣𝗮𝗿𝗮𝗹𝗲𝗹𝗮𝟰𝟱...”",
+        "spend": 299.67,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când au apărut vacanțele 𝗔𝗹𝗹 𝗜𝗻𝗰𝗹𝘂𝘀𝗶𝘃𝗲, credem că...”",
+        "spend": 299.61,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „❤️ Spune-i că o iubești în cel mai romantic mod,...”",
+        "spend": 299.5,
+        "spend_display": "300",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Numărătoarea inversă 3️⃣2️⃣1️⃣ a zilelor până la...”",
+        "spend": 299.27,
+        "spend_display": "299",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „8 zile, sudul 🇮🇹Italiei, zona Puglia, case 🏘...”",
+        "spend": 299.25,
+        "spend_display": "299",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: În 🇮🇹 Sicilia, timpul curge altfel… cu miros de 🍋...",
+        "spend": 299.02,
+        "spend_display": "299",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că Marea 🌊 Neagră are sute de specii de 🐟...”",
+        "spend": 298.9,
+        "spend_display": "299",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✨ România🇷🇴 adoră vacanțele și noi deschidem larg...”",
+        "spend": 297.89,
+        "spend_display": "298",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi unde poți pierde noțiunea ⌛ timpului? Unde...”",
+        "spend": 297.74,
+        "spend_display": "298",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Tu ești mai agitat, el e mai tipicar, ea e foarte...”",
+        "spend": 297.0,
+        "spend_display": "297",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Cluj Wonderland",
+        "spend": 295.94,
+        "spend_display": "296",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇹🇷Antalya. De la 16 Euro/persoană/noapte all...”",
+        "spend": 295.59,
+        "spend_display": "296",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vara 🌞 asta vrăjitorul Oz face 🪄 magie! ”",
+        "spend": 295.26,
+        "spend_display": "295",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Michelangelo, 👨‍🎨 Rafael, Colosseum, 🛶 Veneția,...”",
+        "spend": 290.0,
+        "spend_display": "290",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Maria, Alexandru, Adrian? Vin zilelor lor de nume...”",
+        "spend": 289.79,
+        "spend_display": "290",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗛𝗮𝗻𝗮𝗺𝗶 înseamnă să te oprești o clipă și să...”",
+        "spend": 282.61,
+        "spend_display": "283",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌟 Vara e intensă, dar magia iernii începe chiar...”",
+        "spend": 279.9,
+        "spend_display": "280",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei o experiență All Inclusive de 7 nopți,...”",
+        "spend": 273.86,
+        "spend_display": "274",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cristalul de Boemia a devenit popular încă din...”",
+        "spend": 269.94,
+        "spend_display": "270",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cu ce asociezi mirosul de ☕ cafea? ”",
+        "spend": 268.65,
+        "spend_display": "269",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești pregătit pentru 𝗨𝗹𝘁𝗶𝗺𝗲𝗹𝗲 𝗭𝗶𝗹𝗲 𝗰𝘂 𝗥𝗲𝗱𝘂𝗰𝗲𝗿𝗶...”",
+        "spend": 260.65,
+        "spend_display": "261",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Laponia BF",
+        "spend": 255.81,
+        "spend_display": "256",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În inima 🇫🇷 Bretaniei se află misterioasa pădure...”",
+        "spend": 253.74,
+        "spend_display": "254",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Auzi ceasul🕰️verii cum ticăie? Din ce în ce mai...”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „La 💬 horoscop spune că 2025 va fi un an fabulos ✨...”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Sous le ciel de Paris/Marchent des amoureux\"......”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să trăiești o experiență TT? Adică Totally...”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 Hooopa! Duminica ta tocmai a devenit mai...”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „1, 2, 3, hai rezervă, știm că vrei! De la nord la...”",
+        "spend": 250.0,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „‼️ 𝗖𝗹𝗲𝗮𝗿𝗮𝗻𝗰𝗲 𝗔𝗹𝗲𝗿𝘁 – 𝗩𝗮𝗰𝗮𝗻𝘁̦𝗲 𝗟𝗮𝘀𝘁 𝗠𝗶𝗻𝘂𝘁𝗲 la...”",
+        "spend": 249.99,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Când mariachi te cheamă te duci în ✈️ zbor...”",
+        "spend": 249.97,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Apeluri Reclamă: Știai că în Praga🇨🇿 există un mini turn Eiffel?...",
+        "spend": 249.94,
+        "spend_display": "250",
+        "conversions": 2,
+        "revenue": 31309.35,
+        "revenue_display": "31K",
+        "roas": 125.3,
+        "roas_class": "good"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei relaxare? Vrei ☀ soare? Hai cu noi în...”",
+        "spend": 249.81,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Italienii🇮🇹 beau în medie peste 38 de miliarde de...",
+        "spend": 249.8,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vacanța mare 🌞 e pe sfârșite, așa că profită de...”",
+        "spend": 249.77,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Au cele mai bune gauffre, o bere🍺excelentă,...”",
+        "spend": 249.73,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🏃‍♀️‍➡️ Repede, repede caută-ți 💳 cardul și...”",
+        "spend": 249.69,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Totul e mai frumos atunci când eşti în vacanţă!...”",
+        "spend": 249.67,
+        "spend_display": "250",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Pe insula 🇬🇷Eghina, la ⛪ Mănăstirea Sfântului...”",
+        "spend": 249.42,
+        "spend_display": "249",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Salutare 🖐 tuturor! Sunt eu, Mickey Mouse! Hei,...”",
+        "spend": 248.85,
+        "spend_display": "249",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că insula 🇬🇷Kos nu înseamnă doar plajă, ci...”",
+        "spend": 248.78,
+        "spend_display": "249",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știm, sună aproape ireal… dar e adevărat! Deși...”",
+        "spend": 248.71,
+        "spend_display": "249",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Merhaba, vacanță de vis!”",
+        "spend": 246.95,
+        "spend_display": "247",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Toamna 🍂 se numără bobocii, dar și ofertele early...”",
+        "spend": 236.78,
+        "spend_display": "237",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 E deja vară... în suflet dar și-n planuri de ✈️...”",
+        "spend": 236.35,
+        "spend_display": "236",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Oferte Angajare - Trafic",
+        "spend": 229.92,
+        "spend_display": "230",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Vara viitoare se decide acum. Puneți-vă...”",
+        "spend": 225.32,
+        "spend_display": "225",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce faci mâine la prima oră? Rezervi o vacanță...”",
+        "spend": 217.61,
+        "spend_display": "218",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Post: \"Suntem ca 🧂 sarea și piperul ca ☯ Ying și Yang,...\"",
+        "spend": 206.94,
+        "spend_display": "207",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Toată lumea merge în🧳vacanță, da?! ⛱ Rezervă...”",
+        "spend": 206.62,
+        "spend_display": "207",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Să fii atât de inspirat încât să scrii 📖\"Bătrânul...”",
+        "spend": 200.2,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să descoperi 🌍 lumea alături de #Paralela45?...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ultima strigare! Vara, marea 🌊 și 🇬🇷Grecia te...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce program ai începând cu 25 octombrie? Dacă ești...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Suntem o 💪forță. Suntem o echipă. Și, mai ales,...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Iarna-i un vestit dulgher\", zicea Coșbuc....”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Valea Trandafirilor, din regiunea Kelaat...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mai ai ⏲ 𝟱 𝘇𝗶𝗹𝗲 𝗱𝗲 𝗽𝗿𝗲𝘁̦𝘂𝗿𝗶 ✨ 𝘀𝗽𝗲𝗰𝗶𝗮𝗹𝗲! Alege...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Numai mâine nu-i poimâine și te ⏰ trezești că nu...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Soarele ☀ Mediteranei, gustul Orientului și...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „3 motive să-ți faci bagajele chiar acum pentru un...”",
+        "spend": 200.0,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇷🇴Sărbătorește România cu o escapadă la munte!...”",
+        "spend": 199.99,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că în Sri Lanka 🇱🇰 alegerea numelui are o...”",
+        "spend": 199.97,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei un oraș cu plajă, dar și cu obiective de...”",
+        "spend": 199.96,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce culoare crezi că predomină la 1.600 m...”",
+        "spend": 199.85,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Luna martie e perioada lor, a 👩 doamnelor, e...”",
+        "spend": 199.85,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 Hopa! Ce avem noi aici? Cel mai interesant și...”",
+        "spend": 199.76,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum? E deja luni?? Atunci să înceapă săptămâna cu...”",
+        "spend": 199.74,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: Cine pleacă de la oraș la mare 🏖 caută doar...",
+        "spend": 199.71,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Miercurea ✈ zbori spre paradis! Algarve 🇵🇹 te...”",
+        "spend": 199.66,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cum poți transforma un ardelean într-un...”",
+        "spend": 199.66,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Looking for the sun? Prinde ultimele locuri la ☀...”",
+        "spend": 199.65,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să te simți 😍 special? Să te bucuri de mici...”",
+        "spend": 199.52,
+        "spend_display": "200",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗮̂𝘁 𝗱𝗲 𝗺𝗮𝗿𝗲 𝗲 𝗮𝘃𝗲𝗻𝘁𝘂𝗿𝗮 𝗮𝘀𝘁𝗮? 𝗠𝗮𝗿𝗲... 𝗰𝗮 𝗖𝗵𝗶𝗻𝗮...”",
+        "spend": 199.49,
+        "spend_display": "199",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Franța, Belgia și Italia există obiceiul...”",
+        "spend": 199.16,
+        "spend_display": "199",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Zile libere! Zile de relaxare! Zile cu ☀ soare!...”",
+        "spend": 197.83,
+        "spend_display": "198",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗹𝘂𝗷𝗲𝗮𝗻𝘂𝗹𝗲, 𝗮𝗶 𝗮𝗳𝗹𝗮𝘁 𝗱𝗲 𝗼𝗳𝗲𝗿𝘁𝗮 𝗹𝗮𝘀𝘁 𝗺𝗶𝗻𝘂𝘁𝗲 ✈️ 𝗱𝗶𝗻...”",
+        "spend": 196.81,
+        "spend_display": "197",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Prinde din zbor ✈ cea mai frumoasă destinație la...”",
+        "spend": 196.73,
+        "spend_display": "197",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-ai propus să descoperi 😍 frumusețea și...”",
+        "spend": 196.48,
+        "spend_display": "196",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 𝗡𝘂 𝗿𝗮𝘁𝗮 𝗰𝗲𝗮 𝗺𝗮𝗶 𝘁𝗮𝗿𝗲 𝗼𝗰𝗮𝘇𝗶𝗲 𝗱𝗲 𝗕𝗹𝗮𝗰𝗸 𝗙𝗿𝗶𝗱𝗮𝘆!...”",
+        "spend": 193.24,
+        "spend_display": "193",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „☀️ Vara nu te așteaptă, iar 🇭🇷 Croația este...”",
+        "spend": 180.0,
+        "spend_display": "180",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: E locul în care nu-i e somn, nu-i e foame, nu-i e...",
+        "spend": 179.95,
+        "spend_display": "180",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „✈️  𝗔𝘁𝗲𝗻𝘁̦𝗶𝗲, 𝗰𝗮̆𝗹𝗮̆𝘁𝗼𝗿𝘂𝗹𝗲 𝗰𝘂 𝗱𝗼𝗿 𝗱𝗲 𝗱𝘂𝘂𝘂𝘂𝘂𝗰𝗮̆!...”",
+        "spend": 179.29,
+        "spend_display": "179",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi locul acela unde până și localnicii par...”",
+        "spend": 160.0,
+        "spend_display": "160",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"It's up to you, New York, New York!\"”",
+        "spend": 150.99,
+        "spend_display": "151",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗨𝗹𝘁𝗿𝗮 𝗟𝗮𝘀𝘁 𝗠𝗶𝗻𝘂𝘁𝗲 - 🇹🇷𝗔𝗹𝗮𝗻𝘆𝗮! 5 minute să...”",
+        "spend": 150.0,
+        "spend_display": "150",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Toată lumea e pregătită de îmbarcare? ✈ Avionul...”",
+        "spend": 149.99,
+        "spend_display": "150",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Qu’es-ce que vous-avez préparé pour aujourd’ hui?”",
+        "spend": 149.99,
+        "spend_display": "150",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Alertă de mini-vacanță - 15 August. Sfânta...”",
+        "spend": 149.98,
+        "spend_display": "150",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Gata cu munca și stresul! Vara aceasta toată 👪...”",
+        "spend": 149.7,
+        "spend_display": "150",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că 🐷 purcelușii sunt considerați simbol al...”",
+        "spend": 149.15,
+        "spend_display": "149",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Consideri luna noiembrie cea mai bună pentru 🛒...”",
+        "spend": 144.0,
+        "spend_display": "144",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 136.71,
+        "spend": 139.44,
+        "spend_display": "139",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cel mai frumos Mărțișor? O minivacanța în 🇷🇴țară!...”",
+        "spend": 136.74,
         "spend_display": "137",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „‼️ 𝗔𝗹𝗲𝗿𝘁𝗮̆ 𝗱𝗲🍹𝗿𝗲𝗹𝗮𝘅𝗮𝗿𝗲 𝗶̂𝗻 🇬🇷𝗭𝗮𝗸𝘆𝗻𝘁𝗵𝗼𝘀!...”",
+        "spend": 133.67,
+        "spend_display": "134",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -8794,8 +21638,679 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 125.82,
-        "spend_display": "126",
+        "spend": 129.9,
+        "spend_display": "130",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cireșica are mere,”",
+        "spend": 117.56,
+        "spend_display": "118",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Obiect nou de tip Trafic Campanie cu setări recomandate",
+        "spend": 114.45,
+        "spend_display": "114",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să ai cea mai frumoasă vacanță de ☃ iarnă?...”",
+        "spend": 113.28,
+        "spend_display": "113",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Bonjour! Comment ça va? Je m'appelle 💬Mickey!...”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-ai acordat astăzi timp doar pentru 🤩 tine?...”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să relaxezi de 🎆 Revelion, să mănânci bine,...”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vrei să facem 🌞 lumină în deciziile tale?”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌍 Vacanțele Târgului de Turism #Paralela45 sunt...”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Peste 6 luni, când vei vedea pozele prietenilor...”",
+        "spend": 100.0,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În urmă cu 2000 de ani, în timpul dinastiei Zhou,...”",
+        "spend": 99.98,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Invidios, 😡 enervat pe toate plecările colegilor tăi?”",
+        "spend": 99.97,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „„Cu nesci ridi, ma cose buone fanni”. – cine nu...”",
+        "spend": 99.97,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Care ar fi Mărțișorul potrivit pentru ea?...”",
+        "spend": 99.96,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗗𝗮𝗰𝗮̆ 𝗲 𝗼𝗰𝘁𝗼𝗺𝗯𝗿𝗶𝗲 𝗲... 🇵🇹𝗠𝗮𝗱𝗲𝗶𝗿𝗮! Când a fost...”",
+        "spend": 99.95,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Cultura 🍵 ceaiului, ✍ caligrafia, dansul...”",
+        "spend": 99.92,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗖𝗮̂𝗻𝗱 𝘀𝗲 𝗿𝗲𝘇𝗲𝗿𝘃𝗮̆ 𝘃𝗮𝗰𝗮𝗻𝘁̦𝗮 𝗱𝗲 𝘃𝗮𝗿𝗮̆ 𝗶̂𝗻 𝗥𝗵𝗼𝗱𝗼𝘀?...”",
+        "spend": 99.87,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ceylon sau 🇱🇰Sri Lanka. Țara în care 🍵ceaiul e a...”",
+        "spend": 99.85,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Nicăieri nu-i mai bine ca... acasă. Dacă...”",
+        "spend": 99.84,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „O călătorie în Egipt 🇪🇬 la finalul anului îți va...”",
+        "spend": 99.81,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 𝙎𝙖̆𝙧𝙗𝙖̆𝙩𝙤𝙧𝙚𝙨̦𝙩𝙚 🎉 𝙖𝙨𝙩𝙖̆𝙯𝙞 𝙕𝙞𝙪𝙖 𝙈𝙤𝙣𝙙𝙞𝙖𝙡𝙖̆ 𝙖 𝙄𝙚𝙞!",
+        "spend": 99.81,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă Bartolomeu Diaz și Vasco da Gama ar mai...”",
+        "spend": 99.74,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎏 Cine caută găsește! Cele mai bune prețuri către...”",
+        "spend": 99.72,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ești genul care se mobilizează🧳ușor când vine...”",
+        "spend": 99.56,
+        "spend_display": "100",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Începem ziua în forță și cu vești 🥳 bune! Doar...”",
+        "spend": 99.32,
+        "spend_display": "99",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"𝗖𝗮̆𝗹𝗮̆𝘁𝗼𝗿𝗶𝗮 𝗲𝘀𝘁𝗲 𝘀𝗶𝗻𝗴𝘂𝗿𝘂𝗹 𝗹𝘂𝗰𝗿𝘂 𝗽𝗲 𝗰𝗮𝗿𝗲 𝗶̂𝗹...”",
+        "spend": 99.23,
+        "spend_display": "99",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Lavandă, mimoze și iasomie, un joc de petanque pe...”",
+        "spend": 99.16,
+        "spend_display": "99",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Mergi pe străzile din San Francisco,  descoperă...”",
+        "spend": 98.76,
+        "spend_display": "99",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🎉 Azi sărbătorim pasiunea de a călători, dar și...”",
+        "spend": 98.27,
+        "spend_display": "98",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Bună, hello, bonjour, holà! Oricum ai spune, noi...”",
+        "spend": 98.0,
+        "spend_display": "98",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🇹🇷❤️ 𝟮𝟵 𝗘𝗸𝗶𝗺 𝗖𝘂𝗺𝗵𝘂𝗿𝗶𝘆𝗲𝘁 𝗕𝗮𝘆𝗿𝗮𝗺ı 𝗞𝘂𝘁𝗹𝘂 𝗢𝗹𝘀𝘂𝗻! Azi...”",
+        "spend": 96.55,
+        "spend_display": "97",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Interacţiuni cu postările Reclamă: 🎧  Ce include playlist-ul perfect pentru 🌞 vară?",
+        "spend": 93.33,
+        "spend_display": "93",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „E o destinație ✨ specială! ”",
+        "spend": 90.34,
+        "spend_display": "90",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Iarna ❄ pe uliță e minunată, mai ales dacă ulița...”",
+        "spend": 82.1,
+        "spend_display": "82",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "[14.05.2024] Promovarea paginii https://www.paralela45.ro/vacante/sejur-cipru-de-nord-plecare-din-bucuresti/",
+        "spend": 72.67,
+        "spend_display": "73",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi proverbul cu înțeleptul și...☀️ vara?...”",
+        "spend": 71.3,
+        "spend_display": "71",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Zâmbește, călătorește și alege vacanțele...”",
+        "spend": 69.92,
+        "spend_display": "70",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "[14.05.2024] Promovarea paginii https://www.paralela45.ro/vacante/charter-kefalonia-plecare-din-bucuresti/",
+        "spend": 67.98,
+        "spend_display": "68",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🏊‍♂️ Înotul, aerul 🌊 marin, relaxarea și soarele...”",
+        "spend": 67.47,
+        "spend_display": "67",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Orele 🕐 se scurg, iar ziua plecării ✈ în vacanță...”",
+        "spend": 66.27,
+        "spend_display": "66",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce surprize frumoase ai găsit în ghetuțe? Dacă...”",
+        "spend": 66.07,
+        "spend_display": "66",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗧𝗿𝗮𝗻𝘀𝗶𝗹𝘃𝗮𝗻𝗶𝗮 🇷🇴𝗲 𝗽𝗿𝗲𝗴𝗮̆𝘁𝗶𝘁𝗮̆ 𝗽𝗲𝗻𝘁𝗿𝘂 𝘀𝗲𝘇𝗼𝗻𝘂𝗹 𝗱𝗲...”",
+        "spend": 60.09,
+        "spend_display": "60",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ți-am pregătit curse charter ✈️, cele mai...”",
+        "spend": 58.64,
+        "spend_display": "59",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „#𝗧𝘂𝗿𝗰𝗶𝗮, 𝘃𝗲𝗻𝗶𝗺!!! 😍 O săptămână și ai ✈ plecat în...”",
+        "spend": 58.08,
+        "spend_display": "58",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Mesopotamia a apărut pentru prima dată 🌌...”",
+        "spend": 54.89,
+        "spend_display": "55",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🔊 Ultima strigare! Toată lumea e pregătită pentru...”",
+        "spend": 51.3,
+        "spend_display": "51",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ai văzut scene🎬 filmate la Sagrada Familia şi în...”",
+        "spend": 50.0,
+        "spend_display": "50",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ce dovadă de 👩‍❤‍👨 iubire mai mare vrei decât...”",
+        "spend": 49.87,
+        "spend_display": "50",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Ankara e capitala modernă, dar 🇹🇷Cappadocia e...”",
+        "spend": 49.65,
+        "spend_display": "50",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "GRECIA INDIVIDUAL",
+        "spend": 43.44,
+        "spend_display": "43",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știai că în trecut, prinții și prințesele...”",
+        "spend": 31.29,
+        "spend_display": "31",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „❤️ Merhaba, dragi călători. 🇷🇴România iubește...”",
+        "spend": 25.29,
+        "spend_display": "25",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „În Szymbark se află una dintre cele mai...”",
+        "spend": 24.9,
+        "spend_display": "25",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Hai cu noi să sărbătorești cum se cuvine 🌞 vara!...”",
+        "spend": 23.19,
+        "spend_display": "23",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🌞 O vară perfectă începe în #𝗚𝗿𝗲𝗰𝗶𝗮🇬🇷! Pe ‼ 𝟰...”",
+        "spend": 21.78,
+        "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „#𝗛𝘂𝗿𝗴𝗵𝗮𝗱𝗮 - 𝗢𝗳𝗲𝗿𝘁𝗮̆ 🔥 𝗟𝗔𝗦𝗧 𝗠𝗜𝗡𝗨𝗧𝗘 cu preţuri...”",
+        "spend": 21.52,
+        "spend_display": "22",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Dacă te-ai săturat de vești proaste, îți aducem...”",
+        "spend": 17.69,
+        "spend_display": "18",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „\"Ai petrecut\" în destinații de pe întregul 🌏...”",
+        "spend": 17.44,
+        "spend_display": "17",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Vacanță la ☀ soare, la mare, într-un hotel 🏨...”",
+        "spend": 9.89,
+        "spend_display": "10",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „Știi cât de ușor îți putem schimba starea de 🥳...”",
+        "spend": 7.25,
+        "spend_display": "7",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „🛎 Ding, ding, ding! Zilele acestea se poartă 🍹✈...”",
+        "spend": 7.06,
+        "spend_display": "7",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "meta",
+        "name": "Postare: „𝗩𝗮𝗿𝗮 𝗮𝘀𝘁𝗮, 𝗶̂𝗻𝗰𝗲𝗮𝗿𝗰𝗮̆ \"𝗱𝗼𝗹𝗰𝗲 𝗳𝗮𝗿 𝗻𝗶𝗲𝗻𝘁𝗲\" 𝗶̂𝗻...”",
+        "spend": 5.06,
+        "spend_display": "5",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -8816,91 +22331,161 @@ window.PPC_DATA_BY_PERIOD = {
     ],
     "destinations": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 82532.34,
+        "spend_display": "83K",
+        "conversions": 18,
+        "revenue": 140741.95,
+        "revenue_display": "141K",
+        "roas": 1.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 27115.57,
+        "spend_display": "27K",
+        "conversions": 9,
+        "revenue": 119842.79,
+        "revenue_display": "120K",
+        "roas": 4.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 72986.26,
+        "spend_display": "73K",
+        "conversions": 14,
+        "revenue": 101186.4,
+        "revenue_display": "101K",
+        "roas": 1.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 12356.24,
+        "spend_display": "12K",
+        "conversions": 8,
+        "revenue": 69204.18,
+        "revenue_display": "69K",
+        "roas": 5.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 5917.33,
+        "spend_display": "5.9K",
+        "conversions": 3,
+        "revenue": 56415.42,
+        "revenue_display": "56K",
+        "roas": 9.5
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 45020.78,
+        "spend_display": "45K",
+        "conversions": 9,
+        "revenue": 49850.0,
+        "revenue_display": "50K",
+        "roas": 1.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 16221.32,
+        "spend_display": "16K",
+        "conversions": 5,
+        "revenue": 38406.41,
+        "revenue_display": "38K",
+        "roas": 2.4
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 19570.09,
+        "spend": 19575.49,
         "spend_display": "20K",
         "conversions": 48,
         "revenue": 31295.83,
         "revenue_display": "31K",
         "roas": 1.6
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Greece",
-        "spend": 33183.35,
-        "spend_display": "33K",
-        "conversions": 166,
-        "revenue": 25457.18,
-        "revenue_display": "25K",
-        "roas": 0.8
-      },
-      {
-        "platform": "google",
-        "name": "🇵🇹 Portugal",
-        "spend": 3094.67,
-        "spend_display": "3.1K",
-        "conversions": 17,
-        "revenue": 16156.31,
-        "revenue_display": "16K",
-        "roas": 5.2
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 23219.1,
-        "spend_display": "23K",
-        "conversions": 74,
-        "revenue": 15679.33,
-        "revenue_display": "16K",
-        "roas": 0.7
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇳 Tunisia",
-        "spend": 3286.46,
-        "spend_display": "3.3K",
-        "conversions": 45,
-        "revenue": 10321.05,
-        "revenue_display": "10K",
-        "roas": 3.1
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Turkey",
-        "spend": 26432.23,
-        "spend_display": "26K",
-        "conversions": 90,
-        "revenue": 4673.14,
-        "revenue_display": "4.7K",
-        "roas": 0.2
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 8614.12,
-        "spend_display": "8.6K",
-        "conversions": 86,
-        "revenue": 4303.69,
-        "revenue_display": "4.3K",
-        "roas": 0.5
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 3308.08,
-        "spend_display": "3.3K",
-        "conversions": 1,
-        "revenue": 1296.37,
-        "revenue_display": "1.3K",
-        "roas": 0.4
       }
     ],
     "destinations_all": [
       {
+        "platform": "meta",
+        "name": "🇬🇷 Greece",
+        "spend": 82532.34,
+        "spend_display": "83K",
+        "conversions": 18,
+        "revenue": 140741.95,
+        "revenue_display": "141K",
+        "roas": 1.7
+      },
+      {
+        "platform": "meta",
+        "name": "🇨🇾 Cyprus",
+        "spend": 27115.57,
+        "spend_display": "27K",
+        "conversions": 9,
+        "revenue": 119842.79,
+        "revenue_display": "120K",
+        "roas": 4.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇷 Turkey",
+        "spend": 72986.26,
+        "spend_display": "73K",
+        "conversions": 14,
+        "revenue": 101186.4,
+        "revenue_display": "101K",
+        "roas": 1.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Rhodes",
+        "spend": 12356.24,
+        "spend_display": "12K",
+        "conversions": 8,
+        "revenue": 69204.18,
+        "revenue_display": "69K",
+        "roas": 5.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 5917.33,
+        "spend_display": "5.9K",
+        "conversions": 3,
+        "revenue": 56415.42,
+        "revenue_display": "56K",
+        "roas": 9.5
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇬 Egypt",
+        "spend": 45020.78,
+        "spend_display": "45K",
+        "conversions": 9,
+        "revenue": 49850.0,
+        "revenue_display": "50K",
+        "roas": 1.1
+      },
+      {
+        "platform": "meta",
+        "name": "🇪🇸 Spain",
+        "spend": 16221.32,
+        "spend_display": "16K",
+        "conversions": 5,
+        "revenue": 38406.41,
+        "revenue_display": "38K",
+        "roas": 2.4
+      },
+      {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 19570.09,
+        "spend": 19575.49,
         "spend_display": "20K",
         "conversions": 48,
         "revenue": 31295.83,
@@ -8910,7 +22495,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 33183.35,
+        "spend": 33185.39,
         "spend_display": "33K",
         "conversions": 166,
         "revenue": 25457.18,
@@ -8918,9 +22503,29 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.8
       },
       {
+        "platform": "meta",
+        "name": "🇹🇷 Antalya",
+        "spend": 11379.6,
+        "spend_display": "11K",
+        "conversions": 1,
+        "revenue": 20626.46,
+        "revenue_display": "21K",
+        "roas": 1.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇲🇽 Mexico",
+        "spend": 7644.97,
+        "spend_display": "7.6K",
+        "conversions": 2,
+        "revenue": 17894.76,
+        "revenue_display": "18K",
+        "roas": 2.3
+      },
+      {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 3094.67,
+        "spend": 3093.13,
         "spend_display": "3.1K",
         "conversions": 17,
         "revenue": 16156.31,
@@ -8930,7 +22535,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 23219.1,
+        "spend": 23222.77,
         "spend_display": "23K",
         "conversions": 74,
         "revenue": 15679.33,
@@ -8938,9 +22543,19 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.7
       },
       {
+        "platform": "meta",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 8906.56,
+        "spend_display": "8.9K",
+        "conversions": 1,
+        "revenue": 12177.24,
+        "revenue_display": "12K",
+        "roas": 1.4
+      },
+      {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 3286.46,
+        "spend": 3288.52,
         "spend_display": "3.3K",
         "conversions": 45,
         "revenue": 10321.05,
@@ -8948,9 +22563,49 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 3.1
       },
       {
+        "platform": "meta",
+        "name": "🇲🇪 Montenegro",
+        "spend": 6188.31,
+        "spend_display": "6.2K",
+        "conversions": 2,
+        "revenue": 10001.63,
+        "revenue_display": "10K",
+        "roas": 1.6
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇳 Tunisia",
+        "spend": 11950.39,
+        "spend_display": "12K",
+        "conversions": 1,
+        "revenue": 9859.76,
+        "revenue_display": "9.9K",
+        "roas": 0.8
+      },
+      {
+        "platform": "meta",
+        "name": "🇵🇹 Portugal",
+        "spend": 6053.75,
+        "spend_display": "6.1K",
+        "conversions": 1,
+        "revenue": 8328.98,
+        "revenue_display": "8.3K",
+        "roas": 1.4
+      },
+      {
+        "platform": "meta",
+        "name": "🇰🇪 Kenya",
+        "spend": 4951.34,
+        "spend_display": "5K",
+        "conversions": 1,
+        "revenue": 4752.19,
+        "revenue_display": "4.8K",
+        "roas": 1.0
+      },
+      {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 26432.23,
+        "spend": 26433.43,
         "spend_display": "26K",
         "conversions": 90,
         "revenue": 4673.14,
@@ -8960,7 +22615,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 8614.12,
+        "spend": 8618.23,
         "spend_display": "8.6K",
         "conversions": 86,
         "revenue": 4303.69,
@@ -8970,7 +22625,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 3308.08,
+        "spend": 3308.47,
         "spend_display": "3.3K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -8980,7 +22635,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 9101.66,
+        "spend": 9103.93,
         "spend_display": "9.1K",
         "conversions": 11,
         "revenue": 1052.47,
@@ -8990,7 +22645,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 3000.14,
+        "spend": 3000.43,
         "spend_display": "3K",
         "conversions": 0,
         "revenue": 707.83,
@@ -9000,7 +22655,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 2951.15,
+        "spend": 2952.29,
         "spend_display": "3K",
         "conversions": 1,
         "revenue": 42.9,
@@ -9010,7 +22665,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 7538.27,
+        "spend": 7538.41,
         "spend_display": "7.5K",
         "conversions": 20,
         "revenue": 20.0,
@@ -9030,7 +22685,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 5677.05,
+        "spend": 5677.61,
         "spend_display": "5.7K",
         "conversions": 4,
         "revenue": 4.0,
@@ -9050,7 +22705,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 1504.51,
+        "spend": 1505.3,
         "spend_display": "1.5K",
         "conversions": 1,
         "revenue": 1.0,
@@ -9070,8 +22725,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 859.39,
-        "spend_display": "859",
+        "spend": 861.26,
+        "spend_display": "861",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9080,8 +22735,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 64.56,
-        "spend_display": "65",
+        "spend": 65.61,
+        "spend_display": "66",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9090,8 +22745,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 276.94,
-        "spend_display": "277",
+        "spend": 277.68,
+        "spend_display": "278",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9110,7 +22765,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 2354.75,
+        "spend": 2356.74,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9120,7 +22775,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1093.57,
+        "spend": 1093.62,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9130,7 +22785,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 1031.83,
+        "spend": 1031.84,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9140,8 +22795,98 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇽 Mexico",
-        "spend": 1902.93,
+        "spend": 1902.97,
         "spend_display": "1.9K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 9150.41,
+        "spend_display": "9.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 6162.6,
+        "spend_display": "6.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Italy",
+        "spend": 9522.27,
+        "spend_display": "9.5K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇷🇴 Romania",
+        "spend": 1821.51,
+        "spend_display": "1.8K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇬🇷 Kos",
+        "spend": 3063.15,
+        "spend_display": "3.1K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Sorrento & Ischia",
+        "spend": 493.04,
+        "spend_display": "493",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇮🇹 Sardinia",
+        "spend": 1157.66,
+        "spend_display": "1.2K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇻🇳 Vietnam",
+        "spend": 5712.48,
+        "spend_display": "5.7K",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "meta",
+        "name": "🇹🇭 Thailand",
+        "spend": 4847.18,
+        "spend_display": "4.8K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9173,9 +22918,9 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "severity": "info",
         "icon": "🔵",
-        "title": "Meta, Bing and TikTok not connected",
+        "title": "Bing and TikTok not connected",
         "desc": "Connect these platforms' APIs for live data — see README_PPC_DASHBOARD.md.",
-        "time": "azi"
+        "time": "today"
       }
     ],
     "daily": {
@@ -9234,58 +22979,58 @@ window.PPC_DATA_BY_PERIOD = {
         "JUNE 2026"
       ],
       "spend": [
-        4452.45,
-        9075.84,
-        10448.63,
-        6924.68,
-        4297.26,
-        11644.63,
-        7126.06,
-        7149.97,
-        10575.29,
-        12029.64,
-        13944.95,
-        13958.4,
-        17681.05,
-        21837.5,
-        19803.96,
-        30371.49,
-        22420.16,
-        23332.08,
-        21989.9,
-        21691.96,
-        22059.26,
-        25587.61,
-        21418.98,
-        27549.85,
-        9701.35
+        37052.62,
+        77098.23,
+        72978.12,
+        47250.44,
+        57243.66,
+        57834.81,
+        49192.08,
+        43296.61,
+        53825.07,
+        67342.01,
+        67920.67,
+        64903.91,
+        79986.67,
+        69129.4,
+        82751.57,
+        101520.88,
+        110888.93,
+        108214.14,
+        60939.89,
+        60736.92,
+        65614.38,
+        43256.26,
+        66703.41,
+        81517.07,
+        29272.4
       ],
       "roas": [
-        0.01,
-        0.01,
-        0.02,
-        0.04,
-        0.04,
-        0.03,
-        0.05,
-        0.05,
-        0.04,
-        0.05,
-        0.03,
-        0.05,
+        0.0,
+        0.0,
+        0.0,
         0.01,
         0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.1,
-        1.21,
-        1.28,
-        0.34,
-        2.62,
-        0.76
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.84,
+        3.35,
+        1.65,
+        0.69,
+        0.15,
+        2.14,
+        0.79,
+        1.55,
+        2.28,
+        2.0,
+        3.71,
+        2.43,
+        1.63
       ],
       "revenue": [
         28.99,
@@ -9300,19 +23045,19 @@ window.PPC_DATA_BY_PERIOD = {
         655.0,
         444.0,
         689.0,
-        183.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        61.47,
-        4.12,
-        2266.13,
-        26701.03,
-        32705.6,
-        7209.4,
-        72052.15,
-        7352.54
+        67486.98,
+        231905.34,
+        136831.18,
+        69766.22,
+        16628.6,
+        231349.66,
+        48337.68,
+        94418.31,
+        149757.14,
+        86504.97,
+        247353.64,
+        198153.12,
+        47591.39
       ],
       "conversions": [
         636.35,
@@ -9327,19 +23072,19 @@ window.PPC_DATA_BY_PERIOD = {
         1299.24,
         742.7,
         745.23,
-        264.83,
-        198.18,
-        87.88,
-        82.2,
-        84.31,
-        116.64,
-        59.87,
-        112.97,
-        418.01,
-        18.16,
-        4.38,
-        35.67,
-        6.93
+        271.83,
+        218.18,
+        103.88,
+        92.2,
+        87.31,
+        133.64,
+        65.87,
+        119.97,
+        432.01,
+        23.16,
+        20.38,
+        53.67,
+        13.93
       ],
       "granularity": "month"
     },
@@ -9355,6 +23100,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Jun 24",
+        "full_label": "JUNE 2024",
+        "date": "2024-06-01",
+        "spend": 32600.17,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "Jul 24",
         "full_label": "JULY 2024",
         "date": "2024-07-01",
@@ -9363,6 +23118,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 130.93,
         "roas": 0.01,
         "platform": "google"
+      },
+      {
+        "label": "Jul 24",
+        "full_label": "JULY 2024",
+        "date": "2024-07-01",
+        "spend": 68022.39,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Aug 24",
@@ -9375,6 +23140,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Aug 24",
+        "full_label": "AUGUST 2024",
+        "date": "2024-08-01",
+        "spend": 62529.49,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "Sep 24",
         "full_label": "SEPTEMBER 2024",
         "date": "2024-09-01",
@@ -9383,6 +23158,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 257.0,
         "roas": 0.04,
         "platform": "google"
+      },
+      {
+        "label": "Sep 24",
+        "full_label": "SEPTEMBER 2024",
+        "date": "2024-09-01",
+        "spend": 40325.76,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Oct 24",
@@ -9395,6 +23180,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Oct 24",
+        "full_label": "OCTOBER 2024",
+        "date": "2024-10-01",
+        "spend": 52946.4,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "Nov 24",
         "full_label": "NOVEMBER 2024",
         "date": "2024-11-01",
@@ -9403,6 +23198,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 330.47,
         "roas": 0.03,
         "platform": "google"
+      },
+      {
+        "label": "Nov 24",
+        "full_label": "NOVEMBER 2024",
+        "date": "2024-11-01",
+        "spend": 46190.18,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Dec 24",
@@ -9415,6 +23220,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Dec 24",
+        "full_label": "DECEMBER 2024",
+        "date": "2024-12-01",
+        "spend": 42066.02,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "Jan 25",
         "full_label": "JANUARY 2025",
         "date": "2025-01-01",
@@ -9423,6 +23238,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 341.0,
         "roas": 0.05,
         "platform": "google"
+      },
+      {
+        "label": "Jan 25",
+        "full_label": "JANUARY 2025",
+        "date": "2025-01-01",
+        "spend": 36146.64,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Feb 25",
@@ -9435,6 +23260,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Feb 25",
+        "full_label": "FEBRUARY 2025",
+        "date": "2025-02-01",
+        "spend": 43249.78,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "Mar 25",
         "full_label": "MARCH 2025",
         "date": "2025-03-01",
@@ -9443,6 +23278,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 655.0,
         "roas": 0.05,
         "platform": "google"
+      },
+      {
+        "label": "Mar 25",
+        "full_label": "MARCH 2025",
+        "date": "2025-03-01",
+        "spend": 55312.37,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Apr 25",
@@ -9455,6 +23300,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Apr 25",
+        "full_label": "APRIL 2025",
+        "date": "2025-04-01",
+        "spend": 53975.72,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
+      },
+      {
         "label": "May 25",
         "full_label": "MAY 2025",
         "date": "2025-05-01",
@@ -9463,6 +23318,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 689.0,
         "roas": 0.05,
         "platform": "google"
+      },
+      {
+        "label": "May 25",
+        "full_label": "MAY 2025",
+        "date": "2025-05-01",
+        "spend": 50945.51,
+        "conversions": 0.0,
+        "revenue": 0.0,
+        "roas": 0.0,
+        "platform": "meta"
       },
       {
         "label": "Jun 25",
@@ -9475,6 +23340,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Jun 25",
+        "full_label": "JUNE 2025",
+        "date": "2025-06-01",
+        "spend": 62305.62,
+        "conversions": 7.0,
+        "revenue": 67303.98,
+        "roas": 1.08,
+        "platform": "meta"
+      },
+      {
         "label": "Jul 25",
         "full_label": "JULY 2025",
         "date": "2025-07-01",
@@ -9483,6 +23358,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "Jul 25",
+        "full_label": "JULY 2025",
+        "date": "2025-07-01",
+        "spend": 47291.9,
+        "conversions": 20.0,
+        "revenue": 231905.34,
+        "roas": 4.9,
+        "platform": "meta"
       },
       {
         "label": "Aug 25",
@@ -9495,6 +23380,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Aug 25",
+        "full_label": "AUGUST 2025",
+        "date": "2025-08-01",
+        "spend": 62947.61,
+        "conversions": 16.0,
+        "revenue": 136831.18,
+        "roas": 2.17,
+        "platform": "meta"
+      },
+      {
         "label": "Sep 25",
         "full_label": "SEPTEMBER 2025",
         "date": "2025-09-01",
@@ -9503,6 +23398,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 0.0,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "Sep 25",
+        "full_label": "SEPTEMBER 2025",
+        "date": "2025-09-01",
+        "spend": 71149.39,
+        "conversions": 10.0,
+        "revenue": 69766.22,
+        "roas": 0.98,
+        "platform": "meta"
       },
       {
         "label": "Oct 25",
@@ -9515,6 +23420,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Oct 25",
+        "full_label": "OCTOBER 2025",
+        "date": "2025-10-01",
+        "spend": 88468.77,
+        "conversions": 3.0,
+        "revenue": 16628.6,
+        "roas": 0.19,
+        "platform": "meta"
+      },
+      {
         "label": "Nov 25",
         "full_label": "NOVEMBER 2025",
         "date": "2025-11-01",
@@ -9523,6 +23438,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 61.47,
         "roas": 0.0,
         "platform": "google"
+      },
+      {
+        "label": "Nov 25",
+        "full_label": "NOVEMBER 2025",
+        "date": "2025-11-01",
+        "spend": 84882.06,
+        "conversions": 17.0,
+        "revenue": 231288.19,
+        "roas": 2.72,
+        "platform": "meta"
       },
       {
         "label": "Dec 25",
@@ -9535,6 +23460,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Dec 25",
+        "full_label": "DECEMBER 2025",
+        "date": "2025-12-01",
+        "spend": 38949.99,
+        "conversions": 6.0,
+        "revenue": 48333.56,
+        "roas": 1.24,
+        "platform": "meta"
+      },
+      {
         "label": "Jan 26",
         "full_label": "JANUARY 2026",
         "date": "2026-01-01",
@@ -9543,6 +23478,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 2266.13,
         "roas": 0.1,
         "platform": "google"
+      },
+      {
+        "label": "Jan 26",
+        "full_label": "JANUARY 2026",
+        "date": "2026-01-01",
+        "spend": 39044.96,
+        "conversions": 7.0,
+        "revenue": 92152.18,
+        "roas": 2.36,
+        "platform": "meta"
       },
       {
         "label": "Feb 26",
@@ -9555,6 +23500,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Feb 26",
+        "full_label": "FEBRUARY 2026",
+        "date": "2026-02-01",
+        "spend": 43555.12,
+        "conversions": 14.0,
+        "revenue": 123056.11,
+        "roas": 2.83,
+        "platform": "meta"
+      },
+      {
         "label": "Mar 26",
         "full_label": "MARCH 2026",
         "date": "2026-03-01",
@@ -9563,6 +23518,16 @@ window.PPC_DATA_BY_PERIOD = {
         "revenue": 32705.6,
         "roas": 1.28,
         "platform": "google"
+      },
+      {
+        "label": "Mar 26",
+        "full_label": "MARCH 2026",
+        "date": "2026-03-01",
+        "spend": 17668.65,
+        "conversions": 5.0,
+        "revenue": 53799.37,
+        "roas": 3.04,
+        "platform": "meta"
       },
       {
         "label": "Apr 26",
@@ -9575,6 +23540,16 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "Apr 26",
+        "full_label": "APRIL 2026",
+        "date": "2026-04-01",
+        "spend": 45284.43,
+        "conversions": 16.0,
+        "revenue": 240144.24,
+        "roas": 5.3,
+        "platform": "meta"
+      },
+      {
         "label": "May 26",
         "full_label": "MAY 2026",
         "date": "2026-05-01",
@@ -9585,19 +23560,39 @@ window.PPC_DATA_BY_PERIOD = {
         "platform": "google"
       },
       {
+        "label": "May 26",
+        "full_label": "MAY 2026",
+        "date": "2026-05-01",
+        "spend": 53967.22,
+        "conversions": 18.0,
+        "revenue": 126100.97,
+        "roas": 2.34,
+        "platform": "meta"
+      },
+      {
         "label": "Jun 26",
         "full_label": "JUNE 2026",
         "date": "2026-06-01",
-        "spend": 9701.35,
+        "spend": 9736.23,
         "conversions": 6.93,
         "revenue": 7352.54,
         "roas": 0.76,
         "platform": "google"
+      },
+      {
+        "label": "Jun 26",
+        "full_label": "JUNE 2026",
+        "date": "2026-06-01",
+        "spend": 19536.17,
+        "conversions": 7.0,
+        "revenue": 40238.85,
+        "roas": 2.06,
+        "platform": "meta"
       }
     ],
     "sidebar_spend_today": {
-      "google": "655 RON",
-      "meta": "— RON",
+      "google": "689 RON",
+      "meta": "1,308 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
