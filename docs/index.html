@@ -521,6 +521,15 @@ body::before {
 .camp-table tr:last-child td { border-bottom:none; }
 .camp-table tr:hover td { color: var(--text); }
 
+.camp-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+.camp-table th.sortable:hover { color: var(--text); }
+.camp-table th.sortable.active-sort { color: var(--accent); }
+
 .camp-name {
   color: var(--text);
   font-size: 11px;
@@ -667,6 +676,14 @@ body::before {
 .dest-header .dest-name { width:100px; flex-shrink:0; color: var(--dim); }
 .dest-header .dest-revenue { width:70px; text-align:right; color: var(--dim); }
 .dest-header .dest-roas { width:40px; text-align:right; color: var(--dim); }
+
+.dest-header .dest-sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s;
+}
+.dest-header .dest-sortable:hover { color: var(--text); }
+.dest-header .dest-sortable.active-sort { color: var(--accent); }
 
 /* ─── MINI CHART ─── */
 .mini-chart {
@@ -931,6 +948,82 @@ const PERIOD_DEFS = [
 const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily'];
 let currentView = 'overview';
 const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all' };
+
+/* ─── SORTING ─── */
+const SORT_STATE = {
+  campaigns: { key: null, dir: null },
+  destinations: { key: null, dir: null },
+  daily: { key: null, dir: null }
+};
+
+const SORT_ACCESSORS = {
+  campaigns: {
+    name: c => c.name || '',
+    spend: c => c.spend ?? 0,
+    conversions: c => c.conversions ?? 0,
+    revenue: c => c.revenue ?? 0,
+    roas: c => c.roas ?? 0,
+  },
+  destinations: {
+    name: d => d.name || '',
+    revenue: d => d.revenue ?? 0,
+    roas: d => d.roas ?? 0,
+  },
+  daily: {
+    date: p => p.date || '',
+    spend: p => p.spend ?? 0,
+    conversions: p => p.conversions ?? 0,
+    revenue: p => p.revenue ?? 0,
+    roas: p => p.roas ?? 0,
+  }
+};
+
+function sortRows(rows, group, defaultKey, defaultDir) {
+  const state = SORT_STATE[group];
+  const key = state.key || defaultKey;
+  const dir = state.dir || defaultDir;
+  const get = SORT_ACCESSORS[group][key];
+  if (!get) return rows;
+  const mul = dir === 'asc' ? 1 : -1;
+  return rows.slice().sort((a, b) => {
+    const av = get(a), bv = get(b);
+    if (typeof av === 'string' || typeof bv === 'string') {
+      return String(av).localeCompare(String(bv)) * mul;
+    }
+    return ((av ?? 0) - (bv ?? 0)) * mul;
+  });
+}
+
+function sortArrow(group, key) {
+  const state = SORT_STATE[group];
+  if (state.key !== key) return '';
+  return state.dir === 'asc' ? ' ▲' : ' ▼';
+}
+
+function sortActiveClass(group, key) {
+  return SORT_STATE[group].key === key ? ' active-sort' : '';
+}
+
+function thSort(group, label, key, type) {
+  return `<th class="sortable${sortActiveClass(group, key)}" data-sort="${key}" data-sort-type="${type}">${escapeHtml(label)}${sortArrow(group, key)}</th>`;
+}
+
+function bindSortableHeaders(wrap, group, renderFn) {
+  wrap.querySelectorAll('[data-sort]').forEach(el => {
+    el.addEventListener('click', () => {
+      const key = el.dataset.sort;
+      const type = el.dataset.sortType || 'number';
+      const state = SORT_STATE[group];
+      if (state.key === key) {
+        state.dir = state.dir === 'asc' ? 'desc' : 'asc';
+      } else {
+        state.key = key;
+        state.dir = type === 'string' ? 'asc' : 'desc';
+      }
+      renderFn();
+    });
+  });
+}
 
 function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1318,14 +1411,15 @@ function renderReportCampaigns(data) {
   const all = data.campaigns_all || data.campaigns || [];
   const filter = currentFilters.campaigns;
   const filtered = filter === 'all' ? all : all.filter(c => c.platform === filter);
+  const sorted = sortRows(filtered, 'campaigns', 'spend', 'desc');
 
-  document.getElementById('report-campaigns-count').textContent = `${filtered.length} total`;
+  document.getElementById('report-campaigns-count').textContent = `${sorted.length} total`;
   const wrap = document.getElementById('report-campaigns-wrap');
-  if (!filtered.length) {
+  if (!sorted.length) {
     wrap.innerHTML = `<div class="empty-state">No campaigns for this filter.</div>`;
     return;
   }
-  const rows = filtered.map(c => {
+  const rows = sorted.map(c => {
     const meta = PLATFORM_META[c.platform] || { color: 'var(--dim)' };
     const cls = c.roas_class || roasClass(c.roas);
     return `
@@ -1340,10 +1434,17 @@ function renderReportCampaigns(data) {
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Campaign</th><th>Spend</th><th>Conv.</th><th>Revenue</th><th>ROAS</th></tr>
+        <tr>
+          ${thSort('campaigns', 'Campaign', 'name', 'string')}
+          ${thSort('campaigns', 'Spend', 'spend', 'number')}
+          ${thSort('campaigns', 'Conv.', 'conversions', 'number')}
+          ${thSort('campaigns', 'Revenue', 'revenue', 'number')}
+          ${thSort('campaigns', 'ROAS', 'roas', 'number')}
+        </tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
+  bindSortableHeaders(wrap, 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
 }
 
 /* ─── REPORT: TOP DESTINATIONS ─── */
@@ -1351,15 +1452,22 @@ function renderReportDestinations(data) {
   const all = data.destinations_all || data.destinations || [];
   const filter = currentFilters.destinations;
   const filtered = filter === 'all' ? all : all.filter(d => d.platform === filter);
+  const sorted = sortRows(filtered, 'destinations', 'revenue', 'desc');
 
-  document.getElementById('report-destinations-count').textContent = `${filtered.length} total`;
+  document.getElementById('report-destinations-count').textContent = `${sorted.length} total`;
   const wrap = document.getElementById('report-destinations-wrap');
-  if (!filtered.length) {
+  if (!sorted.length) {
     wrap.innerHTML = `<div class="empty-state">Destination breakdown unavailable for this filter.<br>Requires campaign → destination mapping (see config/accounts.json).</div>`;
     return;
   }
-  const max = Math.max(...filtered.map(d => d.revenue || 0), 1);
-  wrap.innerHTML = `<div class="dest-header"><div class="dest-name">Destination</div><div class="dest-bar-wrap"></div><div class="dest-revenue">Revenue</div><div class="dest-roas">ROAS</div></div><div class="dest-list">` + filtered.map(d => {
+  const max = Math.max(...sorted.map(d => d.revenue || 0), 1);
+  const dh = (key, type) => `dest-sortable${sortActiveClass('destinations', key)}" data-sort="${key}" data-sort-type="${type}`;
+  wrap.innerHTML = `<div class="dest-header">
+      <div class="dest-name ${dh('name','string')}">Destination${sortArrow('destinations','name')}</div>
+      <div class="dest-bar-wrap"></div>
+      <div class="dest-revenue ${dh('revenue','number')}">Revenue${sortArrow('destinations','revenue')}</div>
+      <div class="dest-roas ${dh('roas','number')}">ROAS${sortArrow('destinations','roas')}</div>
+    </div><div class="dest-list">` + sorted.map(d => {
     const pct = Math.round(((d.revenue || 0) / max) * 100);
     const roasColor = d.roas >= 6 ? 'var(--green)' : d.roas >= 4 ? 'var(--orange)' : 'var(--red)';
     return `
@@ -1370,6 +1478,7 @@ function renderReportDestinations(data) {
         <div class="dest-roas" style="color:${roasColor}">${(d.roas ?? 0).toFixed(1)}x</div>
       </div>`;
   }).join('') + `</div>`;
+  bindSortableHeaders(wrap, 'destinations', () => renderReportDestinations(window.PPC_DATA));
 }
 
 /* ─── REPORT: DAILY DIAGNOSTIC ─── */
@@ -1377,14 +1486,15 @@ function renderReportDaily(data) {
   const all = data.daily_table || [];
   const filter = currentFilters.daily;
   const filtered = filter === 'all' ? all : all.filter(p => p.platform === filter);
+  const sorted = sortRows(filtered, 'daily', 'date', 'desc');
 
-  document.getElementById('report-daily-count').textContent = `${filtered.length} total`;
+  document.getElementById('report-daily-count').textContent = `${sorted.length} total`;
   const wrap = document.getElementById('report-daily-wrap');
-  if (!filtered.length) {
+  if (!sorted.length) {
     wrap.innerHTML = `<div class="empty-state">No results for this filter.</div>`;
     return;
   }
-  const rows = filtered.slice().reverse().map(p => {
+  const rows = sorted.map(p => {
     const meta = PLATFORM_META[p.platform] || { color: 'var(--dim)' };
     const cls = roasClass(p.roas);
     return `
@@ -1399,10 +1509,17 @@ function renderReportDaily(data) {
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Date</th><th>Spend (RON)</th><th>Conv.</th><th>Revenue (RON)</th><th>ROAS</th></tr>
+        <tr>
+          ${thSort('daily', 'Date', 'date', 'string')}
+          ${thSort('daily', 'Spend (RON)', 'spend', 'number')}
+          ${thSort('daily', 'Conv.', 'conversions', 'number')}
+          ${thSort('daily', 'Revenue (RON)', 'revenue', 'number')}
+          ${thSort('daily', 'ROAS', 'roas', 'number')}
+        </tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
+  bindSortableHeaders(wrap, 'daily', () => renderReportDaily(window.PPC_DATA));
 }
 
 function renderActiveReport() {

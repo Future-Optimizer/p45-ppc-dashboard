@@ -11,7 +11,7 @@ window.PPC_DATA_BY_PERIOD = {
       "spend_total": {
         "display": "2",
         "unit": "K RON",
-        "delta_display": "↓ 14%",
+        "delta_display": "↓ 13%",
         "delta_dir": "down"
       },
       "revenue": {
@@ -45,12 +45,12 @@ window.PPC_DATA_BY_PERIOD = {
         "status": "connected",
         "status_label": "● Active",
         "status_class": "ok",
-        "spend_display": "689",
+        "spend_display": "699",
         "roas": 0.0,
         "roas_class": "bad",
         "conversions": 0,
         "cpa_display": "0 RON",
-        "share_pct": 35
+        "share_pct": 34
       },
       "meta": {
         "name": "Meta Ads",
@@ -62,7 +62,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas_class": "bad",
         "conversions": 0,
         "cpa_display": "0 RON",
-        "share_pct": 65
+        "share_pct": 66
       },
       "bing": {
         "name": "Bing Ads",
@@ -92,9 +92,9 @@ window.PPC_DATA_BY_PERIOD = {
     "campaigns": [
       {
         "platform": "meta",
-        "name": "Sales campaign - Circuite",
-        "spend": 229.87,
-        "spend_display": "230",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 234.35,
+        "spend_display": "234",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -103,9 +103,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "meta",
-        "name": "Traffic - Circuite Exotice",
-        "spend": 229.7,
-        "spend_display": "230",
+        "name": "Sales campaign - Circuite",
+        "spend": 233.59,
+        "spend_display": "234",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -115,8 +115,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 194.93,
-        "spend_display": "195",
+        "spend": 198.11,
+        "spend_display": "198",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -126,8 +126,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 168.57,
-        "spend_display": "169",
+        "spend": 172.39,
+        "spend_display": "172",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -137,8 +137,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 163.46,
-        "spend_display": "163",
+        "spend": 166.16,
+        "spend_display": "166",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -148,8 +148,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 142.74,
-        "spend_display": "143",
+        "spend": 145.0,
+        "spend_display": "145",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -159,8 +159,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 133.56,
-        "spend_display": "134",
+        "spend": 134.74,
+        "spend_display": "135",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -170,8 +170,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 113.49,
-        "spend_display": "113",
+        "spend": 115.61,
+        "spend_display": "116",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -182,9 +182,9 @@ window.PPC_DATA_BY_PERIOD = {
     "campaigns_all": [
       {
         "platform": "meta",
-        "name": "Sales campaign - Circuite",
-        "spend": 229.87,
-        "spend_display": "230",
+        "name": "Traffic - Circuite Exotice",
+        "spend": 234.35,
+        "spend_display": "234",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -193,9 +193,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "meta",
-        "name": "Traffic - Circuite Exotice",
-        "spend": 229.7,
-        "spend_display": "230",
+        "name": "Sales campaign - Circuite",
+        "spend": 233.59,
+        "spend_display": "234",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -205,8 +205,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 194.93,
-        "spend_display": "195",
+        "spend": 198.11,
+        "spend_display": "198",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -216,8 +216,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 168.57,
-        "spend_display": "169",
+        "spend": 172.39,
+        "spend_display": "172",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -227,8 +227,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 163.46,
-        "spend_display": "163",
+        "spend": 166.16,
+        "spend_display": "166",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -238,8 +238,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 142.74,
-        "spend_display": "143",
+        "spend": 145.0,
+        "spend_display": "145",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -249,8 +249,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 133.56,
-        "spend_display": "134",
+        "spend": 134.74,
+        "spend_display": "135",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -260,8 +260,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 113.49,
-        "spend_display": "113",
+        "spend": 115.61,
+        "spend_display": "116",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -271,8 +271,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 88.32,
-        "spend_display": "88",
+        "spend": 89.54,
+        "spend_display": "90",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -282,8 +282,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 86.07,
-        "spend_display": "86",
+        "spend": 88.27,
+        "spend_display": "88",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -293,8 +293,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 80.32,
-        "spend_display": "80",
+        "spend": 81.5,
+        "spend_display": "82",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -304,19 +304,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 68.2,
-        "spend_display": "68",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "PMax Shopping - Agentie de turism",
-        "spend": 45.18,
-        "spend_display": "45",
+        "spend": 68.97,
+        "spend_display": "69",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -326,7 +315,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 44.86,
+        "spend": 45.45,
+        "spend_display": "45",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "google",
+        "name": "PMax Shopping - Agentie de turism",
+        "spend": 45.35,
         "spend_display": "45",
         "conversions": 0,
         "revenue": 0.0,
@@ -337,8 +337,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 38.44,
-        "spend_display": "38",
+        "spend": 38.83,
+        "spend_display": "39",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -348,8 +348,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 35.49,
-        "spend_display": "35",
+        "spend": 35.93,
+        "spend_display": "36",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -359,7 +359,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 29.53,
+        "spend": 30.24,
         "spend_display": "30",
         "conversions": 0,
         "revenue": 0.0,
@@ -370,19 +370,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 25.19,
-        "spend_display": "25",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0,
-        "roas_class": "bad"
-      },
-      {
-        "platform": "google",
-        "name": "Search | Agentie de turism",
-        "spend": 18.55,
-        "spend_display": "19",
+        "spend": 26.12,
+        "spend_display": "26",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -392,8 +381,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 18.4,
-        "spend_display": "18",
+        "spend": 18.78,
+        "spend_display": "19",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0,
+        "roas_class": "bad"
+      },
+      {
+        "platform": "google",
+        "name": "Search | Agentie de turism",
+        "spend": 18.76,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -403,8 +403,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 18.1,
-        "spend_display": "18",
+        "spend": 18.54,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -414,7 +414,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 15.84,
+        "spend": 16.23,
         "spend_display": "16",
         "conversions": 0,
         "revenue": 0.0,
@@ -425,7 +425,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 7.96,
+        "spend": 7.97,
         "spend_display": "8",
         "conversions": 0,
         "revenue": 0.0,
@@ -449,8 +449,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 27.25,
-        "spend_display": "27",
+        "spend": 27.68,
+        "spend_display": "28",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -459,8 +459,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 18.36,
-        "spend_display": "18",
+        "spend": 18.66,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -469,7 +469,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 14.62,
+        "spend": 14.96,
         "spend_display": "15",
         "conversions": 0,
         "revenue": 0.0,
@@ -479,7 +479,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 60.6,
+        "spend": 61.26,
         "spend_display": "61",
         "conversions": 0,
         "revenue": 0.0,
@@ -489,8 +489,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 43.5,
-        "spend_display": "43",
+        "spend": 44.0,
+        "spend_display": "44",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -499,7 +499,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 18.54,
+        "spend": 19.06,
         "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
@@ -508,9 +508,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 28.36,
-        "spend_display": "28",
+        "name": "🇹🇷 Turkey",
+        "spend": 33.04,
+        "spend_display": "33",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -518,9 +518,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 50.68,
-        "spend_display": "51",
+        "name": "🇵🇹 Portugal",
+        "spend": 23.56,
+        "spend_display": "24",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -531,8 +531,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 27.25,
-        "spend_display": "27",
+        "spend": 27.68,
+        "spend_display": "28",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -541,8 +541,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 18.36,
-        "spend_display": "18",
+        "spend": 18.66,
+        "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -551,7 +551,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 14.62,
+        "spend": 14.96,
         "spend_display": "15",
         "conversions": 0,
         "revenue": 0.0,
@@ -561,7 +561,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 60.6,
+        "spend": 61.26,
         "spend_display": "61",
         "conversions": 0,
         "revenue": 0.0,
@@ -571,8 +571,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 43.5,
-        "spend_display": "43",
+        "spend": 44.0,
+        "spend_display": "44",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -581,7 +581,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 18.54,
+        "spend": 19.06,
         "spend_display": "19",
         "conversions": 0,
         "revenue": 0.0,
@@ -590,29 +590,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 28.36,
-        "spend_display": "28",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇪🇬 Egypt",
-        "spend": 50.68,
-        "spend_display": "51",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 32.17,
-        "spend_display": "32",
+        "spend": 33.04,
+        "spend_display": "33",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -621,8 +601,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 23.25,
-        "spend_display": "23",
+        "spend": 23.56,
+        "spend_display": "24",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇪🇬 Egypt",
+        "spend": 50.98,
+        "spend_display": "51",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇨🇾 Cyprus",
+        "spend": 28.98,
+        "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -631,8 +631,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 53.33,
-        "spend_display": "53",
+        "spend": 53.82,
+        "spend_display": "54",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -641,7 +641,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 79.55,
+        "spend": 80.34,
         "spend_display": "80",
         "conversions": 0,
         "revenue": 0.0,
@@ -651,38 +651,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 38.44,
-        "spend_display": "38",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 0.28,
-        "spend_display": "0",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 0.67,
-        "spend_display": "1",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 10.37,
-        "spend_display": "10",
+        "spend": 38.82,
+        "spend_display": "39",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -691,8 +661,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 3.1,
+        "spend": 3.13,
         "spend_display": "3",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇰🇪 Kenya",
+        "spend": 0.29,
+        "spend_display": "0",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -711,7 +691,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 1.85,
+        "spend": 1.86,
         "spend_display": "2",
         "conversions": 0,
         "revenue": 0.0,
@@ -720,9 +700,19 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇬🇷 Chania (Crete)",
-        "spend": 29.13,
-        "spend_display": "29",
+        "name": "🇻🇳 Vietnam",
+        "spend": 10.67,
+        "spend_display": "11",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 0.67,
+        "spend_display": "1",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -731,8 +721,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 14.58,
+        "spend": 14.92,
         "spend_display": "15",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 29.4,
+        "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -741,8 +741,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 50.15,
-        "spend_display": "50",
+        "spend": 50.91,
+        "spend_display": "51",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -751,8 +751,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 124.51,
-        "spend_display": "125",
+        "spend": 126.59,
+        "spend_display": "127",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -761,8 +761,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 93.03,
-        "spend_display": "93",
+        "spend": 94.76,
+        "spend_display": "95",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -771,8 +771,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 112.92,
-        "spend_display": "113",
+        "spend": 115.26,
+        "spend_display": "115",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -781,8 +781,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 144.91,
-        "spend_display": "145",
+        "spend": 146.99,
+        "spend_display": "147",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -791,8 +791,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 111.57,
-        "spend_display": "112",
+        "spend": 113.34,
+        "spend_display": "113",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -801,8 +801,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 73.9,
-        "spend_display": "74",
+        "spend": 75.75,
+        "spend_display": "76",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -811,7 +811,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 29.14,
+        "spend": 29.47,
         "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
@@ -821,8 +821,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 68.64,
-        "spend_display": "69",
+        "spend": 71.67,
+        "spend_display": "72",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -831,8 +831,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 82.34,
-        "spend_display": "82",
+        "spend": 83.13,
+        "spend_display": "83",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -841,8 +841,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 59.41,
-        "spend_display": "59",
+        "spend": 60.13,
+        "spend_display": "60",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -851,7 +851,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 68.55,
+        "spend": 69.45,
         "spend_display": "69",
         "conversions": 0,
         "revenue": 0.0,
@@ -861,8 +861,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 75.88,
-        "spend_display": "76",
+        "spend": 77.57,
+        "spend_display": "78",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -871,8 +871,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 69.81,
-        "spend_display": "70",
+        "spend": 70.51,
+        "spend_display": "71",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -881,8 +881,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 28.45,
-        "spend_display": "28",
+        "spend": 28.79,
+        "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -891,7 +891,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 8.88,
+        "spend": 9.12,
         "spend_display": "9",
         "conversions": 0,
         "revenue": 0.0,
@@ -901,8 +901,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 28.37,
-        "spend_display": "28",
+        "spend": 28.85,
+        "spend_display": "29",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -911,8 +911,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 39.23,
-        "spend_display": "39",
+        "spend": 40.1,
+        "spend_display": "40",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -924,7 +924,7 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Protect brand",
-        "desc": "This campaign spends 68 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 69 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -938,7 +938,7 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Buc",
-        "desc": "This campaign spends 86 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 88 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -957,7 +957,7 @@ window.PPC_DATA_BY_PERIOD = {
         "12 Jun 2026"
       ],
       "spend": [
-        1996.77
+        2030.45
       ],
       "roas": [
         0.0
@@ -975,7 +975,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -985,7 +985,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1331.38,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -993,8 +993,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -1032,7 +1032,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "2024",
+        "display": "2028",
         "unit": "RON",
         "delta_display": "↑ 12%",
         "delta_dir": "down"
@@ -1048,7 +1048,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.9,
         "roas_class": "bad",
         "conversions": 4,
-        "cpa_display": "1,326 RON",
+        "cpa_display": "1,328 RON",
         "share_pct": 34
       },
       "meta": {
@@ -1057,10 +1057,10 @@ window.PPC_DATA_BY_PERIOD = {
         "status_label": "● Active",
         "status_class": "ok",
         "spend_display": "11K",
-        "roas": 2.1,
+        "roas": 2.0,
         "roas_class": "bad",
         "conversions": 4,
-        "cpa_display": "2,762 RON",
+        "cpa_display": "2,768 RON",
         "share_pct": 66
       },
       "bing": {
@@ -1092,18 +1092,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 335.09,
-        "spend_display": "335",
+        "spend": 335.53,
+        "spend_display": "336",
         "conversions": 1,
         "revenue": 3908.26,
         "revenue_display": "3.9K",
-        "roas": 11.7,
+        "roas": 11.6,
         "roas_class": "good"
       },
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 1437.95,
+        "spend": 1441.77,
         "spend_display": "1.4K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -1114,18 +1114,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 946.84,
-        "spend_display": "947",
+        "spend": 948.96,
+        "spend_display": "949",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 5.6,
+        "roas": 5.5,
         "roas_class": "good"
       },
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 1202.15,
+        "spend": 1204.41,
         "spend_display": "1.2K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -1136,7 +1136,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 1284.17,
+        "spend": 1285.35,
         "spend_display": "1.3K",
         "conversions": 4,
         "revenue": 5037.4,
@@ -1147,7 +1147,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 1918.96,
+        "spend": 1922.68,
         "spend_display": "1.9K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1158,7 +1158,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 1657.49,
+        "spend": 1662.14,
         "spend_display": "1.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1169,7 +1169,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 1638.42,
+        "spend": 1641.6,
         "spend_display": "1.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1182,7 +1182,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 1918.96,
+        "spend": 1922.68,
         "spend_display": "1.9K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1193,7 +1193,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 1657.49,
+        "spend": 1662.14,
         "spend_display": "1.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1204,7 +1204,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 1638.42,
+        "spend": 1641.6,
         "spend_display": "1.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1215,7 +1215,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 1443.82,
+        "spend": 1446.52,
         "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -1226,7 +1226,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 1437.95,
+        "spend": 1441.77,
         "spend_display": "1.4K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -1237,7 +1237,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 1284.17,
+        "spend": 1285.35,
         "spend_display": "1.3K",
         "conversions": 4,
         "revenue": 5037.4,
@@ -1248,7 +1248,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 1202.15,
+        "spend": 1204.41,
         "spend_display": "1.2K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -1259,19 +1259,19 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 946.84,
-        "spend_display": "947",
+        "spend": 948.96,
+        "spend_display": "949",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 5.6,
+        "roas": 5.5,
         "roas_class": "good"
       },
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 694.24,
-        "spend_display": "694",
+        "spend": 696.44,
+        "spend_display": "696",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1281,8 +1281,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 571.8,
-        "spend_display": "572",
+        "spend": 572.57,
+        "spend_display": "573",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1292,8 +1292,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 469.21,
-        "spend_display": "469",
+        "spend": 469.92,
+        "spend_display": "470",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1303,7 +1303,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 454.03,
+        "spend": 454.42,
         "spend_display": "454",
         "conversions": 0,
         "revenue": 0.0,
@@ -1314,7 +1314,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 421.12,
+        "spend": 421.13,
         "spend_display": "421",
         "conversions": 0,
         "revenue": 0.0,
@@ -1325,7 +1325,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 401.09,
+        "spend": 401.27,
         "spend_display": "401",
         "conversions": 0,
         "revenue": 0.0,
@@ -1336,8 +1336,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 366.62,
-        "spend_display": "367",
+        "spend": 367.54,
+        "spend_display": "368",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1347,8 +1347,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 346.1,
-        "spend_display": "346",
+        "spend": 346.69,
+        "spend_display": "347",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1358,18 +1358,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 335.09,
-        "spend_display": "335",
+        "spend": 335.53,
+        "spend_display": "336",
         "conversions": 1,
         "revenue": 3908.26,
         "revenue_display": "3.9K",
-        "roas": 11.7,
+        "roas": 11.6,
         "roas_class": "good"
       },
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 176.53,
+        "spend": 176.92,
         "spend_display": "177",
         "conversions": 0,
         "revenue": 0.0,
@@ -1380,8 +1380,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 158.33,
-        "spend_display": "158",
+        "spend": 158.54,
+        "spend_display": "159",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1391,8 +1391,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 148.13,
-        "spend_display": "148",
+        "spend": 148.51,
+        "spend_display": "149",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1402,8 +1402,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 144.28,
-        "spend_display": "144",
+        "spend": 144.73,
+        "spend_display": "145",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1413,8 +1413,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1424,8 +1424,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1470,27 +1470,27 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 567.71,
-        "spend_display": "568",
+        "spend": 569.56,
+        "spend_display": "570",
         "conversions": 1,
         "revenue": 8328.98,
         "revenue_display": "8.3K",
-        "roas": 14.7
+        "roas": 14.6
       },
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 310.22,
-        "spend_display": "310",
+        "spend": 311.09,
+        "spend_display": "311",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 17.0
+        "roas": 16.9
       },
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 1070.29,
+        "spend": 1072.37,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -1500,17 +1500,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 1279.85,
+        "spend": 1281.93,
         "spend_display": "1.3K",
         "conversions": 1,
         "revenue": 3908.26,
         "revenue_display": "3.9K",
-        "roas": 3.1
+        "roas": 3.0
       },
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 405.61,
+        "spend": 406.24,
         "spend_display": "406",
         "conversions": 2,
         "revenue": 2873.47,
@@ -1520,8 +1520,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 502.36,
-        "spend_display": "502",
+        "spend": 503.42,
+        "spend_display": "503",
         "conversions": 2,
         "revenue": 1790.49,
         "revenue_display": "1.8K",
@@ -1530,7 +1530,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 372.8,
+        "spend": 373.14,
         "spend_display": "373",
         "conversions": 0,
         "revenue": 373.44,
@@ -1540,7 +1540,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 156.67,
+        "spend": 157.12,
         "spend_display": "157",
         "conversions": 0,
         "revenue": 0.0,
@@ -1552,27 +1552,27 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 567.71,
-        "spend_display": "568",
+        "spend": 569.56,
+        "spend_display": "570",
         "conversions": 1,
         "revenue": 8328.98,
         "revenue_display": "8.3K",
-        "roas": 14.7
+        "roas": 14.6
       },
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 310.22,
-        "spend_display": "310",
+        "spend": 311.09,
+        "spend_display": "311",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 17.0
+        "roas": 16.9
       },
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 1070.29,
+        "spend": 1072.37,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -1582,17 +1582,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 1279.85,
+        "spend": 1281.93,
         "spend_display": "1.3K",
         "conversions": 1,
         "revenue": 3908.26,
         "revenue_display": "3.9K",
-        "roas": 3.1
+        "roas": 3.0
       },
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 405.61,
+        "spend": 406.24,
         "spend_display": "406",
         "conversions": 2,
         "revenue": 2873.47,
@@ -1602,8 +1602,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 502.36,
-        "spend_display": "502",
+        "spend": 503.42,
+        "spend_display": "503",
         "conversions": 2,
         "revenue": 1790.49,
         "revenue_display": "1.8K",
@@ -1612,7 +1612,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 372.8,
+        "spend": 373.14,
         "spend_display": "373",
         "conversions": 0,
         "revenue": 373.44,
@@ -1622,7 +1622,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 156.67,
+        "spend": 157.12,
         "spend_display": "157",
         "conversions": 0,
         "revenue": 0.0,
@@ -1632,7 +1632,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 83.82,
+        "spend": 84.12,
         "spend_display": "84",
         "conversions": 0,
         "revenue": 0.0,
@@ -1642,7 +1642,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 82.6,
+        "spend": 82.94,
         "spend_display": "83",
         "conversions": 0,
         "revenue": 0.0,
@@ -1651,19 +1651,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇪🇸 Spain",
-        "spend": 343.1,
-        "spend_display": "343",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 582.64,
-        "spend_display": "583",
+        "spend": 583.54,
+        "spend_display": "584",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1672,18 +1662,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 60.29,
-        "spend_display": "60",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 238.25,
-        "spend_display": "238",
+        "spend": 60.87,
+        "spend_display": "61",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1692,8 +1672,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 235.44,
-        "spend_display": "235",
+        "spend": 236.37,
+        "spend_display": "236",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1702,8 +1682,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 118.33,
-        "spend_display": "118",
+        "spend": 118.64,
+        "spend_display": "119",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇪🇸 Spain",
+        "spend": 343.95,
+        "spend_display": "344",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇨🇾 Cyprus",
+        "spend": 238.92,
+        "spend_display": "239",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1712,7 +1712,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 176.53,
+        "spend": 176.92,
         "spend_display": "177",
         "conversions": 0,
         "revenue": 0.0,
@@ -1721,38 +1721,8 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 66.04,
-        "spend_display": "66",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 132.22,
-        "spend_display": "132",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 268.8,
-        "spend_display": "269",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 87.1,
+        "spend": 87.13,
         "spend_display": "87",
         "conversions": 0,
         "revenue": 0.0,
@@ -1761,8 +1731,18 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇰🇪 Kenya",
+        "spend": 66.05,
+        "spend_display": "66",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 218.68,
+        "spend": 218.69,
         "spend_display": "219",
         "conversions": 0,
         "revenue": 0.0,
@@ -1781,9 +1761,19 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇬🇷 Chania (Crete)",
-        "spend": 41.62,
-        "spend_display": "42",
+        "name": "🇻🇳 Vietnam",
+        "spend": 269.15,
+        "spend_display": "269",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 132.22,
+        "spend_display": "132",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1792,8 +1782,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 22.31,
-        "spend_display": "22",
+        "spend": 22.65,
+        "spend_display": "23",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Chania (Crete)",
+        "spend": 41.96,
+        "spend_display": "42",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1802,8 +1802,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 459.37,
-        "spend_display": "459",
+        "spend": 460.13,
+        "spend_display": "460",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1812,8 +1812,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 787.25,
-        "spend_display": "787",
+        "spend": 788.98,
+        "spend_display": "789",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1822,8 +1822,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 994.96,
-        "spend_display": "995",
+        "spend": 997.3,
+        "spend_display": "997",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1832,8 +1832,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 931.65,
-        "spend_display": "932",
+        "spend": 933.42,
+        "spend_display": "933",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1842,7 +1842,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 246.89,
+        "spend": 247.22,
         "spend_display": "247",
         "conversions": 0,
         "revenue": 0.0,
@@ -1852,8 +1852,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 642.16,
-        "spend_display": "642",
+        "spend": 645.19,
+        "spend_display": "645",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1862,8 +1862,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 622.47,
-        "spend_display": "622",
+        "spend": 623.26,
+        "spend_display": "623",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1872,7 +1872,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 447.52,
+        "spend": 448.24,
         "spend_display": "448",
         "conversions": 0,
         "revenue": 0.0,
@@ -1882,8 +1882,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 591.04,
-        "spend_display": "591",
+        "spend": 591.94,
+        "spend_display": "592",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1892,8 +1892,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 530.48,
-        "spend_display": "530",
+        "spend": 532.17,
+        "spend_display": "532",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1902,8 +1902,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 462.24,
-        "spend_display": "462",
+        "spend": 462.94,
+        "spend_display": "463",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1912,8 +1912,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 244.48,
-        "spend_display": "244",
+        "spend": 244.82,
+        "spend_display": "245",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1922,7 +1922,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 83.11,
+        "spend": 83.35,
         "spend_display": "83",
         "conversions": 0,
         "revenue": 0.0,
@@ -1932,8 +1932,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 241.32,
-        "spend_display": "241",
+        "spend": 241.8,
+        "spend_display": "242",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -1945,21 +1945,21 @@ window.PPC_DATA_BY_PERIOD = {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Protect brand",
-        "desc": "This campaign spends 572 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 573 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Search | Agentie de turism",
-        "desc": "This campaign spends 158 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 159 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
         "severity": "crit",
         "icon": "🔴",
         "title": "Google Ads: ROAS below critical (0.0x) — Pmax | Sejururi - Plecare din Buc",
-        "desc": "This campaign spends 694 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
+        "desc": "This campaign spends 696 RON with a ROAS of 0.0x, below the critical threshold of 3.0x. Needs urgent review.",
         "time": "today"
       },
       {
@@ -1996,7 +1996,7 @@ window.PPC_DATA_BY_PERIOD = {
         2397.67,
         2239.66,
         2334.77,
-        1996.77
+        2030.45
       ],
       "roas": [
         1.7,
@@ -2152,7 +2152,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -2162,7 +2162,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1331.38,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -2170,8 +2170,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -2197,7 +2197,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "down"
       },
       "roas_global": {
-        "display": "2.03",
+        "display": "2.02",
         "unit": "x",
         "delta_display": "↓ 0.6x",
         "delta_dir": "down"
@@ -2209,7 +2209,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "1909",
+        "display": "1911",
         "unit": "RON",
         "delta_display": "↑ 40%",
         "delta_dir": "down"
@@ -2225,7 +2225,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.8,
         "roas_class": "bad",
         "conversions": 8,
-        "cpa_display": "1,422 RON",
+        "cpa_display": "1,423 RON",
         "share_pct": 33
       },
       "meta": {
@@ -2237,7 +2237,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 2.6,
         "roas_class": "bad",
         "conversions": 10,
-        "cpa_display": "2,298 RON",
+        "cpa_display": "2,300 RON",
         "share_pct": 67
       },
       "bing": {
@@ -2269,8 +2269,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 693.47,
-        "spend_display": "693",
+        "spend": 693.91,
+        "spend_display": "694",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
@@ -2280,7 +2280,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 2908.3,
+        "spend": 2912.12,
         "spend_display": "2.9K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -2291,18 +2291,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 2416.01,
+        "spend": 2418.27,
         "spend_display": "2.4K",
         "conversions": 2,
         "revenue": 13657.64,
         "revenue_display": "14K",
-        "roas": 5.7,
+        "roas": 5.6,
         "roas_class": "good"
       },
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2596.04,
+        "spend": 2597.22,
         "spend_display": "2.6K",
         "conversions": 7,
         "revenue": 8555.19,
@@ -2313,7 +2313,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 3870.91,
+        "spend": 3874.63,
         "spend_display": "3.9K",
         "conversions": 2,
         "revenue": 11666.1,
@@ -2324,7 +2324,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 2005.84,
+        "spend": 2007.96,
         "spend_display": "2K",
         "conversions": 1,
         "revenue": 5263.22,
@@ -2335,7 +2335,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 2895.42,
+        "spend": 2898.12,
         "spend_display": "2.9K",
         "conversions": 1,
         "revenue": 5949.1,
@@ -2346,7 +2346,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 1145.23,
+        "spend": 1146.0,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 641.84,
@@ -2359,7 +2359,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 3870.91,
+        "spend": 3874.63,
         "spend_display": "3.9K",
         "conversions": 2,
         "revenue": 11666.1,
@@ -2370,7 +2370,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 3356.03,
+        "spend": 3360.68,
         "spend_display": "3.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2381,7 +2381,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 3308.09,
+        "spend": 3311.27,
         "spend_display": "3.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2392,7 +2392,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 2908.3,
+        "spend": 2912.12,
         "spend_display": "2.9K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -2403,7 +2403,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 2895.42,
+        "spend": 2898.12,
         "spend_display": "2.9K",
         "conversions": 1,
         "revenue": 5949.1,
@@ -2414,7 +2414,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2596.04,
+        "spend": 2597.22,
         "spend_display": "2.6K",
         "conversions": 7,
         "revenue": 8555.19,
@@ -2425,18 +2425,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 2416.01,
+        "spend": 2418.27,
         "spend_display": "2.4K",
         "conversions": 2,
         "revenue": 13657.64,
         "revenue_display": "14K",
-        "roas": 5.7,
+        "roas": 5.6,
         "roas_class": "good"
       },
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 2005.84,
+        "spend": 2007.96,
         "spend_display": "2K",
         "conversions": 1,
         "revenue": 5263.22,
@@ -2447,7 +2447,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1737.23,
+        "spend": 1739.43,
         "spend_display": "1.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2458,7 +2458,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 1174.69,
+        "spend": 1175.4,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2469,7 +2469,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 1145.23,
+        "spend": 1146.0,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 641.84,
@@ -2480,7 +2480,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 1075.32,
+        "spend": 1075.71,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -2491,7 +2491,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 986.41,
+        "spend": 986.42,
         "spend_display": "986",
         "conversions": 0,
         "revenue": 0.0,
@@ -2502,8 +2502,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 693.47,
-        "spend_display": "693",
+        "spend": 693.91,
+        "spend_display": "694",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
@@ -2513,7 +2513,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 686.55,
+        "spend": 687.48,
         "spend_display": "687",
         "conversions": 0,
         "revenue": 0.0,
@@ -2524,7 +2524,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 684.83,
+        "spend": 685.42,
         "spend_display": "685",
         "conversions": 0,
         "revenue": 0.0,
@@ -2535,7 +2535,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 504.28,
+        "spend": 504.46,
         "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
@@ -2557,7 +2557,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 331.19,
+        "spend": 331.4,
         "spend_display": "331",
         "conversions": 0,
         "revenue": 0.0,
@@ -2568,8 +2568,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 314.49,
-        "spend_display": "314",
+        "spend": 314.88,
+        "spend_display": "315",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2579,7 +2579,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 298.08,
+        "spend": 298.45,
         "spend_display": "298",
         "conversions": 0,
         "revenue": 0.0,
@@ -2590,8 +2590,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 288.31,
-        "spend_display": "288",
+        "spend": 288.76,
+        "spend_display": "289",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2623,8 +2623,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2634,8 +2634,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2658,7 +2658,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 2162.12,
+        "spend": 2164.2,
         "spend_display": "2.2K",
         "conversions": 3,
         "revenue": 16832.49,
@@ -2668,7 +2668,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 1852.85,
+        "spend": 1854.62,
         "spend_display": "1.9K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -2678,8 +2678,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 955.32,
-        "spend_display": "955",
+        "spend": 956.08,
+        "spend_display": "956",
         "conversions": 1,
         "revenue": 8491.25,
         "revenue_display": "8.5K",
@@ -2688,7 +2688,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 1118.68,
+        "spend": 1120.76,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -2698,7 +2698,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 2586.15,
+        "spend": 2588.23,
         "spend_display": "2.6K",
         "conversions": 2,
         "revenue": 7282.46,
@@ -2708,17 +2708,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.85,
-        "spend_display": "343",
+        "spend": 343.72,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 15.4
+        "roas": 15.3
       },
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 817.5,
+        "spend": 818.13,
         "spend_display": "818",
         "conversions": 3,
         "revenue": 3536.33,
@@ -2728,7 +2728,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 1060.31,
+        "spend": 1061.37,
         "spend_display": "1.1K",
         "conversions": 2,
         "revenue": 2627.08,
@@ -2740,7 +2740,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 2162.12,
+        "spend": 2164.2,
         "spend_display": "2.2K",
         "conversions": 3,
         "revenue": 16832.49,
@@ -2750,7 +2750,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 1852.85,
+        "spend": 1854.62,
         "spend_display": "1.9K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -2760,8 +2760,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 955.32,
-        "spend_display": "955",
+        "spend": 956.08,
+        "spend_display": "956",
         "conversions": 1,
         "revenue": 8491.25,
         "revenue_display": "8.5K",
@@ -2770,7 +2770,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 1118.68,
+        "spend": 1120.76,
         "spend_display": "1.1K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -2780,7 +2780,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 2586.15,
+        "spend": 2588.23,
         "spend_display": "2.6K",
         "conversions": 2,
         "revenue": 7282.46,
@@ -2790,17 +2790,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.85,
-        "spend_display": "343",
+        "spend": 343.72,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 15.4
+        "roas": 15.3
       },
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 817.5,
+        "spend": 818.13,
         "spend_display": "818",
         "conversions": 3,
         "revenue": 3536.33,
@@ -2810,7 +2810,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 1060.31,
+        "spend": 1061.37,
         "spend_display": "1.1K",
         "conversions": 2,
         "revenue": 2627.08,
@@ -2820,8 +2820,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 590.46,
-        "spend_display": "590",
+        "spend": 591.3,
+        "spend_display": "591",
         "conversions": 1,
         "revenue": 1754.87,
         "revenue_display": "1.8K",
@@ -2830,8 +2830,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 740.23,
-        "spend_display": "740",
+        "spend": 740.57,
+        "spend_display": "741",
         "conversions": 0,
         "revenue": 470.53,
         "revenue_display": "471",
@@ -2840,7 +2840,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 1261.25,
+        "spend": 1262.14,
         "spend_display": "1.3K",
         "conversions": 0,
         "revenue": 166.38,
@@ -2850,7 +2850,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 296.99,
+        "spend": 297.47,
         "spend_display": "297",
         "conversions": 0,
         "revenue": 0.0,
@@ -2860,8 +2860,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 43.38,
-        "spend_display": "43",
+        "spend": 43.72,
+        "spend_display": "44",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2880,8 +2880,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 109.28,
-        "spend_display": "109",
+        "spend": 109.59,
+        "spend_display": "110",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2890,7 +2890,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 197.95,
+        "spend": 198.33,
         "spend_display": "198",
         "conversions": 0,
         "revenue": 0.0,
@@ -2900,8 +2900,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 107.49,
-        "spend_display": "107",
+        "spend": 108.07,
+        "spend_display": "108",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇨🇾 Cyprus",
+        "spend": 494.65,
+        "spend_display": "495",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2910,7 +2920,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 483.54,
+        "spend": 484.48,
         "spend_display": "484",
         "conversions": 0,
         "revenue": 0.0,
@@ -2920,7 +2930,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 317.59,
+        "spend": 317.9,
         "spend_display": "318",
         "conversions": 0,
         "revenue": 0.0,
@@ -2929,29 +2939,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇨🇾 Cyprus",
-        "spend": 493.98,
-        "spend_display": "494",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 314.49,
-        "spend_display": "314",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇩🇴 Dominican Republic",
-        "spend": 194.29,
-        "spend_display": "194",
+        "spend": 314.88,
+        "spend_display": "315",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -2960,7 +2950,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 141.13,
+        "spend": 141.14,
         "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
@@ -2969,8 +2959,38 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 279.14,
+        "spend_display": "279",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇻🇳 Vietnam",
+        "spend": 645.59,
+        "spend_display": "646",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 194.32,
+        "spend_display": "194",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 605.85,
+        "spend": 605.86,
         "spend_display": "606",
         "conversions": 0,
         "revenue": 0.0,
@@ -2989,29 +3009,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 645.24,
-        "spend_display": "645",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 279.13,
-        "spend_display": "279",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 22.31,
-        "spend_display": "22",
+        "spend": 22.65,
+        "spend_display": "23",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3020,7 +3020,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 1595.22,
+        "spend": 1596.95,
         "spend_display": "1.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3030,7 +3030,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 2011.83,
+        "spend": 2014.17,
         "spend_display": "2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3040,7 +3040,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 501.94,
+        "spend": 502.27,
         "spend_display": "502",
         "conversions": 0,
         "revenue": 0.0,
@@ -3050,7 +3050,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1304.77,
+        "spend": 1307.8,
         "spend_display": "1.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3060,7 +3060,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 1252.25,
+        "spend": 1253.04,
         "spend_display": "1.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3070,8 +3070,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 865.3,
-        "spend_display": "865",
+        "spend": 866.02,
+        "spend_display": "866",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -3080,7 +3080,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 1201.83,
+        "spend": 1202.73,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3090,7 +3090,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 1069.27,
+        "spend": 1070.96,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3100,7 +3100,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 970.7,
+        "spend": 971.4,
         "spend_display": "971",
         "conversions": 0,
         "revenue": 0.0,
@@ -3110,7 +3110,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 600.79,
+        "spend": 601.13,
         "spend_display": "601",
         "conversions": 0,
         "revenue": 0.0,
@@ -3120,7 +3120,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 164.71,
+        "spend": 164.95,
         "spend_display": "165",
         "conversions": 0,
         "revenue": 0.0,
@@ -3130,7 +3130,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 491.8,
+        "spend": 492.28,
         "spend_display": "492",
         "conversions": 0,
         "revenue": 0.0,
@@ -3235,7 +3235,7 @@ window.PPC_DATA_BY_PERIOD = {
         2397.67,
         2239.66,
         2334.77,
-        1996.77
+        2030.45
       ],
       "roas": [
         4.33,
@@ -3552,7 +3552,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -3562,7 +3562,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1331.38,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -3570,8 +3570,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -3609,7 +3609,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "up"
       },
       "cpa_avg": {
-        "display": "1525",
+        "display": "1526",
         "unit": "RON",
         "delta_display": "↓ 39%",
         "delta_dir": "up"
@@ -3637,7 +3637,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 2.3,
         "roas_class": "bad",
         "conversions": 17,
-        "cpa_display": "2,915 RON",
+        "cpa_display": "2,916 RON",
         "share_pct": 66
       },
       "bing": {
@@ -3669,7 +3669,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 5061.9,
+        "spend": 5063.08,
         "spend_display": "5.1K",
         "conversions": 25,
         "revenue": 49155.34,
@@ -3680,18 +3680,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 1456.15,
+        "spend": 1456.59,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
         "roas": 5.0,
-        "roas_class": "good"
+        "roas_class": "warn"
       },
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 4606.53,
+        "spend": 4608.65,
         "spend_display": "4.6K",
         "conversions": 2,
         "revenue": 17440.46,
@@ -3702,7 +3702,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 8357.09,
+        "spend": 8360.81,
         "spend_display": "8.4K",
         "conversions": 4,
         "revenue": 31385.62,
@@ -3713,7 +3713,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 5238.32,
+        "spend": 5240.58,
         "spend_display": "5.2K",
         "conversions": 3,
         "revenue": 18625.27,
@@ -3724,7 +3724,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 6136.6,
+        "spend": 6140.42,
         "spend_display": "6.1K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -3735,7 +3735,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 1454.3,
+        "spend": 1454.89,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 2763.25,
@@ -3746,7 +3746,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 6263.8,
+        "spend": 6266.5,
         "spend_display": "6.3K",
         "conversions": 2,
         "revenue": 11168.15,
@@ -3759,7 +3759,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 8357.09,
+        "spend": 8360.81,
         "spend_display": "8.4K",
         "conversions": 4,
         "revenue": 31385.62,
@@ -3770,7 +3770,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 7192.56,
+        "spend": 7198.44,
         "spend_display": "7.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3781,7 +3781,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 7141.35,
+        "spend": 7144.53,
         "spend_display": "7.1K",
         "conversions": 2,
         "revenue": 11257.03,
@@ -3792,7 +3792,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 6263.8,
+        "spend": 6266.5,
         "spend_display": "6.3K",
         "conversions": 2,
         "revenue": 11168.15,
@@ -3803,7 +3803,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 6136.6,
+        "spend": 6140.42,
         "spend_display": "6.1K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -3814,7 +3814,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 5238.32,
+        "spend": 5240.58,
         "spend_display": "5.2K",
         "conversions": 3,
         "revenue": 18625.27,
@@ -3825,7 +3825,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 5061.9,
+        "spend": 5063.08,
         "spend_display": "5.1K",
         "conversions": 25,
         "revenue": 49155.34,
@@ -3836,7 +3836,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 4606.53,
+        "spend": 4608.65,
         "spend_display": "4.6K",
         "conversions": 2,
         "revenue": 17440.46,
@@ -3847,7 +3847,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 4094.75,
+        "spend": 4096.95,
         "spend_display": "4.1K",
         "conversions": 1,
         "revenue": 5485.72,
@@ -3858,7 +3858,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 2772.47,
+        "spend": 2773.18,
         "spend_display": "2.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3869,7 +3869,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 2663.09,
+        "spend": 2663.48,
         "spend_display": "2.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -3880,7 +3880,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 2594.92,
+        "spend": 2594.93,
         "spend_display": "2.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3891,7 +3891,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 2391.16,
+        "spend": 2391.93,
         "spend_display": "2.4K",
         "conversions": 3,
         "revenue": 2466.94,
@@ -3902,7 +3902,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 1466.95,
+        "spend": 1467.88,
         "spend_display": "1.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3913,18 +3913,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 1456.15,
+        "spend": 1456.59,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
         "roas": 5.0,
-        "roas_class": "good"
+        "roas_class": "warn"
       },
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 1454.3,
+        "spend": 1454.89,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 2763.25,
@@ -3935,7 +3935,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1035.26,
+        "spend": 1035.7,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -3946,7 +3946,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 903.64,
+        "spend": 904.01,
         "spend_display": "904",
         "conversions": 0,
         "revenue": 0.0,
@@ -3957,7 +3957,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 723.73,
+        "spend": 723.94,
         "spend_display": "724",
         "conversions": 0,
         "revenue": 0.0,
@@ -3968,8 +3968,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 710.35,
-        "spend_display": "710",
+        "spend": 710.74,
+        "spend_display": "711",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4001,7 +4001,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 504.28,
+        "spend": 504.46,
         "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
@@ -4023,8 +4023,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4034,8 +4034,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4058,7 +4058,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 2533.99,
+        "spend": 2535.05,
         "spend_display": "2.5K",
         "conversions": 13,
         "revenue": 25168.34,
@@ -4068,7 +4068,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 4634.48,
+        "spend": 4636.62,
         "spend_display": "4.6K",
         "conversions": 4,
         "revenue": 22051.54,
@@ -4078,7 +4078,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 3920.85,
+        "spend": 3922.71,
         "spend_display": "3.9K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -4088,8 +4088,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 825.22,
-        "spend_display": "825",
+        "spend": 825.53,
+        "spend_display": "826",
         "conversions": 3,
         "revenue": 13690.86,
         "revenue_display": "14K",
@@ -4098,7 +4098,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 2124.69,
+        "spend": 2125.45,
         "spend_display": "2.1K",
         "conversions": 2,
         "revenue": 13458.88,
@@ -4118,7 +4118,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 4416.48,
+        "spend": 4418.85,
         "spend_display": "4.4K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -4128,7 +4128,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 1046.31,
+        "spend": 1046.64,
         "spend_display": "1K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -4140,7 +4140,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 2533.99,
+        "spend": 2535.05,
         "spend_display": "2.5K",
         "conversions": 13,
         "revenue": 25168.34,
@@ -4150,7 +4150,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 4634.48,
+        "spend": 4636.62,
         "spend_display": "4.6K",
         "conversions": 4,
         "revenue": 22051.54,
@@ -4160,7 +4160,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 3920.85,
+        "spend": 3922.71,
         "spend_display": "3.9K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -4170,8 +4170,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 825.22,
-        "spend_display": "825",
+        "spend": 825.53,
+        "spend_display": "826",
         "conversions": 3,
         "revenue": 13690.86,
         "revenue_display": "14K",
@@ -4180,7 +4180,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 2124.69,
+        "spend": 2125.45,
         "spend_display": "2.1K",
         "conversions": 2,
         "revenue": 13458.88,
@@ -4200,7 +4200,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 4416.48,
+        "spend": 4418.85,
         "spend_display": "4.4K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -4210,7 +4210,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 1046.31,
+        "spend": 1046.64,
         "spend_display": "1K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -4220,7 +4220,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 2387.05,
+        "spend": 2389.13,
         "spend_display": "2.4K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -4230,7 +4230,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 2479.18,
+        "spend": 2480.08,
         "spend_display": "2.5K",
         "conversions": 4,
         "revenue": 7621.05,
@@ -4240,7 +4240,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 1633.93,
+        "spend": 1634.56,
         "spend_display": "1.6K",
         "conversions": 6,
         "revenue": 7567.99,
@@ -4250,7 +4250,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 5465.33,
+        "spend": 5467.55,
         "spend_display": "5.5K",
         "conversions": 2,
         "revenue": 7282.46,
@@ -4260,7 +4260,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 1382.07,
+        "spend": 1383.0,
         "spend_display": "1.4K",
         "conversions": 1,
         "revenue": 6504.84,
@@ -4270,17 +4270,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.85,
-        "spend_display": "343",
+        "spend": 343.72,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 15.4
+        "roas": 15.3
       },
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 2259.25,
+        "spend": 2259.95,
         "spend_display": "2.3K",
         "conversions": 1,
         "revenue": 4752.19,
@@ -4290,7 +4290,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 1223.42,
+        "spend": 1224.27,
         "spend_display": "1.2K",
         "conversions": 1,
         "revenue": 1754.87,
@@ -4300,7 +4300,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 1468.38,
+        "spend": 1468.72,
         "spend_display": "1.5K",
         "conversions": 1,
         "revenue": 1306.94,
@@ -4310,7 +4310,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 1688.81,
+        "spend": 1689.16,
         "spend_display": "1.7K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -4320,7 +4320,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 1220.31,
+        "spend": 1220.32,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 707.83,
@@ -4330,8 +4330,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 960.66,
-        "spend_display": "961",
+        "spend": 961.59,
+        "spend_display": "962",
         "conversions": 0,
         "revenue": 294.27,
         "revenue_display": "294",
@@ -4360,7 +4360,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 833.53,
+        "spend": 834.01,
         "spend_display": "834",
         "conversions": 0,
         "revenue": 0.0,
@@ -4370,8 +4370,28 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 50.79,
+        "spend": 51.13,
         "spend_display": "51",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Heraklion (Crete)",
+        "spend": 134.91,
+        "spend_display": "135",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇬🇷 Rhodes",
+        "spend": 911.44,
+        "spend_display": "911",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4389,29 +4409,9 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 134.6,
-        "spend_display": "135",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇬🇷 Rhodes",
-        "spend": 911.07,
-        "spend_display": "911",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 240.15,
-        "spend_display": "240",
+        "spend": 240.73,
+        "spend_display": "241",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4420,7 +4420,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 880.68,
+        "spend": 881.35,
         "spend_display": "881",
         "conversions": 0,
         "revenue": 0.0,
@@ -4430,8 +4430,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 710.35,
-        "spend_display": "710",
+        "spend": 710.74,
+        "spend_display": "711",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4440,7 +4440,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 441.26,
+        "spend": 441.29,
         "spend_display": "441",
         "conversions": 0,
         "revenue": 0.0,
@@ -4450,7 +4450,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 420.25,
+        "spend": 420.26,
         "spend_display": "420",
         "conversions": 0,
         "revenue": 0.0,
@@ -4480,8 +4480,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 22.31,
-        "spend_display": "22",
+        "spend": 22.65,
+        "spend_display": "23",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -4490,7 +4490,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 3456.77,
+        "spend": 3458.54,
         "spend_display": "3.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4500,7 +4500,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 2818.21,
+        "spend": 2821.24,
         "spend_display": "2.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4510,7 +4510,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 2758.24,
+        "spend": 2759.2,
         "spend_display": "2.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4520,7 +4520,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 2646.26,
+        "spend": 2647.29,
         "spend_display": "2.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4530,7 +4530,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 2469.88,
+        "spend": 2471.91,
         "spend_display": "2.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4540,7 +4540,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 1306.69,
+        "spend": 1307.17,
         "spend_display": "1.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4550,7 +4550,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 349.75,
+        "spend": 349.99,
         "spend_display": "350",
         "conversions": 0,
         "revenue": 0.0,
@@ -4560,7 +4560,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 1055.84,
+        "spend": 1056.32,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -4702,8 +4702,8 @@ window.PPC_DATA_BY_PERIOD = {
         2466.55,
         2397.67,
         2239.66,
-        2334.77,
-        1996.77
+        2334.79,
+        2036.75
       ],
       "roas": [
         2.78,
@@ -5378,7 +5378,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "11",
         "full_label": "11 Jun 2026",
         "date": "2026-06-11",
-        "spend": 1534.79,
+        "spend": 1534.81,
         "conversions": 1.0,
         "revenue": 8328.98,
         "roas": 5.43,
@@ -5388,7 +5388,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -5398,7 +5398,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1337.68,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -5406,8 +5406,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -5473,7 +5473,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 3.3,
         "roas_class": "bad",
         "conversions": 42,
-        "cpa_display": "2,971 RON",
+        "cpa_display": "2,972 RON",
         "share_pct": 65
       },
       "bing": {
@@ -5505,7 +5505,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 14623.48,
+        "spend": 14626.92,
         "spend_display": "15K",
         "conversions": 11,
         "revenue": 143077.96,
@@ -5516,7 +5516,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6442.37,
+        "spend": 6443.55,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
@@ -5538,18 +5538,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 1456.15,
+        "spend": 1456.59,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
         "roas": 5.0,
-        "roas_class": "good"
+        "roas_class": "warn"
       },
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 8445.88,
+        "spend": 8448.6,
         "spend_display": "8.4K",
         "conversions": 3,
         "revenue": 38066.92,
@@ -5560,7 +5560,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 15228.24,
+        "spend": 15231.42,
         "spend_display": "15K",
         "conversions": 4,
         "revenue": 62319.77,
@@ -5571,7 +5571,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 12151.55,
+        "spend": 12153.81,
         "spend_display": "12K",
         "conversions": 6,
         "revenue": 31921.71,
@@ -5582,7 +5582,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 14520.38,
+        "spend": 14524.86,
         "spend_display": "15K",
         "conversions": 5,
         "revenue": 36649.74,
@@ -5595,7 +5595,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 19480.75,
+        "spend": 19484.47,
         "spend_display": "19K",
         "conversions": 6,
         "revenue": 45038.97,
@@ -5606,7 +5606,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 15783.25,
+        "spend": 15785.46,
         "spend_display": "16K",
         "conversions": 5,
         "revenue": 11179.06,
@@ -5617,7 +5617,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 15369.54,
+        "spend": 15375.42,
         "spend_display": "15K",
         "conversions": 2,
         "revenue": 16742.6,
@@ -5628,7 +5628,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 15228.24,
+        "spend": 15231.42,
         "spend_display": "15K",
         "conversions": 4,
         "revenue": 62319.77,
@@ -5639,7 +5639,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 14623.48,
+        "spend": 14626.92,
         "spend_display": "15K",
         "conversions": 11,
         "revenue": 143077.96,
@@ -5650,7 +5650,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 14520.38,
+        "spend": 14524.86,
         "spend_display": "15K",
         "conversions": 5,
         "revenue": 36649.74,
@@ -5661,7 +5661,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 12151.55,
+        "spend": 12153.81,
         "spend_display": "12K",
         "conversions": 6,
         "revenue": 31921.71,
@@ -5683,7 +5683,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 8445.88,
+        "spend": 8448.6,
         "spend_display": "8.4K",
         "conversions": 3,
         "revenue": 38066.92,
@@ -5694,7 +5694,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 6558.36,
+        "spend": 6559.07,
         "spend_display": "6.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -5705,7 +5705,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6442.37,
+        "spend": 6443.55,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
@@ -5716,7 +5716,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 5763.93,
+        "spend": 5764.7,
         "spend_display": "5.8K",
         "conversions": 6,
         "revenue": 3882.84,
@@ -5727,7 +5727,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 5666.76,
+        "spend": 5667.15,
         "spend_display": "5.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -5738,7 +5738,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 5603.07,
+        "spend": 5603.08,
         "spend_display": "5.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -5749,7 +5749,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 4185.65,
+        "spend": 4186.03,
         "spend_display": "4.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -5760,7 +5760,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 3638.0,
+        "spend": 3638.92,
         "spend_display": "3.6K",
         "conversions": 4,
         "revenue": 7865.48,
@@ -5771,7 +5771,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 3623.88,
+        "spend": 3624.47,
         "spend_display": "3.6K",
         "conversions": 4,
         "revenue": 5884.73,
@@ -5793,7 +5793,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 2356.74,
+        "spend": 2357.13,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -5804,7 +5804,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 1986.35,
+        "spend": 1986.56,
         "spend_display": "2K",
         "conversions": 3,
         "revenue": 4444.94,
@@ -5837,13 +5837,13 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 1456.15,
+        "spend": 1456.59,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
         "roas": 5.0,
-        "roas_class": "good"
+        "roas_class": "warn"
       },
       {
         "platform": "google",
@@ -5892,7 +5892,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1137.53,
+        "spend": 1137.97,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -5958,7 +5958,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 504.28,
+        "spend": 504.46,
         "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
@@ -6035,8 +6035,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6046,8 +6046,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6081,7 +6081,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 4816.47,
+        "spend": 4817.98,
         "spend_display": "4.8K",
         "conversions": 9,
         "revenue": 119842.79,
@@ -6091,7 +6091,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 10820.17,
+        "spend": 10822.42,
         "spend_display": "11K",
         "conversions": 10,
         "revenue": 72166.41,
@@ -6101,7 +6101,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 5916.77,
+        "spend": 5920.54,
         "spend_display": "5.9K",
         "conversions": 3,
         "revenue": 56415.42,
@@ -6111,7 +6111,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 5532.86,
+        "spend": 5533.92,
         "spend_display": "5.5K",
         "conversions": 17,
         "revenue": 28481.26,
@@ -6121,7 +6121,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 9423.11,
+        "spend": 9425.12,
         "spend_display": "9.4K",
         "conversions": 3,
         "revenue": 24282.3,
@@ -6141,7 +6141,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 10026.42,
+        "spend": 10029.04,
         "spend_display": "10K",
         "conversions": 3,
         "revenue": 18639.29,
@@ -6151,7 +6151,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 7528.34,
+        "spend": 7529.23,
         "spend_display": "7.5K",
         "conversions": 9,
         "revenue": 18407.75,
@@ -6163,7 +6163,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 4816.47,
+        "spend": 4817.98,
         "spend_display": "4.8K",
         "conversions": 9,
         "revenue": 119842.79,
@@ -6173,7 +6173,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 10820.17,
+        "spend": 10822.42,
         "spend_display": "11K",
         "conversions": 10,
         "revenue": 72166.41,
@@ -6183,7 +6183,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 5916.77,
+        "spend": 5920.54,
         "spend_display": "5.9K",
         "conversions": 3,
         "revenue": 56415.42,
@@ -6193,7 +6193,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 5532.86,
+        "spend": 5533.92,
         "spend_display": "5.5K",
         "conversions": 17,
         "revenue": 28481.26,
@@ -6203,7 +6203,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 9423.11,
+        "spend": 9425.12,
         "spend_display": "9.4K",
         "conversions": 3,
         "revenue": 24282.3,
@@ -6223,7 +6223,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 10026.42,
+        "spend": 10029.04,
         "spend_display": "10K",
         "conversions": 3,
         "revenue": 18639.29,
@@ -6233,7 +6233,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 7528.34,
+        "spend": 7529.23,
         "spend_display": "7.5K",
         "conversions": 9,
         "revenue": 18407.75,
@@ -6243,7 +6243,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 3308.14,
+        "spend": 3309.07,
         "spend_display": "3.3K",
         "conversions": 2,
         "revenue": 17894.76,
@@ -6253,7 +6253,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 2426.6,
+        "spend": 2426.91,
         "spend_display": "2.4K",
         "conversions": 5,
         "revenue": 16144.49,
@@ -6273,7 +6273,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 11567.34,
+        "spend": 11569.96,
         "spend_display": "12K",
         "conversions": 3,
         "revenue": 10851.31,
@@ -6283,7 +6283,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 2834.83,
+        "spend": 2835.23,
         "spend_display": "2.8K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -6293,7 +6293,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 2160.22,
+        "spend": 2160.85,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 9507.64,
@@ -6303,7 +6303,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 6053.35,
+        "spend": 6055.57,
         "spend_display": "6.1K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -6313,7 +6313,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 4358.97,
+        "spend": 4359.82,
         "spend_display": "4.4K",
         "conversions": 4,
         "revenue": 7781.68,
@@ -6323,17 +6323,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.85,
-        "spend_display": "343",
+        "spend": 343.93,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
-        "roas": 15.4
+        "roas": 15.3
       },
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 4951.25,
+        "spend": 4952.03,
         "spend_display": "5K",
         "conversions": 1,
         "revenue": 4752.19,
@@ -6343,7 +6343,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 3382.66,
+        "spend": 3383.59,
         "spend_display": "3.4K",
         "conversions": 2,
         "revenue": 4182.54,
@@ -6353,7 +6353,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 4169.47,
+        "spend": 4169.81,
         "spend_display": "4.2K",
         "conversions": 2,
         "revenue": 2934.75,
@@ -6363,7 +6363,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 3308.47,
+        "spend": 3308.82,
         "spend_display": "3.3K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -6373,7 +6373,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 2295.99,
+        "spend": 2296.66,
         "spend_display": "2.3K",
         "conversions": 0,
         "revenue": 946.44,
@@ -6383,7 +6383,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 3000.43,
+        "spend": 3000.44,
         "spend_display": "3K",
         "conversions": 0,
         "revenue": 707.83,
@@ -6403,7 +6403,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 2464.99,
+        "spend": 2465.56,
         "spend_display": "2.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6433,7 +6433,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 1172.79,
+        "spend": 1173.1,
         "spend_display": "1.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6443,8 +6443,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 861.26,
-        "spend_display": "861",
+        "spend": 861.74,
+        "spend_display": "862",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6453,8 +6453,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 997.13,
-        "spend_display": "997",
+        "spend": 997.5,
+        "spend_display": "998",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6463,7 +6463,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 65.61,
+        "spend": 65.95,
         "spend_display": "66",
         "conversions": 0,
         "revenue": 0.0,
@@ -6473,7 +6473,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 35.09,
+        "spend": 35.43,
         "spend_display": "35",
         "conversions": 0,
         "revenue": 0.0,
@@ -6493,7 +6493,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 2356.74,
+        "spend": 2357.13,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6503,7 +6503,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1093.62,
+        "spend": 1093.65,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6513,7 +6513,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 1031.84,
+        "spend": 1031.85,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6533,7 +6533,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 7714.79,
+        "spend": 7716.94,
         "spend_display": "7.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6563,7 +6563,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 5862.51,
+        "spend": 5863.67,
         "spend_display": "5.9K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6573,7 +6573,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 5712.31,
+        "spend": 5713.44,
         "spend_display": "5.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6583,7 +6583,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 4846.8,
+        "spend": 4848.83,
         "spend_display": "4.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6593,7 +6593,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 1628.61,
+        "spend": 1629.09,
         "spend_display": "1.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6603,8 +6603,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 718.25,
-        "spend_display": "718",
+        "spend": 718.58,
+        "spend_display": "719",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -6613,7 +6613,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 1367.98,
+        "spend": 1368.57,
         "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -6925,8 +6925,8 @@ window.PPC_DATA_BY_PERIOD = {
         2466.55,
         2397.67,
         2239.66,
-        2334.77,
-        1996.77
+        2334.79,
+        2036.75
       ],
       "roas": [
         0.92,
@@ -8981,7 +8981,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "11",
         "full_label": "11 Jun 2026",
         "date": "2026-06-11",
-        "spend": 1534.79,
+        "spend": 1534.81,
         "conversions": 1.0,
         "revenue": 8328.98,
         "roas": 5.43,
@@ -8991,7 +8991,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -9001,7 +9001,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1337.68,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -9009,8 +9009,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -9036,7 +9036,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "down"
       },
       "roas_global": {
-        "display": "1.63",
+        "display": "1.62",
         "unit": "x",
         "delta_display": "↓ 0.8x",
         "delta_dir": "down"
@@ -9048,7 +9048,7 @@ window.PPC_DATA_BY_PERIOD = {
         "delta_dir": "down"
       },
       "cpa_avg": {
-        "display": "2101",
+        "display": "2103",
         "unit": "RON",
         "delta_display": "↑ 38%",
         "delta_dir": "down"
@@ -9064,7 +9064,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.8,
         "roas_class": "bad",
         "conversions": 7,
-        "cpa_display": "1,404 RON",
+        "cpa_display": "1,406 RON",
         "share_pct": 33
       },
       "meta": {
@@ -9076,7 +9076,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 2.1,
         "roas_class": "bad",
         "conversions": 7,
-        "cpa_display": "2,790 RON",
+        "cpa_display": "2,794 RON",
         "share_pct": 67
       },
       "bing": {
@@ -9108,8 +9108,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 580.31,
-        "spend_display": "580",
+        "spend": 580.88,
+        "spend_display": "581",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
@@ -9119,7 +9119,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 2484.12,
+        "spend": 2488.6,
         "spend_display": "2.5K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -9130,7 +9130,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 1674.61,
+        "spend": 1677.33,
         "spend_display": "1.7K",
         "conversions": 1,
         "revenue": 5263.22,
@@ -9141,18 +9141,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2199.71,
+        "spend": 2200.9,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 6710.69,
         "revenue_display": "6.7K",
-        "roas": 3.1,
+        "roas": 3.0,
         "roas_class": "bad"
       },
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 2066.03,
+        "spend": 2069.46,
         "spend_display": "2.1K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -9163,7 +9163,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 2486.24,
+        "spend": 2489.07,
         "spend_display": "2.5K",
         "conversions": 1,
         "revenue": 5949.1,
@@ -9174,8 +9174,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 986.46,
-        "spend_display": "986",
+        "spend": 987.24,
+        "spend_display": "987",
         "conversions": 1,
         "revenue": 641.84,
         "revenue_display": "642",
@@ -9185,7 +9185,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 3305.93,
+        "spend": 3310.31,
         "spend_display": "3.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9198,7 +9198,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 3305.93,
+        "spend": 3310.31,
         "spend_display": "3.3K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9209,7 +9209,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 2857.92,
+        "spend": 2863.8,
         "spend_display": "2.9K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9220,7 +9220,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 2817.04,
+        "spend": 2821.21,
         "spend_display": "2.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9231,7 +9231,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 2486.24,
+        "spend": 2489.07,
         "spend_display": "2.5K",
         "conversions": 1,
         "revenue": 5949.1,
@@ -9242,7 +9242,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 2484.12,
+        "spend": 2488.6,
         "spend_display": "2.5K",
         "conversions": 2,
         "revenue": 16577.68,
@@ -9253,18 +9253,18 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 2199.71,
+        "spend": 2200.9,
         "spend_display": "2.2K",
         "conversions": 6,
         "revenue": 6710.69,
         "revenue_display": "6.7K",
-        "roas": 3.1,
+        "roas": 3.0,
         "roas_class": "bad"
       },
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 2066.03,
+        "spend": 2069.46,
         "spend_display": "2.1K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -9275,7 +9275,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 1674.61,
+        "spend": 1677.33,
         "spend_display": "1.7K",
         "conversions": 1,
         "revenue": 5263.22,
@@ -9286,7 +9286,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 1445.56,
+        "spend": 1447.76,
         "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9297,8 +9297,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 986.46,
-        "spend_display": "986",
+        "spend": 987.24,
+        "spend_display": "987",
         "conversions": 1,
         "revenue": 641.84,
         "revenue_display": "642",
@@ -9308,8 +9308,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 950.21,
-        "spend_display": "950",
+        "spend": 951.06,
+        "spend_display": "951",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9319,7 +9319,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 881.93,
+        "spend": 882.32,
         "spend_display": "882",
         "conversions": 0,
         "revenue": 0.0,
@@ -9330,7 +9330,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 801.8,
+        "spend": 801.81,
         "spend_display": "802",
         "conversions": 0,
         "revenue": 0.0,
@@ -9340,8 +9340,8 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 596.57,
+        "name": "Pmax | Sejururi - Plecare din Iasi",
+        "spend": 597.47,
         "spend_display": "597",
         "conversions": 0,
         "revenue": 0.0,
@@ -9351,8 +9351,8 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 596.55,
+        "name": "Pmax | Sejururi - Plecare din Cluj",
+        "spend": 597.16,
         "spend_display": "597",
         "conversions": 0,
         "revenue": 0.0,
@@ -9363,8 +9363,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 580.31,
-        "spend_display": "580",
+        "spend": 580.88,
+        "spend_display": "581",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
@@ -9374,7 +9374,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 504.28,
+        "spend": 504.46,
         "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
@@ -9396,7 +9396,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 289.76,
+        "spend": 289.97,
         "spend_display": "290",
         "conversions": 0,
         "revenue": 0.0,
@@ -9407,8 +9407,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 268.48,
-        "spend_display": "268",
+        "spend": 268.87,
+        "spend_display": "269",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9418,7 +9418,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 259.53,
+        "spend": 259.9,
         "spend_display": "260",
         "conversions": 0,
         "revenue": 0.0,
@@ -9429,8 +9429,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 249.32,
-        "spend_display": "249",
+        "spend": 249.76,
+        "spend_display": "250",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9462,8 +9462,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9473,8 +9473,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9497,7 +9497,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 1596.2,
+        "spend": 1598.32,
         "spend_display": "1.6K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -9507,17 +9507,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 950.76,
-        "spend_display": "951",
+        "spend": 952.98,
+        "spend_display": "953",
         "conversions": 1,
         "revenue": 8328.98,
         "revenue_display": "8.3K",
-        "roas": 8.8
+        "roas": 8.7
       },
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 2205.77,
+        "spend": 2208.43,
         "spend_display": "2.2K",
         "conversions": 2,
         "revenue": 7282.46,
@@ -9527,8 +9527,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.96,
-        "spend_display": "343",
+        "spend": 343.93,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
@@ -9537,7 +9537,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 1842.78,
+        "spend": 1845.15,
         "spend_display": "1.8K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -9547,8 +9547,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 690.92,
-        "spend_display": "691",
+        "spend": 691.55,
+        "spend_display": "692",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -9557,8 +9557,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 877.77,
-        "spend_display": "878",
+        "spend": 878.82,
+        "spend_display": "879",
         "conversions": 2,
         "revenue": 2604.67,
         "revenue_display": "2.6K",
@@ -9567,7 +9567,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 635.96,
+        "spend": 636.3,
         "spend_display": "636",
         "conversions": 0,
         "revenue": 403.31,
@@ -9579,7 +9579,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 1596.2,
+        "spend": 1598.32,
         "spend_display": "1.6K",
         "conversions": 2,
         "revenue": 14197.8,
@@ -9589,17 +9589,17 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 950.76,
-        "spend_display": "951",
+        "spend": 952.98,
+        "spend_display": "953",
         "conversions": 1,
         "revenue": 8328.98,
         "revenue_display": "8.3K",
-        "roas": 8.8
+        "roas": 8.7
       },
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 2205.77,
+        "spend": 2208.43,
         "spend_display": "2.2K",
         "conversions": 2,
         "revenue": 7282.46,
@@ -9609,8 +9609,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 342.96,
-        "spend_display": "343",
+        "spend": 343.93,
+        "spend_display": "344",
         "conversions": 1,
         "revenue": 5263.22,
         "revenue_display": "5.3K",
@@ -9619,7 +9619,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 1842.78,
+        "spend": 1845.15,
         "spend_display": "1.8K",
         "conversions": 1,
         "revenue": 5166.39,
@@ -9629,8 +9629,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 690.92,
-        "spend_display": "691",
+        "spend": 691.55,
+        "spend_display": "692",
         "conversions": 3,
         "revenue": 3536.33,
         "revenue_display": "3.5K",
@@ -9639,8 +9639,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 877.77,
-        "spend_display": "878",
+        "spend": 878.82,
+        "spend_display": "879",
         "conversions": 2,
         "revenue": 2604.67,
         "revenue_display": "2.6K",
@@ -9649,7 +9649,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 635.96,
+        "spend": 636.3,
         "spend_display": "636",
         "conversions": 0,
         "revenue": 403.31,
@@ -9659,7 +9659,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 1073.07,
+        "spend": 1073.97,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 166.38,
@@ -9669,8 +9669,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 260.37,
-        "spend_display": "260",
+        "spend": 260.85,
+        "spend_display": "261",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9679,7 +9679,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 42.79,
+        "spend": 43.14,
         "spend_display": "43",
         "conversions": 0,
         "revenue": 0.0,
@@ -9699,8 +9699,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 107.27,
-        "spend_display": "107",
+        "spend": 107.58,
+        "spend_display": "108",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9709,38 +9709,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 161.37,
-        "spend_display": "161",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇪 Montenegro",
-        "spend": 93.8,
-        "spend_display": "94",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇷 Turkey",
-        "spend": 426.9,
-        "spend_display": "427",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇵🇹 Portugal",
-        "spend": 259.0,
-        "spend_display": "259",
+        "spend": 161.74,
+        "spend_display": "162",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9749,7 +9719,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 525.6,
+        "spend": 526.45,
         "spend_display": "526",
         "conversions": 0,
         "revenue": 0.0,
@@ -9758,9 +9728,39 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇲🇪 Montenegro",
+        "spend": 94.38,
+        "spend_display": "94",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 423.08,
-        "spend_display": "423",
+        "spend": 423.75,
+        "spend_display": "424",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇹🇷 Turkey",
+        "spend": 427.83,
+        "spend_display": "428",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇵🇹 Portugal",
+        "spend": 259.31,
+        "spend_display": "259",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9769,18 +9769,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 268.48,
-        "spend_display": "268",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇩🇴 Dominican Republic",
-        "spend": 165.44,
-        "spend_display": "165",
+        "spend": 268.87,
+        "spend_display": "269",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9789,38 +9779,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 121.73,
+        "spend": 121.74,
         "spend_display": "122",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇹🇭 Thailand",
-        "spend": 463.07,
-        "spend_display": "463",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇱🇰 Sri Lanka",
-        "spend": 174.58,
-        "spend_display": "175",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇻🇳 Vietnam",
-        "spend": 527.08,
-        "spend_display": "527",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9838,9 +9798,49 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇻🇳 Vietnam",
+        "spend": 527.43,
+        "spend_display": "527",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇩🇴 Dominican Republic",
+        "spend": 165.47,
+        "spend_display": "165",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇹🇭 Thailand",
+        "spend": 463.08,
+        "spend_display": "463",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇱🇰 Sri Lanka",
+        "spend": 174.59,
+        "spend_display": "175",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 22.31,
-        "spend_display": "22",
+        "spend": 22.65,
+        "spend_display": "23",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9849,8 +9849,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 813.89,
-        "spend_display": "814",
+        "spend": 815.4,
+        "spend_display": "815",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9859,7 +9859,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 1363.03,
+        "spend": 1365.13,
         "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9869,7 +9869,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 1718.29,
+        "spend": 1720.77,
         "spend_display": "1.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9879,7 +9879,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 431.74,
+        "spend": 432.14,
         "spend_display": "432",
         "conversions": 0,
         "revenue": 0.0,
@@ -9889,7 +9889,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1107.77,
+        "spend": 1111.79,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9899,7 +9899,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 1055.83,
+        "spend": 1056.99,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9909,8 +9909,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 798.12,
-        "spend_display": "798",
+        "spend": 799.05,
+        "spend_display": "799",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9919,7 +9919,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 1013.62,
+        "spend": 1014.75,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -9929,8 +9929,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 894.57,
-        "spend_display": "895",
+        "spend": 896.42,
+        "spend_display": "896",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9939,8 +9939,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 805.23,
-        "spend_display": "805",
+        "spend": 806.01,
+        "spend_display": "806",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9949,8 +9949,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 503.34,
-        "spend_display": "503",
+        "spend": 503.82,
+        "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -9959,7 +9959,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 139.68,
+        "spend": 140.01,
         "spend_display": "140",
         "conversions": 0,
         "revenue": 0.0,
@@ -9969,8 +9969,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 421.48,
-        "spend_display": "421",
+        "spend": 422.07,
+        "spend_display": "422",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -10067,8 +10067,8 @@ window.PPC_DATA_BY_PERIOD = {
         2466.55,
         2397.67,
         2239.66,
-        2334.77,
-        1996.77
+        2334.79,
+        2036.75
       ],
       "roas": [
         0.02,
@@ -10329,7 +10329,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "11",
         "full_label": "11 Jun 2026",
         "date": "2026-06-11",
-        "spend": 1534.79,
+        "spend": 1534.81,
         "conversions": 1.0,
         "revenue": 8328.98,
         "roas": 5.43,
@@ -10339,7 +10339,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 688.99,
+        "spend": 699.07,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -10349,7 +10349,7 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "12",
         "full_label": "12 Jun 2026",
         "date": "2026-06-12",
-        "spend": 1307.78,
+        "spend": 1337.68,
         "conversions": 0.0,
         "revenue": 0.0,
         "roas": 0.0,
@@ -10357,8 +10357,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -11205,26 +11205,6 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
-        "name": "🇰🇪 Kenya",
-        "spend": 745.08,
-        "spend_display": "745",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
-        "name": "🇲🇽 Mexico",
-        "spend": 1423.15,
-        "spend_display": "1.4K",
-        "conversions": 0,
-        "revenue": 0.0,
-        "revenue_display": "0",
-        "roas": 0.0
-      },
-      {
-        "platform": "google",
         "name": "🇩🇴 Dominican Republic",
         "spend": 629.63,
         "spend_display": "630",
@@ -11235,9 +11215,29 @@ window.PPC_DATA_BY_PERIOD = {
       },
       {
         "platform": "google",
+        "name": "🇰🇪 Kenya",
+        "spend": 745.08,
+        "spend_display": "745",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
         "name": "🇱🇰 Sri Lanka",
         "spend": 468.61,
         "spend_display": "469",
+        "conversions": 0,
+        "revenue": 0.0,
+        "revenue_display": "0",
+        "roas": 0.0
+      },
+      {
+        "platform": "google",
+        "name": "🇲🇽 Mexico",
+        "spend": 1423.15,
+        "spend_display": "1.4K",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -12198,8 +12198,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
@@ -12253,7 +12253,7 @@ window.PPC_DATA_BY_PERIOD = {
         "roas": 0.5,
         "roas_class": "bad",
         "conversions": 4193,
-        "cpa_display": "73 RON",
+        "cpa_display": "74 RON",
         "share_pct": 20
       },
       "meta": {
@@ -12387,7 +12387,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Protect brand",
-        "spend": 41326.56,
+        "spend": 41327.33,
         "spend_display": "41K",
         "conversions": 978,
         "revenue": 7820.44,
@@ -12420,7 +12420,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Buc",
-        "spend": 21339.05,
+        "spend": 21341.25,
         "spend_display": "21K",
         "conversions": 129,
         "revenue": 21874.84,
@@ -12442,7 +12442,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Circuite",
-        "spend": 19481.46,
+        "spend": 19485.13,
         "spend_display": "19K",
         "conversions": 6,
         "revenue": 45038.97,
@@ -12519,7 +12519,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Circuite Exotice",
-        "spend": 15370.53,
+        "spend": 15375.42,
         "spend_display": "15K",
         "conversions": 2,
         "revenue": 16742.6,
@@ -12530,7 +12530,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic - Sejururi Exotice",
-        "spend": 15228.92,
+        "spend": 15232.41,
         "spend_display": "15K",
         "conversions": 4,
         "revenue": 62319.77,
@@ -12541,7 +12541,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi - Transilvania",
-        "spend": 14624.09,
+        "spend": 14626.92,
         "spend_display": "15K",
         "conversions": 11,
         "revenue": 143077.96,
@@ -12552,7 +12552,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Sud",
-        "spend": 14521.04,
+        "spend": 14524.86,
         "spend_display": "15K",
         "conversions": 5,
         "revenue": 36649.74,
@@ -12651,7 +12651,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Sejururi – Moldova",
-        "spend": 12152.11,
+        "spend": 12154.98,
         "spend_display": "12K",
         "conversions": 6,
         "revenue": 31921.71,
@@ -12662,7 +12662,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost",
-        "spend": 11582.76,
+        "spend": 11583.14,
         "spend_display": "12K",
         "conversions": 7,
         "revenue": 7.0,
@@ -12849,7 +12849,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Traffic campaign - Boost Urgente",
-        "spend": 8446.12,
+        "spend": 8448.6,
         "spend_display": "8.4K",
         "conversions": 3,
         "revenue": 38066.92,
@@ -12981,7 +12981,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Awareness - Exotice",
-        "spend": 6558.5,
+        "spend": 6559.21,
         "spend_display": "6.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -12992,7 +12992,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax | Circuite",
-        "spend": 6442.37,
+        "spend": 6443.55,
         "spend_display": "6.4K",
         "conversions": 32,
         "revenue": 62862.28,
@@ -13113,7 +13113,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Circuite Exotice",
-        "spend": 5666.76,
+        "spend": 5667.15,
         "spend_display": "5.7K",
         "conversions": 1,
         "revenue": 2004.19,
@@ -13146,7 +13146,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejur Exotice",
-        "spend": 5603.07,
+        "spend": 5603.08,
         "spend_display": "5.6K",
         "conversions": 0,
         "revenue": 0.0,
@@ -13234,7 +13234,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Iasi",
-        "spend": 4662.24,
+        "spend": 4663.17,
         "spend_display": "4.7K",
         "conversions": 29,
         "revenue": 15558.87,
@@ -13245,7 +13245,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi - Plecare din Cluj",
-        "spend": 4643.59,
+        "spend": 4644.18,
         "spend_display": "4.6K",
         "conversions": 41,
         "revenue": 6395.75,
@@ -13597,7 +13597,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Search | Agentie de turism",
-        "spend": 2966.93,
+        "spend": 2967.14,
         "spend_display": "3K",
         "conversions": 52,
         "revenue": 6145.34,
@@ -13916,7 +13916,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Vacanta Romania",
-        "spend": 2356.74,
+        "spend": 2357.13,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -14708,13 +14708,13 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "Sales campaign - Urgente",
-        "spend": 1456.18,
+        "spend": 1456.72,
         "spend_display": "1.5K",
         "conversions": 2,
         "revenue": 7282.46,
         "revenue_display": "7.3K",
         "roas": 5.0,
-        "roas_class": "good"
+        "roas_class": "warn"
       },
       {
         "platform": "meta",
@@ -15170,7 +15170,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Demand Gen - Boost Higher Focus",
-        "spend": 1137.53,
+        "spend": 1137.97,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -18756,7 +18756,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "PMax Shopping - Agentie de turism",
-        "spend": 504.28,
+        "spend": 504.46,
         "spend_display": "504",
         "conversions": 0,
         "revenue": 0.0,
@@ -21605,8 +21605,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Grecia",
-        "spend": 139.44,
-        "spend_display": "139",
+        "spend": 140.65,
+        "spend_display": "141",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -21638,8 +21638,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "Pmax | Sejururi Spania",
-        "spend": 129.9,
-        "spend_display": "130",
+        "spend": 131.09,
+        "spend_display": "131",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -22333,7 +22333,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 82532.34,
+        "spend": 82534.42,
         "spend_display": "83K",
         "conversions": 18,
         "revenue": 140741.95,
@@ -22343,7 +22343,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 27115.57,
+        "spend": 27116.77,
         "spend_display": "27K",
         "conversions": 9,
         "revenue": 119842.79,
@@ -22353,7 +22353,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 72986.26,
+        "spend": 72988.67,
         "spend_display": "73K",
         "conversions": 14,
         "revenue": 101186.4,
@@ -22363,7 +22363,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 12356.24,
+        "spend": 12356.79,
         "spend_display": "12K",
         "conversions": 8,
         "revenue": 69204.18,
@@ -22373,7 +22373,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 5917.33,
+        "spend": 5920.79,
         "spend_display": "5.9K",
         "conversions": 3,
         "revenue": 56415.42,
@@ -22383,7 +22383,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 45020.78,
+        "spend": 45022.66,
         "spend_display": "45K",
         "conversions": 9,
         "revenue": 49850.0,
@@ -22393,7 +22393,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 16221.32,
+        "spend": 16223.38,
         "spend_display": "16K",
         "conversions": 5,
         "revenue": 38406.41,
@@ -22403,7 +22403,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 19575.49,
+        "spend": 19576.55,
         "spend_display": "20K",
         "conversions": 48,
         "revenue": 31295.83,
@@ -22415,7 +22415,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Greece",
-        "spend": 82532.34,
+        "spend": 82534.42,
         "spend_display": "83K",
         "conversions": 18,
         "revenue": 140741.95,
@@ -22425,7 +22425,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇨🇾 Cyprus",
-        "spend": 27115.57,
+        "spend": 27116.77,
         "spend_display": "27K",
         "conversions": 9,
         "revenue": 119842.79,
@@ -22435,7 +22435,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇷 Turkey",
-        "spend": 72986.26,
+        "spend": 72988.67,
         "spend_display": "73K",
         "conversions": 14,
         "revenue": 101186.4,
@@ -22445,7 +22445,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Rhodes",
-        "spend": 12356.24,
+        "spend": 12356.79,
         "spend_display": "12K",
         "conversions": 8,
         "revenue": 69204.18,
@@ -22455,7 +22455,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 5917.33,
+        "spend": 5920.79,
         "spend_display": "5.9K",
         "conversions": 3,
         "revenue": 56415.42,
@@ -22465,7 +22465,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇬 Egypt",
-        "spend": 45020.78,
+        "spend": 45022.66,
         "spend_display": "45K",
         "conversions": 9,
         "revenue": 49850.0,
@@ -22475,7 +22475,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇪🇸 Spain",
-        "spend": 16221.32,
+        "spend": 16223.38,
         "spend_display": "16K",
         "conversions": 5,
         "revenue": 38406.41,
@@ -22485,7 +22485,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇮🇹 Italy",
-        "spend": 19575.49,
+        "spend": 19576.55,
         "spend_display": "20K",
         "conversions": 48,
         "revenue": 31295.83,
@@ -22495,7 +22495,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Greece",
-        "spend": 33185.39,
+        "spend": 33186.28,
         "spend_display": "33K",
         "conversions": 166,
         "revenue": 25457.18,
@@ -22515,7 +22515,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇽 Mexico",
-        "spend": 7644.97,
+        "spend": 7645.7,
         "spend_display": "7.6K",
         "conversions": 2,
         "revenue": 17894.76,
@@ -22525,7 +22525,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇵🇹 Portugal",
-        "spend": 3093.13,
+        "spend": 3093.44,
         "spend_display": "3.1K",
         "conversions": 17,
         "revenue": 16156.31,
@@ -22535,7 +22535,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Spain",
-        "spend": 23222.77,
+        "spend": 23223.62,
         "spend_display": "23K",
         "conversions": 74,
         "revenue": 15679.33,
@@ -22555,7 +22555,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇳 Tunisia",
-        "spend": 3288.52,
+        "spend": 3289.15,
         "spend_display": "3.3K",
         "conversions": 45,
         "revenue": 10321.05,
@@ -22565,7 +22565,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇲🇪 Montenegro",
-        "spend": 6188.31,
+        "spend": 6189.28,
         "spend_display": "6.2K",
         "conversions": 2,
         "revenue": 10001.63,
@@ -22575,7 +22575,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇳 Tunisia",
-        "spend": 11950.39,
+        "spend": 11950.73,
         "spend_display": "12K",
         "conversions": 1,
         "revenue": 9859.76,
@@ -22585,7 +22585,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇵🇹 Portugal",
-        "spend": 6053.75,
+        "spend": 6055.57,
         "spend_display": "6.1K",
         "conversions": 1,
         "revenue": 8328.98,
@@ -22595,7 +22595,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇰🇪 Kenya",
-        "spend": 4951.34,
+        "spend": 4952.03,
         "spend_display": "5K",
         "conversions": 1,
         "revenue": 4752.19,
@@ -22605,7 +22605,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇷 Turkey",
-        "spend": 26433.43,
+        "spend": 26434.36,
         "spend_display": "26K",
         "conversions": 90,
         "revenue": 4673.14,
@@ -22615,7 +22615,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇬 Egypt",
-        "spend": 8618.23,
+        "spend": 8618.58,
         "spend_display": "8.6K",
         "conversions": 86,
         "revenue": 4303.69,
@@ -22625,7 +22625,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇻🇳 Vietnam",
-        "spend": 3308.47,
+        "spend": 3308.82,
         "spend_display": "3.3K",
         "conversions": 1,
         "revenue": 1296.37,
@@ -22635,7 +22635,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇨🇾 Cyprus",
-        "spend": 9103.93,
+        "spend": 9104.6,
         "spend_display": "9.1K",
         "conversions": 11,
         "revenue": 1052.47,
@@ -22645,7 +22645,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇹🇭 Thailand",
-        "spend": 3000.43,
+        "spend": 3000.44,
         "spend_display": "3K",
         "conversions": 0,
         "revenue": 707.83,
@@ -22655,7 +22655,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇲🇪 Montenegro",
-        "spend": 2952.29,
+        "spend": 2952.87,
         "spend_display": "3K",
         "conversions": 1,
         "revenue": 42.9,
@@ -22685,7 +22685,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 5677.61,
+        "spend": 5677.92,
         "spend_display": "5.7K",
         "conversions": 4,
         "revenue": 4.0,
@@ -22705,7 +22705,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Rhodes",
-        "spend": 1505.3,
+        "spend": 1505.67,
         "spend_display": "1.5K",
         "conversions": 1,
         "revenue": 1.0,
@@ -22725,8 +22725,8 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Kos",
-        "spend": 861.26,
-        "spend_display": "861",
+        "spend": 861.74,
+        "spend_display": "862",
         "conversions": 0,
         "revenue": 0.0,
         "revenue_display": "0",
@@ -22735,7 +22735,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇬🇷 Chania (Crete)",
-        "spend": 65.61,
+        "spend": 65.95,
         "spend_display": "66",
         "conversions": 0,
         "revenue": 0.0,
@@ -22745,7 +22745,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇪🇸 Palma de Mallorca",
-        "spend": 277.68,
+        "spend": 278.02,
         "spend_display": "278",
         "conversions": 0,
         "revenue": 0.0,
@@ -22765,7 +22765,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇷🇴 Romania",
-        "spend": 2356.74,
+        "spend": 2357.13,
         "spend_display": "2.4K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22775,7 +22775,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇩🇴 Dominican Republic",
-        "spend": 1093.62,
+        "spend": 1093.65,
         "spend_display": "1.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22785,7 +22785,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "google",
         "name": "🇰🇪 Kenya",
-        "spend": 1031.84,
+        "spend": 1031.85,
         "spend_display": "1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22805,7 +22805,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Heraklion (Crete)",
-        "spend": 9150.41,
+        "spend": 9150.83,
         "spend_display": "9.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22815,7 +22815,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇱🇰 Sri Lanka",
-        "spend": 6162.6,
+        "spend": 6163.49,
         "spend_display": "6.2K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22825,7 +22825,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇮🇹 Italy",
-        "spend": 9522.27,
+        "spend": 9524.21,
         "spend_display": "9.5K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22845,7 +22845,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇬🇷 Kos",
-        "spend": 3063.15,
+        "spend": 3063.45,
         "spend_display": "3.1K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22875,7 +22875,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇻🇳 Vietnam",
-        "spend": 5712.48,
+        "spend": 5713.44,
         "spend_display": "5.7K",
         "conversions": 0,
         "revenue": 0.0,
@@ -22885,7 +22885,7 @@ window.PPC_DATA_BY_PERIOD = {
       {
         "platform": "meta",
         "name": "🇹🇭 Thailand",
-        "spend": 4847.18,
+        "spend": 4848.83,
         "spend_display": "4.8K",
         "conversions": 0,
         "revenue": 0.0,
@@ -23003,7 +23003,7 @@ window.PPC_DATA_BY_PERIOD = {
         43256.26,
         66703.41,
         81517.07,
-        29272.4
+        29307.3
       ],
       "roas": [
         0.0,
@@ -23030,7 +23030,7 @@ window.PPC_DATA_BY_PERIOD = {
         2.0,
         3.71,
         2.43,
-        1.63
+        1.62
       ],
       "revenue": [
         28.99,
@@ -23573,17 +23573,17 @@ window.PPC_DATA_BY_PERIOD = {
         "label": "Jun 26",
         "full_label": "JUNE 2026",
         "date": "2026-06-01",
-        "spend": 9736.23,
+        "spend": 9745.83,
         "conversions": 6.93,
         "revenue": 7352.54,
-        "roas": 0.76,
+        "roas": 0.75,
         "platform": "google"
       },
       {
         "label": "Jun 26",
         "full_label": "JUNE 2026",
         "date": "2026-06-01",
-        "spend": 19536.17,
+        "spend": 19561.47,
         "conversions": 7.0,
         "revenue": 40238.85,
         "roas": 2.06,
@@ -23591,8 +23591,8 @@ window.PPC_DATA_BY_PERIOD = {
       }
     ],
     "sidebar_spend_today": {
-      "google": "689 RON",
-      "meta": "1,308 RON",
+      "google": "699 RON",
+      "meta": "1,331 RON",
       "bing": "— RON",
       "tiktok": "— RON"
     }
