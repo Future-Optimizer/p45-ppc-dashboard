@@ -979,6 +979,7 @@ const SORT_ACCESSORS = {
     clicks: c => c.clicks ?? 0,
     ctr: c => c.ctr ?? 0,
     cpc: c => c.cpc ?? 0,
+    daily_budget: c => c.daily_budget ?? 0,
   },
   destinations: {
     name: d => d.name || '',
@@ -1450,6 +1451,7 @@ function renderReportCampaigns(data) {
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(c.name)}</span></td>
         <td>${escapeHtml(c.spend_display ?? '—')}</td>
+        <td>${escapeHtml(c.daily_budget_display ?? '—')}</td>
         <td>${escapeHtml(c.impressions_display ?? c.impressions ?? '—')}</td>
         <td>${escapeHtml(c.clicks_display ?? c.clicks ?? '—')}</td>
         <td>${escapeHtml(c.ctr_display ?? '—')}</td>
@@ -1465,6 +1467,7 @@ function renderReportCampaigns(data) {
         <tr>
           ${thSort('campaigns', 'Campaign', 'name', 'string')}
           ${thSort('campaigns', 'Spend (EUR)', 'spend', 'number')}
+          ${thSort('campaigns', 'Daily Budget (EUR)', 'daily_budget', 'number')}
           ${thSort('campaigns', 'Impr.', 'impressions', 'number')}
           ${thSort('campaigns', 'Clicks', 'clicks', 'number')}
           ${thSort('campaigns', 'CTR', 'ctr', 'number')}
