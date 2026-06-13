@@ -697,6 +697,51 @@ body::before {
 .dest-header .dest-sortable:hover { color: var(--text); }
 .dest-header .dest-sortable.active-sort { color: var(--accent); }
 
+/* ─── AUDIENCE INTERESTS (GA4) ─── */
+.interest-list {
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.interest-row {
+  display:flex; align-items:center; gap:10px;
+}
+
+.interest-name {
+  font-size: 11px;
+  color: var(--text);
+  width: 150px;
+  flex-shrink:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.interest-bar-wrap {
+  flex:1;
+  height:5px;
+  background: var(--s3);
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.interest-bar-fill {
+  height:100%;
+  border-radius:3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+}
+
+.interest-value {
+  font-family:'Syne', sans-serif;
+  font-size: 11px;
+  font-weight:700;
+  color: var(--text);
+  width: 60px;
+  text-align:right;
+  flex-shrink:0;
+}
+
 /* ─── MINI CHART ─── */
 .mini-chart {
   width:100%;
@@ -819,6 +864,10 @@ body::before {
     <div class="nav-dot" style="background:var(--dim)"></div>
     Daily Diagnostic
   </div>
+  <div class="nav-item" data-view="report-audience">
+    <div class="nav-dot" style="background:var(--dim)"></div>
+    Audience &amp; Attribution
+  </div>
 
   <div class="sb-section" style="margin-top:8px">Spend Today</div>
   <div id="sidebar-spend"></div>
@@ -923,6 +972,18 @@ body::before {
     </div>
   </div>
 
+  <!-- VIEW: REPORT — AUDIENCE & ATTRIBUTION (GA4) -->
+  <div id="view-report-audience" class="view hidden">
+    <div class="card">
+      <div class="card-title">Audience Interests (Affinity / In-Market) <span class="ct-badge" id="audience-interests-badge">GA4</span></div>
+      <div id="audience-interests-wrap"></div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-title">Channel Contribution to Conversions <span class="ct-badge" id="audience-channels-badge">GA4</span></div>
+      <div id="audience-channels-wrap"></div>
+    </div>
+  </div>
+
 </main>
 </div>
 
@@ -957,7 +1018,7 @@ const PERIOD_DEFS = [
   { key: 'all_time',   label: 'All time' },
 ];
 
-const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily'];
+const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-audience'];
 let currentView = 'overview';
 const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all' };
 
@@ -1575,11 +1636,82 @@ function renderReportDaily(data) {
   bindSortableHeaders(wrap, 'daily', () => renderReportDaily(window.PPC_DATA));
 }
 
+/* ─── REPORT: AUDIENCE & ATTRIBUTION (GA4) ─── */
+function renderInterestList(wrapId, badgeId, items, days) {
+  const wrap = document.getElementById(wrapId);
+  const badge = document.getElementById(badgeId);
+  if (badge) badge.textContent = days ? `GA4 · ${days}d` : 'GA4';
+  if (!items || !items.length) {
+    wrap.innerHTML = `<div class="empty-state">No audience data available.<br>Requires Google Signals enabled on the GA4 property.</div>`;
+    return;
+  }
+  const max = Math.max(...items.map(i => i.users || 0), 1);
+  wrap.innerHTML = `<div class="interest-list">` + items.map(i => {
+    const pct = Math.round(((i.users || 0) / max) * 100);
+    return `
+      <div class="interest-row">
+        <div class="interest-name" title="${escapeHtml(i.name)}">${escapeHtml(i.name)}</div>
+        <div class="interest-bar-wrap"><div class="interest-bar-fill" style="width:${pct}%"></div></div>
+        <div class="interest-value">${(i.users || 0).toLocaleString('en-US')}</div>
+      </div>`;
+  }).join('') + `</div>`;
+}
+
+function renderReportAudience() {
+  const ga4 = window.PPC_GA4_DATA;
+  const interestsBadge = document.getElementById('audience-interests-badge');
+  const channelsBadge = document.getElementById('audience-channels-badge');
+  const channelsWrap = document.getElementById('audience-channels-wrap');
+
+  if (!ga4) {
+    const msg = `<div class="empty-state">GA4 not connected.<br>Configure config/accounts.json → "ga4" (property ID + service account key).</div>`;
+    document.getElementById('audience-interests-wrap').innerHTML = msg;
+    channelsWrap.innerHTML = msg;
+    if (interestsBadge) interestsBadge.textContent = 'Not connected';
+    if (channelsBadge) channelsBadge.textContent = 'Not connected';
+    return;
+  }
+
+  const days = ga4.lookback_days;
+  const audience = ga4.audience || {};
+  renderInterestList('audience-interests-wrap', 'audience-interests-badge', audience.interests, days);
+
+  if (channelsBadge) channelsBadge.textContent = `GA4 · ${days}d`;
+  const channels = ga4.channel_contribution || [];
+  if (!channels.length) {
+    channelsWrap.innerHTML = `<div class="empty-state">No channel data available.</div>`;
+    return;
+  }
+  const rows = channels.map(c => `
+    <tr>
+      <td><span class="camp-name">${escapeHtml(c.channel)}</span></td>
+      <td>${escapeHtml((c.sessions ?? 0).toLocaleString('en-US'))}</td>
+      <td>${escapeHtml((c.conversions ?? 0).toLocaleString('en-US'))}</td>
+      <td>${escapeHtml(Math.round(c.revenue ?? 0).toLocaleString('en-US'))}</td>
+    </tr>`).join('');
+  channelsWrap.innerHTML = `
+    <table class="camp-table">
+      <thead>
+        <tr>
+          <th>Channel</th>
+          <th>Sessions</th>
+          <th>Conversions</th>
+          <th>Revenue (EUR)</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="empty-state" style="margin-top:10px; padding:0; text-align:left; border:none;">
+      Based on GA4's configured attribution model (cross-channel, data-driven by default) — reflects each channel's contribution to conversions, not just last-click. GA4 removed the classic "Assisted Conversions" report, so this is the closest available equivalent.
+    </div>`;
+}
+
 function renderActiveReport() {
   const data = window.PPC_DATA || {};
   if (currentView === 'report-campaigns') renderReportCampaigns(data);
   if (currentView === 'report-destinations') renderReportDestinations(data);
   if (currentView === 'report-daily') renderReportDaily(data);
+  if (currentView === 'report-audience') renderReportAudience();
 }
 
 /* ─── VIEW SWITCHING ─── */
