@@ -677,6 +677,18 @@ body::before {
 .dest-header .dest-revenue { width:70px; text-align:right; color: var(--dim); }
 .dest-header .dest-roas { width:40px; text-align:right; color: var(--dim); }
 
+.dest-impr, .dest-clicks, .dest-ctr, .dest-cpc {
+  font-size: 10px;
+  width: 52px;
+  flex-shrink:0;
+  text-align:right;
+  color: var(--text);
+}
+.dest-header .dest-impr,
+.dest-header .dest-clicks,
+.dest-header .dest-ctr,
+.dest-header .dest-cpc { color: var(--dim); }
+
 .dest-header .dest-sortable {
   cursor: pointer;
   user-select: none;
@@ -963,11 +975,19 @@ const SORT_ACCESSORS = {
     conversions: c => c.conversions ?? 0,
     revenue: c => c.revenue ?? 0,
     roas: c => c.roas ?? 0,
+    impressions: c => c.impressions ?? 0,
+    clicks: c => c.clicks ?? 0,
+    ctr: c => c.ctr ?? 0,
+    cpc: c => c.cpc ?? 0,
   },
   destinations: {
     name: d => d.name || '',
     revenue: d => d.revenue ?? 0,
     roas: d => d.roas ?? 0,
+    impressions: d => d.impressions ?? 0,
+    clicks: d => d.clicks ?? 0,
+    ctr: d => d.ctr ?? 0,
+    cpc: d => d.cpc ?? 0,
   },
   daily: {
     date: p => p.date || '',
@@ -975,6 +995,10 @@ const SORT_ACCESSORS = {
     conversions: p => p.conversions ?? 0,
     revenue: p => p.revenue ?? 0,
     roas: p => p.roas ?? 0,
+    impressions: p => p.impressions ?? 0,
+    clicks: p => p.clicks ?? 0,
+    ctr: p => p.ctr ?? 0,
+    cpc: p => p.cpc ?? 0,
   }
 };
 
@@ -1242,7 +1266,7 @@ function drawLineChart(canvasId, data, color, fillColor, format, labels, fullLab
   const yOf = v => pad.top + cH - ((v - min) / (max - min || 1)) * cH;
 
   function fmtValue(v) {
-    if (format === 'K') return Math.round(v).toLocaleString('en-US') + ' RON';
+    if (format === 'K') return Math.round(v).toLocaleString('en-US') + ' EUR';
     return v.toFixed(2) + 'x';
   }
 
@@ -1426,6 +1450,10 @@ function renderReportCampaigns(data) {
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(c.name)}</span></td>
         <td>${escapeHtml(c.spend_display ?? '—')}</td>
+        <td>${escapeHtml(c.impressions_display ?? c.impressions ?? '—')}</td>
+        <td>${escapeHtml(c.clicks_display ?? c.clicks ?? '—')}</td>
+        <td>${escapeHtml(c.ctr_display ?? '—')}</td>
+        <td>${escapeHtml(c.cpc_display ?? '—')}</td>
         <td>${escapeHtml(c.conversions ?? '—')}</td>
         <td>${escapeHtml(c.revenue_display ?? '—')}</td>
         <td><span class="roas-pill roas-${cls}">${(c.roas ?? 0).toFixed(1)}x</span></td>
@@ -1436,9 +1464,13 @@ function renderReportCampaigns(data) {
       <thead>
         <tr>
           ${thSort('campaigns', 'Campaign', 'name', 'string')}
-          ${thSort('campaigns', 'Spend', 'spend', 'number')}
+          ${thSort('campaigns', 'Spend (EUR)', 'spend', 'number')}
+          ${thSort('campaigns', 'Impr.', 'impressions', 'number')}
+          ${thSort('campaigns', 'Clicks', 'clicks', 'number')}
+          ${thSort('campaigns', 'CTR', 'ctr', 'number')}
+          ${thSort('campaigns', 'CPC (EUR)', 'cpc', 'number')}
           ${thSort('campaigns', 'Conv.', 'conversions', 'number')}
-          ${thSort('campaigns', 'Revenue', 'revenue', 'number')}
+          ${thSort('campaigns', 'Revenue (EUR)', 'revenue', 'number')}
           ${thSort('campaigns', 'ROAS', 'roas', 'number')}
         </tr>
       </thead>
@@ -1465,6 +1497,10 @@ function renderReportDestinations(data) {
   wrap.innerHTML = `<div class="dest-header">
       <div class="dest-name ${dh('name','string')}">Destination${sortArrow('destinations','name')}</div>
       <div class="dest-bar-wrap"></div>
+      <div class="dest-impr ${dh('impressions','number')}">Impr.${sortArrow('destinations','impressions')}</div>
+      <div class="dest-clicks ${dh('clicks','number')}">Clicks${sortArrow('destinations','clicks')}</div>
+      <div class="dest-ctr ${dh('ctr','number')}">CTR${sortArrow('destinations','ctr')}</div>
+      <div class="dest-cpc ${dh('cpc','number')}">CPC${sortArrow('destinations','cpc')}</div>
       <div class="dest-revenue ${dh('revenue','number')}">Revenue${sortArrow('destinations','revenue')}</div>
       <div class="dest-roas ${dh('roas','number')}">ROAS${sortArrow('destinations','roas')}</div>
     </div><div class="dest-list">` + sorted.map(d => {
@@ -1474,6 +1510,10 @@ function renderReportDestinations(data) {
       <div class="dest-row">
         <div class="dest-name">${escapeHtml(d.name)}</div>
         <div class="dest-bar-wrap"><div class="dest-bar-fill" style="width:${pct}%"></div></div>
+        <div class="dest-impr">${escapeHtml(d.impressions_display ?? d.impressions ?? '—')}</div>
+        <div class="dest-clicks">${escapeHtml(d.clicks_display ?? d.clicks ?? '—')}</div>
+        <div class="dest-ctr">${escapeHtml(d.ctr_display ?? '—')}</div>
+        <div class="dest-cpc">${escapeHtml(d.cpc_display ?? '—')}</div>
         <div class="dest-revenue">${escapeHtml(d.revenue_display ?? '—')}</div>
         <div class="dest-roas" style="color:${roasColor}">${(d.roas ?? 0).toFixed(1)}x</div>
       </div>`;
@@ -1497,10 +1537,16 @@ function renderReportDaily(data) {
   const rows = sorted.map(p => {
     const meta = PLATFORM_META[p.platform] || { color: 'var(--dim)' };
     const cls = roasClass(p.roas);
+    const ctrDisplay = p.ctr != null ? `${p.ctr.toFixed(2)}%` : '—';
+    const cpcDisplay = p.cpc != null ? p.cpc.toFixed(2) : '—';
     return `
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(p.full_label || p.date)}</span></td>
         <td>${escapeHtml(Math.round(p.spend ?? 0).toLocaleString('en-US'))}</td>
+        <td>${escapeHtml((p.impressions ?? 0).toLocaleString('en-US'))}</td>
+        <td>${escapeHtml((p.clicks ?? 0).toLocaleString('en-US'))}</td>
+        <td>${escapeHtml(ctrDisplay)}</td>
+        <td>${escapeHtml(cpcDisplay)}</td>
         <td>${escapeHtml(p.conversions ?? '—')}</td>
         <td>${escapeHtml(Math.round(p.revenue ?? 0).toLocaleString('en-US'))}</td>
         <td><span class="roas-pill roas-${cls}">${(p.roas ?? 0).toFixed(2)}x</span></td>
@@ -1511,9 +1557,13 @@ function renderReportDaily(data) {
       <thead>
         <tr>
           ${thSort('daily', 'Date', 'date', 'string')}
-          ${thSort('daily', 'Spend (RON)', 'spend', 'number')}
+          ${thSort('daily', 'Spend (EUR)', 'spend', 'number')}
+          ${thSort('daily', 'Impr.', 'impressions', 'number')}
+          ${thSort('daily', 'Clicks', 'clicks', 'number')}
+          ${thSort('daily', 'CTR', 'ctr', 'number')}
+          ${thSort('daily', 'CPC (EUR)', 'cpc', 'number')}
           ${thSort('daily', 'Conv.', 'conversions', 'number')}
-          ${thSort('daily', 'Revenue (RON)', 'revenue', 'number')}
+          ${thSort('daily', 'Revenue (EUR)', 'revenue', 'number')}
           ${thSort('daily', 'ROAS', 'roas', 'number')}
         </tr>
       </thead>
