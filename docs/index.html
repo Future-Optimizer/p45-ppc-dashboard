@@ -533,10 +533,16 @@ body::before {
 .camp-name {
   color: var(--text);
   font-size: 11px;
-  max-width: 160px;
+  max-width: 120px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
+}
+
+.camp-source {
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .camp-plt-dot {
@@ -991,10 +997,10 @@ body::before {
 <script src="ppc-data.js"></script>
 <script>
 const PLATFORM_META = {
-  google: { label: 'Google Ads', icon: 'G', color: 'var(--google)', bg: 'rgba(66,133,244,0.12)' },
-  meta:   { label: 'Meta Ads',   icon: 'f', color: 'var(--meta)',   bg: 'rgba(24,119,242,0.12)' },
-  bing:   { label: 'Bing Ads',   icon: 'B', color: 'var(--bing)',   bg: 'rgba(0,180,216,0.12)' },
-  tiktok: { label: 'TikTok Ads', icon: 'T', color: 'var(--tiktok)', bg: 'rgba(255,45,85,0.12)' }
+  google: { label: 'Google Ads', short: 'Google', icon: 'G', color: 'var(--google)', bg: 'rgba(66,133,244,0.12)' },
+  meta:   { label: 'Meta Ads',   short: 'Meta',   icon: 'f', color: 'var(--meta)',   bg: 'rgba(24,119,242,0.12)' },
+  bing:   { label: 'Bing Ads',   short: 'Bing',   icon: 'B', color: 'var(--bing)',   bg: 'rgba(0,180,216,0.12)' },
+  tiktok: { label: 'TikTok Ads', short: 'TikTok', icon: 'T', color: 'var(--tiktok)', bg: 'rgba(255,45,85,0.12)' }
 };
 const PLATFORM_ORDER = ['google', 'meta', 'bing', 'tiktok'];
 
@@ -1226,11 +1232,12 @@ function renderCampaigns(data) {
     return;
   }
   const rows = campaigns.map(c => {
-    const meta = PLATFORM_META[c.platform] || { color: 'var(--dim)' };
+    const meta = PLATFORM_META[c.platform] || { color: 'var(--dim)', short: '—' };
     const cls = c.roas_class || roasClass(c.roas);
     return `
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name">${escapeHtml(c.name)}</span></td>
+        <td><span class="camp-source" style="color:${meta.color}">${escapeHtml(meta.short || '—')}</span></td>
         <td>${escapeHtml(c.spend_display ?? '—')}</td>
         <td>${escapeHtml(c.conversions ?? '—')}</td>
         <td><span class="roas-pill roas-${cls}">${(c.roas ?? 0).toFixed(1)}x</span></td>
@@ -1239,7 +1246,7 @@ function renderCampaigns(data) {
   wrap.innerHTML = `
     <table class="camp-table">
       <thead>
-        <tr><th>Campaign</th><th>Spend</th><th>Conv.</th><th>ROAS</th></tr>
+        <tr><th>Campaign</th><th>Source</th><th>Spend</th><th>Conv.</th><th>ROAS</th></tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
