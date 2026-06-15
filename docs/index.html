@@ -279,7 +279,7 @@ body::before {
 /* ─── KPI ROW ─── */
 .kpi-row {
   display:grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
 
@@ -704,6 +704,19 @@ body::before {
 .dest-header .dest-sortable.active-sort { color: var(--accent); }
 
 /* ─── AUDIENCE INTERESTS (GA4) ─── */
+.interest-header {
+  display:flex; align-items:center; gap:10px;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.interest-header .interest-name { width: 150px; flex-shrink:0; color: var(--dim); }
+.interest-header .interest-value { width: 70px; text-align:right; color: var(--dim); white-space:nowrap; letter-spacing:0.5px; }
+
 .interest-list {
   display:flex;
   flex-direction:column;
@@ -743,7 +756,7 @@ body::before {
   font-size: 11px;
   font-weight:700;
   color: var(--text);
-  width: 60px;
+  width: 70px;
   text-align:right;
   flex-shrink:0;
 }
@@ -831,6 +844,7 @@ body::before {
 .kpi-card:nth-child(3) { animation-delay:0.15s; }
 .kpi-card:nth-child(4) { animation-delay:0.20s; }
 .kpi-card:nth-child(5) { animation-delay:0.25s; }
+.kpi-card:nth-child(6) { animation-delay:0.30s; }
 
 /* scrollbar */
 ::-webkit-scrollbar { width:5px; }
@@ -872,7 +886,7 @@ body::before {
   </div>
   <div class="nav-item" data-view="report-audience">
     <div class="nav-dot" style="background:var(--dim)"></div>
-    Audience &amp; Attribution
+    GA4 Audiences &amp; Attribution
   </div>
 
   <div class="sb-section" style="margin-top:8px">Spend Today</div>
@@ -1008,10 +1022,11 @@ const KPI_META = {
   spend_total: { label: 'Total Spend', accent: 'var(--accent)' },
   revenue:     { label: 'Attributed Revenue', accent: 'var(--green)' },
   roas_global: { label: 'Overall ROAS', accent: 'var(--purple)' },
+  cost_of_sale:{ label: 'Cost of Sale', accent: 'var(--red)' },
   conversions: { label: 'Conversions', accent: 'var(--bing)' },
   cpa_avg:     { label: 'Avg. CPA', accent: 'var(--orange)' }
 };
-const KPI_ORDER = ['spend_total', 'revenue', 'roas_global', 'conversions', 'cpa_avg'];
+const KPI_ORDER = ['spend_total', 'revenue', 'roas_global', 'cost_of_sale', 'conversions', 'cpa_avg'];
 
 const PERIOD_DEFS = [
   { key: 'today',      label: 'Today' },
@@ -1596,7 +1611,41 @@ function renderReportDestinations(data) {
 function renderReportDaily(data) {
   const all = data.daily_table || [];
   const filter = currentFilters.daily;
-  const filtered = filter === 'all' ? all : all.filter(p => p.platform === filter);
+  let filtered;
+  if (filter === 'all') {
+    // Cumulate across all platforms: one row per date.
+    const byDate = new Map();
+    all.forEach(p => {
+      const key = p.date;
+      if (!byDate.has(key)) {
+        byDate.set(key, {
+          date: p.date,
+          label: p.label,
+          full_label: p.full_label,
+          platform: 'all',
+          spend: 0,
+          impressions: 0,
+          clicks: 0,
+          conversions: 0,
+          revenue: 0,
+        });
+      }
+      const agg = byDate.get(key);
+      agg.spend += p.spend ?? 0;
+      agg.impressions += p.impressions ?? 0;
+      agg.clicks += p.clicks ?? 0;
+      agg.conversions += p.conversions ?? 0;
+      agg.revenue += p.revenue ?? 0;
+    });
+    filtered = Array.from(byDate.values()).map(agg => ({
+      ...agg,
+      ctr: agg.impressions > 0 ? (agg.clicks / agg.impressions) * 100 : 0,
+      cpc: agg.clicks > 0 ? agg.spend / agg.clicks : 0,
+      roas: agg.spend > 0 ? agg.revenue / agg.spend : 0,
+    }));
+  } else {
+    filtered = all.filter(p => p.platform === filter);
+  }
   const sorted = sortRows(filtered, 'daily', 'date', 'desc');
 
   document.getElementById('report-daily-count').textContent = `${sorted.length} total`;
@@ -1653,7 +1702,13 @@ function renderInterestList(wrapId, badgeId, items, days) {
     return;
   }
   const max = Math.max(...items.map(i => i.users || 0), 1);
-  wrap.innerHTML = `<div class="interest-list">` + items.map(i => {
+  const header = `
+    <div class="interest-header">
+      <div class="interest-name">Interest</div>
+      <div class="interest-bar-wrap"></div>
+      <div class="interest-value">Active Users</div>
+    </div>`;
+  wrap.innerHTML = header + `<div class="interest-list">` + items.map(i => {
     const pct = Math.round(((i.users || 0) / max) * 100);
     return `
       <div class="interest-row">
