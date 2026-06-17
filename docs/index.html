@@ -520,6 +520,31 @@ body::before {
 
 .camp-table tr:last-child td { border-bottom:none; }
 .camp-table tr:hover td { color: var(--text); }
+.camp-table tfoot td {
+  border-top: 1px solid var(--border2);
+  border-bottom: none;
+  color: var(--text);
+  font-weight: 600;
+  padding-top: 12px;
+  background: transparent;
+}
+.camp-table tfoot tr:hover td { color: var(--text); }
+
+.table-search-wrap { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.table-search {
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 11px;
+  font-family: inherit;
+  padding: 6px 12px;
+  outline: none;
+  width: 220px;
+  transition: border-color 0.15s;
+}
+.table-search:focus { border-color: var(--accent); }
+.table-search::placeholder { color: var(--dim); }
 
 .camp-table th.sortable {
   cursor: pointer;
@@ -1058,6 +1083,7 @@ const PERIOD_DEFS = [
 const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-adgroups', 'report-audience'];
 let currentView = 'overview';
 const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all', adgroups: 'all' };
+const currentSearch = { campaigns: '', adgroups: '' };
 
 /* ─── SORTING ─── */
 const SORT_STATE = {
@@ -1543,11 +1569,38 @@ function renderFilterChips(containerId, filterKey, onChange) {
   });
 }
 
+/* ─── TOTALS HELPER ─── */
+function computeTotals(rows) {
+  const spend    = rows.reduce((s, r) => s + (r.spend ?? 0), 0);
+  const impr     = rows.reduce((s, r) => s + (r.impressions ?? 0), 0);
+  const clicks   = rows.reduce((s, r) => s + (r.clicks ?? 0), 0);
+  const conv     = rows.reduce((s, r) => s + (r.conversions ?? 0), 0);
+  const revenue  = rows.reduce((s, r) => s + (r.revenue ?? 0), 0);
+  const budget   = rows.reduce((s, r) => s + (r.daily_budget ?? 0), 0);
+  return {
+    spend, impr, clicks, conv, revenue, budget,
+    ctr:  impr  > 0 ? (clicks / impr  * 100) : 0,
+    cpc:  clicks > 0 ? (spend  / clicks)      : 0,
+    roas: spend  > 0 ? (revenue / spend)       : 0,
+  };
+}
+
+function fmtTotals(v, type) {
+  if (type === 'eur')   return v >= 1000 ? (v/1000).toFixed(1)+'K' : v.toFixed(0);
+  if (type === 'pct')   return v.toFixed(2)+'%';
+  if (type === 'num')   return v >= 1000000 ? (v/1000000).toFixed(1)+'M' : v >= 1000 ? (v/1000).toFixed(1)+'K' : Math.round(v).toString();
+  if (type === 'roas')  return v.toFixed(2)+'x';
+  if (type === 'conv')  return v.toFixed(1);
+  return v.toString();
+}
+
 /* ─── REPORT: ACTIVE CAMPAIGNS ─── */
 function renderReportCampaigns(data) {
   const all = data.campaigns_all || data.campaigns || [];
   const filter = currentFilters.campaigns;
-  const filtered = filter === 'all' ? all : all.filter(c => c.platform === filter);
+  const byPlatform = filter === 'all' ? all : all.filter(c => c.platform === filter);
+  const q = currentSearch.campaigns.trim().toLowerCase();
+  const filtered = q ? byPlatform.filter(c => (c.name || '').toLowerCase().includes(q)) : byPlatform;
   const sorted = sortRows(filtered, 'campaigns', 'spend', 'desc');
 
   document.getElementById('report-campaigns-count').textContent = `${sorted.length} total`;
@@ -1570,10 +1623,27 @@ function renderReportCampaigns(data) {
         <td>${escapeHtml(c.cpc_display ?? '—')}</td>
         <td>${escapeHtml(c.conversions ?? '—')}</td>
         <td>${escapeHtml(c.revenue_display ?? '—')}</td>
-        <td><span class="roas-pill roas-${cls}">${(c.roas ?? 0).toFixed(1)}x</span></td>
+        <td><span class="roas-pill roas-${roasClass(c.roas ?? 0)}">${(c.roas ?? 0).toFixed(1)}x</span></td>
       </tr>`;
   }).join('');
+  const t = computeTotals(sorted);
+  const totalsRow = `
+    <tfoot><tr>
+      <td>TOTAL (${sorted.length})</td>
+      <td>${fmtTotals(t.spend,  'eur')}</td>
+      <td>${fmtTotals(t.budget, 'eur')}</td>
+      <td>${fmtTotals(t.impr,   'num')}</td>
+      <td>${fmtTotals(t.clicks, 'num')}</td>
+      <td>${fmtTotals(t.ctr,    'pct')}</td>
+      <td>${fmtTotals(t.cpc,    'eur')}</td>
+      <td>${fmtTotals(t.conv,   'conv')}</td>
+      <td>${fmtTotals(t.revenue,'eur')}</td>
+      <td><span class="roas-pill roas-${roasClass(t.roas)}">${t.roas.toFixed(1)}x</span></td>
+    </tr></tfoot>`;
   wrap.innerHTML = `
+    <div class="table-search-wrap">
+      <input class="table-search" id="search-campaigns" placeholder="🔍  Search campaigns..." value="${escapeHtml(currentSearch.campaigns)}">
+    </div>
     <table class="camp-table">
       <thead>
         <tr>
@@ -1590,8 +1660,18 @@ function renderReportCampaigns(data) {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
+      ${totalsRow}
     </table>`;
   bindSortableHeaders(wrap, 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
+  const searchEl = document.getElementById('search-campaigns');
+  if (searchEl) {
+    searchEl.focus();
+    searchEl.setSelectionRange(searchEl.value.length, searchEl.value.length);
+    searchEl.addEventListener('input', () => {
+      currentSearch.campaigns = searchEl.value;
+      renderReportCampaigns(window.PPC_DATA);
+    });
+  }
 }
 
 /* ─── REPORT: TOP DESTINATIONS ─── */
@@ -1801,7 +1881,13 @@ function renderReportAudience() {
 function renderReportAdGroups(data) {
   const all = data.ad_groups_all || [];
   const filter = currentFilters.adgroups;
-  const filtered = filter === 'all' ? all : all.filter(r => r.platform === filter);
+  const byPlatform = filter === 'all' ? all : all.filter(r => r.platform === filter);
+  const q = currentSearch.adgroups.trim().toLowerCase();
+  const filtered = q
+    ? byPlatform.filter(r =>
+        (r.campaign_name || '').toLowerCase().includes(q) ||
+        (r.group_name || '').toLowerCase().includes(q))
+    : byPlatform;
   const sorted = sortRows(filtered, 'adgroups', 'spend', 'desc');
 
   document.getElementById('report-adgroups-count').textContent = `${sorted.length} total`;
@@ -1812,7 +1898,6 @@ function renderReportAdGroups(data) {
   }
   const rows = sorted.map(r => {
     const meta = PLATFORM_META[r.platform] || { color: 'var(--dim)', short: '—' };
-    const cls = r.roas_class || roasClass(r.roas);
     return `
       <tr>
         <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name" title="${escapeHtml(r.campaign_name)}">${escapeHtml(r.campaign_name)}</span></td>
@@ -1825,10 +1910,28 @@ function renderReportAdGroups(data) {
         <td>${escapeHtml(r.cpc_display ?? '—')}</td>
         <td>${escapeHtml(r.conversions ?? '—')}</td>
         <td>${escapeHtml(r.revenue_display ?? '—')}</td>
-        <td><span class="roas-pill roas-${cls}">${(r.roas ?? 0).toFixed(1)}x</span></td>
+        <td><span class="roas-pill roas-${roasClass(r.roas ?? 0)}">${(r.roas ?? 0).toFixed(1)}x</span></td>
       </tr>`;
   }).join('');
+  const t = computeTotals(sorted);
+  const totalsRow = `
+    <tfoot><tr>
+      <td>TOTAL (${sorted.length})</td>
+      <td></td>
+      <td></td>
+      <td>${fmtTotals(t.spend,  'eur')}</td>
+      <td>${fmtTotals(t.impr,   'num')}</td>
+      <td>${fmtTotals(t.clicks, 'num')}</td>
+      <td>${fmtTotals(t.ctr,    'pct')}</td>
+      <td>${fmtTotals(t.cpc,    'eur')}</td>
+      <td>${fmtTotals(t.conv,   'conv')}</td>
+      <td>${fmtTotals(t.revenue,'eur')}</td>
+      <td><span class="roas-pill roas-${roasClass(t.roas)}">${t.roas.toFixed(1)}x</span></td>
+    </tr></tfoot>`;
   wrap.innerHTML = `
+    <div class="table-search-wrap">
+      <input class="table-search" id="search-adgroups" placeholder="🔍  Search campaigns or ad groups..." value="${escapeHtml(currentSearch.adgroups)}">
+    </div>
     <table class="camp-table">
       <thead>
         <tr>
@@ -1846,8 +1949,18 @@ function renderReportAdGroups(data) {
         </tr>
       </thead>
       <tbody>${rows}</tbody>
+      ${totalsRow}
     </table>`;
   bindSortableHeaders(wrap, 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
+  const searchEl = document.getElementById('search-adgroups');
+  if (searchEl) {
+    searchEl.focus();
+    searchEl.setSelectionRange(searchEl.value.length, searchEl.value.length);
+    searchEl.addEventListener('input', () => {
+      currentSearch.adgroups = searchEl.value;
+      renderReportAdGroups(window.PPC_DATA);
+    });
+  }
 }
 
 function renderActiveReport() {
@@ -1891,9 +2004,7 @@ renderAll();
 
 document.getElementById('btn-refresh').addEventListener('click', function() {
   this.style.color = 'var(--green)';
-  // ppc-data.js este un fisier static -- pentru date proaspete, ruleaza
-  // scriptul de fetch (scripts/fetch_google_ads_data.py) si reincarca pagina.
-  location.reload();
+  setTimeout(() => location.reload(), 300);
 });
 
 document.querySelector('.sidebar').addEventListener('click', function(e) {
