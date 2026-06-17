@@ -1003,7 +1003,7 @@ body::before {
         Ad Groups &amp; Ad Sets
         <span class="ct-badge" id="report-adgroups-count">—</span>
       </div>
-      <div class="filter-row" id="filter-adgroups"></div>
+      <div class="report-filters" id="filter-adgroups"></div>
       <div id="report-adgroups-wrap"></div>
     </div>
   </div>
@@ -1911,4 +1911,10 @@ document.querySelector('.sidebar').addEventListener('click', function(e) {
   }
 });
 
-renderF
+renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
+renderFilterChips('filter-destinations', 'destinations', () => renderReportDestinations(window.PPC_DATA));
+renderFilterChips('filter-daily', 'daily', () => renderReportDaily(window.PPC_DATA));
+renderFilterChips('filter-adgroups', 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
+</script>
+</body>
+</html>
