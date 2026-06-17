@@ -876,6 +876,10 @@ body::before {
     <div class="nav-dot" style="background:var(--dim)"></div>
     Active Campaigns
   </div>
+  <div class="nav-item" data-view="report-adgroups">
+    <div class="nav-dot" style="background:var(--dim)"></div>
+    Ad Groups &amp; Ad Sets
+  </div>
   <div class="nav-item" data-view="report-destinations">
     <div class="nav-dot" style="background:var(--dim)"></div>
     Top Destinations
@@ -992,6 +996,18 @@ body::before {
     </div>
   </div>
 
+  <!-- VIEW: REPORT — AD GROUPS & AD SETS -->
+  <div id="view-report-adgroups" class="view hidden">
+    <div class="card">
+      <div class="card-title">
+        Ad Groups &amp; Ad Sets
+        <span class="ct-badge" id="report-adgroups-count">—</span>
+      </div>
+      <div class="filter-row" id="filter-adgroups"></div>
+      <div id="report-adgroups-wrap"></div>
+    </div>
+  </div>
+
   <!-- VIEW: REPORT — AUDIENCE & ATTRIBUTION (GA4) -->
   <div id="view-report-audience" class="view hidden">
     <div class="card">
@@ -1039,9 +1055,9 @@ const PERIOD_DEFS = [
   { key: 'all_time',   label: 'All time' },
 ];
 
-const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-audience'];
+const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-adgroups', 'report-audience'];
 let currentView = 'overview';
-const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all' };
+const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all', adgroups: 'all' };
 
 /* ─── SORTING ─── */
 const SORT_STATE = {
@@ -1768,11 +1784,65 @@ function renderReportAudience() {
     </div>`;
 }
 
+/* ─── REPORT: AD GROUPS & AD SETS ─── */
+function renderReportAdGroups(data) {
+  const all = data.ad_groups_all || [];
+  const filter = currentFilters.adgroups;
+  const filtered = filter === 'all' ? all : all.filter(r => r.platform === filter);
+  const sorted = sortRows(filtered, 'adgroups', 'spend', 'desc');
+
+  document.getElementById('report-adgroups-count').textContent = `${sorted.length} total`;
+  const wrap = document.getElementById('report-adgroups-wrap');
+  if (!sorted.length) {
+    wrap.innerHTML = `<div class="empty-state">No ad group data for this filter.<br>Run the fetch script to populate data.</div>`;
+    return;
+  }
+  const rows = sorted.map(r => {
+    const meta = PLATFORM_META[r.platform] || { color: 'var(--dim)', short: '—' };
+    const cls = r.roas_class || roasClass(r.roas);
+    return `
+      <tr>
+        <td><span class="camp-plt-dot" style="background:${meta.color}"></span><span class="camp-name" title="${escapeHtml(r.campaign_name)}">${escapeHtml(r.campaign_name)}</span></td>
+        <td><span class="camp-name" title="${escapeHtml(r.group_name)}">${escapeHtml(r.group_name)}</span></td>
+        <td><span class="camp-source" style="color:${meta.color}">${escapeHtml(meta.short)}</span></td>
+        <td>${escapeHtml(r.spend_display ?? '—')}</td>
+        <td>${escapeHtml(r.impressions_display ?? '—')}</td>
+        <td>${escapeHtml(r.clicks_display ?? '—')}</td>
+        <td>${escapeHtml(r.ctr_display ?? '—')}</td>
+        <td>${escapeHtml(r.cpc_display ?? '—')}</td>
+        <td>${escapeHtml(r.conversions ?? '—')}</td>
+        <td>${escapeHtml(r.revenue_display ?? '—')}</td>
+        <td><span class="roas-pill roas-${cls}">${(r.roas ?? 0).toFixed(1)}x</span></td>
+      </tr>`;
+  }).join('');
+  wrap.innerHTML = `
+    <table class="camp-table">
+      <thead>
+        <tr>
+          ${thSort('adgroups', 'Campaign', 'campaign_name', 'string')}
+          ${thSort('adgroups', 'Ad Group / Ad Set', 'group_name', 'string')}
+          <th>Source</th>
+          ${thSort('adgroups', 'Spend (EUR)', 'spend', 'number')}
+          ${thSort('adgroups', 'Impr.', 'impressions', 'number')}
+          ${thSort('adgroups', 'Clicks', 'clicks', 'number')}
+          ${thSort('adgroups', 'CTR', 'ctr', 'number')}
+          ${thSort('adgroups', 'CPC (EUR)', 'cpc', 'number')}
+          ${thSort('adgroups', 'Conv.', 'conversions', 'number')}
+          ${thSort('adgroups', 'Revenue (EUR)', 'revenue', 'number')}
+          ${thSort('adgroups', 'ROAS', 'roas', 'number')}
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+  bindSortableHeaders(wrap, 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
+}
+
 function renderActiveReport() {
   const data = window.PPC_DATA || {};
   if (currentView === 'report-campaigns') renderReportCampaigns(data);
   if (currentView === 'report-destinations') renderReportDestinations(data);
   if (currentView === 'report-daily') renderReportDaily(data);
+  if (currentView === 'report-adgroups') renderReportAdGroups(data);
   if (currentView === 'report-audience') renderReportAudience();
 }
 
@@ -1831,6 +1901,7 @@ document.querySelector('.sidebar').addEventListener('click', function(e) {
 renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
 renderFilterChips('filter-destinations', 'destinations', () => renderReportDestinations(window.PPC_DATA));
 renderFilterChips('filter-daily', 'daily', () => renderReportDaily(window.PPC_DATA));
+renderFilterChips('filter-adgroups', 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
 </script>
 </body>
 </html>
