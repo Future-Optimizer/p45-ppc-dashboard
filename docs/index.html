@@ -1063,7 +1063,8 @@ const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all', ad
 const SORT_STATE = {
   campaigns: { key: null, dir: null },
   destinations: { key: null, dir: null },
-  daily: { key: null, dir: null }
+  daily: { key: null, dir: null },
+  adgroups: { key: null, dir: null }
 };
 
 const SORT_ACCESSORS = {
@@ -1098,6 +1099,18 @@ const SORT_ACCESSORS = {
     clicks: p => p.clicks ?? 0,
     ctr: p => p.ctr ?? 0,
     cpc: p => p.cpc ?? 0,
+  },
+  adgroups: {
+    campaign_name: r => r.campaign_name || '',
+    group_name: r => r.group_name || '',
+    spend: r => r.spend ?? 0,
+    conversions: r => r.conversions ?? 0,
+    revenue: r => r.revenue ?? 0,
+    roas: r => r.roas ?? 0,
+    impressions: r => r.impressions ?? 0,
+    clicks: r => r.clicks ?? 0,
+    ctr: r => r.ctr ?? 0,
+    cpc: r => r.cpc ?? 0,
   }
 };
 
@@ -1898,10 +1911,4 @@ document.querySelector('.sidebar').addEventListener('click', function(e) {
   }
 });
 
-renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
-renderFilterChips('filter-destinations', 'destinations', () => renderReportDestinations(window.PPC_DATA));
-renderFilterChips('filter-daily', 'daily', () => renderReportDaily(window.PPC_DATA));
-renderFilterChips('filter-adgroups', 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
-</script>
-</body>
-</html>
+renderF
