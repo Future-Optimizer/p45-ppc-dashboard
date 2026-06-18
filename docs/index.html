@@ -786,6 +786,48 @@ body::before {
   flex-shrink:0;
 }
 
+/* ─── CRM ORDERS ─── */
+.crm-kpi-row {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:12px;
+  margin-bottom:0;
+}
+.crm-kpi-card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.crm-kpi-label {
+  font-size:9px; letter-spacing:1px; text-transform:uppercase; color:var(--dim); margin-bottom:6px;
+}
+.crm-kpi-val {
+  font-family:'Syne',sans-serif; font-size:22px; font-weight:800; color:var(--text); letter-spacing:-0.5px;
+}
+.crm-kpi-val em { font-style:normal; font-size:12px; margin-left:2px; color:var(--dim); font-family:'DM Mono',monospace; font-weight:400; }
+.crm-kpi-pct {
+  font-size:11px; color:var(--mid); margin-top:4px;
+}
+.crm-kpi-pct b { color:var(--green); }
+.crm-kpi-pct.bad b { color:var(--red); }
+
+.crm-status-list { display:flex; flex-direction:column; gap:10px; }
+.crm-status-row { display:flex; align-items:center; gap:10px; }
+.crm-status-label { font-size:11px; color:var(--text); width:120px; flex-shrink:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.crm-bar-wrap { flex:1; height:6px; background:var(--s3); border-radius:3px; overflow:hidden; }
+.crm-bar-fill { height:100%; border-radius:3px; }
+.crm-status-count { font-family:'Syne',sans-serif; font-size:11px; font-weight:700; color:var(--text); width:36px; text-align:right; flex-shrink:0; }
+.crm-status-pct { font-size:10px; color:var(--dim); width:38px; text-align:right; flex-shrink:0; }
+.crm-status-suma { font-size:10px; color:var(--accent); width:80px; text-align:right; flex-shrink:0; }
+.crm-pagination { display:flex; align-items:center; justify-content:center; gap:12px; margin-top:10px; padding-top:8px; border-top:1px solid var(--s3); }
+.crm-page-btn { background:var(--s2); border:1px solid var(--s3); color:var(--text); font-size:11px; padding:4px 10px; border-radius:4px; cursor:pointer; transition:background .15s; }
+.crm-page-btn:hover:not(:disabled) { background:var(--s3); }
+.crm-page-btn:disabled { opacity:0.35; cursor:default; }
+.crm-page-info { font-size:10px; color:var(--dim); }
+.crm-sort-btn { background:transparent; border:1px solid var(--s3); color:var(--dim); font-size:10px; padding:2px 8px; border-radius:3px; cursor:pointer; transition:background .15s, color .15s; width:70px; text-align:center; }
+.crm-sort-btn:hover { background:var(--s2); color:var(--text); }
+
 /* ─── MINI CHART ─── */
 .mini-chart {
   width:100%;
@@ -917,6 +959,10 @@ body::before {
     <div class="nav-dot" style="background:var(--dim)"></div>
     GA4 Audiences &amp; Attribution
   </div>
+  <div class="nav-item" data-view="report-crm">
+    <div class="nav-dot" style="background:var(--green)"></div>
+    CRM Orders
+  </div>
 
   <div class="sb-section" style="margin-top:8px">Spend Today</div>
   <div id="sidebar-spend"></div>
@@ -1045,6 +1091,25 @@ body::before {
     </div>
   </div>
 
+  <!-- VIEW: REPORT — CRM ORDERS -->
+  <div id="view-report-crm" class="view hidden">
+    <div class="crm-kpi-row" id="crm-kpi-row"></div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+      <div class="card">
+        <div class="card-title">Orders by Status <span class="ct-badge" id="crm-badge">CRM</span></div>
+        <div id="crm-status-wrap"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Top Products / Destinations</div>
+        <div id="crm-produs-wrap"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="card-title">Daily Orders Timeline</div>
+      <div id="crm-daily-wrap"></div>
+    </div>
+  </div>
+
 </main>
 </div>
 
@@ -1080,7 +1145,7 @@ const PERIOD_DEFS = [
   { key: 'all_time',   label: 'All time' },
 ];
 
-const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-adgroups', 'report-audience'];
+const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-adgroups', 'report-audience', 'report-crm'];
 let currentView = 'overview';
 const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all', adgroups: 'all' };
 const currentSearch = { campaigns: '', adgroups: '' };
@@ -1962,6 +2027,294 @@ function renderReportAdGroups(data) {
     });
   }
 }
+/* ─── REPORT: CRM ORDERS ─── */
+function renderReportCRM() {
+  const crm = window.PPC_CRM_DATA;
+  const badge = document.getElementById('crm-badge');
+  const kpiRow = document.getElementById('crm-kpi-row');
+  const statusWrap = document.getElementById('crm-status-wrap');
+  const produsWrap = document.getElementById('crm-produs-wrap');
+  const dailyWrap = document.getElementById('crm-daily-wrap');
+
+  if (!crm) {
+    const msg = `<div class="empty-state">CRM not connected.<br>
+      1. Enable Google Sheets API in Cloud Console<br>
+      2. Share the sheet with the service account email (client_email in config/ga4-service-account.json)<br>
+      3. Run the fetch script again.</div>`;
+    if (kpiRow) kpiRow.innerHTML = '';
+    if (statusWrap) statusWrap.innerHTML = msg;
+    if (produsWrap) produsWrap.innerHTML = '';
+    if (dailyWrap) dailyWrap.innerHTML = '';
+    if (badge) badge.textContent = 'Not connected';
+    return;
+  }
+
+  if (badge) badge.textContent = `CRM · ${crm.sheet_name || ''}`;
+
+  // ── KPI Cards ──
+  const confirmate = crm.total_confirmate || 0;
+  const anulataEntry = (crm.status_breakdown || []).find(s => s.status === 'Anulată');
+  const anulate = anulataEntry ? anulataEntry.count : 0;
+
+  kpiRow.innerHTML = [
+    { label: 'Total Orders', val: (crm.total_orders||0).toLocaleString('en-US'), unit: '', sub: `as of ${crm.snapshot_date}`, cls: '' },
+    { label: 'Confirmed (Status rezervare)', val: confirmate.toLocaleString('en-US'), unit: '', sub: `<b>${crm.rata_confirmare||0}%</b> confirmation rate`, cls: '' },
+    { label: 'Cancelled', val: anulate.toLocaleString('en-US'), unit: '', sub: `<b>${crm.rata_anulare||0}%</b> cancellation rate`, cls: 'bad' },
+    { label: 'Revenue Confirmed', val: Math.round(crm.total_suma_finalizata_ron||0).toLocaleString('en-US'), unit: ' RON', sub: 'from Finalizată orders', cls: '' },
+  ].map(k => `
+    <div class="crm-kpi-card">
+      <div class="crm-kpi-label">${k.label}</div>
+      <div class="crm-kpi-val">${k.val}<em>${k.unit}</em></div>
+      <div class="crm-kpi-pct ${k.cls}">${k.sub}</div>
+    </div>`).join('');
+
+  // ── Status Breakdown ──
+  const statuses = crm.status_breakdown || [];
+  if (!statuses.length) {
+    statusWrap.innerHTML = `<div class="empty-state">No status data available.</div>`;
+  } else {
+    const maxCount = Math.max(...statuses.map(s => s.count), 1);
+    statusWrap.innerHTML = `<div class="crm-status-list">` + statuses.map(s => `
+      <div class="crm-status-row">
+        <div class="crm-status-label" title="${escapeHtml(s.status)}">${escapeHtml(s.status)}</div>
+        <div class="crm-bar-wrap">
+          <div class="crm-bar-fill" style="width:${Math.round(s.count/maxCount*100)}%; background:${s.color};"></div>
+        </div>
+        <div class="crm-status-count">${s.count.toLocaleString('en-US')}</div>
+        <div class="crm-status-pct">${s.pct}%</div>
+      </div>`).join('') + `</div>`;
+
+    // Append Status rezervare breakdown if available
+    const stRez = crm.status_rezervare_breakdown || [];
+    if (stRez.length) {
+      statusWrap.innerHTML += `
+        <div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--border);">
+          <div style="font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--dim);margin-bottom:10px;">Status Rezervare</div>
+          <div class="crm-status-list">` + stRez.map(s => `
+            <div class="crm-status-row">
+              <div class="crm-status-label">${escapeHtml(s.status)}</div>
+              <div class="crm-bar-wrap">
+                <div class="crm-bar-fill" style="width:${s.pct}%; background:var(--accent);"></div>
+              </div>
+              <div class="crm-status-count">${s.count}</div>
+              <div class="crm-status-pct">${s.pct}%</div>
+            </div>`).join('') + `</div></div>`;
+    }
+  }
+
+  // ── Products / Destinations (paginated + sortable) ──
+  const produse = crm.tip_produs_breakdown || [];
+  if (!produse.length) {
+    produsWrap.innerHTML = `<div class="empty-state">No product data available.</div>`;
+  } else {
+    const PAGE_SIZE = 15;
+    window._crmProdusPage = 0;
+    window._crmProdusSort = window._crmProdusSort || { col: 'suma_total', dir: 'desc' };
+    function getSorted() {
+      const { col, dir } = window._crmProdusSort;
+      return [...produse].sort((a, b) => {
+        const av = col === 'pct' ? a.pct : (a.suma_total || 0);
+        const bv = col === 'pct' ? b.pct : (b.suma_total || 0);
+        return dir === 'desc' ? bv - av : av - bv;
+      });
+    }
+    function sortArrow(col) {
+      const { col: c, dir: d } = window._crmProdusSort;
+      if (c !== col) return ' <span style="opacity:.3">↕</span>';
+      return d === 'desc' ? ' <span style="color:var(--accent)">↓</span>' : ' <span style="color:var(--accent)">↑</span>';
+    }
+    function renderProdusPage() {
+      const sorted = getSorted();
+      const page = window._crmProdusPage;
+      const totalPages = Math.ceil(sorted.length / PAGE_SIZE);
+      const slice = sorted.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE);
+      const maxP = Math.max(...slice.map(p => p.count), 1);
+      produsWrap.innerHTML =
+        `<div style="display:flex; align-items:center; gap:6px; margin-bottom:6px; padding:0 2px;">
+          <div style="flex:1"></div>
+          <div style="width:36px"></div>
+          <button class="crm-sort-btn" id="crm-sort-pct">%${sortArrow('pct')}</button>
+          <button class="crm-sort-btn" id="crm-sort-suma">RON${sortArrow('suma_total')}</button>
+        </div>` +
+        `<div class="crm-status-list">` +
+        slice.map(p => {
+          const suma = p.suma_total ? Math.round(p.suma_total).toLocaleString('en-US') + ' RON' : '—';
+          return `<div class="crm-status-row">
+            <div class="crm-status-label" title="${escapeHtml(p.name)}">${escapeHtml(p.name)}</div>
+            <div class="crm-bar-wrap">
+              <div class="crm-bar-fill" style="width:${Math.round(p.count/maxP*100)}%; background:var(--accent);"></div>
+            </div>
+            <div class="crm-status-count">${p.count.toLocaleString('en-US')}</div>
+            <div class="crm-status-pct">${p.pct}%</div>
+            <div class="crm-status-suma">${suma}</div>
+          </div>`;
+        }).join('') +
+        `</div>` +
+        (totalPages > 1 ? `
+        <div class="crm-pagination">
+          <button class="crm-page-btn" id="crm-produs-prev"${page === 0 ? ' disabled' : ''}>← Prev</button>
+          <span class="crm-page-info">Page ${page + 1} / ${totalPages} &nbsp;·&nbsp; ${sorted.length} destinations</span>
+          <button class="crm-page-btn" id="crm-produs-next"${page >= totalPages - 1 ? ' disabled' : ''}>Next →</button>
+        </div>` : ``);
+      // sort buttons
+      document.getElementById('crm-sort-pct').onclick = () => {
+        const s = window._crmProdusSort;
+        window._crmProdusSort = { col: 'pct', dir: s.col === 'pct' && s.dir === 'desc' ? 'asc' : 'desc' };
+        window._crmProdusPage = 0; renderProdusPage();
+      };
+      document.getElementById('crm-sort-suma').onclick = () => {
+        const s = window._crmProdusSort;
+        window._crmProdusSort = { col: 'suma_total', dir: s.col === 'suma_total' && s.dir === 'desc' ? 'asc' : 'desc' };
+        window._crmProdusPage = 0; renderProdusPage();
+      };
+      // pagination
+      const prevBtn = document.getElementById('crm-produs-prev');
+      const nextBtn = document.getElementById('crm-produs-next');
+      if (prevBtn) prevBtn.onclick = () => { if (window._crmProdusPage > 0) { window._crmProdusPage--; renderProdusPage(); } };
+      if (nextBtn) nextBtn.onclick = () => { if (window._crmProdusPage < totalPages - 1) { window._crmProdusPage++; renderProdusPage(); } };
+    }
+    renderProdusPage();
+  }
+
+  // ── Daily Orders Chart (SVG) ──
+  const daily = (crm.daily_orders || []).slice(0, 60).reverse(); // cronologic
+  if (!daily.length) {
+    dailyWrap.innerHTML = `<div class="empty-state">No daily order data available.</div>`;
+    return;
+  }
+
+  const W = 900, H = 220, PAD = { top: 20, right: 20, bottom: 40, left: 50 };
+  const chartW = W - PAD.left - PAD.right;
+  const chartH = H - PAD.top - PAD.bottom;
+  const n = daily.length;
+  const barW = Math.max(2, Math.floor(chartW / n) - 2);
+
+  const maxSuma = Math.max(...daily.map(d => d.suma_total || 0), 1);
+  const maxAvans = Math.max(...daily.map(d => d.avans_total || 0), 1);
+  const maxAbs = Math.max(maxSuma, maxAvans);
+  const maxCount = Math.max(...daily.map(d => d.total || 0), 1);
+
+  function xPos(i) { return PAD.left + i * (chartW / n) + barW / 2; }
+  function yBar(val, maxVal) { return PAD.top + chartH - (val / maxVal) * chartH; }
+  function barH(val, maxVal) { return Math.max(0, (val / maxVal) * chartH); }
+
+  // Suma bars (background, teal)
+  const sumaBars = daily.map((d, i) => {
+    const bh = barH(d.suma_total || 0, maxAbs);
+    const x = PAD.left + i * (chartW / n);
+    return `<rect x="${x+1}" y="${PAD.top + chartH - bh}" width="${barW}" height="${bh}" fill="rgba(16,212,142,0.35)" rx="1"/>`;
+  }).join('');
+
+  // Avans bars (foreground, amber)
+  const avansBars = daily.map((d, i) => {
+    const bh = barH(d.avans_total || 0, maxAbs);
+    const x = PAD.left + i * (chartW / n);
+    return `<rect x="${x+1}" y="${PAD.top + chartH - bh}" width="${barW}" height="${bh}" fill="rgba(240,180,41,0.55)" rx="1"/>`;
+  }).join('');
+
+  // Count line
+  const countPoints = daily.map((d, i) =>
+    `${xPos(i)},${yBar(d.total || 0, maxCount)}`).join(' ');
+  const countDots = daily.map((d, i) =>
+    `<circle cx="${xPos(i)}" cy="${yBar(d.total||0, maxCount)}" r="2.5" fill="var(--bing)" opacity="0.8"/>`).join('');
+
+  // X axis labels (every ~7 days)
+  const step = Math.max(1, Math.floor(n / 10));
+  const xLabels = daily.map((d, i) => {
+    if (i % step !== 0 && i !== n-1) return '';
+    const label = d.date.substring(5); // MM-DD
+    return `<text x="${xPos(i)}" y="${H - 8}" text-anchor="middle" font-size="8" fill="#4a5568">${label}</text>`;
+  }).join('');
+
+  // Y axis labels (right = count, left = RON)
+  const yLabelsSuma = [0, 0.5, 1].map(f => {
+    const val = Math.round(maxAbs * f);
+    const y = PAD.top + chartH - f * chartH;
+    const disp = val >= 1000 ? `${Math.round(val/1000)}K` : val;
+    return `<text x="${PAD.left - 5}" y="${y + 4}" text-anchor="end" font-size="8" fill="#4a5568">${disp}</text>`;
+  }).join('');
+  const yLabelsCount = [0, 0.5, 1].map(f => {
+    const val = Math.round(maxCount * f);
+    const y = PAD.top + chartH - f * chartH;
+    return `<text x="${W - PAD.right + 4}" y="${y + 4}" text-anchor="start" font-size="8" fill="var(--bing)">${val}</text>`;
+  }).join('');
+
+  // Hover rects (invisible, for tooltip)
+  const hoverRects = daily.map((d, i) => {
+    const x = PAD.left + i * (chartW / n);
+    return `<rect class="crm-chart-hover" x="${x}" y="${PAD.top}" width="${chartW/n}" height="${chartH}"
+      fill="transparent" data-date="${d.date}" data-total="${d.total}"
+      data-suma="${Math.round(d.suma_total||0)}" data-avans="${Math.round(d.avans_total||0)}"/>`;
+  }).join('');
+
+  const tooltip = `<g id="crm-chart-tip" opacity="0" pointer-events="none">
+    <rect id="crm-tip-bg" x="0" y="0" width="120" height="56" rx="4" fill="var(--s2)" stroke="var(--border2)"/>
+    <text id="crm-tip-date" x="8" y="16" font-size="9" fill="var(--dim)"></text>
+    <text id="crm-tip-total" x="8" y="30" font-size="10" fill="var(--bing)"></text>
+    <text id="crm-tip-suma" x="8" y="43" font-size="10" fill="var(--green)"></text>
+    <text id="crm-tip-avans" x="8" y="56" font-size="10" fill="var(--accent)"></text>
+  </g>`;
+
+  // Legend
+  const legend = `
+    <g transform="translate(${PAD.left}, ${H - 2})">
+      <rect x="0" y="-6" width="10" height="8" fill="rgba(16,212,142,0.55)" rx="1"/>
+      <text x="14" y="1" font-size="9" fill="var(--mid)">Suma (RON)</text>
+      <rect x="80" y="-6" width="10" height="8" fill="rgba(240,180,41,0.7)" rx="1"/>
+      <text x="94" y="1" font-size="9" fill="var(--mid)">Avans platit</text>
+      <line x1="175" y1="-2" x2="185" y2="-2" stroke="var(--bing)" stroke-width="2"/>
+      <circle cx="180" cy="-2" r="2.5" fill="var(--bing)"/>
+      <text x="189" y="1" font-size="9" fill="var(--mid)">Comenzi (nr)</text>
+    </g>`;
+
+  dailyWrap.innerHTML = `
+    <svg viewBox="0 0 ${W} ${H+10}" width="100%" style="overflow:visible; display:block;">
+      <line x1="${PAD.left}" y1="${PAD.top + chartH}" x2="${W - PAD.right}" y2="${PAD.top + chartH}" stroke="var(--border)" stroke-width="1"/>
+      ${sumaBars}
+      ${avansBars}
+      <polyline points="${countPoints}" fill="none" stroke="var(--bing)" stroke-width="1.5" stroke-linejoin="round"/>
+      ${countDots}
+      ${xLabels}
+      ${yLabelsSuma}
+      ${yLabelsCount}
+      ${hoverRects}
+      ${tooltip}
+      ${legend}
+    </svg>`;
+
+  // Tooltip interaction
+  dailyWrap.querySelectorAll('.crm-chart-hover').forEach(rect => {
+    rect.addEventListener('mouseenter', function(e) {
+      const tip = document.getElementById('crm-chart-tip');
+      const svgEl = dailyWrap.querySelector('svg');
+      const svgRect = svgEl.getBoundingClientRect();
+      const vbW = W, vbH = H + 10;
+      const scaleX = vbW / svgRect.width;
+      const mx = (e.clientX - svgRect.left) * scaleX;
+      const my = (e.clientY - svgRect.top) * (vbH / svgRect.height);
+      const tx = Math.min(mx + 8, W - 135);
+      const ty = Math.max(my - 60, PAD.top);
+      document.getElementById('crm-tip-bg').setAttribute('x', tx);
+      document.getElementById('crm-tip-bg').setAttribute('y', ty);
+      document.getElementById('crm-tip-date').setAttribute('x', tx + 8);
+      document.getElementById('crm-tip-date').setAttribute('y', ty + 14);
+      document.getElementById('crm-tip-total').setAttribute('x', tx + 8);
+      document.getElementById('crm-tip-total').setAttribute('y', ty + 28);
+      document.getElementById('crm-tip-suma').setAttribute('x', tx + 8);
+      document.getElementById('crm-tip-suma').setAttribute('y', ty + 41);
+      document.getElementById('crm-tip-avans').setAttribute('x', tx + 8);
+      document.getElementById('crm-tip-avans').setAttribute('y', ty + 54);
+      document.getElementById('crm-tip-date').textContent = this.dataset.date;
+      document.getElementById('crm-tip-total').textContent = `Orders: ${this.dataset.total}`;
+      document.getElementById('crm-tip-suma').textContent = `Suma: ${parseInt(this.dataset.suma).toLocaleString('en-US')} RON`;
+      document.getElementById('crm-tip-avans').textContent = `Avans: ${parseInt(this.dataset.avans).toLocaleString('en-US')} RON`;
+      tip.setAttribute('opacity', '1');
+    });
+    rect.addEventListener('mouseleave', function() {
+      document.getElementById('crm-chart-tip').setAttribute('opacity', '0');
+    });
+  });
+}
 
 function renderActiveReport() {
   const data = window.PPC_DATA || {};
@@ -1970,6 +2323,7 @@ function renderActiveReport() {
   if (currentView === 'report-daily') renderReportDaily(data);
   if (currentView === 'report-adgroups') renderReportAdGroups(data);
   if (currentView === 'report-audience') renderReportAudience();
+  if (currentView === 'report-crm') renderReportCRM();
 }
 
 /* ─── VIEW SWITCHING ─── */
@@ -1988,7 +2342,6 @@ function switchView(view) {
 
 function renderAll() {
   const data = window.PPC_DATA || {};
-  renderPeriodTabs();
   renderTopbar(data);
   renderKPIs(data);
   renderPlatforms(data);
@@ -2000,32 +2353,76 @@ function renderAll() {
   renderActiveReport();
 }
 
+/* ─── PERIOD TABS ─── */
+function renderPeriodTabs() {
+  const tabs = document.getElementById('period-tabs');
+  if (!tabs) return;
+  tabs.innerHTML = PERIOD_DEFS.map(p => {
+    const active = window.PPC_DATA === window.PPC_DATA_BY_PERIOD?.[p.key];
+    return `<div class="period-tab${active ? ' active' : ''}" data-period="${p.key}">${p.label}</div>`;
+  }).join('');
+  tabs.querySelectorAll('.period-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const key = tab.dataset.period;
+      const byPeriod = window.PPC_DATA_BY_PERIOD;
+      if (byPeriod && byPeriod[key]) {
+        window.PPC_DATA = byPeriod[key];
+        renderAll();
+        renderPeriodTabs();
+      }
+    });
+  });
+}
+
+/* ─── NAV ITEMS ─── */
+document.querySelectorAll('.nav-item[data-view]').forEach(item => {
+  item.addEventListener('click', () => switchView(item.dataset.view));
+});
+
+document.getElementById('btn-refresh')?.addEventListener('click', () => {
+  renderAll();
+});
+
+/* ─── TOPBAR TITLE ─── */
+const VIEW_TITLES = {
+  overview: 'OVERVIEW',
+  'report-campaigns': 'ACTIVE CAMPAIGNS',
+  'report-destinations': 'TOP DESTINATIONS',
+  'report-daily': 'DAILY DIAGNOSTIC',
+  'report-adgroups': 'AD GROUPS & AD SETS',
+  'report-audience': 'GA4 AUDIENCES & ATTRIBUTION',
+  'report-crm': 'CRM ORDERS',
+};
+function updateTopbarTitle(view) {
+  const el = document.getElementById('topbar-title');
+  if (el) el.textContent = VIEW_TITLES[view] || view.toUpperCase();
+}
+const _origSwitchView = switchView;
+// Patch switchView to also update topbar title
+(function() {
+  const navItems = document.querySelectorAll('.nav-item[data-view]');
+  navItems.forEach(item => {
+    item.addEventListener('click', () => updateTopbarTitle(item.dataset.view));
+  });
+})();
+
+/* ─── DATA SOURCE LABEL ─── */
+function renderDataSource(data) {
+  const el = document.getElementById('data-source');
+  if (!el) return;
+  const sources = [];
+  if (data?.platforms?.google?.status !== 'not_connected') sources.push('Google Ads');
+  if (data?.platforms?.meta?.status !== 'not_connected') sources.push('Meta Ads');
+  if (window.PPC_GA4_DATA) sources.push('GA4');
+  if (window.PPC_CRM_DATA) sources.push('CRM');
+  el.textContent = sources.length ? `SOURCE: ${sources.join(' + ')}` : 'SOURCE: —';
+}
+
+/* ─── INIT ─── */
+renderPeriodTabs();
 renderAll();
-
-document.getElementById('btn-refresh').addEventListener('click', function() {
-  this.style.color = 'var(--green)';
-  setTimeout(() => location.reload(), 300);
-});
-
-document.querySelector('.sidebar').addEventListener('click', function(e) {
-  const item = e.target.closest('.nav-item[data-view]');
-  if (!item) return;
-  if (item.dataset.platform) {
-    currentFilters.campaigns = item.dataset.platform;
-    document.querySelectorAll('#nav-platforms .nav-item').forEach(el => el.classList.remove('active'));
-    item.classList.add('active');
-  }
-  switchView(item.dataset.view);
-  if (item.dataset.platform) {
-    renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
-    renderReportCampaigns(window.PPC_DATA);
-  }
-});
-
-renderFilterChips('filter-campaigns', 'campaigns', () => renderReportCampaigns(window.PPC_DATA));
-renderFilterChips('filter-destinations', 'destinations', () => renderReportDestinations(window.PPC_DATA));
-renderFilterChips('filter-daily', 'daily', () => renderReportDaily(window.PPC_DATA));
-renderFilterChips('filter-adgroups', 'adgroups', () => renderReportAdGroups(window.PPC_DATA));
+updateTopbarTitle('overview');
+renderDataSource(window.PPC_DATA || {});
 </script>
 </body>
-</html>
+</html>                
