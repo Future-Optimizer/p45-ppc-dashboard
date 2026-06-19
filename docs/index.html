@@ -828,6 +828,16 @@ body::before {
 .crm-sort-btn { background:transparent; border:1px solid var(--s3); color:var(--dim); font-size:10px; padding:2px 8px; border-radius:3px; cursor:pointer; transition:background .15s, color .15s; width:70px; text-align:center; }
 .crm-sort-btn:hover { background:var(--s2); color:var(--text); }
 
+.crm-filter-bar { display:flex; align-items:center; gap:14px; margin-bottom:12px; padding:10px 14px; background:var(--s1); border:1px solid var(--border); border-radius:10px; flex-wrap:wrap; }
+.crm-filter-group { display:flex; align-items:center; gap:8px; }
+.crm-filter-group label { font-size:9px; letter-spacing:1px; text-transform:uppercase; color:var(--dim); }
+.crm-filter-group select { background:var(--s2); border:1px solid var(--s3); color:var(--text); font-size:11px; padding:5px 8px; border-radius:5px; cursor:pointer; font-family:inherit; }
+.crm-filter-group select:hover { border-color:var(--accent); }
+.crm-filter-reset { background:transparent; border:1px solid var(--s3); color:var(--dim); font-size:10px; padding:5px 10px; border-radius:5px; cursor:pointer; transition:background .15s, color .15s; }
+.crm-filter-reset:hover { background:var(--s2); color:var(--text); }
+.crm-filter-reset:disabled { opacity:0.3; cursor:default; }
+.crm-filter-count { font-size:10px; color:var(--dim); margin-left:auto; }
+
 /* ─── MINI CHART ─── */
 .mini-chart {
   width:100%;
@@ -1093,6 +1103,7 @@ body::before {
 
   <!-- VIEW: REPORT — CRM ORDERS -->
   <div id="view-report-crm" class="view hidden">
+    <div class="crm-filter-bar" id="crm-filter-bar"></div>
     <div class="crm-kpi-row" id="crm-kpi-row"></div>
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
       <div class="card">
@@ -2027,7 +2038,152 @@ function renderReportAdGroups(data) {
     });
   }
 }
-/* ─── REPORT: CRM ORDERS ─── */
+/* ─── REPORT: CRM ORDERS — filtre dinamice ─── */
+const CRM_STATUS_COLOR = { 'Finalizată':'#10d48e','Anulată':'#f43f5e','Emisă':'#f0b429','Creată':'#60a5fa','La cerere':'#a78bfa' };
+const CRM_STATUS_KEY = { 'Finalizată':'finalizata','Anulată':'anulata','Emisă':'emisa','Creată':'creata','La cerere':'lacerere' };
+const CRM_KNOWN_STATUSES = ['Finalizată','Anulată','Emisă','Creată','La cerere'];
+
+function getFilteredCrmOrders(crm) {
+  const orders = crm.orders || [];
+  const f = window._crmFilters || { status: 'all', statusPlata: 'all' };
+  return orders.filter(o =>
+    (f.status === 'all' || o.status === f.status) &&
+    (f.statusPlata === 'all' || o.status_plata === f.statusPlata)
+  );
+}
+
+function crmComputeAggregates(orders) {
+  const total = orders.length;
+  const statusCounts = {};
+  const stRezCounts = {};
+  const produsData = {};
+  const daily = {};
+  let confirmate = 0;
+  let sumaFinalizata = 0;
+
+  orders.forEach(o => {
+    statusCounts[o.status] = (statusCounts[o.status] || 0) + 1;
+
+    if (o.status_rezervare && o.status_rezervare !== '—') {
+      stRezCounts[o.status_rezervare] = (stRezCounts[o.status_rezervare] || 0) + 1;
+    }
+    const rezLower = (o.status_rezervare || '').toLowerCase();
+    if (rezLower === 'confirmată' || rezLower === 'confirmata' || rezLower === 'confirmat') confirmate++;
+
+    if ((o.suma || 0) > 0 && o.status === 'Finalizată') sumaFinalizata += o.suma;
+
+    if (o.produs && o.produs !== '—') {
+      if (!produsData[o.produs]) produsData[o.produs] = { count: 0, suma: 0 };
+      produsData[o.produs].count++;
+      produsData[o.produs].suma += (o.suma || 0);
+    }
+
+    if (o.data) {
+      if (!daily[o.data]) daily[o.data] = { total: 0, suma_total: 0, avans_total: 0, finalizata: 0, anulata: 0, emisa: 0, creata: 0, lacerere: 0, altele: 0 };
+      const d = daily[o.data];
+      d.total++;
+      d.suma_total += (o.suma || 0);
+      d.avans_total += (o.avans || 0);
+      const key = CRM_STATUS_KEY[o.status] || 'altele';
+      d[key] = (d[key] || 0) + 1;
+    }
+  });
+
+  const allStatuses = [...CRM_KNOWN_STATUSES, 'Altele'];
+  let status_breakdown = allStatuses
+    .map(s => {
+      const cnt = statusCounts[s] || 0;
+      return { status: s, count: cnt, pct: total ? Math.round(cnt / total * 1000) / 10 : 0, color: CRM_STATUS_COLOR[s] || '#8896b0', key: CRM_STATUS_KEY[s] || 'altele' };
+    })
+    .filter(s => !(s.count === 0 && s.status === 'Altele'));
+  status_breakdown.sort((a, b) => b.count - a.count);
+
+  let status_rezervare_breakdown = Object.entries(stRezCounts)
+    .map(([s, c]) => ({ status: s, count: c, pct: total ? Math.round(c / total * 1000) / 10 : 0 }));
+  status_rezervare_breakdown.sort((a, b) => b.count - a.count);
+
+  let tip_produs_breakdown = Object.entries(produsData)
+    .map(([name, d]) => ({ name, count: d.count, pct: total ? Math.round(d.count / total * 1000) / 10 : 0, suma_total: Math.round(d.suma * 100) / 100 }));
+  tip_produs_breakdown.sort((a, b) => b.suma_total - a.suma_total);
+
+  let daily_orders = Object.keys(daily).sort().reverse().map(date => {
+    const d = daily[date];
+    return {
+      date, total: d.total,
+      suma_total: Math.round(d.suma_total * 100) / 100,
+      avans_total: Math.round(d.avans_total * 100) / 100,
+      finalizata: d.finalizata || 0, anulata: d.anulata || 0, emisa: d.emisa || 0,
+      creata: d.creata || 0, lacerere: d.lacerere || 0, altele: d.altele || 0,
+    };
+  });
+
+  const finalizate = statusCounts['Finalizată'] || 0;
+  const anulate = statusCounts['Anulată'] || 0;
+
+  return {
+    total_orders: total,
+    total_confirmate: confirmate,
+    rata_finalizare: total ? Math.round(finalizate / total * 1000) / 10 : 0,
+    rata_anulare: total ? Math.round(anulate / total * 1000) / 10 : 0,
+    rata_confirmare: total ? Math.round(confirmate / total * 1000) / 10 : 0,
+    total_suma_finalizata_ron: Math.round(sumaFinalizata * 100) / 100,
+    status_rezervare_breakdown,
+    status_breakdown,
+    daily_orders,
+    tip_produs_breakdown,
+  };
+}
+
+function renderCrmFilterBar(crm) {
+  const wrap = document.getElementById('crm-filter-bar');
+  if (!wrap) return;
+  if (!crm || !crm.orders || !crm.orders.length) { wrap.innerHTML = ''; return; }
+
+  window._crmFilters = window._crmFilters || { status: 'all', statusPlata: 'all' };
+  const f = window._crmFilters;
+
+  const statuses = [...new Set(crm.orders.map(o => o.status).filter(Boolean))].sort();
+  const statusPlataVals = [...new Set(crm.orders.map(o => o.status_plata).filter(v => v && v !== '—'))].sort();
+  const filteredCount = getFilteredCrmOrders(crm).length;
+  const isFiltered = f.status !== 'all' || f.statusPlata !== 'all';
+
+  wrap.innerHTML = `
+    <div class="crm-filter-group">
+      <label>Status</label>
+      <select id="crm-filter-status">
+        <option value="all"${f.status === 'all' ? ' selected' : ''}>All</option>
+        ${statuses.map(s => `<option value="${escapeHtml(s)}"${f.status === s ? ' selected' : ''}>${escapeHtml(s)}</option>`).join('')}
+      </select>
+    </div>
+    <div class="crm-filter-group">
+      <label>Status plata</label>
+      <select id="crm-filter-status-plata">
+        <option value="all"${f.statusPlata === 'all' ? ' selected' : ''}>All</option>
+        ${statusPlataVals.map(s => `<option value="${escapeHtml(s)}"${f.statusPlata === s ? ' selected' : ''}>${escapeHtml(s)}</option>`).join('')}
+      </select>
+    </div>
+    <button class="crm-filter-reset" id="crm-filter-reset"${isFiltered ? '' : ' disabled'}>Reset filters</button>
+    <span class="crm-filter-count">${filteredCount.toLocaleString('en-US')} / ${crm.orders.length.toLocaleString('en-US')} orders</span>
+  `;
+
+  document.getElementById('crm-filter-status').onchange = (e) => {
+    window._crmFilters.status = e.target.value;
+    window._crmProdusPage = 0;
+    renderReportCRM();
+  };
+  document.getElementById('crm-filter-status-plata').onchange = (e) => {
+    window._crmFilters.statusPlata = e.target.value;
+    window._crmProdusPage = 0;
+    renderReportCRM();
+  };
+  const resetBtn = document.getElementById('crm-filter-reset');
+  if (resetBtn) resetBtn.onclick = () => {
+    window._crmFilters = { status: 'all', statusPlata: 'all' };
+    window._crmProdusPage = 0;
+    renderReportCRM();
+  };
+}
+
 function renderReportCRM() {
   const crm = window.PPC_CRM_DATA;
   const badge = document.getElementById('crm-badge');
@@ -2051,16 +2207,21 @@ function renderReportCRM() {
 
   if (badge) badge.textContent = `CRM · ${crm.sheet_name || ''}`;
 
+  renderCrmFilterBar(crm);
+  const crmFilters = window._crmFilters || { status: 'all', statusPlata: 'all' };
+  const crmIsFiltered = (crm.orders && crm.orders.length) && (crmFilters.status !== 'all' || crmFilters.statusPlata !== 'all');
+  const data = crmIsFiltered ? crmComputeAggregates(getFilteredCrmOrders(crm)) : crm;
+
   // ── KPI Cards ──
-  const confirmate = crm.total_confirmate || 0;
-  const anulataEntry = (crm.status_breakdown || []).find(s => s.status === 'Anulată');
+  const confirmate = data.total_confirmate || 0;
+  const anulataEntry = (data.status_breakdown || []).find(s => s.status === 'Anulată');
   const anulate = anulataEntry ? anulataEntry.count : 0;
 
   kpiRow.innerHTML = [
-    { label: 'Total Orders', val: (crm.total_orders||0).toLocaleString('en-US'), unit: '', sub: `as of ${crm.snapshot_date}`, cls: '' },
-    { label: 'Confirmed (Status rezervare)', val: confirmate.toLocaleString('en-US'), unit: '', sub: `<b>${crm.rata_confirmare||0}%</b> confirmation rate`, cls: '' },
-    { label: 'Cancelled', val: anulate.toLocaleString('en-US'), unit: '', sub: `<b>${crm.rata_anulare||0}%</b> cancellation rate`, cls: 'bad' },
-    { label: 'Revenue Confirmed', val: Math.round(crm.total_suma_finalizata_ron||0).toLocaleString('en-US'), unit: ' RON', sub: 'from Finalizată orders', cls: '' },
+    { label: 'Total Orders', val: (data.total_orders||0).toLocaleString('en-US'), unit: '', sub: `as of ${crm.snapshot_date}`, cls: '' },
+    { label: 'Confirmed (Status rezervare)', val: confirmate.toLocaleString('en-US'), unit: '', sub: `<b>${data.rata_confirmare||0}%</b> confirmation rate`, cls: '' },
+    { label: 'Cancelled', val: anulate.toLocaleString('en-US'), unit: '', sub: `<b>${data.rata_anulare||0}%</b> cancellation rate`, cls: 'bad' },
+    { label: 'Revenue Confirmed', val: Math.round(data.total_suma_finalizata_ron||0).toLocaleString('en-US'), unit: ' RON', sub: 'from Finalizată orders', cls: '' },
   ].map(k => `
     <div class="crm-kpi-card">
       <div class="crm-kpi-label">${k.label}</div>
@@ -2069,7 +2230,7 @@ function renderReportCRM() {
     </div>`).join('');
 
   // ── Status Breakdown ──
-  const statuses = crm.status_breakdown || [];
+  const statuses = data.status_breakdown || [];
   if (!statuses.length) {
     statusWrap.innerHTML = `<div class="empty-state">No status data available.</div>`;
   } else {
@@ -2085,7 +2246,7 @@ function renderReportCRM() {
       </div>`).join('') + `</div>`;
 
     // Append Status rezervare breakdown if available
-    const stRez = crm.status_rezervare_breakdown || [];
+    const stRez = data.status_rezervare_breakdown || [];
     if (stRez.length) {
       statusWrap.innerHTML += `
         <div style="margin-top:16px; padding-top:12px; border-top:1px solid var(--border);">
@@ -2103,7 +2264,7 @@ function renderReportCRM() {
   }
 
   // ── Products / Destinations (paginated + sortable) ──
-  const produse = crm.tip_produs_breakdown || [];
+  const produse = data.tip_produs_breakdown || [];
   if (!produse.length) {
     produsWrap.innerHTML = `<div class="empty-state">No product data available.</div>`;
   } else {
@@ -2177,7 +2338,7 @@ function renderReportCRM() {
   }
 
   // ── Daily Orders Chart (SVG) ──
-  const daily = (crm.daily_orders || []).slice(0, 60).reverse(); // cronologic
+  const daily = (data.daily_orders || []).slice(0, 60).reverse(); // cronologic
   if (!daily.length) {
     dailyWrap.innerHTML = `<div class="empty-state">No daily order data available.</div>`;
     return;
