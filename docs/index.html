@@ -1147,6 +1147,7 @@ const KPI_ORDER = ['spend_total', 'revenue', 'roas_global', 'cost_of_sale', 'con
 
 const PERIOD_DEFS = [
   { key: 'today',      label: 'Today' },
+  { key: 'yesterday',  label: 'Yesterday' },
   { key: '7d',         label: '7 days' },
   { key: '14d',        label: '14 days' },
   { key: '30d',        label: '30 days' },
@@ -1159,6 +1160,7 @@ const PERIOD_DEFS = [
 const VIEWS = ['overview', 'report-campaigns', 'report-destinations', 'report-daily', 'report-adgroups', 'report-audience', 'report-crm'];
 let currentView = 'overview';
 const currentFilters = { campaigns: 'all', destinations: 'all', daily: 'all', adgroups: 'all' };
+let currentPlatform = 'all';
 const currentSearch = { campaigns: '', adgroups: '' };
 
 /* ─── SORTING ─── */
@@ -2496,7 +2498,13 @@ function switchView(view) {
     if (el) el.classList.toggle('hidden', v !== view);
   });
   document.querySelectorAll('.nav-item[data-view]').forEach(item => {
-    item.classList.toggle('active', item.dataset.view === view && !item.dataset.platform);
+    if (item.dataset.platform) {
+      // Platform nav item: active only when both view and platform match
+      item.classList.toggle('active', item.dataset.view === view && item.dataset.platform === currentPlatform);
+    } else {
+      // Regular nav item: active when view matches and no platform filter is active
+      item.classList.toggle('active', item.dataset.view === view && currentPlatform === 'all');
+    }
   });
   renderActiveReport();
 }
@@ -2537,7 +2545,13 @@ function renderPeriodTabs() {
 
 /* ─── NAV ITEMS ─── */
 document.querySelectorAll('.nav-item[data-view]').forEach(item => {
-  item.addEventListener('click', () => switchView(item.dataset.view));
+  item.addEventListener('click', () => {
+    const platform = item.dataset.platform || 'all';
+    currentPlatform = platform;
+    // Sync all report filters with the selected platform
+    Object.keys(currentFilters).forEach(k => currentFilters[k] = platform);
+    switchView(item.dataset.view);
+  });
 });
 
 document.getElementById('btn-refresh')?.addEventListener('click', () => {
